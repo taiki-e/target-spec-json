@@ -1,0 +1,15 @@
+[package]
+name = "target-spec-json-internal-codegen"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = "1"
+fs-err = "2"
+globset = "0.4"
+ignore = "0.4"
+prettyplease = "0.2"
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "2", features = ["full", "visit-mut"] }

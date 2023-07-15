@@ -1,0 +1,99 @@
+name: CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - dev
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+env:
+  CARGO_INCREMENTAL: 0
+  CARGO_NET_GIT_FETCH_WITH_CLI: true
+  CARGO_NET_RETRY: 10
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+  RUSTDOCFLAGS: -D warnings
+  RUSTFLAGS: -D warnings
+  RUSTUP_MAX_RETRIES: 10
+  EXCLUDE: --exclude target-spec-json-internal-codegen
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  check-external-types:
+    uses: taiki-e/workflows/.github/workflows/check-external-types.yml@main
+  deny:
+    uses: taiki-e/workflows/.github/workflows/deny.yml@main
+  docs:
+    uses: taiki-e/workflows/.github/workflows/docs.yml@main
+  msrv:
+    uses: taiki-e/workflows/.github/workflows/msrv.yml@main
+    with:
+      event_name: ${{ github.event_name }}
+  tidy:
+    uses: taiki-e/workflows/.github/workflows/tidy.yml@main
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - rust: nightly
+          - rust: nightly
+            os: macos-latest
+          - rust: nightly
+            os: windows-latest
+    runs-on: ${{ matrix.os || 'ubuntu-latest' }}
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: rustup toolchain add ${{ matrix.rust }} --no-self-update && rustup default ${{ matrix.rust }}
+      - run: rustup toolchain add nightly --no-self-update
+      - uses: taiki-e/install-action@cargo-hack
+      - uses: taiki-e/install-action@cargo-minimal-versions
+      - run: cargo test --workspace --all-features $EXCLUDE
+      - run: cargo hack build --workspace --ignore-private --feature-powerset --no-dev-deps
+      - run: cargo minimal-versions build --workspace --all-features --ignore-private
+
+  miri:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: rustup toolchain add nightly --no-self-update --component miri && rustup default nightly
+      - run: cargo miri test --workspace --all-features $EXCLUDE
+        env:
+          MIRIFLAGS: -Zmiri-strict-provenance -Zmiri-symbolic-alignment-check -Zmiri-retag-fields -Zmiri-disable-isolation
+          RUSTDOCFLAGS: ${{ env.RUSTDOCFLAGS }} -Z randomize-layout
+          RUSTFLAGS: ${{ env.RUSTFLAGS }} -Z randomize-layout
+
+  codegen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: rustup toolchain add nightly --no-self-update && rustup default nightly
+      - run: tools/gen.sh
+      - run: git add -N . && git diff --exit-code
