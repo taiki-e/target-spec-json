@@ -6502,6 +6502,23 @@
     ],
     "target-pointer-width": "32"
   },
+  "sparc-unknown-none-elf": {
+    "abi": "elf",
+    "arch": "sparc",
+    "cpu": "v7",
+    "data-layout": "E-m:e-p:32:32-i64:64-f128:64-n32-S64",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "is-builtin": true,
+    "linker": "sparc-elf-gcc",
+    "llvm-target": "sparc-unknown-none-elf",
+    "max-atomic-width": 32,
+    "no-default-libraries": false,
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-endian": "big",
+    "target-pointer-width": "32"
+  },
   "sparc64-unknown-linux-gnu": {
     "arch": "sparc64",
     "cpu": "v9",
