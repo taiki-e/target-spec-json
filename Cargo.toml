@@ -7,7 +7,7 @@ license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/target-spec-json"
 keywords = ["serde", "serialization"]
 categories = ["parser-implementations"]
-exclude = ["/.*", "/ci", "/tools"]
+exclude = ["/.*", "/tools"]
 description = """
 Structured access to rustc `--print target-spec-json` and `--print all-target-specs-json`.
 """
