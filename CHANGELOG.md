@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetArch::{mips32r6,mips64r6}`.
+
 ## [0.1.0] - 2023-07-15
 
 Initial release
