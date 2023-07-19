@@ -906,7 +906,6 @@
   },
   "aarch64-unknown-linux-ohos": {
     "arch": "aarch64",
-    "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "dynamic-linking": true,
@@ -919,62 +918,6 @@
     "max-atomic-width": 128,
     "os": "linux",
     "position-independent-executables": true,
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "dynamic-nopic-exe": [
-        "crtend.o",
-        "crtn.o"
-      ],
-      "dynamic-pic-exe": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "static-dylib": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "static-nopic-exe": [
-        "crtend.o",
-        "crtn.o"
-      ],
-      "static-pic-exe": [
-        "crtendS.o",
-        "crtn.o"
-      ]
-    },
-    "pre-link-objects-fallback": {
-      "dynamic-dylib": [
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "dynamic-nopic-exe": [
-        "crt1.o",
-        "crti.o",
-        "crtbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "Scrt1.o",
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "static-dylib": [
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "static-nopic-exe": [
-        "crt1.o",
-        "crti.o",
-        "crtbegin.o"
-      ],
-      "static-pic-exe": [
-        "rcrt1.o",
-        "crti.o",
-        "crtbeginS.o"
-      ]
-    },
     "relro-level": "full",
     "supported-sanitizers": [
       "address",
@@ -2360,7 +2303,6 @@
   "armv7-unknown-linux-ohos": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "dynamic-linking": true,
@@ -2373,62 +2315,6 @@
     "max-atomic-width": 64,
     "os": "linux",
     "position-independent-executables": true,
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "dynamic-nopic-exe": [
-        "crtend.o",
-        "crtn.o"
-      ],
-      "dynamic-pic-exe": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "static-dylib": [
-        "crtendS.o",
-        "crtn.o"
-      ],
-      "static-nopic-exe": [
-        "crtend.o",
-        "crtn.o"
-      ],
-      "static-pic-exe": [
-        "crtendS.o",
-        "crtn.o"
-      ]
-    },
-    "pre-link-objects-fallback": {
-      "dynamic-dylib": [
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "dynamic-nopic-exe": [
-        "crt1.o",
-        "crti.o",
-        "crtbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "Scrt1.o",
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "static-dylib": [
-        "crti.o",
-        "crtbeginS.o"
-      ],
-      "static-nopic-exe": [
-        "crt1.o",
-        "crti.o",
-        "crtbegin.o"
-      ],
-      "static-pic-exe": [
-        "rcrt1.o",
-        "crti.o",
-        "crtbeginS.o"
-      ]
-    },
     "relro-level": "full",
     "supported-split-debuginfo": [
       "packed",
@@ -4924,7 +4810,7 @@
     "target-pointer-width": "32"
   },
   "mipsisa32r6-unknown-linux-gnu": {
-    "arch": "mips",
+    "arch": "mips32r6",
     "cpu": "mips32r6",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
@@ -4952,7 +4838,7 @@
     "target-pointer-width": "32"
   },
   "mipsisa32r6el-unknown-linux-gnu": {
-    "arch": "mips",
+    "arch": "mips32r6",
     "cpu": "mips32r6",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
@@ -4980,7 +4866,7 @@
   },
   "mipsisa64r6-unknown-linux-gnuabi64": {
     "abi": "abi64",
-    "arch": "mips64",
+    "arch": "mips64r6",
     "cpu": "mips64r6",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
@@ -5009,7 +4895,7 @@
   },
   "mipsisa64r6el-unknown-linux-gnuabi64": {
     "abi": "abi64",
-    "arch": "mips64",
+    "arch": "mips64r6",
     "cpu": "mips64r6",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
@@ -8668,6 +8554,53 @@
         "rcrt1.o",
         "crti.o",
         "crtbeginS.o"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline-or-call",
+      "min-llvm-version-for-inline": [
+        16,
+        0,
+        0
+      ]
+    },
+    "static-position-independent-executables": true,
+    "supported-sanitizers": [
+      "address",
+      "cfi",
+      "leak",
+      "memory",
+      "thread"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-xray": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
+  },
+  "x86_64-unknown-linux-ohos": {
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128",
+    "dynamic-linking": true,
+    "env": "ohos",
+    "force-emulated-tls": true,
+    "has-rpath": true,
+    "is-builtin": true,
+    "llvm-target": "x86_64-unknown-linux-musl",
+    "max-atomic-width": 64,
+    "os": "linux",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gcc": [
+        "-m64"
       ]
     },
     "relro-level": "full",
