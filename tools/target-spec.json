@@ -733,18 +733,6 @@
     "os": "hermit",
     "panic-strategy": "abort",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "ld": [
-        "--build-id",
-        "--hash-style=gnu",
-        "--Bstatic"
-      ],
-      "ld.lld": [
-        "--build-id",
-        "--hash-style=gnu",
-        "--Bstatic"
-      ]
-    },
     "static-position-independent-executables": true,
     "target-pointer-width": "64",
     "tls-model": "initial-exec"
@@ -1614,7 +1602,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
-    "llvm-target": "armebv7r-unknown-none-eabi",
+    "llvm-target": "armebv7r-none-eabi",
     "max-atomic-width": 64,
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -1631,7 +1619,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
-    "llvm-target": "armebv7r-unknown-none-eabihf",
+    "llvm-target": "armebv7r-none-eabihf",
     "max-atomic-width": 64,
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2571,7 +2559,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
-    "llvm-target": "armv7r-unknown-none-eabi",
+    "llvm-target": "armv7r-none-eabi",
     "max-atomic-width": 64,
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2587,7 +2575,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
-    "llvm-target": "armv7r-unknown-none-eabihf",
+    "llvm-target": "armv7r-none-eabihf",
     "max-atomic-width": 64,
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -6022,6 +6010,26 @@
     ],
     "target-pointer-width": "64"
   },
+  "riscv64gc-unknown-hermit": {
+    "arch": "riscv64",
+    "code-model": "medium",
+    "cpu": "generic-rv64",
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "features": "+m,+a,+f,+d,+c",
+    "has-thread-local": true,
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "ld.lld",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64-unknown-hermit",
+    "max-atomic-width": 64,
+    "os": "hermit",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "static-position-independent-executables": true,
+    "target-pointer-width": "64",
+    "tls-model": "local-exec"
+  },
   "riscv64gc-unknown-linux-gnu": {
     "arch": "riscv64",
     "code-model": "medium",
@@ -8309,18 +8317,6 @@
     "panic-strategy": "abort",
     "plt-by-default": false,
     "position-independent-executables": true,
-    "pre-link-args": {
-      "ld": [
-        "--build-id",
-        "--hash-style=gnu",
-        "--Bstatic"
-      ],
-      "ld.lld": [
-        "--build-id",
-        "--hash-style=gnu",
-        "--Bstatic"
-      ]
-    },
     "stack-probes": {
       "kind": "inline-or-call",
       "min-llvm-version-for-inline": [
