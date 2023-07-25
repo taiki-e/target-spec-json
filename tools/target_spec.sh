@@ -25,8 +25,6 @@ target_arch=(
     amdgpu
     asmjs
     csky
-    mips32r6
-    mips64r6
     nvptx
     spirv
     xtensa
