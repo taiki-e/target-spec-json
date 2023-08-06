@@ -5810,7 +5810,7 @@
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
     "llvm-target": "riscv32",
-    "max-atomic-width": 0,
+    "max-atomic-width": 32,
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -5827,7 +5827,7 @@
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
     "llvm-target": "riscv32",
-    "max-atomic-width": 0,
+    "max-atomic-width": 32,
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -5917,7 +5917,7 @@
     "linker": "rust-lld",
     "linker-flavor": "ld.lld",
     "llvm-target": "riscv32",
-    "max-atomic-width": 0,
+    "max-atomic-width": 32,
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
