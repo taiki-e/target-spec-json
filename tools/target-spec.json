@@ -2699,7 +2699,7 @@
     },
     "linker": "avr-gcc",
     "llvm-target": "avr-unknown-unknown",
-    "max-atomic-width": 0,
+    "max-atomic-width": 16,
     "pre-link-args": {
       "gcc": [
         "-mmcu=atmega328"
@@ -6408,7 +6408,7 @@
     "has-thread-local": true,
     "is-builtin": true,
     "llvm-target": "sparc-unknown-linux-gnu",
-    "max-atomic-width": 64,
+    "max-atomic-width": 32,
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
