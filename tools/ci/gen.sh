@@ -19,13 +19,14 @@ fi
 git config user.name "Taiki Endo"
 git config user.email "te316e89@gmail.com"
 
-path=tools/target-spec.json
-git add -N "${path}"
-if ! git diff --exit-code -- "${path}"; then
-    git add "${path}"
-    git commit -m "Update ${path}"
-    has_update=1
-fi
+for path in tools/target-spec.json src/gen/*; do
+    git add -N "${path}"
+    if ! git diff --exit-code -- "${path}"; then
+        git add "${path}"
+        git commit -m "Update ${path}"
+        has_update=1
+    fi
+done
 
 if [[ -n "${has_update:-}" ]] && [[ -n "${GITHUB_OUTPUT:-}" ]]; then
     echo "success=false" >>"${GITHUB_OUTPUT}"

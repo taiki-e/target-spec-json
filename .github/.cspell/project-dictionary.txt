@@ -17,5 +17,6 @@ relro
 rpath
 singlethread
 staticlib
+teeos
 unparse
 uwtable
