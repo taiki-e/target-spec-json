@@ -7,16 +7,12 @@ cmdline
 debuginfo
 dylibs
 interworking
-libnx
 mcount
-newlib
 rdylib
 redzone
-relibc
 relro
 rpath
 singlethread
 staticlib
-teeos
 unparse
 uwtable
