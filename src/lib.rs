@@ -197,6 +197,8 @@ pub struct TargetSpec {
     pub llvm_abiname: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub llvm_args: Option<Vec<String>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub llvm_mcount_intrinsic: Option<String>,
     pub llvm_target: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub main_needs_argc_argv: Option<bool>,

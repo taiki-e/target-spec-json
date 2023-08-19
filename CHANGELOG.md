@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::llvm_mcount_intrinsic`.
+
 ## [0.1.1] - 2023-07-18
 
 - Add `TargetArch::{mips32r6,mips64r6}`.
