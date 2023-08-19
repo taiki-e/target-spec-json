@@ -24,7 +24,6 @@ target_arch=(
     # and https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L134.
     amdgpu
     asmjs
-    csky
     nvptx
     spirv
     xtensa
