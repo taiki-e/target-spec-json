@@ -2,7 +2,6 @@ abiname
 arange
 bitcode
 cabi
-cdylib
 cmdline
 debuginfo
 dylibs
@@ -13,6 +12,5 @@ redzone
 relro
 rpath
 singlethread
-staticlib
 unparse
 uwtable
