@@ -7802,7 +7802,6 @@
         "__rust_rwlock_wrlock"
       ]
     },
-    "relax-elf-relocations": true,
     "target-pointer-width": "64",
     "vendor": "fortanix"
   },
