@@ -43,8 +43,6 @@ target-spec-json = "0.1"
 )]
 #![allow(clippy::must_use_candidate, clippy::struct_excessive_bools, clippy::missing_errors_doc)]
 
-// Refs: https://github.com/rust-lang/rust/blob/HEAD/compiler/rustc_target/src/spec/mod.rs
-
 #[cfg(test)]
 #[path = "gen/assert_impl.rs"]
 mod assert_impl;
@@ -69,6 +67,8 @@ pub use crate::error::Error;
 use crate::{error::Result, process::ProcessBuilder};
 
 pub type AllTargetSpecs = BTreeMap<String, TargetSpec>;
+
+// Refs: https://github.com/rust-lang/rust/blob/HEAD/compiler/rustc_target/src/spec/mod.rs
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "kebab-case")]
@@ -263,9 +263,9 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub staticlib_suffix: Option<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub supported_sanitizers: Vec<String>,
+    pub supported_sanitizers: Vec<String>, // TODO: enum
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub supported_split_debuginfo: Vec<String>,
+    pub supported_split_debuginfo: Vec<String>, // TODO: enum (packed|unpacked|off)
     #[serde(skip_serializing_if = "Option::is_none")]
     pub supports_stack_protector: Option<bool>, // TODO: default true?
     #[serde(default, skip_serializing_if = "ops::Not::not")]
@@ -275,7 +275,7 @@ pub struct TargetSpec {
     #[serde(default, skip_serializing_if = "TargetEndian::is_little")]
     pub target_endian: TargetEndian,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub target_family: Vec<String>,
+    pub target_family: Vec<String>, // TODO: enum (unix|windows|wasm)
     #[serde(skip_serializing_if = "Option::is_none")]
     pub target_mcount: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
