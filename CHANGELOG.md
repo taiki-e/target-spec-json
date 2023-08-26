@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetOs::hurd`.
+
 ## [0.1.2] - 2023-08-19
 
 - Add `TargetSpec::llvm_mcount_intrinsic`.

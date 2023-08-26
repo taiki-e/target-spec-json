@@ -28,7 +28,10 @@ target_arch=(
     spirv
     xtensa
 )
-target_os=()
+target_os=(
+    # Operating systems that do not included in builtin targets.
+    hurd
+)
 target_env=(
     # Environments that do not included in builtin targets.
     # See also https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L131.
