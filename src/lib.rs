@@ -49,10 +49,12 @@ target-spec-json = "0.1"
 #[path = "gen/assert_impl.rs"]
 mod assert_impl;
 
-use process::ProcessBuilder;
-pub use target_spec::{PanicStrategy, TargetArch, TargetEndian, TargetEnv, TargetOs};
 #[path = "gen/target_spec.rs"]
 mod target_spec;
+pub use target_spec::{Arch, Env, Os, PanicStrategy, TargetEndian};
+pub use Arch as TargetArch;
+pub use Env as TargetEnv;
+pub use Os as TargetOs;
 
 #[macro_use]
 mod process;
@@ -64,7 +66,7 @@ use std::{collections::BTreeMap, ops, process::Command};
 use serde::{Deserialize, Serialize};
 
 pub use crate::error::Error;
-use crate::error::Result;
+use crate::{error::Result, process::ProcessBuilder};
 
 pub type AllTargetSpecs = BTreeMap<String, TargetSpec>;
 
@@ -79,7 +81,7 @@ pub struct TargetSpec {
     pub abi: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub allows_weak_linkage: Option<bool>,
-    pub arch: TargetArch,
+    pub arch: Arch,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub archive_format: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -131,8 +133,8 @@ pub struct TargetSpec {
     pub emit_debug_gdb_scripts: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub entry_name: Option<String>,
-    #[serde(default, skip_serializing_if = "TargetEnv::is_none")]
-    pub env: TargetEnv,
+    #[serde(default, skip_serializing_if = "Env::is_none")]
+    pub env: Env,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub executables: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -216,8 +218,8 @@ pub struct TargetSpec {
     pub no_builtins: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub no_default_libraries: Option<bool>,
-    #[serde(default, skip_serializing_if = "TargetOs::is_none")]
-    pub os: TargetOs,
+    #[serde(default, skip_serializing_if = "Os::is_none")]
+    pub os: Os,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub obj_is_bitcode: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]

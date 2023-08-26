@@ -97,10 +97,10 @@ use serde::{Deserialize, Serialize};
 
 ${derive}
 #[non_exhaustive]
-pub enum TargetArch {
+pub enum Arch {
 $(sed <<<"${target_arch[*]}" -E 's/^/    /g; s/$/,/g')
 }
-impl TargetArch {
+impl Arch {
     pub fn as_str(self) -> &'static str {
         match self {
 EOF
@@ -112,14 +112,14 @@ cat >>"${file}" <<EOF
         }
     }
 }
-$(display TargetArch)
+$(display Arch)
 
 ${derive}
 #[non_exhaustive]
-pub enum TargetOs {
+pub enum Os {
 $(sed <<<"${target_os[*]}" -E 's/^/    /g; s/$/,/g')
 }
-impl TargetOs {
+impl Os {
     pub fn as_str(self) -> &'static str {
         match self {
 EOF
@@ -131,15 +131,15 @@ cat >>"${file}" <<EOF
         }
     }
 }
-$(default TargetOs none)
-$(display TargetOs)
+$(default Os none)
+$(display Os)
 
 ${derive}
 #[non_exhaustive]
-pub enum TargetEnv {
+pub enum Env {
 $(sed <<<"${target_env[*]}" -E 's/^/    /g; s/$/,/g')
 }
-impl TargetEnv {
+impl Env {
     pub fn as_str(self) -> &'static str {
         match self {
 EOF
@@ -155,8 +155,8 @@ cat >>"${file}" <<EOF
         }
     }
 }
-$(default TargetEnv none)
-$(display TargetEnv)
+$(default Env none)
+$(display Env)
 
 ${derive}
 #[allow(clippy::exhaustive_enums)]
