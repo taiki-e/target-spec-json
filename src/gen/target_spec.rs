@@ -7,7 +7,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
-pub enum TargetArch {
+pub enum Arch {
     aarch64,
     amdgpu,
     arm,
@@ -39,7 +39,7 @@ pub enum TargetArch {
     x86_64,
     xtensa,
 }
-impl TargetArch {
+impl Arch {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::aarch64 => "aarch64",
@@ -75,7 +75,7 @@ impl TargetArch {
         }
     }
 }
-impl core::fmt::Display for TargetArch {
+impl core::fmt::Display for Arch {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }
@@ -83,7 +83,7 @@ impl core::fmt::Display for TargetArch {
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
-pub enum TargetOs {
+pub enum Os {
     aix,
     android,
     cuda,
@@ -120,7 +120,7 @@ pub enum TargetOs {
     windows,
     xous,
 }
-impl TargetOs {
+impl Os {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::aix => "aix",
@@ -161,18 +161,18 @@ impl TargetOs {
         }
     }
 }
-impl TargetOs {
+impl Os {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_none(&self) -> bool {
         matches!(self, Self::none)
     }
 }
-impl Default for TargetOs {
+impl Default for Os {
     fn default() -> Self {
         Self::none
     }
 }
-impl core::fmt::Display for TargetOs {
+impl core::fmt::Display for Os {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }
@@ -180,7 +180,7 @@ impl core::fmt::Display for TargetOs {
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
-pub enum TargetEnv {
+pub enum Env {
     eabihf,
     gnu,
     gnueabihf,
@@ -197,7 +197,7 @@ pub enum TargetEnv {
     sgx,
     uclibc,
 }
-impl TargetEnv {
+impl Env {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::eabihf => "eabihf",
@@ -218,18 +218,18 @@ impl TargetEnv {
         }
     }
 }
-impl TargetEnv {
+impl Env {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_none(&self) -> bool {
         matches!(self, Self::none)
     }
 }
-impl Default for TargetEnv {
+impl Default for Env {
     fn default() -> Self {
         Self::none
     }
 }
-impl core::fmt::Display for TargetEnv {
+impl core::fmt::Display for Env {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }

@@ -10,7 +10,9 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
-- Add `TargetOs::hurd`.
+- Rename `TargetArch` to `Arch`, `TargetEnv` to `Env`, `TargetOs` to `Os` for consistency with `TargetSpec` field names.
+
+- Add `Os::hurd`.
 
 ## [0.1.2] - 2023-08-19
 
