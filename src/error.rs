@@ -13,10 +13,9 @@ pub struct Error(ErrorKind);
 pub(crate) enum ErrorKind {
     Io(io::Error),
 
-    Process(crate::process::ProcessError),
-
     Json(serde_json::Error),
 
+    Other(String),
     WithContext(String, Option<Box<dyn std::error::Error + Send + Sync + 'static>>),
 }
 
@@ -30,9 +29,8 @@ impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match &self.0 {
             ErrorKind::Io(e) => fmt::Display::fmt(e, f),
-            ErrorKind::Process(e) => fmt::Display::fmt(e, f),
             ErrorKind::Json(e) => fmt::Display::fmt(e, f),
-            ErrorKind::WithContext(e, ..) => fmt::Display::fmt(e, f),
+            ErrorKind::Other(e) | ErrorKind::WithContext(e, ..) => fmt::Display::fmt(e, f),
         }
     }
 }
@@ -41,8 +39,8 @@ impl std::error::Error for Error {
     fn source(&self) -> Option<&(dyn std::error::Error + 'static)> {
         match &self.0 {
             ErrorKind::Io(e) => e.source(),
-            ErrorKind::Process(e) => e.source(),
             ErrorKind::Json(e) => e.source(),
+            ErrorKind::Other(_) => None,
             ErrorKind::WithContext(_, e) => Some(&**e.as_ref()?),
         }
     }
@@ -53,9 +51,9 @@ impl From<io::Error> for ErrorKind {
         Self::Io(e)
     }
 }
-impl From<crate::process::ProcessError> for ErrorKind {
-    fn from(e: crate::process::ProcessError) -> Self {
-        Self::Process(e)
+impl From<String> for ErrorKind {
+    fn from(e: String) -> Self {
+        Self::Other(e)
     }
 }
 impl From<serde_json::Error> for ErrorKind {
