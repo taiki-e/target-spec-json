@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /*!
 <!-- tidy:crate-doc:start -->
 Structured access to rustc `--print target-spec-json` and `--print all-target-specs-json`.

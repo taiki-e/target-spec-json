@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 use std::{fmt, io};
 
 pub(crate) type Result<T, E = Error> = std::result::Result<T, E>;
