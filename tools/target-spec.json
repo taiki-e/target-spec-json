@@ -193,6 +193,11 @@
       ]
     },
     "split-debuginfo": "packed",
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "thread"
+    ],
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -7610,6 +7615,11 @@
         0
       ]
     },
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "thread"
+    ],
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
