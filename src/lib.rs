@@ -27,21 +27,20 @@ target-spec-json = "0.1"
 ))]
 #![forbid(unsafe_code)]
 #![warn(
-    missing_copy_implementations,
-    missing_debug_implementations,
-    // missing_docs,
     rust_2018_idioms,
     single_use_lifetimes,
-    unreachable_pub
-)]
-#![warn(
+    unreachable_pub,
     clippy::pedantic,
-    // lints for public library
+    // Lints that may help when writing public library.
+    missing_debug_implementations,
+    // missing_docs,
     clippy::alloc_instead_of_core,
     clippy::exhaustive_enums,
     clippy::exhaustive_structs,
+    clippy::impl_trait_in_params,
+    // clippy::missing_inline_in_public_items,
     // clippy::std_instead_of_alloc,
-    // clippy::std_instead_of_core,
+    clippy::std_instead_of_core,
 )]
 #![allow(clippy::must_use_candidate, clippy::struct_excessive_bools, clippy::missing_errors_doc)]
 
@@ -61,7 +60,8 @@ mod process;
 
 mod error;
 
-use std::{collections::BTreeMap, ops, process::Command};
+use core::ops;
+use std::{collections::BTreeMap, process::Command};
 
 use serde::{Deserialize, Serialize};
 

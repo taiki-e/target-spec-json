@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0 OR MIT
 
-use std::{fmt, io};
+use core::fmt;
+use std::io;
 
-pub(crate) type Result<T, E = Error> = std::result::Result<T, E>;
+pub(crate) type Result<T, E = Error> = core::result::Result<T, E>;
 
 #[derive(Debug)]
 pub struct Error(ErrorKind);
@@ -104,7 +105,7 @@ where
         }
     }
 }
-impl<T> Context<T, std::convert::Infallible> for Option<T> {
+impl<T> Context<T, core::convert::Infallible> for Option<T> {
     fn context<C>(self, context: C) -> Result<T, Error>
     where
         C: fmt::Display,
