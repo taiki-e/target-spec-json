@@ -134,6 +134,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub emit_debug_gdb_scripts: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub entry_abi: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub entry_name: Option<String>,
     #[serde(default, skip_serializing_if = "Env::is_none")]
     pub env: Env,

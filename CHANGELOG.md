@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::entry_abi`.
+
 ## [0.1.4] - 2023-09-11
 
 - Remove dependency on `shell-escape`.
