@@ -6038,7 +6038,7 @@
     "default-dwarf-version": 2,
     "default-uwtable": true,
     "dynamic-linking": true,
-    "features": "+m,+a,+f,+d,+c,+Zba,+Zbb,+Zbs",
+    "features": "+m,+a,+f,+d,+c,+zba,+zbb,+zbs,+v",
     "has-rpath": true,
     "is-builtin": true,
     "is-like-android": true,
