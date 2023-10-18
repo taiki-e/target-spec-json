@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Improve compile time.
+
 ## [0.1.5] - 2023-09-25
 
 - Add `TargetSpec::entry_abi`.

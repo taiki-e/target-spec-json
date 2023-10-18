@@ -63,7 +63,7 @@ mod error;
 use core::ops;
 use std::{collections::BTreeMap, process::Command};
 
-use serde::{Deserialize, Serialize};
+use serde_derive::{Deserialize, Serialize};
 
 pub use crate::error::Error;
 use crate::{error::Result, process::ProcessBuilder};

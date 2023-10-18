@@ -124,7 +124,7 @@ cat >"${file}" <<EOF
 
 #![allow(non_camel_case_types)]
 
-use serde::{Deserialize, Serialize};
+use serde_derive::{Deserialize, Serialize};
 
 $(enum Arch "${target_arch[@]}")
 
