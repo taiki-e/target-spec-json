@@ -2743,9 +2743,42 @@
     "has-rpath": true,
     "has-thread-local": true,
     "is-builtin": true,
-    "late-link-args-static": {
+    "late-link-args": {
       "gcc": [
         "-l:libatomic.a"
+      ]
+    },
+    "llvm-target": "csky-unknown-linux-gnuabiv2",
+    "max-atomic-width": 32,
+    "os": "linux",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
+  "csky-unknown-linux-gnuabiv2hf": {
+    "abi": "abiv2hf",
+    "arch": "csky",
+    "cpu": "ck860fv",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-S32-p:32:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:32-v128:32:32-a:0:32-Fi32-n32",
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+hard-float,+hard-float-abi,+2e3,+3e7,+7e10,+cache,+dsp1e2,+dspe60,+e1,+e2,+edsp,+elrw,+hard-tp,+high-registers,+hwdiv,+mp,+mp1e2,+nvic,+trust",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "late-link-args": {
+      "gcc": [
+        "-l:libatomic.a",
+        "-mhard-float"
       ]
     },
     "llvm-target": "csky-unknown-linux-gnuabiv2",
