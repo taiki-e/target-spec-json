@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::zephyr`.
+
 ## [0.1.6] - 2023-10-18
 
 - Improve compile time.

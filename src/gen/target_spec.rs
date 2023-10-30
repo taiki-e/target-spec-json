@@ -120,6 +120,7 @@ pub enum Os {
     watchos,
     windows,
     xous,
+    zephyr,
 }
 impl Os {
     pub fn as_str(self) -> &'static str {
@@ -159,6 +160,7 @@ impl Os {
             Self::watchos => "watchos",
             Self::windows => "windows",
             Self::xous => "xous",
+            Self::zephyr => "zephyr",
         }
     }
 }

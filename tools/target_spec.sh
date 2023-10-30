@@ -30,7 +30,7 @@ target_arch=(
 )
 target_os=(
     # Operating systems that do not included in builtin targets.
-    hurd
+    zephyr
 )
 target_env=(
     # Environments that do not included in builtin targets.
