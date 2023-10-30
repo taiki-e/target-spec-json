@@ -27,10 +27,6 @@ target-spec-json = "0.1"
 ))]
 #![forbid(unsafe_code)]
 #![warn(
-    rust_2018_idioms,
-    single_use_lifetimes,
-    unreachable_pub,
-    clippy::pedantic,
     // Lints that may help when writing public library.
     missing_debug_implementations,
     // missing_docs,
@@ -42,7 +38,7 @@ target-spec-json = "0.1"
     // clippy::std_instead_of_alloc,
     clippy::std_instead_of_core,
 )]
-#![allow(clippy::must_use_candidate, clippy::struct_excessive_bools, clippy::missing_errors_doc)]
+#![allow(clippy::must_use_candidate)]
 
 #[cfg(test)]
 #[path = "gen/assert_impl.rs"]
