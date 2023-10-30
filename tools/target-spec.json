@@ -372,6 +372,78 @@
     "target-pointer-width": "64",
     "vendor": "apple"
   },
+  "aarch64-apple-tvos-sim": {
+    "abi": "sim",
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "bitcode-llvm-cmdline": "-triple\u0000arm64-apple-tvos15.0-simulator\u0000-emit-obj\u0000-disable-llvm-passes\u0000-target-abi\u0000darwinpcs\u0000-Os\u0000",
+    "cpu": "apple-a12",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+neon,+fp-armv8,+apple-a7",
+    "forces-embed-bitcode": true,
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64-apple-tvos10.0.0-simulator",
+    "max-atomic-width": 128,
+    "os": "tvos",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "tvos-simulator",
+        "10.0",
+        "10.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "tvos-simulator",
+        "10.0",
+        "10.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
   "aarch64-apple-watchos-sim": {
     "abi": "sim",
     "abi-return-struct-as-int": true,
@@ -3403,6 +3475,32 @@
       "unix"
     ],
     "target-pointer-width": "32"
+  },
+  "i586-unknown-netbsd": {
+    "arch": "x86",
+    "cpu": "pentium",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-f64:32:64-f80:32-n8:16:32-S128",
+    "default-dwarf-version": 2,
+    "dynamic-linking": true,
+    "has-rpath": true,
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "i586-unknown-netbsdelf",
+    "max-atomic-width": 64,
+    "no-default-libraries": false,
+    "os": "netbsd",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "call"
+    },
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "__mcount",
+    "target-pointer-width": "32",
+    "use-ctors-section": true
   },
   "i686-apple-darwin": {
     "abi-return-struct-as-int": true,
