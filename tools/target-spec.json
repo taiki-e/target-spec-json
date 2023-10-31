@@ -5382,6 +5382,30 @@
     "target-mcount": "_mcount",
     "target-pointer-width": "32"
   },
+  "mipsel-unknown-netbsd": {
+    "arch": "mips",
+    "cpu": "mips32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
+    "default-dwarf-version": 2,
+    "dynamic-linking": true,
+    "features": "+soft-float",
+    "has-rpath": true,
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "mipsel-unknown-netbsd",
+    "max-atomic-width": 32,
+    "no-default-libraries": false,
+    "os": "netbsd",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "__mcount",
+    "target-pointer-width": "32",
+    "use-ctors-section": true
+  },
   "mipsel-unknown-none": {
     "arch": "mips",
     "cpu": "mips32r2",
