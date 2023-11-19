@@ -2886,46 +2886,6 @@
     "target-pointer-width": "32",
     "vendor": "apple"
   },
-  "asmjs-unknown-emscripten": {
-    "arch": "wasm32",
-    "crt-objects-fallback": "true",
-    "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-f128:64-n32:64-S128-ni:1:10:20",
-    "default-hidden-visibility": true,
-    "dll-prefix": "",
-    "dll-suffix": ".wasm",
-    "dynamic-linking": true,
-    "eh-frame-header": false,
-    "emit-debug-gdb-scripts": false,
-    "exe-suffix": ".js",
-    "generate-arange-section": false,
-    "has-thread-local": true,
-    "is-builtin": true,
-    "is-like-wasm": true,
-    "limit-rdylib-exports": false,
-    "linker-flavor": "em-cc",
-    "linker-is-gnu": false,
-    "llvm-target": "wasm32-unknown-emscripten",
-    "max-atomic-width": 64,
-    "no-default-libraries": false,
-    "only-cdylib": true,
-    "os": "emscripten",
-    "post-link-args": {
-      "em-cc": [
-        "-sABORTING_MALLOC=0",
-        "-Wl,--fatal-warnings",
-        "-sWASM=0",
-        "--memory-init-file",
-        "0"
-      ]
-    },
-    "singlethread": true,
-    "target-family": [
-      "unix",
-      "wasm"
-    ],
-    "target-pointer-width": "32",
-    "tls-model": "local-exec"
-  },
   "avr-unknown-gnu-atmega328": {
     "arch": "avr",
     "atomic-cas": false,
