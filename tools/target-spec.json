@@ -1779,6 +1779,156 @@
     "target-pointer-width": "32",
     "vendor": "apple"
   },
+  "arm64e-apple-darwin": {
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "cpu": "apple-m1",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "IPHONEOS_DEPLOYMENT_TARGET",
+      "TVOS_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64e-apple-macosx11.0.0",
+    "max-atomic-width": 128,
+    "os": "macos",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "macos",
+        "11.0",
+        "11.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64e"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "macos",
+        "11.0",
+        "11.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64e"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "supported-sanitizers": [
+      "address",
+      "cfi",
+      "thread"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001mcount",
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
+  "arm64e-apple-ios": {
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "bitcode-llvm-cmdline": "-triple\u0000arm64e-apple-ios14.1.0\u0000-emit-obj\u0000-disable-llvm-passes\u0000-target-abi\u0000darwinpcs\u0000-Os\u0000",
+    "cpu": "apple-a12",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+neon,+fp-armv8,+apple-a12,+v8.3a,+paca,+pacg",
+    "forces-embed-bitcode": true,
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64e-apple-ios14.0.0",
+    "max-atomic-width": 128,
+    "os": "ios",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "ios",
+        "14.0",
+        "14.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64e"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "ios",
+        "14.0",
+        "14.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64e"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "supported-sanitizers": [
+      "address",
+      "thread"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
   "armeb-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
