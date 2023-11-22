@@ -9170,42 +9170,6 @@
     "target-pointer-width": "64",
     "vendor": "pc"
   },
-  "x86_64-sun-solaris": {
-    "arch": "x86_64",
-    "cpu": "x86-64",
-    "crt-objects-fallback": "false",
-    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128",
-    "dynamic-linking": true,
-    "eh-frame-header": false,
-    "has-rpath": true,
-    "is-builtin": true,
-    "is-like-solaris": true,
-    "limit-rdylib-exports": false,
-    "linker-flavor": "unix-cc",
-    "linker-is-gnu": false,
-    "llvm-target": "x86_64-pc-solaris",
-    "max-atomic-width": 64,
-    "os": "solaris",
-    "plt-by-default": false,
-    "pre-link-args": {
-      "unix-cc": [
-        "-m64"
-      ]
-    },
-    "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
-    },
-    "target-family": [
-      "unix"
-    ],
-    "target-pointer-width": "64",
-    "vendor": "sun"
-  },
   "x86_64-unikraft-linux-musl": {
     "arch": "x86_64",
     "cpu": "x86-64",
