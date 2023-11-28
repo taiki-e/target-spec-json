@@ -1094,6 +1094,14 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "panic-strategy": "abort",
+    "pre-link-args": {
+      "gnu": [
+        "--fix-cortex-a53-843419"
+      ],
+      "gnu-lld": [
+        "--fix-cortex-a53-843419"
+      ]
+    },
     "relocation-model": "static",
     "supported-sanitizers": [
       "kcfi",
@@ -3314,12 +3322,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -3358,12 +3361,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "target-family": [
@@ -3448,12 +3446,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address"
@@ -3554,12 +3547,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -3658,12 +3646,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -3697,12 +3680,7 @@
     "position-independent-executables": true,
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address"
@@ -4081,12 +4059,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -4114,12 +4087,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -4190,12 +4158,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address"
@@ -4296,12 +4259,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -4338,12 +4296,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -4380,12 +4333,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -4710,12 +4658,7 @@
       ]
     },
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -8203,12 +8146,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -8287,12 +8225,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -8368,12 +8301,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -8450,12 +8378,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -8527,12 +8450,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -8702,12 +8620,7 @@
       ]
     },
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -8747,12 +8660,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address"
@@ -8823,12 +8731,7 @@
       ]
     },
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -9195,12 +9098,7 @@
     },
     "relocation-model": "static",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -9233,12 +9131,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -9271,12 +9164,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -9348,12 +9236,7 @@
       ]
     },
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -9387,12 +9270,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -9416,12 +9294,7 @@
     "plt-by-default": false,
     "position-independent-executables": true,
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "target-pointer-width": "64",
@@ -9515,12 +9388,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "supported-sanitizers": [
@@ -9568,12 +9436,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-split-debuginfo": [
       "packed",
@@ -9669,12 +9532,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "supported-sanitizers": [
@@ -9721,12 +9579,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "supported-sanitizers": [
@@ -9773,12 +9626,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
@@ -9813,12 +9661,7 @@
     "position-independent-executables": true,
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "static-position-independent-executables": true,
     "supported-sanitizers": [
@@ -9854,12 +9697,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supports-xray": true,
     "target-family": [
@@ -9895,12 +9733,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -10232,12 +10065,7 @@
       ]
     },
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -10308,12 +10136,7 @@
     },
     "split-debuginfo": "packed",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+      "kind": "inline"
     },
     "supported-sanitizers": [
       "address",
