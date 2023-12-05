@@ -1,5 +1,6 @@
 abiname
 arange
+asmjs
 bitcode
 cabi
 cmdline
