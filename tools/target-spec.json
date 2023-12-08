@@ -1209,7 +1209,6 @@
     "dynamic-linking": true,
     "features": "+strict-align,+neon,+fp-armv8",
     "is-builtin": true,
-    "linker": "aarch64-linux-gnu-ld",
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
