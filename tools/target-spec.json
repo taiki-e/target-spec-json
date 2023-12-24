@@ -57,6 +57,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -132,6 +135,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "thread"
@@ -206,6 +212,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "leak",
@@ -281,6 +290,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "thread"
@@ -354,6 +366,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -424,6 +439,81 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
+  "aarch64-apple-watchos": {
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "cpu": "apple-a7",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+v8a,+neon,+fp-armv8,+apple-a7",
+    "frame-pointer": "always",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "aarch64-apple-watchos",
+    "max-atomic-width": 128,
+    "os": "watchos",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "watchos",
+        "5.0",
+        "5.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "watchos",
+        "5.0",
+        "5.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -494,6 +584,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -561,6 +654,9 @@
         "Scrt1.o"
       ]
     },
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -587,6 +683,9 @@
     "max-atomic-width": 128,
     "os": "solid_asp3",
     "relocation-model": "static",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-pointer-width": "64",
     "vendor": "kmc"
   },
@@ -608,6 +707,9 @@
     "os": "android",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -624,7 +726,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "aarch64-nintendo-switch-freestanding": {
     "arch": "aarch64",
@@ -642,6 +745,9 @@
     "panic-strategy": "abort",
     "position-independent-executables": true,
     "relro-level": "off",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-pointer-width": "64"
   },
   "aarch64-pc-windows-gnullvm": {
@@ -767,6 +873,9 @@
     "os": "freebsd",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -834,6 +943,9 @@
         "Scrt1.o"
       ]
     },
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -858,9 +970,49 @@
     "os": "hermit",
     "panic-strategy": "abort",
     "position-independent-executables": true,
+    "stack-probes": {
+      "kind": "inline"
+    },
     "static-position-independent-executables": true,
     "target-pointer-width": "64",
     "tls-model": "initial-exec"
+  },
+  "aarch64-unknown-illumos": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "features": "+v8a",
+    "frame-pointer": "always",
+    "has-rpath": true,
+    "is-builtin": true,
+    "is-like-solaris": true,
+    "late-link-args": {
+      "unix-cc": [
+        "-lc",
+        "-lssp"
+      ]
+    },
+    "limit-rdylib-exports": false,
+    "linker-flavor": "unix-cc",
+    "linker-is-gnu": false,
+    "llvm-target": "aarch64-unknown-solaris2.11",
+    "max-atomic-width": 128,
+    "os": "illumos",
+    "pre-link-args": {
+      "unix-cc": [
+        "-std=c99"
+      ]
+    },
+    "supported-sanitizers": [
+      "address",
+      "cfi"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
   },
   "aarch64-unknown-linux-gnu": {
     "arch": "aarch64",
@@ -879,6 +1031,9 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -918,6 +1073,9 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -1003,6 +1161,9 @@
       ]
     },
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -1030,7 +1191,6 @@
     "dynamic-linking": true,
     "env": "ohos",
     "features": "+reserve-x18",
-    "force-emulated-tls": true,
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
@@ -1039,6 +1199,9 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -1057,7 +1220,8 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "aarch64-unknown-netbsd": {
     "arch": "aarch64",
@@ -1075,6 +1239,9 @@
     "os": "netbsd",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-family": [
       "unix"
     ],
@@ -1103,6 +1270,9 @@
       ]
     },
     "relocation-model": "static",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "kcfi",
       "kernel-address"
@@ -1123,6 +1293,9 @@
     "max-atomic-width": 128,
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-pointer-width": "64"
   },
   "aarch64-unknown-nto-qnx710": {
@@ -1173,10 +1346,14 @@
     "os": "openbsd",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "aarch64-unknown-redox": {
     "arch": "aarch64",
@@ -1196,6 +1373,9 @@
     "os": "redox",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-family": [
       "unix"
     ],
@@ -1242,6 +1422,9 @@
       ]
     },
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-pointer-width": "64"
   },
   "aarch64-unknown-uefi": {
@@ -1364,6 +1547,9 @@
     "llvm-target": "aarch64-unknown-linux-gnu",
     "max-atomic-width": 128,
     "os": "vxworks",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-family": [
       "unix"
     ],
@@ -1388,6 +1574,9 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -1418,6 +1607,9 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -1445,6 +1637,9 @@
     "os": "netbsd",
     "position-independent-executables": true,
     "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "target-endian": "big",
     "target-family": [
       "unix"
@@ -1483,7 +1678,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "arm-unknown-linux-gnueabi": {
     "abi": "eabi",
@@ -1775,6 +1971,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -1844,6 +2043,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "cfi",
@@ -1865,7 +2067,6 @@
     "abi-return-struct-as-int": true,
     "arch": "aarch64",
     "archive-format": "darwin",
-    "bitcode-llvm-cmdline": "-triple\u0000arm64e-apple-ios14.1.0\u0000-emit-obj\u0000-disable-llvm-passes\u0000-target-abi\u0000darwinpcs\u0000-Os\u0000",
     "cpu": "apple-a12",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
@@ -1874,8 +2075,7 @@
     "dynamic-linking": true,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
-    "features": "+neon,+fp-armv8,+apple-a12,+v8.3a,+paca,+pacg",
-    "forces-embed-bitcode": true,
+    "features": "+neon,+fp-armv8,+apple-a12,+v8.3a,+pauth",
     "frame-pointer": "non-leaf",
     "function-sections": false,
     "has-rpath": true,
@@ -1921,6 +2121,9 @@
       ]
     },
     "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "address",
       "thread"
@@ -2353,7 +2556,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "armv7-sony-vita-newlibeabihf": {
     "abi": "eabihf",
@@ -2653,7 +2857,6 @@
     "dynamic-linking": true,
     "env": "ohos",
     "features": "+v7,+thumb2,+soft-float,-neon",
-    "force-emulated-tls": true,
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
@@ -2671,7 +2874,8 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "armv7-unknown-linux-uclibceabi": {
     "abi": "eabi",
@@ -3263,6 +3467,22 @@
     ],
     "target-pointer-width": "32"
   },
+  "hexagon-unknown-none-elf": {
+    "arch": "hexagon",
+    "c-enum-min-bits": 8,
+    "cpu": "hexagonv60",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32:32-a:0-n16:32-i64:64:64-i32:32:32-i16:16:16-i1:8:8-f32:32:32-f64:64:64-v32:32:32-v64:64:64-v512:512:512-v1024:1024:1024-v2048:2048:2048",
+    "dynamic-linking": true,
+    "emit-debug-gdb-scripts": false,
+    "features": "-small-data,+hvx-length128b",
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "hexagon-unknown-none-elf",
+    "max-atomic-width": 32,
+    "panic-strategy": "abort",
+    "target-pointer-width": "32"
+  },
   "i386-apple-ios": {
     "abi-return-struct-as-int": true,
     "arch": "x86",
@@ -3692,7 +3912,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "i686-pc-windows-gnu": {
     "abi-return-struct-as-int": true,
@@ -4337,7 +4558,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "i686-unknown-uefi": {
     "abi-return-struct-as-int": true,
@@ -4628,6 +4850,57 @@
     ],
     "target-pointer-width": "32",
     "vendor": "uwp"
+  },
+  "i686-win7-windows-msvc": {
+    "abi-return-struct-as-int": true,
+    "arch": "x86",
+    "cpu": "pentium4",
+    "crt-objects-fallback": "false",
+    "crt-static-allows-dylibs": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32-a:0:32-S32",
+    "debuginfo-kind": "pdb",
+    "dll-prefix": "",
+    "dll-suffix": ".dll",
+    "dll-tls-export": false,
+    "dynamic-linking": true,
+    "emit-debug-gdb-scripts": false,
+    "env": "msvc",
+    "exe-suffix": ".exe",
+    "is-builtin": true,
+    "is-like-msvc": true,
+    "is-like-windows": true,
+    "linker-flavor": "msvc",
+    "linker-is-gnu": false,
+    "lld-flavor": "link",
+    "llvm-target": "i686-pc-windows-msvc",
+    "max-atomic-width": 64,
+    "no-default-libraries": false,
+    "os": "windows",
+    "pre-link-args": {
+      "msvc": [
+        "/NOLOGO",
+        "/LARGEADDRESSAWARE",
+        "/SAFESEH"
+      ],
+      "msvc-lld": [
+        "/NOLOGO",
+        "/LARGEADDRESSAWARE",
+        "/SAFESEH"
+      ]
+    },
+    "requires-uwtable": true,
+    "split-debuginfo": "packed",
+    "staticlib-prefix": "",
+    "staticlib-suffix": ".lib",
+    "supported-split-debuginfo": [
+      "packed"
+    ],
+    "target-family": [
+      "windows"
+    ],
+    "target-pointer-width": "32",
+    "vendor": "pc"
   },
   "i686-wrs-vxworks": {
     "arch": "x86",
@@ -5894,7 +6167,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "powerpc-wrs-vxworks": {
     "arch": "powerpc",
@@ -6228,7 +6502,8 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "powerpc64-wrs-vxworks": {
     "arch": "powerpc64",
@@ -6735,7 +7010,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "riscv64gc-unknown-freebsd": {
     "abi-return-struct-as-int": true,
@@ -7037,7 +7313,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "riscv64imac-unknown-none-elf": {
     "arch": "riscv64",
@@ -7340,7 +7617,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "sparcv9-sun-solaris": {
     "arch": "sparc64",
@@ -7631,7 +7909,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "tls-model": "emulated"
   },
   "thumbv7neon-unknown-linux-gnueabihf": {
     "abi": "eabihf",
@@ -8691,7 +8970,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "x86_64-pc-nto-qnx710": {
     "arch": "x86_64",
@@ -9578,7 +9858,6 @@
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128",
     "dynamic-linking": true,
     "env": "ohos",
-    "force-emulated-tls": true,
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
@@ -9615,7 +9894,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "x86_64-unknown-netbsd": {
     "arch": "x86_64",
@@ -9720,7 +10000,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "tls-model": "emulated"
   },
   "x86_64-unknown-redox": {
     "arch": "x86_64",
@@ -10051,6 +10332,55 @@
     ],
     "target-pointer-width": "64",
     "vendor": "uwp"
+  },
+  "x86_64-win7-windows-msvc": {
+    "abi-return-struct-as-int": true,
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "crt-static-allows-dylibs": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128",
+    "debuginfo-kind": "pdb",
+    "dll-prefix": "",
+    "dll-suffix": ".dll",
+    "dll-tls-export": false,
+    "dynamic-linking": true,
+    "emit-debug-gdb-scripts": false,
+    "env": "msvc",
+    "exe-suffix": ".exe",
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-msvc": true,
+    "is-like-windows": true,
+    "linker-flavor": "msvc",
+    "linker-is-gnu": false,
+    "lld-flavor": "link",
+    "llvm-target": "x86_64-win7-windows-msvc",
+    "max-atomic-width": 64,
+    "no-default-libraries": false,
+    "os": "windows",
+    "plt-by-default": false,
+    "pre-link-args": {
+      "msvc": [
+        "/NOLOGO"
+      ],
+      "msvc-lld": [
+        "/NOLOGO"
+      ]
+    },
+    "requires-uwtable": true,
+    "split-debuginfo": "packed",
+    "staticlib-prefix": "",
+    "staticlib-suffix": ".lib",
+    "supported-split-debuginfo": [
+      "packed"
+    ],
+    "target-family": [
+      "windows"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "win7"
   },
   "x86_64-wrs-vxworks": {
     "arch": "x86_64",
