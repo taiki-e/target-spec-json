@@ -62,8 +62,8 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -712,10 +712,10 @@
     },
     "supported-sanitizers": [
       "address",
+      "hwaddress",
       "cfi",
       "memtag",
-      "shadow-call-stack",
-      "hwaddress"
+      "shadow-call-stack"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -878,9 +878,9 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "target-family": [
       "unix"
@@ -1036,12 +1036,12 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "memtag",
       "thread",
-      "hwaddress"
+      "hwaddress",
+      "cfi",
+      "memtag"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -1166,10 +1166,10 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -1204,12 +1204,12 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "memtag",
       "thread",
-      "hwaddress"
+      "hwaddress",
+      "cfi",
+      "memtag"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -2048,8 +2048,8 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -8446,9 +8446,9 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -9032,8 +9032,8 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "target-family": [
       "unix"
@@ -9465,9 +9465,9 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supports-xray": true,
     "target-family": [
@@ -9629,8 +9629,8 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "target-family": [
       "unix"
@@ -9690,10 +9690,10 @@
     "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
       "thread",
+      "cfi",
       "safestack"
     ],
     "supported-split-debuginfo": [
@@ -9834,10 +9834,10 @@
     "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -9880,10 +9880,10 @@
     "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -9927,10 +9927,10 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
       "memory",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supports-xray": true,
     "target-family": [
@@ -10487,9 +10487,9 @@
     },
     "supported-sanitizers": [
       "address",
-      "cfi",
       "leak",
-      "thread"
+      "thread",
+      "cfi"
     ],
     "supported-split-debuginfo": [
       "packed",
