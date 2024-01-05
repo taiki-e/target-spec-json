@@ -3630,6 +3630,9 @@
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
+    "supported-sanitizers": [
+      "address"
+    ],
     "supported-split-debuginfo": [
       "packed"
     ],
@@ -4243,6 +4246,9 @@
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
+    "supported-sanitizers": [
+      "address"
+    ],
     "supported-split-debuginfo": [
       "packed"
     ],
@@ -4900,7 +4906,7 @@
       "windows"
     ],
     "target-pointer-width": "32",
-    "vendor": "pc"
+    "vendor": "win7"
   },
   "i686-wrs-vxworks": {
     "arch": "x86",
@@ -9361,6 +9367,9 @@
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
+    "supported-sanitizers": [
+      "address"
+    ],
     "supported-split-debuginfo": [
       "packed"
     ],
