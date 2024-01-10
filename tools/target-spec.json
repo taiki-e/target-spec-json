@@ -4346,12 +4346,7 @@
     },
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        11,
-        0,
-        1
-      ]
+      "kind": "inline"
     },
     "target-family": [
       "unix"
@@ -6924,6 +6919,30 @@
     "os": "xous",
     "relocation-model": "static",
     "target-pointer-width": "32"
+  },
+  "riscv32imafc-esp-espidf": {
+    "arch": "riscv32",
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "env": "newlib",
+    "features": "+m,+a,+c,+f",
+    "is-builtin": true,
+    "linker": "riscv32-esp-elf-gcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-abiname": "ilp32f",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "os": "espidf",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32",
+    "vendor": "espressif"
   },
   "riscv32imafc-unknown-none-elf": {
     "arch": "riscv32",
