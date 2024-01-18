@@ -6379,7 +6379,7 @@
     "crt-objects-fallback": "musl",
     "crt-static-default": true,
     "crt-static-respected": true,
-    "data-layout": "E-m:e-Fi64-i64:64-n32:64-S128-v256:256:256-v512:512:512",
+    "data-layout": "E-m:e-Fn32-i64:64-n32:64-S128-v256:256:256-v512:512:512",
     "dynamic-linking": true,
     "env": "musl",
     "has-rpath": true,
