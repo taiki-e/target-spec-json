@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::zkvm`.
+
 ## [0.1.7] - 2023-10-30
 
 - Add `Os::zephyr`.
