@@ -121,6 +121,7 @@ pub enum Os {
     windows,
     xous,
     zephyr,
+    zkvm,
 }
 impl Os {
     pub fn as_str(self) -> &'static str {
@@ -161,6 +162,7 @@ impl Os {
             Self::windows => "windows",
             Self::xous => "xous",
             Self::zephyr => "zephyr",
+            Self::zkvm => "zkvm",
         }
     }
 }
