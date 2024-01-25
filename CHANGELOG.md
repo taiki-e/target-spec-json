@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Env::preview2`.
+
 ## [0.1.8] - 2024-01-24
 
 - Add `Os::zkvm`.
