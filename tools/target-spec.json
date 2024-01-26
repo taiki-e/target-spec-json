@@ -8175,8 +8175,7 @@
     "os": "emscripten",
     "post-link-args": {
       "em-cc": [
-        "-sABORTING_MALLOC=0",
-        "-Wl,--fatal-warnings"
+        "-sABORTING_MALLOC=0"
       ]
     },
     "singlethread": true,
@@ -8219,7 +8218,6 @@
         "stack-size=1048576",
         "--stack-first",
         "--allow-undefined",
-        "--fatal-warnings",
         "--no-demangle",
         "--no-entry"
       ],
@@ -8228,7 +8226,6 @@
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
         "-Wl,--allow-undefined",
-        "-Wl,--fatal-warnings",
         "-Wl,--no-demangle",
         "--target=wasm32-unknown-unknown",
         "-Wl,--no-entry"
@@ -8278,7 +8275,6 @@
         "stack-size=1048576",
         "--stack-first",
         "--allow-undefined",
-        "--fatal-warnings",
         "--no-demangle"
       ],
       "wasm-lld-cc": [
@@ -8286,7 +8282,6 @@
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
         "-Wl,--allow-undefined",
-        "-Wl,--fatal-warnings",
         "-Wl,--no-demangle",
         "--target=wasm32-wasi"
       ]
@@ -8353,7 +8348,6 @@
         "stack-size=1048576",
         "--stack-first",
         "--allow-undefined",
-        "--fatal-warnings",
         "--no-demangle",
         "--import-memory",
         "--export-memory",
@@ -8364,7 +8358,6 @@
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
         "-Wl,--allow-undefined",
-        "-Wl,--fatal-warnings",
         "-Wl,--no-demangle",
         "--target=wasm32-wasi-threads",
         "-Wl,--import-memory",
@@ -8434,7 +8427,6 @@
         "stack-size=1048576",
         "--stack-first",
         "--allow-undefined",
-        "--fatal-warnings",
         "--no-demangle"
       ],
       "wasm-lld-cc": [
@@ -8442,7 +8434,6 @@
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
         "-Wl,--allow-undefined",
-        "-Wl,--fatal-warnings",
         "-Wl,--no-demangle"
       ]
     },
@@ -8503,7 +8494,6 @@
         "stack-size=1048576",
         "--stack-first",
         "--allow-undefined",
-        "--fatal-warnings",
         "--no-demangle",
         "--no-entry",
         "-mwasm64"
@@ -8513,7 +8503,6 @@
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
         "-Wl,--allow-undefined",
-        "-Wl,--fatal-warnings",
         "-Wl,--no-demangle",
         "--target=wasm64-unknown-unknown",
         "-Wl,--no-entry"
