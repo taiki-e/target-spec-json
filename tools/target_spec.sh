@@ -30,12 +30,13 @@ target_arch=(
 )
 target_os=(
     # Operating systems that do not included in builtin targets.
-    zephyr
+    zephyr # https://github.com/rust-lang/compiler-team/issues/629
 )
 target_env=(
     # Environments that do not included in builtin targets.
     # See also https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L131.
     libnx
+    preview2 # https://github.com/rust-lang/rust/pull/119616
 )
 rustc -Z unstable-options --print all-target-specs-json >tools/target-spec.json
 for target_spec in $(jq <tools/target-spec.json -c '. | to_entries | .[].value'); do
