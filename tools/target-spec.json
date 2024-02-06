@@ -4956,6 +4956,7 @@
   },
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
@@ -4984,7 +4985,7 @@
   },
   "loongarch64-unknown-none": {
     "arch": "loongarch64",
-    "code-model": "small",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
     "features": "+f,+d",
@@ -5001,7 +5002,7 @@
   "loongarch64-unknown-none-softfloat": {
     "abi": "softfloat",
     "arch": "loongarch64",
-    "code-model": "small",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
     "features": "-f,-d",
@@ -6754,11 +6755,6 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
-    "supported-split-debuginfo": [
-      "packed",
-      "unpacked",
-      "off"
-    ],
     "target-family": [
       "unix"
     ],
@@ -6841,11 +6837,6 @@
       ]
     },
     "relro-level": "full",
-    "supported-split-debuginfo": [
-      "packed",
-      "unpacked",
-      "off"
-    ],
     "target-family": [
       "unix"
     ],
@@ -7069,11 +7060,6 @@
     "supported-sanitizers": [
       "address"
     ],
-    "supported-split-debuginfo": [
-      "packed",
-      "unpacked",
-      "off"
-    ],
     "target-family": [
       "unix"
     ],
@@ -7214,11 +7200,6 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
-    "supported-split-debuginfo": [
-      "packed",
-      "unpacked",
-      "off"
-    ],
     "target-family": [
       "unix"
     ],
@@ -7301,11 +7282,6 @@
       ]
     },
     "relro-level": "full",
-    "supported-split-debuginfo": [
-      "packed",
-      "unpacked",
-      "off"
-    ],
     "target-family": [
       "unix"
     ],
