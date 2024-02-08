@@ -73,9 +73,9 @@ impl From<serde_json::Error> for ErrorKind {
 
 // Inspired by anyhow::Context.
 pub(crate) trait Context<T, E> {
-    fn context<C>(self, context: C) -> Result<T, Error>
-    where
-        C: fmt::Display;
+    // fn context<C>(self, context: C) -> Result<T, Error>
+    // where
+    //     C: fmt::Display;
     fn with_context<C, F>(self, context: F) -> Result<T, Error>
     where
         C: fmt::Display,
@@ -85,15 +85,15 @@ impl<T, E> Context<T, E> for Result<T, E>
 where
     E: std::error::Error + Send + Sync + 'static,
 {
-    fn context<C>(self, context: C) -> Result<T, Error>
-    where
-        C: fmt::Display,
-    {
-        match self {
-            Ok(ok) => Ok(ok),
-            Err(e) => Err(Error(ErrorKind::WithContext(context.to_string(), Some(Box::new(e))))),
-        }
-    }
+    // fn context<C>(self, context: C) -> Result<T, Error>
+    // where
+    //     C: fmt::Display,
+    // {
+    //     match self {
+    //         Ok(ok) => Ok(ok),
+    //         Err(e) => Err(Error(ErrorKind::WithContext(context.to_string(), Some(Box::new(e))))),
+    //     }
+    // }
     fn with_context<C, F>(self, context: F) -> Result<T, Error>
     where
         C: fmt::Display,
@@ -106,15 +106,15 @@ where
     }
 }
 impl<T> Context<T, core::convert::Infallible> for Option<T> {
-    fn context<C>(self, context: C) -> Result<T, Error>
-    where
-        C: fmt::Display,
-    {
-        match self {
-            Some(ok) => Ok(ok),
-            None => Err(Error(ErrorKind::WithContext(context.to_string(), None))),
-        }
-    }
+    // fn context<C>(self, context: C) -> Result<T, Error>
+    // where
+    //     C: fmt::Display,
+    // {
+    //     match self {
+    //         Some(ok) => Ok(ok),
+    //         None => Err(Error(ErrorKind::WithContext(context.to_string(), None))),
+    //     }
+    // }
     fn with_context<C, F>(self, context: F) -> Result<T, Error>
     where
         C: fmt::Display,
