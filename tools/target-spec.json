@@ -3242,6 +3242,23 @@
     "target-pointer-width": "32",
     "vendor": "apple"
   },
+  "armv8r-none-eabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+fp-armv8,-fp64,-d32",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "armv8r-none-eabihf",
+    "max-atomic-width": 64,
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
   "avr-unknown-gnu-atmega328": {
     "arch": "avr",
     "atomic-cas": false,
@@ -4960,6 +4977,7 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
+    "direct-access-external-data": false,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+f,+d",
