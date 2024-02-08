@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::direct_access_external_data`.
+
 ## [0.1.9] - 2024-01-25
 
 - Add `Env::preview2`.

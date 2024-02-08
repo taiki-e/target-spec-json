@@ -115,6 +115,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub default_uwtable: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub direct_access_external_data: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub disable_redzone: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub dll_prefix: Option<String>,
