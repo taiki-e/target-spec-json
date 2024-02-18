@@ -3511,6 +3511,7 @@
     "target-pointer-width": "32"
   },
   "i386-apple-ios": {
+    "abi": "sim",
     "abi-return-struct-as-int": true,
     "arch": "x86",
     "archive-format": "darwin",
@@ -3545,7 +3546,7 @@
         "-arch",
         "i386",
         "-platform_version",
-        "ios",
+        "ios-simulator",
         "10.0",
         "10.0"
       ],
@@ -3557,7 +3558,7 @@
         "-arch",
         "i386",
         "-platform_version",
-        "ios",
+        "ios-simulator",
         "10.0",
         "10.0"
       ],
