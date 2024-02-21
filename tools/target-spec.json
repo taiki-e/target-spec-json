@@ -177,12 +177,12 @@
       "ZERO_AR_DATE=1"
     ],
     "link-env-remove": [
-      "IPHONEOS_DEPLOYMENT_TARGET"
+      "MACOSX_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios14.0-macabi",
+    "llvm-target": "arm64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
     "os": "ios",
     "pre-link-args": {
@@ -191,24 +191,24 @@
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "10.0",
-        "10.0"
+        "13.1",
+        "13.1"
       ],
       "darwin-cc": [
         "-target",
-        "arm64-apple-ios14.0-macabi"
+        "arm64-apple-ios13.1.0-macabi"
       ],
       "darwin-lld": [
         "-arch",
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "10.0",
-        "10.0"
+        "13.1",
+        "13.1"
       ],
       "darwin-lld-cc": [
         "-target",
-        "arm64-apple-ios14.0-macabi"
+        "arm64-apple-ios13.1.0-macabi"
       ]
     },
     "split-debuginfo": "packed",
@@ -4974,7 +4974,6 @@
   },
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
-    "code-model": "medium",
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
@@ -5004,7 +5003,7 @@
   },
   "loongarch64-unknown-none": {
     "arch": "loongarch64",
-    "code-model": "medium",
+    "code-model": "small",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
     "features": "+f,+d",
@@ -5021,7 +5020,7 @@
   "loongarch64-unknown-none-softfloat": {
     "abi": "softfloat",
     "arch": "loongarch64",
-    "code-model": "medium",
+    "code-model": "small",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
     "features": "-f,-d",
@@ -8618,12 +8617,12 @@
       "ZERO_AR_DATE=1"
     ],
     "link-env-remove": [
-      "IPHONEOS_DEPLOYMENT_TARGET"
+      "MACOSX_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-ios14.0-macabi",
+    "llvm-target": "x86_64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
     "os": "ios",
     "pre-link-args": {
@@ -8632,24 +8631,24 @@
         "x86_64",
         "-platform_version",
         "mac-catalyst",
-        "10.0",
-        "10.0"
+        "13.1",
+        "13.1"
       ],
       "darwin-cc": [
         "-target",
-        "x86_64-apple-ios14.0-macabi"
+        "x86_64-apple-ios13.1.0-macabi"
       ],
       "darwin-lld": [
         "-arch",
         "x86_64",
         "-platform_version",
         "mac-catalyst",
-        "10.0",
-        "10.0"
+        "13.1",
+        "13.1"
       ],
       "darwin-lld-cc": [
         "-target",
-        "x86_64-apple-ios14.0-macabi"
+        "x86_64-apple-ios13.1.0-macabi"
       ]
     },
     "split-debuginfo": "packed",
