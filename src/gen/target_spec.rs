@@ -186,9 +186,7 @@ impl core::fmt::Display for Os {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
 pub enum Env {
-    eabihf,
     gnu,
-    gnueabihf,
     libnx,
     msvc,
     musl,
@@ -206,9 +204,7 @@ pub enum Env {
 impl Env {
     pub fn as_str(self) -> &'static str {
         match self {
-            Self::eabihf => "eabihf",
             Self::gnu => "gnu",
-            Self::gnueabihf => "gnueabihf",
             Self::libnx => "libnx",
             Self::msvc => "msvc",
             Self::musl => "musl",
