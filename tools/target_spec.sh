@@ -37,6 +37,9 @@ target_env=(
     # See also https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L131.
     libnx
     preview2 # https://github.com/rust-lang/rust/pull/119616
+    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590
+    eabihf
+    gnueabihf
 )
 rustc -Z unstable-options --print all-target-specs-json >tools/target-spec.json
 for target_spec in $(jq <tools/target-spec.json -c '. | to_entries | .[].value'); do
