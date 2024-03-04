@@ -9833,7 +9833,8 @@
       "memory",
       "thread",
       "cfi",
-      "safestack"
+      "safestack",
+      "dataflow"
     ],
     "supported-split-debuginfo": [
       "packed",
