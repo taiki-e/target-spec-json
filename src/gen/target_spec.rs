@@ -41,6 +41,7 @@ pub enum Arch {
     xtensa,
 }
 impl Arch {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
             Self::aarch64 => "aarch64",
@@ -124,6 +125,7 @@ pub enum Os {
     zkvm,
 }
 impl Os {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
             Self::aix => "aix",
@@ -205,6 +207,7 @@ pub enum Env {
     uclibc,
 }
 impl Env {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
             Self::eabihf => "eabihf",
@@ -251,6 +254,7 @@ pub enum TargetEndian {
     little,
 }
 impl TargetEndian {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
             Self::big => "big",
@@ -282,6 +286,7 @@ pub enum PanicStrategy {
     unwind,
 }
 impl PanicStrategy {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
             Self::abort => "abort",

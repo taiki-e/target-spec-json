@@ -79,6 +79,7 @@ pub enum ${name} {
 $(sed <<<"${variants[*]}" -E 's/^/    /g; s/$/,/g')
 }
 impl ${name} {
+    #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
 EOF
@@ -95,6 +96,7 @@ EOF
 }
 EOF
     if [[ -n "${DEFAULT:-}" ]]; then
+        # take &self for skip_serializing_if
         cat <<EOF
 impl ${name} {
     #[allow(clippy::trivially_copy_pass_by_ref)]
