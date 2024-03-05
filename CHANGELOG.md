@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `#[must_use]` to `as_str` methods.
+
 ## [0.1.10] - 2024-02-08
 
 - Add `TargetSpec::direct_access_external_data`.
