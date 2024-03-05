@@ -19,11 +19,15 @@ fi
 git config user.name "Taiki Endo"
 git config user.email "te316e89@gmail.com"
 
-for path in tools/target-spec.json src/gen/*; do
+for path in tools src/gen/*; do
     git add -N "${path}"
     if ! git diff --exit-code -- "${path}"; then
         git add "${path}"
-        git commit -m "codegen: Update ${path}"
+        if [[ "${path}" == tools ]]; then
+            git commit -m "Update target-spec"
+        else
+            git commit -m "codegen: Update ${path}"
+        fi
         has_update=1
     fi
 done

@@ -47,5 +47,5 @@
       "dictionaries": ["rust"]
     }
   ],
-  "ignorePaths": ["tools/target-spec.json"]
+  "ignorePaths": ["tools/cfg", "tools/target-spec.json"]
 }

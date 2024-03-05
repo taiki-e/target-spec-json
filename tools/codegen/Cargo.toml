@@ -4,6 +4,7 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1"
+duct = "0.13"
 fs-err = "2"
 globset = { version = "0.4", default-features = false }
 prettyplease = "0.2"
