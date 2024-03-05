@@ -4,7 +4,6 @@ asmjs
 bitcode
 cabi
 cmdline
-debuginfo
 dylibs
 interworking
 mcount
