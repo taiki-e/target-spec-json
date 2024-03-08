@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Arch::arm64ec`.
+
 ## [0.1.11] - 2024-03-05
 
 - Add `#[must_use]` to `as_str` methods.
