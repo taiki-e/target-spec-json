@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.12] - 2024-03-08
+
 - Add `Arch::arm64ec`.
 
 ## [0.1.11] - 2024-03-05
@@ -66,7 +68,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.11...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.12...HEAD
+[0.1.12]: https://github.com/taiki-e/target-spec-json/compare/v0.1.11...v0.1.12
 [0.1.11]: https://github.com/taiki-e/target-spec-json/compare/v0.1.10...v0.1.11
 [0.1.10]: https://github.com/taiki-e/target-spec-json/compare/v0.1.9...v0.1.10
 [0.1.9]: https://github.com/taiki-e/target-spec-json/compare/v0.1.8...v0.1.9
