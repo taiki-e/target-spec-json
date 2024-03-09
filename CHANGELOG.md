@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::description`.
+
 ## [0.1.12] - 2024-03-08
 
 - Add `Arch::arm64ec`.
