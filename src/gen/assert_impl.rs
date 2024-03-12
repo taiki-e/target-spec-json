@@ -81,6 +81,11 @@ const _: fn() = || {
     assert_unpin::<crate::TargetSpec>();
     assert_unwind_safe::<crate::TargetSpec>();
     assert_ref_unwind_safe::<crate::TargetSpec>();
+    assert_send::<crate::Metadata>();
+    assert_sync::<crate::Metadata>();
+    assert_unpin::<crate::Metadata>();
+    assert_unwind_safe::<crate::Metadata>();
+    assert_ref_unwind_safe::<crate::Metadata>();
     assert_send::<crate::StackProbes>();
     assert_sync::<crate::StackProbes>();
     assert_unpin::<crate::StackProbes>();

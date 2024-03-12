@@ -114,6 +114,8 @@ pub struct TargetSpec {
     pub default_hidden_visibility: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub default_uwtable: Option<bool>,
+    // Field removed 3 days after it was added.
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub direct_access_external_data: Option<bool>,
@@ -210,6 +212,7 @@ pub struct TargetSpec {
     pub max_atomic_width: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub merge_functions: Option<String>,
+    pub metadata: Option<Metadata>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub min_atomic_width: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -291,6 +294,16 @@ pub struct TargetSpec {
     pub use_ctors_section: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub vendor: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[cfg_attr(test, serde(deny_unknown_fields))]
+#[non_exhaustive]
+pub struct Metadata {
+    pub description: Option<String>,
+    pub host_tools: Option<bool>,
+    pub std: Option<bool>,
+    pub tier: Option<u64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

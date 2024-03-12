@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::metadata`.
+
 ## [0.1.13] - 2024-03-09
 
 - Add `TargetSpec::description`.
