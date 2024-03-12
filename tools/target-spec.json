@@ -7,7 +7,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -30,6 +29,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-macosx11.0.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "macos",
     "pre-link-args": {
       "darwin": [
@@ -86,7 +91,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -109,6 +113,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-ios10.0.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -164,7 +174,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -187,6 +196,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -243,7 +258,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -266,6 +280,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-ios10.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -320,7 +340,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -343,6 +362,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-tvos10.0.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "tvos",
     "pre-link-args": {
       "darwin": [
@@ -394,7 +419,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -417,6 +441,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-tvos10.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "tvos",
     "pre-link-args": {
       "darwin": [
@@ -467,7 +497,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
@@ -489,6 +518,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "aarch64-apple-watchos",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "watchos",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -541,7 +576,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -564,6 +598,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64-apple-watchos5.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "watchos",
     "pre-link-args": {
       "darwin": [
@@ -610,7 +650,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "has-thread-local": true,
@@ -619,6 +658,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-fuchsia",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "fuchsia",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -680,7 +725,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "disable-redzone": true,
     "executables": false,
     "features": "+v8a,+neon,+fp-armv8",
@@ -691,6 +735,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "solid_asp3",
     "relocation-model": "static",
     "stack-probes": {
@@ -706,7 +756,6 @@
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a,+neon,+fp-armv8",
     "has-rpath": true,
@@ -715,6 +764,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-linux-android",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -744,7 +799,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "is-builtin": true,
@@ -753,6 +807,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "horizon",
     "panic-strategy": "abort",
     "position-independent-executables": true,
@@ -770,7 +830,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -803,6 +862,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-pc-windows-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -830,7 +895,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": "ARM64 Windows MSVC",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -848,6 +912,12 @@
     "lld-flavor": "link",
     "llvm-target": "aarch64-pc-windows-msvc",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -878,7 +948,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "has-rpath": true,
@@ -887,6 +956,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-freebsd",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -908,7 +983,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "has-thread-local": true,
@@ -917,6 +991,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-fuchsia",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "fuchsia",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -978,7 +1058,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "features": "+v8a,+strict-align,+neon,+fp-armv8",
     "has-thread-local": true,
     "is-builtin": true,
@@ -986,6 +1065,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-hermit",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "hermit",
     "panic-strategy": "abort",
     "position-independent-executables": true,
@@ -1000,7 +1085,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "eh-frame-header": false,
     "features": "+v8a",
@@ -1019,6 +1103,12 @@
     "linker-is-gnu": false,
     "llvm-target": "aarch64-unknown-solaris2.11",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "illumos",
     "pre-link-args": {
       "unix-cc": [
@@ -1039,7 +1129,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v8a,+outline-atomics",
@@ -1049,6 +1138,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-linux-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1082,7 +1177,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v8a,+outline-atomics",
@@ -1092,6 +1186,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1115,7 +1215,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+v8a",
@@ -1125,6 +1224,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-linux-musl",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -1211,7 +1316,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "ohos",
     "features": "+reserve-x18",
@@ -1220,6 +1324,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-linux-musl",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1252,7 +1362,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "has-rpath": true,
@@ -1261,6 +1370,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-netbsd",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -1279,7 +1394,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "disable-redzone": true,
     "features": "+v8a,+strict-align,+neon,+fp-armv8",
     "is-builtin": true,
@@ -1287,6 +1401,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "pre-link-args": {
       "gnu": [
@@ -1311,7 +1431,6 @@
     "arch": "aarch64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "disable-redzone": true,
     "features": "+v8a,+strict-align,-neon,-fp-armv8",
     "is-builtin": true,
@@ -1319,6 +1438,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "stack-probes": {
@@ -1331,7 +1456,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "nto71",
     "features": "+v8a",
@@ -1341,6 +1465,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "nto",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -1364,7 +1494,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v8a",
     "frame-pointer": "always",
@@ -1373,6 +1502,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-openbsd",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1391,7 +1526,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "relibc",
     "features": "+v8a",
@@ -1401,6 +1535,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-redox",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "redox",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1417,13 +1557,18 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "features": "+strict-align,+neon,+fp-armv8",
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "teeos",
     "panic-strategy": "abort",
     "position-independent-executables": true,
@@ -1466,7 +1611,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "disable-redzone": true,
     "dll-tls-export": false,
     "emit-debug-gdb-scripts": false,
@@ -1482,6 +1626,12 @@
     "lld-flavor": "link",
     "llvm-target": "aarch64-unknown-windows",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "uefi",
     "panic-strategy": "abort",
     "pre-link-args": {
@@ -1517,7 +1667,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -1535,6 +1684,12 @@
     "lld-flavor": "link",
     "llvm-target": "aarch64-pc-windows-msvc",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -1569,7 +1724,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -1581,6 +1735,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64-unknown-linux-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "stack-probes": {
       "kind": "inline"
@@ -1597,7 +1757,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v8a,+outline-atomics",
@@ -1607,6 +1766,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64_be-unknown-linux-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1631,7 +1796,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v8a,+outline-atomics",
@@ -1641,6 +1805,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64_be-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1664,7 +1834,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -1672,6 +1841,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "aarch64_be-unknown-netbsd",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -1695,7 +1870,6 @@
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+strict-align,+v5te",
     "has-rpath": true,
@@ -1704,6 +1878,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "arm-linux-androideabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1727,7 +1907,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+strict-align,+v6",
@@ -1738,6 +1917,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1758,7 +1943,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+strict-align,+v6,+vfp2,-d32",
@@ -1769,6 +1953,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -1790,7 +1980,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+strict-align,+v6",
@@ -1800,6 +1989,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "arm-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -1877,7 +2072,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+strict-align,+v6,+vfp2,-d32",
@@ -1887,6 +2081,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "arm-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -1965,7 +2165,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p:32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
@@ -1987,6 +2186,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64_32-apple-watchos",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "watchos",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -2038,7 +2243,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -2061,6 +2265,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64e-apple-macosx11.0.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "macos",
     "pre-link-args": {
       "darwin": [
@@ -2117,7 +2327,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -2140,6 +2349,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "arm64e-apple-ios14.0.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -2194,7 +2409,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -2222,6 +2436,12 @@
     "lld-flavor": "link",
     "llvm-target": "arm64ec-pc-windows-msvc",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -2251,7 +2471,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+strict-align,+v8,+crc",
@@ -2262,6 +2481,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armeb-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2283,13 +2508,18 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-target": "armebv7r-none-eabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
@@ -2301,7 +2531,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+vfp3,-d32,-fp16",
     "is-builtin": true,
@@ -2309,6 +2538,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armebv7r-none-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
@@ -2326,7 +2561,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+soft-float,+strict-align,+atomics-32",
     "has-thumb-interworking": true,
@@ -2335,6 +2569,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv4t-none-eabi",
     "main-needs-argc-argv": false,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -2345,7 +2585,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+soft-float,+strict-align",
@@ -2357,6 +2596,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv4t-unknown-linux-gnueabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2383,7 +2628,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+soft-float,+strict-align,+atomics-32",
     "has-thumb-interworking": true,
@@ -2392,6 +2636,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv5te-none-eabi",
     "main-needs-argc-argv": false,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -2402,7 +2652,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+soft-float,+strict-align",
@@ -2413,6 +2662,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2434,7 +2689,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+soft-float,+strict-align",
@@ -2445,6 +2699,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -2521,7 +2781,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "uclibc",
     "features": "+soft-float,+strict-align",
@@ -2532,6 +2791,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv5te-unknown-linux-uclibcgnueabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2554,7 +2819,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v6,+vfp2,-d32",
@@ -2565,6 +2829,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv6-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2580,7 +2850,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v6,+vfp2,-d32",
     "has-rpath": true,
@@ -2589,6 +2858,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv6-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -2606,7 +2881,6 @@
     "cpu": "mpcore",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "env": "newlib",
     "exe-suffix": ".elf",
     "features": "+vfp2",
@@ -2615,6 +2889,12 @@
     "linker": "arm-none-eabi-gcc",
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv6k-none-eabihf",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "horizon",
     "pre-link-args": {
@@ -2646,7 +2926,6 @@
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v7,+thumb-mode,+thumb2,+vfp3,-d32,-neon",
     "has-rpath": true,
@@ -2655,6 +2934,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -2686,7 +2971,6 @@
     "cpu": "cortex-a9",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "env": "newlib",
     "exe-suffix": ".elf",
     "features": "+v7,+neon,+vfp3,+thumb2,+thumb-mode",
@@ -2696,6 +2980,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "thumbv7a-vita-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "vita",
     "pre-link-args": {
@@ -2723,7 +3013,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
@@ -2733,6 +3022,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2748,7 +3043,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v7,+thumb2,+soft-float,-neon",
@@ -2759,6 +3053,12 @@
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2779,7 +3079,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
@@ -2789,6 +3088,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -2810,7 +3115,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+v7,+thumb2,+soft-float,-neon",
@@ -2820,6 +3124,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -2897,7 +3207,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
@@ -2907,6 +3216,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -2983,7 +3298,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "ohos",
     "features": "+v7,+thumb2,+soft-float,-neon",
@@ -2992,6 +3306,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -3013,7 +3333,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "uclibc",
     "features": "+v7,+thumb2,+soft-float,-neon",
@@ -3023,6 +3342,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -3043,7 +3368,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "uclibc",
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
@@ -3053,6 +3377,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -3073,7 +3403,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
     "has-rpath": true,
@@ -3082,6 +3411,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -3101,7 +3436,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -3113,6 +3447,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "target-family": [
       "unix"
@@ -3125,7 +3465,6 @@
     "arch": "arm",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "disable-redzone": true,
     "executables": false,
     "features": "+v7,+soft-float,+thumb2,-neon",
@@ -3136,6 +3475,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "solid_asp3",
     "relocation-model": "static",
     "target-pointer-width": "32",
@@ -3145,7 +3490,6 @@
     "arch": "arm",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "disable-redzone": true,
     "executables": false,
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
@@ -3156,6 +3500,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "solid_asp3",
     "relocation-model": "static",
     "target-pointer-width": "32",
@@ -3167,7 +3517,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "disable-redzone": true,
     "emit-debug-gdb-scripts": false,
     "features": "+v7,+thumb2,+soft-float,-neon,+strict-align",
@@ -3176,6 +3525,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -3186,7 +3541,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "disable-redzone": true,
     "emit-debug-gdb-scripts": false,
     "features": "+v7,+vfp3,-d32,+thumb2,-neon,+strict-align",
@@ -3195,6 +3549,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -3207,7 +3567,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p:32:32-Fi8-i64:64-a:0:32-n32-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
@@ -3229,6 +3588,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "armv7k-apple-watchos",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "watchos",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -3275,13 +3640,18 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv7r-none-eabi",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -3292,7 +3662,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+vfp3,-d32,-fp16",
     "is-builtin": true,
@@ -3300,6 +3669,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv7r-none-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -3312,7 +3687,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p:32:32-Fi8-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -3335,6 +3709,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "armv7s-apple-ios10.0.0",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -3380,7 +3760,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+fp-armv8,-fp64,-d32",
     "is-builtin": true,
@@ -3388,6 +3767,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "armv8r-none-eabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -3398,7 +3783,6 @@
     "cpu": "atmega328",
     "crt-objects-fallback": "false",
     "data-layout": "e-P1-p:16:8-i8:8-i16:8-i32:8-i64:8-f32:8-f64:8-n8-a:8",
-    "description": null,
     "eh-frame-header": false,
     "exe-suffix": ".elf",
     "is-builtin": true,
@@ -3414,6 +3798,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "avr-unknown-unknown",
     "max-atomic-width": 16,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "pre-link-args": {
       "gnu-cc": [
         "-mmcu=atmega328"
@@ -3431,7 +3821,6 @@
     "atomic-cas": false,
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "is-builtin": true,
     "linker-flavor": "bpf",
@@ -3439,6 +3828,12 @@
     "llvm-target": "bpfeb",
     "max-atomic-width": 64,
     "merge-functions": "disabled",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "min-atomic-width": 64,
     "no-builtins": true,
     "obj-is-bitcode": true,
@@ -3453,7 +3848,6 @@
     "atomic-cas": false,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "is-builtin": true,
     "linker-flavor": "bpf",
@@ -3461,6 +3855,12 @@
     "llvm-target": "bpfel",
     "max-atomic-width": 64,
     "merge-functions": "disabled",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "min-atomic-width": 64,
     "no-builtins": true,
     "obj-is-bitcode": true,
@@ -3475,7 +3875,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-S32-p:32:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:32-v128:32:32-a:0:32-Fi32-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+2e3,+3e7,+7e10,+cache,+dsp1e2,+dspe60,+e1,+e2,+edsp,+elrw,+hard-tp,+high-registers,+hwdiv,+mp,+mp1e2,+nvic,+trust",
@@ -3493,6 +3892,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -3513,7 +3918,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-S32-p:32:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:32-v128:32:32-a:0:32-Fi32-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+hard-float,+hard-float-abi,+2e3,+3e7,+7e10,+cache,+dsp1e2,+dspe60,+e1,+e2,+edsp,+elrw,+hard-tp,+high-registers,+hwdiv,+mp,+mp1e2,+nvic,+trust",
@@ -3533,6 +3937,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -3553,7 +3963,6 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32:32-a:0-n16:32-i64:64:64-i32:32:32-i16:16:16-i1:8:8-f32:32:32-f64:64:64-v32:32:32-v64:64:64-v512:512:512-v1024:1024:1024-v2048:2048:2048",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "-small-data,+hvx-length128b",
@@ -3564,6 +3973,12 @@
     "linker-is-gnu": false,
     "llvm-target": "hexagon-unknown-linux-musl",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -3639,7 +4054,6 @@
     "cpu": "hexagonv60",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32:32-a:0-n16:32-i64:64:64-i32:32:32-i16:16:16-i1:8:8-f32:32:32-f64:64:64-v32:32:32-v64:64:64-v512:512:512-v1024:1024:1024-v2048:2048:2048",
-    "description": null,
     "dynamic-linking": true,
     "emit-debug-gdb-scripts": false,
     "features": "-small-data,+hvx-length128b",
@@ -3647,6 +4061,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "hexagon-unknown-none-elf",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "target-pointer-width": "32"
   },
@@ -3659,7 +4079,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:128-n8:16:32-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -3681,6 +4100,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "i386-apple-ios10.0.0-simulator",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -3729,7 +4154,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "nto70",
     "has-rpath": true,
@@ -3738,6 +4162,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i586-pc-unknown",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "nto",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -3767,7 +4197,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": "32-bit MSVC (Windows 7+)",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -3783,6 +4212,12 @@
     "lld-flavor": "link",
     "llvm-target": "i586-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": "32-bit MSVC (Windows 7+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -3819,7 +4254,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -3828,6 +4262,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i586-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -3862,7 +4302,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "frame-pointer": "always",
@@ -3872,6 +4311,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i586-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -3960,7 +4405,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -3968,6 +4412,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i586-unknown-netbsdelf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -3990,7 +4440,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:128-n8:16:32-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -4013,6 +4462,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "i686-apple-macosx10.12.0",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "macos",
     "pre-link-args": {
       "darwin": [
@@ -4066,7 +4521,6 @@
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+mmx,+sse,+sse2,+sse3,+ssse3",
     "has-rpath": true,
@@ -4075,6 +4529,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-linux-android",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -4103,7 +4563,6 @@
     "crt-objects-fallback": "mingw",
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -4190,6 +4649,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-pc-windows-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "windows",
     "post-link-objects": {
       "dynamic-dylib": [
@@ -4321,7 +4786,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -4354,6 +4818,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-pc-windows-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -4392,7 +4862,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": "32-bit MSVC (Windows 7+)",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -4408,6 +4877,12 @@
     "lld-flavor": "link",
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": "32-bit MSVC (Windows 7+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -4446,7 +4921,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -4454,6 +4928,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-freebsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -4480,12 +4960,17 @@
     "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-haiku",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "haiku",
     "pre-link-args": {
       "gnu-cc": [
@@ -4510,7 +4995,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -4519,6 +5003,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-hurd-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "hurd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -4544,7 +5034,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -4553,6 +5042,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -4587,7 +5082,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "frame-pointer": "always",
@@ -4597,6 +5091,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -4685,7 +5185,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -4693,6 +5192,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-netbsdelf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -4722,7 +5227,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "frame-pointer": "always",
     "has-rpath": true,
@@ -4730,6 +5234,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-openbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -4760,7 +5270,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": null,
     "disable-redzone": true,
     "dll-tls-export": false,
     "emit-debug-gdb-scripts": false,
@@ -4776,6 +5285,12 @@
     "lld-flavor": "link",
     "llvm-target": "i686-unknown-windows-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "uefi",
     "panic-strategy": "abort",
     "pre-link-args": {
@@ -4809,7 +5324,6 @@
     "crt-objects-fallback": "mingw",
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -4869,6 +5383,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-pc-windows-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "windows",
     "post-link-objects": {
       "dynamic-dylib": [
@@ -5001,7 +5521,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -5018,6 +5537,12 @@
     "lld-flavor": "link",
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -5054,7 +5579,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32-a:0:32-S32",
     "debuginfo-kind": "pdb",
-    "description": "32-bit Windows 7 support",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -5070,6 +5594,12 @@
     "lld-flavor": "link",
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "pre-link-args": {
@@ -5105,7 +5635,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -5116,6 +5645,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "i686-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "pre-link-args": {
       "gnu-cc": [
@@ -5140,7 +5675,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
-    "description": null,
     "direct-access-external-data": false,
     "dynamic-linking": true,
     "env": "gnu",
@@ -5152,6 +5686,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "loongarch64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5170,7 +5710,6 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+f,+d",
@@ -5181,6 +5720,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "loongarch64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5255,7 +5800,6 @@
     "code-model": "small",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
-    "description": null,
     "features": "+f,+d",
     "is-builtin": true,
     "linker": "rust-lld",
@@ -5263,6 +5807,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "loongarch64-unknown-none",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "64"
@@ -5273,7 +5823,6 @@
     "code-model": "small",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n64-S128",
-    "description": null,
     "features": "-f,-d",
     "is-builtin": true,
     "linker": "rust-lld",
@@ -5281,6 +5830,12 @@
     "llvm-abiname": "lp64s",
     "llvm-target": "loongarch64-unknown-none",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "64"
@@ -5291,7 +5846,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:16:32-i8:8:8-i16:16:16-i32:16:32-n8:16:32-a:0:16-S16",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -5300,6 +5854,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "m68k-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5321,7 +5881,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips32r2,+fpxx,+nooddspreg",
@@ -5331,6 +5890,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5352,7 +5917,6 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+mips32r2,+soft-float",
@@ -5362,6 +5926,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips-unknown-linux-musl",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5439,7 +6009,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "uclibc",
     "features": "+mips32r2,+soft-float",
@@ -5449,6 +6018,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips-unknown-linux-uclibc",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5471,7 +6046,6 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+mips64r2,+soft-float",
@@ -5481,6 +6055,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5559,7 +6139,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips64r2,+xgot",
@@ -5569,6 +6148,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips64-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5592,7 +6177,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+mips64r2",
@@ -5602,6 +6186,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5680,7 +6270,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips64r2,+xgot",
@@ -5690,6 +6279,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips64el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5712,7 +6307,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+mips64r2",
@@ -5722,6 +6316,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mips64el-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5797,7 +6397,6 @@
     "cpu": "mips2",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "features": "+single-float",
     "is-builtin": true,
     "link-script": "ENTRY(module_start)\nSECTIONS\n{\n  /* PRX format requires text to begin at 0 */\n  .text 0 : { *(.text .text.*) }\n\n  /* Sort stubs for convenient ordering */\n  .sceStub.text : { *(.sceStub.text) *(SORT(.sceStub.text.*)) }\n\n  /* PSP import library stub sections. Bundles together `.lib.stub.entry.*`\n   * sections for better `--gc-sections` support. */\n  .lib.stub.top : { *(.lib.stub.top) }\n  .lib.stub :     { *(.lib.stub) *(.lib.stub.entry.*) }\n  .lib.stub.btm : { *(.lib.stub.btm) }\n\n  /* Keep these sections around, even though they may appear unused to the linker */\n  .lib.ent.top :  { KEEP(*(.lib.ent.top)) }\n  .lib.ent :      { KEEP(*(.lib.ent)) }\n  .lib.ent.btm :  { KEEP(*(.lib.ent.btm)) }\n\n  .eh_frame_hdr : { *(.eh_frame_hdr) }\n\n  /* Add symbols for LLVM's libunwind */\n  __eh_frame_hdr_start = SIZEOF(.eh_frame_hdr) > 0 ? ADDR(.eh_frame_hdr) : 0;\n  __eh_frame_hdr_end = SIZEOF(.eh_frame_hdr) > 0 ? . : 0;\n  .eh_frame :\n  {\n    __eh_frame_start = .;\n    KEEP(*(.eh_frame))\n    __eh_frame_end = .;\n  }\n\n  /* These are explicitly listed to avoid being merged into .rodata */\n  .rodata.sceResident : { *(.rodata.sceResident) *(.rodata.sceResident.*) }\n  .rodata.sceModuleInfo : { *(.rodata.sceModuleInfo) }\n  /* Sort NIDs for convenient ordering */\n  .rodata.sceNid : { *(.rodata.sceNid) *(SORT(.rodata.sceNid.*)) }\n\n  .rodata : { *(.rodata .rodata.*) }\n  .data : { *(.data .data.*) }\n  .gcc_except_table : { *(.gcc_except_table .gcc_except_table.*) }\n  .bss : { *(.bss .bss.*) }\n\n  /DISCARD/ : { *(.rel.sceStub.text .MIPS.abiflags .reginfo) }\n}\n",
@@ -5807,6 +6406,12 @@
       "-mno-check-zero-division"
     ],
     "llvm-target": "mipsel-sony-psp",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "psp",
     "pre-link-args": {
       "gnu": [
@@ -5827,7 +6432,6 @@
     "cpu": "mips1",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "env": "psx",
     "exe-suffix": ".exe",
     "features": "+soft-float",
@@ -5840,6 +6444,12 @@
     ],
     "llvm-target": "mipsel-sony-psx",
     "max-atomic-width": 0,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32",
@@ -5851,7 +6461,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips32r2,+fpxx,+nooddspreg",
@@ -5861,6 +6470,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5881,7 +6496,6 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+mips32r2,+soft-float",
@@ -5891,6 +6505,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsel-unknown-linux-musl",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -5967,7 +6587,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "uclibc",
     "features": "+mips32r2,+soft-float",
@@ -5977,6 +6596,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsel-unknown-linux-uclibc",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -5997,7 +6622,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+soft-float",
     "has-rpath": true,
@@ -6006,6 +6630,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsel-unknown-netbsd",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -6022,7 +6652,6 @@
     "cpu": "mips32r2",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+mips32r2,+soft-float,+noabicalls",
     "is-builtin": true,
@@ -6030,6 +6659,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "mipsel-unknown-none",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -6040,7 +6675,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips32r6",
@@ -6050,6 +6684,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsisa32r6-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -6071,7 +6711,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips32r6",
@@ -6081,6 +6720,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsisa32r6el-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -6102,7 +6747,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips64r6",
@@ -6112,6 +6756,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsisa64r6-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -6134,7 +6784,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+mips64r6",
@@ -6144,6 +6793,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "mipsisa64r6el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -6167,7 +6822,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:16:16-i32:16-i64:16-f32:16-f64:16-a:8-n8:16-S16",
     "default-codegen-units": 1,
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "is-builtin": true,
@@ -6176,6 +6830,12 @@
     "linker-is-gnu": false,
     "llvm-target": "msp430-none-elf",
     "max-atomic-width": 0,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-c-int-width": "16",
@@ -6185,9 +6845,8 @@
   "nvptx64-nvidia-cuda": {
     "arch": "nvptx64",
     "cpu": "sm_30",
-    "crt-objects-fallback": "false",
+    "crt-objects-fallback": "true",
     "data-layout": "e-i64:64-i128:128-v16:16-v32:32-n16:32:64",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".ptx",
     "dynamic-linking": true,
@@ -6199,6 +6858,12 @@
     "llvm-target": "nvptx64-nvidia-cuda",
     "max-atomic-width": 64,
     "merge-functions": "disabled",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "obj-is-bitcode": true,
     "only-cdylib": true,
     "os": "cuda",
@@ -6214,7 +6879,6 @@
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+secure-plt",
     "has-rpath": true,
@@ -6223,6 +6887,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-freebsd13.0",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6251,7 +6921,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -6260,6 +6929,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6292,7 +6967,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -6301,6 +6975,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-linux-gnuspe",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6333,7 +7013,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "has-rpath": true,
@@ -6342,6 +7021,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-linux-musl",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -6429,7 +7114,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -6437,6 +7121,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-netbsd",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -6466,7 +7156,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "frame-pointer": "always",
     "has-rpath": true,
@@ -6474,6 +7163,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-openbsd",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -6494,7 +7189,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -6506,6 +7200,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "pre-link-args": {
       "gnu-cc": [
@@ -6536,7 +7236,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -6548,6 +7247,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc-unknown-linux-gnuspe",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "pre-link-args": {
       "gnu-cc": [
@@ -6580,7 +7285,6 @@
     "crt-static-respected": true,
     "data-layout": "E-m:a-Fi64-i64:64-n32:64-S128-v256:256:256-v512:512:512",
     "default-dwarf-version": 3,
-    "description": null,
     "dll-suffix": ".a",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -6592,6 +7296,12 @@
     "linker-is-gnu": false,
     "llvm-target": "powerpc64-ibm-aix",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "aix",
     "pre-link-args": {
       "unix": [
@@ -6626,7 +7336,6 @@
     "crt-static-respected": true,
     "data-layout": "E-m:e-Fn32-i64:64-n32:64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -6634,6 +7343,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64-unknown-freebsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6661,7 +7376,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-Fi64-i64:64-n32:64-S128-v256:256:256-v512:512:512",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -6670,6 +7384,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6703,7 +7423,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-Fn32-i64:64-n32:64-S128-v256:256:256-v512:512:512",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "has-rpath": true,
@@ -6712,6 +7431,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -6801,7 +7526,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-Fn32-i64:64-n32:64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "frame-pointer": "always",
     "has-rpath": true,
@@ -6809,6 +7533,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64-unknown-openbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6839,7 +7569,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-Fi64-i64:64-n32:64-S128-v256:256:256-v512:512:512",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
@@ -6850,6 +7579,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "pre-link-args": {
       "gnu-cc": [
@@ -6878,7 +7613,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-Fn32-i64:64-n32:64",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -6886,6 +7620,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64le-unknown-freebsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6912,7 +7652,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-Fn32-i64:64-n32:64-S128-v256:256:256-v512:512:512",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -6921,6 +7660,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64le-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -6953,7 +7698,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-Fn32-i64:64-n32:64-S128-v256:256:256-v512:512:512",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "has-rpath": true,
@@ -6962,6 +7706,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "powerpc64le-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -7050,7 +7800,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+m,+a,+f,+d,+c",
@@ -7061,6 +7810,12 @@
     "llvm-abiname": "ilp32d",
     "llvm-target": "riscv32-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7077,7 +7832,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+m,+a,+f,+d,+c",
@@ -7088,6 +7842,12 @@
     "llvm-abiname": "ilp32d",
     "llvm-target": "riscv32-unknown-linux-musl",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -7158,7 +7918,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+forced-atomics",
@@ -7167,6 +7926,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7176,7 +7941,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m",
@@ -7185,6 +7949,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "zkvm",
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7198,7 +7968,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+forced-atomics",
@@ -7207,6 +7976,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7216,7 +7991,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "env": "newlib",
@@ -7226,6 +8000,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "espidf",
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7240,7 +8020,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+a,+c",
@@ -7249,6 +8028,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7258,13 +8043,18 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "features": "+m,+a,+c",
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "xous",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7274,7 +8064,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "env": "newlib",
@@ -7285,6 +8074,12 @@
     "llvm-abiname": "ilp32f",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "espidf",
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7299,7 +8094,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+a,+c,+f",
@@ -7309,6 +8103,12 @@
     "llvm-abiname": "ilp32f",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7318,7 +8118,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "env": "newlib",
@@ -7328,6 +8127,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "espidf",
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7343,7 +8148,6 @@
     "cpu": "generic-rv32",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+c,+forced-atomics",
@@ -7352,6 +8156,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -7365,7 +8175,6 @@
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+m,+a,+f,+d,+c,+zba,+zbb,+zbs,+v",
     "has-rpath": true,
@@ -7375,6 +8184,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-linux-android",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7396,7 +8211,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+m,+a,+f,+d,+c",
     "has-rpath": true,
@@ -7406,6 +8220,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-freebsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7420,7 +8240,6 @@
     "cpu": "generic-rv64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "features": "+m,+a,+f,+d,+c",
     "has-thread-local": true,
@@ -7430,6 +8249,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-fuchsia",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "fuchsia",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -7488,7 +8313,6 @@
     "cpu": "generic-rv64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "features": "+m,+a,+f,+d,+c",
     "has-thread-local": true,
     "is-builtin": true,
@@ -7497,6 +8321,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-hermit",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "hermit",
     "panic-strategy": "abort",
     "position-independent-executables": true,
@@ -7511,7 +8341,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+m,+a,+f,+d,+c",
@@ -7522,6 +8351,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7538,7 +8373,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+m,+a,+f,+d,+c",
@@ -7549,6 +8383,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -7620,7 +8460,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+m,+a,+f,+d,+c",
     "has-rpath": true,
@@ -7630,6 +8469,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-netbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -7647,7 +8492,6 @@
     "cpu": "generic-rv64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+a,+f,+d,+c",
@@ -7657,6 +8501,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "supported-sanitizers": [
@@ -7672,7 +8522,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "features": "+m,+a,+f,+d,+c",
     "frame-pointer": "always",
@@ -7682,6 +8531,12 @@
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-openbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7697,7 +8552,6 @@
     "cpu": "generic-rv64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "features": "+m,+a,+c",
@@ -7706,6 +8560,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "supported-sanitizers": [
@@ -7719,7 +8579,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "-vector",
@@ -7729,6 +8588,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "s390x-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "min-global-align": 16,
     "os": "linux",
     "position-independent-executables": true,
@@ -7760,7 +8625,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "E-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "-vector",
@@ -7770,6 +8634,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "s390x-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "min-global-align": 16,
     "os": "linux",
     "position-independent-executables": true,
@@ -7857,7 +8727,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-i64:64-f128:64-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -7866,6 +8735,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc-unknown-linux-gnu",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -7894,7 +8769,6 @@
     "cpu": "v7",
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-i64:64-f128:64-n32-S64",
-    "description": null,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
     "is-builtin": true,
@@ -7902,6 +8776,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc-unknown-none-elf",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7914,7 +8794,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -7923,6 +8802,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -7943,7 +8828,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-i64:64-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -7951,6 +8835,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc64-unknown-netbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "position-independent-executables": true,
@@ -7978,7 +8868,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-i64:64-n32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "frame-pointer": "always",
     "has-rpath": true,
@@ -7986,6 +8875,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc64-unknown-openbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -8009,7 +8904,6 @@
     "cpu": "v9",
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-i64:64-n32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "eh-frame-header": false,
     "has-rpath": true,
@@ -8020,6 +8914,12 @@
     "linker-is-gnu": false,
     "llvm-target": "sparcv9-sun-solaris",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "solaris",
     "pre-link-args": {
       "unix-cc": [
@@ -8045,7 +8945,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+soft-float,+strict-align,+atomics-32",
     "has-thumb-interworking": true,
@@ -8054,6 +8953,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv4t-none-eabi",
     "main-needs-argc-argv": false,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8070,7 +8975,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+soft-float,+strict-align,+atomics-32",
     "has-thumb-interworking": true,
@@ -8079,6 +8983,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv5te-none-eabi",
     "main-needs-argc-argv": false,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8090,7 +9000,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+strict-align,+atomics-32",
     "frame-pointer": "always",
@@ -8098,6 +9007,12 @@
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv6m-none-eabi",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8110,7 +9025,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "debuginfo-kind": "pdb",
-    "description": "ARM32 Windows MSVC",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -8128,6 +9042,12 @@
     "lld-flavor": "link",
     "llvm-target": "thumbv7a-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "panic-strategy": "abort",
@@ -8163,7 +9083,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -8181,6 +9100,12 @@
     "lld-flavor": "link",
     "llvm-target": "thumbv7a-pc-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "panic-strategy": "abort",
@@ -8215,7 +9140,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "frame-pointer": "always",
     "is-builtin": true,
@@ -8223,6 +9147,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv7em-none-eabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8233,7 +9163,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+vfp4,-d32,-fp64",
     "frame-pointer": "always",
@@ -8242,6 +9171,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv7em-none-eabihf",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8252,7 +9187,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "frame-pointer": "always",
     "is-builtin": true,
@@ -8260,6 +9194,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv7m-none-eabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8272,7 +9212,6 @@
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+v7,+thumb-mode,+thumb2,+vfp3,+neon",
     "has-rpath": true,
@@ -8281,6 +9220,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -8312,7 +9257,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "features": "+v7,+thumb-mode,+thumb2,+vfp3,+neon",
@@ -8322,6 +9266,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
@@ -8342,7 +9292,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+v7,+thumb-mode,+thumb2,+vfp3,+neon",
@@ -8352,6 +9301,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "post-link-objects-fallback": {
@@ -8428,7 +9383,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+strict-align",
     "frame-pointer": "always",
@@ -8437,6 +9391,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv8m.base-none-eabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8447,7 +9407,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "frame-pointer": "always",
     "is-builtin": true,
@@ -8455,6 +9414,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv8m.main-none-eabi",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8465,7 +9430,6 @@
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "description": null,
     "emit-debug-gdb-scripts": false,
     "features": "+fp-armv8,-fp64,-d32",
     "frame-pointer": "always",
@@ -8474,6 +9438,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv8m.main-none-eabihf",
     "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": "32"
@@ -8483,7 +9453,6 @@
     "crt-objects-fallback": "true",
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-f128:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8499,6 +9468,12 @@
     "linker-is-gnu": false,
     "llvm-target": "wasm32-unknown-emscripten",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "only-cdylib": true,
     "os": "emscripten",
@@ -8521,7 +9496,6 @@
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-adjusted-cabi": "wasm",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8539,6 +9513,12 @@
     "lld-flavor": "wasm",
     "llvm-target": "wasm32-unknown-unknown",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "unknown",
     "panic-strategy": "abort",
@@ -8577,7 +9557,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8597,6 +9576,12 @@
     "llvm-target": "wasm32-wasi",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "wasi",
     "panic-strategy": "abort",
@@ -8650,7 +9635,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8671,6 +9655,12 @@
     "llvm-target": "wasm32-wasi",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "wasi",
     "panic-strategy": "abort",
@@ -8729,7 +9719,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8749,6 +9738,12 @@
     "llvm-target": "wasm32-wasi",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "wasi",
     "panic-strategy": "abort",
@@ -8802,7 +9797,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8823,6 +9817,12 @@
     "llvm-target": "wasm32-unknown-unknown",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "wasi",
     "panic-strategy": "abort",
@@ -8872,7 +9872,6 @@
     "crt-objects-fallback": "true",
     "data-layout": "e-m:e-p:64:64-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
     "default-hidden-visibility": true,
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".wasm",
     "dynamic-linking": true,
@@ -8891,6 +9890,12 @@
     "lld-flavor": "wasm",
     "llvm-target": "wasm64-unknown-unknown",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "only-cdylib": true,
     "os": "unknown",
     "panic-strategy": "abort",
@@ -8930,7 +9935,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -8953,6 +9957,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64-apple-macosx10.12.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "macos",
     "pre-link-args": {
       "darwin": [
@@ -9013,7 +10023,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -9035,6 +10044,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64-apple-ios10.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -9090,7 +10105,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -9112,6 +10126,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "ios",
     "pre-link-args": {
       "darwin": [
@@ -9168,7 +10188,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -9190,6 +10209,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64-apple-tvos10.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "tvos",
     "pre-link-args": {
       "darwin": [
@@ -9241,7 +10266,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -9263,6 +10287,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64-apple-watchos5.0.0-simulator",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "watchos",
     "pre-link-args": {
       "darwin": [
@@ -9311,7 +10341,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "env": "sgx",
     "features": "+rdrnd,+rdseed,+lvi-cfi,+lvi-load-hardening",
     "is-builtin": true,
@@ -9322,6 +10351,12 @@
     ],
     "llvm-target": "x86_64-elf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "unknown",
     "override-export-symbols": [
       "sgx_entry",
@@ -9410,7 +10445,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "has-thread-local": true,
     "is-builtin": true,
@@ -9418,6 +10452,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "x86_64-unknown-fuchsia",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "fuchsia",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -9485,7 +10525,6 @@
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-dwarf-version": 2,
     "default-uwtable": true,
-    "description": null,
     "dynamic-linking": true,
     "features": "+mmx,+sse,+sse2,+sse3,+ssse3,+sse4.1,+sse4.2,+popcnt",
     "has-rpath": true,
@@ -9494,6 +10533,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-linux-android",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "android",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -9530,7 +10575,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "nto71",
     "has-rpath": true,
@@ -9539,6 +10583,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "nto",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -9562,7 +10612,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "eh-frame-header": false,
     "has-rpath": true,
@@ -9573,6 +10622,12 @@
     "linker-is-gnu": false,
     "llvm-target": "x86_64-pc-solaris",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "solaris",
     "plt-by-default": false,
     "pre-link-args": {
@@ -9602,7 +10657,6 @@
     "crt-objects-fallback": "mingw",
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -9689,6 +10743,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-pc-windows-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "windows",
     "plt-by-default": false,
     "post-link-objects": {
@@ -9823,7 +10883,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -9856,6 +10915,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-pc-windows-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "plt-by-default": false,
@@ -9887,7 +10952,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": "64-bit MSVC (Windows 7+)",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -9905,6 +10969,12 @@
     "lld-flavor": "link",
     "llvm-target": "x86_64-pc-windows-msvc",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": "64-bit MSVC (Windows 7+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
+    },
     "no-default-libraries": false,
     "os": "windows",
     "plt-by-default": false,
@@ -9937,7 +11007,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "env": "musl",
     "has-thread-local": true,
     "is-builtin": true,
@@ -9945,6 +11014,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "panic-strategy": "abort",
     "plt-by-default": false,
@@ -9972,7 +11047,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -9980,6 +11054,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-dragonfly",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "dragonfly",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10008,7 +11088,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -10016,6 +11095,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-freebsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "freebsd",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10048,7 +11133,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "has-thread-local": true,
     "is-builtin": true,
@@ -10056,6 +11140,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "x86_64-unknown-fuchsia",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "fuchsia",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10120,12 +11210,17 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-haiku",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "haiku",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10151,7 +11246,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "features": "+rdrnd,+rdseed",
     "has-thread-local": true,
     "is-builtin": true,
@@ -10159,6 +11253,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "x86_64-unknown-hermit",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "hermit",
     "panic-strategy": "abort",
     "plt-by-default": false,
@@ -10175,7 +11275,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "eh-frame-header": false,
     "frame-pointer": "always",
@@ -10193,6 +11292,12 @@
     "linker-is-gnu": false,
     "llvm-target": "x86_64-pc-solaris",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "illumos",
     "plt-by-default": false,
     "pre-link-args": {
@@ -10216,7 +11321,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "env": "uclibc",
     "is-builtin": true,
     "linker": "l4-bender",
@@ -10224,6 +11328,12 @@
     "linker-is-gnu": false,
     "llvm-target": "x86_64-unknown-l4re-uclibc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "l4re",
     "panic-strategy": "abort",
     "plt-by-default": false,
@@ -10239,7 +11349,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -10248,6 +11357,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10291,7 +11406,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
@@ -10299,6 +11413,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-gnux32",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -10330,7 +11450,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "musl",
     "has-rpath": true,
@@ -10339,6 +11458,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10435,7 +11560,6 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "ohos",
     "has-rpath": true,
@@ -10443,6 +11567,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "linux",
     "position-independent-executables": true,
     "pre-link-args": {
@@ -10483,7 +11613,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
@@ -10491,6 +11620,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-netbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "netbsd",
     "plt-by-default": false,
@@ -10528,7 +11663,6 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "disable-redzone": true,
     "features": "-mmx,-sse,-sse2,-sse3,-ssse3,-sse4.1,-sse4.2,-3dnow,-3dnowa,-avx,-avx2,+soft-float",
     "is-builtin": true,
@@ -10536,6 +11670,12 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "x86_64-unknown-none-elf",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "panic-strategy": "abort",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10557,7 +11697,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-dwarf-version": 2,
-    "description": null,
     "dynamic-linking": true,
     "frame-pointer": "always",
     "has-rpath": true,
@@ -10565,6 +11704,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-openbsd",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "openbsd",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10594,7 +11739,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "dynamic-linking": true,
     "env": "relibc",
     "has-rpath": true,
@@ -10603,6 +11747,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-redox",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "redox",
     "plt-by-default": false,
     "position-independent-executables": true,
@@ -10631,7 +11781,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "disable-redzone": true,
     "dll-tls-export": false,
     "emit-debug-gdb-scripts": false,
@@ -10648,6 +11797,12 @@
     "lld-flavor": "link",
     "llvm-target": "x86_64-unknown-windows",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "uefi",
     "panic-strategy": "abort",
     "plt-by-default": false,
@@ -10682,7 +11837,6 @@
     "crt-objects-fallback": "mingw",
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -10742,6 +11896,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-pc-windows-gnu",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "windows",
     "plt-by-default": false,
     "post-link-objects": {
@@ -10877,7 +12037,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": null,
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -10895,6 +12054,12 @@
     "lld-flavor": "link",
     "llvm-target": "x86_64-pc-windows-msvc",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "plt-by-default": false,
@@ -10932,7 +12097,6 @@
     "crt-static-respected": true,
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "pdb",
-    "description": "64-bit Windows 7 support",
     "dll-prefix": "",
     "dll-suffix": ".dll",
     "dll-tls-export": false,
@@ -10949,6 +12113,12 @@
     "lld-flavor": "link",
     "llvm-target": "x86_64-win7-windows-msvc",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "no-default-libraries": false,
     "os": "windows",
     "plt-by-default": false,
@@ -10981,7 +12151,6 @@
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    "description": null,
     "disable-redzone": true,
     "dynamic-linking": true,
     "env": "gnu",
@@ -10993,6 +12162,12 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-unknown-linux-gnu",
     "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "vxworks",
     "plt-by-default": false,
     "pre-link-args": {
@@ -11021,7 +12196,6 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "debuginfo-kind": "dwarf-dsym",
-    "description": null,
     "dll-suffix": ".dylib",
     "dynamic-linking": true,
     "eh-frame-header": false,
@@ -11045,6 +12219,12 @@
     "lld-flavor": "darwin",
     "llvm-target": "x86_64h-apple-macosx10.12.0",
     "max-atomic-width": 128,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
     "os": "macos",
     "pre-link-args": {
       "darwin": [
