@@ -6854,7 +6854,7 @@ target_pointer_width="32"
 target_thread_local
 target_vendor="unknown"
 
-wasm32-wasi-preview1-threads:
+wasm32-wasip1:
 overflow_checks
 panic="abort"
 relocation_model="static"
@@ -6863,8 +6863,6 @@ target_arch="wasm32"
 target_endian="little"
 target_env=""
 target_family="wasm"
-target_feature="atomics"
-target_feature="bulk-memory"
 target_feature="crt-static"
 target_feature="mutable-globals"
 target_feature="sign-ext"
@@ -6890,7 +6888,7 @@ target_pointer_width="32"
 target_thread_local
 target_vendor="unknown"
 
-wasm32-wasip1:
+wasm32-wasip1-threads:
 overflow_checks
 panic="abort"
 relocation_model="static"
@@ -6899,6 +6897,8 @@ target_arch="wasm32"
 target_endian="little"
 target_env=""
 target_family="wasm"
+target_feature="atomics"
+target_feature="bulk-memory"
 target_feature="crt-static"
 target_feature="mutable-globals"
 target_feature="sign-ext"
