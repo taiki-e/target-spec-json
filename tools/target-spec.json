@@ -4213,7 +4213,7 @@
     "llvm-target": "i586-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit MSVC (Windows 7+)",
+      "description": "32-bit MSVC (Windows 10+)",
       "host_tools": true,
       "std": true,
       "tier": 1
@@ -4878,7 +4878,7 @@
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit MSVC (Windows 7+)",
+      "description": "32-bit MSVC (Windows 10+)",
       "host_tools": true,
       "std": true,
       "tier": 1
@@ -9627,90 +9627,6 @@
     "target-pointer-width": "32",
     "tls-model": "local-exec"
   },
-  "wasm32-wasi-preview1-threads": {
-    "arch": "wasm32",
-    "crt-objects-fallback": "true",
-    "crt-static-allows-dylibs": true,
-    "crt-static-default": true,
-    "crt-static-respected": true,
-    "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
-    "default-hidden-visibility": true,
-    "dll-prefix": "",
-    "dll-suffix": ".wasm",
-    "dynamic-linking": true,
-    "eh-frame-header": false,
-    "emit-debug-gdb-scripts": false,
-    "entry-name": "__main_void",
-    "exe-suffix": ".wasm",
-    "features": "+atomics,+bulk-memory,+mutable-globals",
-    "generate-arange-section": false,
-    "has-thread-local": true,
-    "is-builtin": true,
-    "is-like-wasm": true,
-    "limit-rdylib-exports": false,
-    "linker": "rust-lld",
-    "linker-flavor": "wasm-lld",
-    "linker-is-gnu": false,
-    "lld-flavor": "wasm",
-    "llvm-target": "wasm32-wasi",
-    "main-needs-argc-argv": false,
-    "max-atomic-width": 64,
-    "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
-    },
-    "only-cdylib": true,
-    "os": "wasi",
-    "panic-strategy": "abort",
-    "pre-link-args": {
-      "wasm-lld": [
-        "-z",
-        "stack-size=1048576",
-        "--stack-first",
-        "--allow-undefined",
-        "--no-demangle",
-        "--import-memory",
-        "--export-memory",
-        "--shared-memory"
-      ],
-      "wasm-lld-cc": [
-        "-Wl,-z",
-        "-Wl,stack-size=1048576",
-        "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
-        "-Wl,--no-demangle",
-        "--target=wasm32-wasi-threads",
-        "-Wl,--import-memory",
-        "-Wl,--export-memory,",
-        "-Wl,--shared-memory"
-      ]
-    },
-    "pre-link-objects-fallback": {
-      "dynamic-nopic-exe": [
-        "crt1-command.o"
-      ],
-      "dynamic-pic-exe": [
-        "crt1-command.o"
-      ],
-      "static-nopic-exe": [
-        "crt1-command.o"
-      ],
-      "static-pic-exe": [
-        "crt1-command.o"
-      ],
-      "wasi-reactor-exe": [
-        "crt1-reactor.o"
-      ]
-    },
-    "relocation-model": "static",
-    "target-family": [
-      "wasm"
-    ],
-    "target-pointer-width": "32",
-    "tls-model": "local-exec"
-  },
   "wasm32-wasip1": {
     "arch": "wasm32",
     "crt-objects-fallback": "true",
@@ -9783,6 +9699,90 @@
     },
     "relocation-model": "static",
     "singlethread": true,
+    "target-family": [
+      "wasm"
+    ],
+    "target-pointer-width": "32",
+    "tls-model": "local-exec"
+  },
+  "wasm32-wasip1-threads": {
+    "arch": "wasm32",
+    "crt-objects-fallback": "true",
+    "crt-static-allows-dylibs": true,
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-n32:64-S128-ni:1:10:20",
+    "default-hidden-visibility": true,
+    "dll-prefix": "",
+    "dll-suffix": ".wasm",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "entry-name": "__main_void",
+    "exe-suffix": ".wasm",
+    "features": "+atomics,+bulk-memory,+mutable-globals",
+    "generate-arange-section": false,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-wasm": true,
+    "limit-rdylib-exports": false,
+    "linker": "rust-lld",
+    "linker-flavor": "wasm-lld",
+    "linker-is-gnu": false,
+    "lld-flavor": "wasm",
+    "llvm-target": "wasm32-wasi",
+    "main-needs-argc-argv": false,
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "only-cdylib": true,
+    "os": "wasi",
+    "panic-strategy": "abort",
+    "pre-link-args": {
+      "wasm-lld": [
+        "-z",
+        "stack-size=1048576",
+        "--stack-first",
+        "--allow-undefined",
+        "--no-demangle",
+        "--import-memory",
+        "--export-memory",
+        "--shared-memory"
+      ],
+      "wasm-lld-cc": [
+        "-Wl,-z",
+        "-Wl,stack-size=1048576",
+        "-Wl,--stack-first",
+        "-Wl,--allow-undefined",
+        "-Wl,--no-demangle",
+        "--target=wasm32-wasip1-threads",
+        "-Wl,--import-memory",
+        "-Wl,--export-memory,",
+        "-Wl,--shared-memory"
+      ]
+    },
+    "pre-link-objects-fallback": {
+      "dynamic-nopic-exe": [
+        "crt1-command.o"
+      ],
+      "dynamic-pic-exe": [
+        "crt1-command.o"
+      ],
+      "static-nopic-exe": [
+        "crt1-command.o"
+      ],
+      "static-pic-exe": [
+        "crt1-command.o"
+      ],
+      "wasi-reactor-exe": [
+        "crt1-reactor.o"
+      ]
+    },
+    "relocation-model": "static",
     "target-family": [
       "wasm"
     ],
@@ -10970,7 +10970,7 @@
     "llvm-target": "x86_64-pc-windows-msvc",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "64-bit MSVC (Windows 7+)",
+      "description": "64-bit MSVC (Windows 10+)",
       "host_tools": true,
       "std": true,
       "tier": 1
