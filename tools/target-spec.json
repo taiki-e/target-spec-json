@@ -1157,7 +1157,8 @@
       "thread",
       "hwaddress",
       "cfi",
-      "memtag"
+      "memtag",
+      "kcfi"
     ],
     "supported-split-debuginfo": [
       "packed",
@@ -11408,6 +11409,7 @@
       "memory",
       "thread",
       "cfi",
+      "kcfi",
       "safestack",
       "dataflow"
     ],
