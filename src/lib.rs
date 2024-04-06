@@ -334,8 +334,6 @@ pub fn all_target_specs_json(rustc: Command) -> Result<AllTargetSpecs> {
 
 #[cfg(test)]
 mod tests {
-    use anyhow::Context as _;
-
     use super::*;
 
     fn target_spec_json(target: &str) -> Result<(TargetSpec, String)> {
@@ -363,14 +361,15 @@ mod tests {
     fn parse_target_spec_json() {
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
-            let (parsed, raw) =
-                target_spec_json(target).with_context(|| target.to_owned()).unwrap();
+            eprintln!("target={}:", target);
+            let (parsed, raw) = target_spec_json(target).unwrap();
             let deserialized = serde_json::to_string(&parsed).unwrap();
             assert_eq!(
                 serde_json::from_str::<serde_json::Value>(&raw).unwrap(),
                 serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
             );
         }
+        eprintln!("all-targets:");
         let (parsed, raw) = all_target_specs_json().unwrap();
         let deserialized = serde_json::to_string(&parsed).unwrap();
         assert_eq!(
