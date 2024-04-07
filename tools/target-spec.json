@@ -22,7 +22,8 @@
     ],
     "link-env-remove": [
       "IPHONEOS_DEPLOYMENT_TARGET",
-      "TVOS_DEPLOYMENT_TARGET"
+      "TVOS_DEPLOYMENT_TARGET",
+      "XROS_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
@@ -489,6 +490,171 @@
     "target-pointer-width": "64",
     "vendor": "apple"
   },
+  "aarch64-apple-visionos": {
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "cpu": "apple-a7",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+neon,+fp-armv8,+apple-a16",
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64-apple-visionos1.0.0",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Apple visionOS",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "visionos",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "visionos",
+        "1.0",
+        "1.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "visionos",
+        "1.0",
+        "1.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address",
+      "thread"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
+  "aarch64-apple-visionos-sim": {
+    "abi": "sim",
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "cpu": "apple-a12",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+neon,+fp-armv8,+apple-a16",
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64-apple-visionos1.0.0-simulator",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Apple visionOS simulator",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "visionos",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "visionos-simulator",
+        "1.0",
+        "1.0"
+      ],
+      "darwin-cc": [
+        "-arch",
+        "arm64"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64",
+        "-platform_version",
+        "visionos-simulator",
+        "1.0",
+        "1.0"
+      ],
+      "darwin-lld-cc": [
+        "-arch",
+        "arm64"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address",
+      "thread"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
   "aarch64-apple-watchos": {
     "abi-return-struct-as-int": true,
     "arch": "aarch64",
@@ -890,6 +1056,7 @@
   "aarch64-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "aarch64",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
     "crt-static-respected": true,
@@ -1609,6 +1776,7 @@
     "abi-return-struct-as-int": true,
     "allows-weak-linkage": false,
     "arch": "aarch64",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p:64:64-i32:32-i64:64-i128:128-n32:64-S128",
     "debuginfo-kind": "pdb",
@@ -1663,6 +1831,7 @@
     "abi": "uwp",
     "abi-return-struct-as-int": true,
     "arch": "aarch64",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
     "crt-static-respected": true,
@@ -2259,7 +2428,8 @@
     ],
     "link-env-remove": [
       "IPHONEOS_DEPLOYMENT_TARGET",
-      "TVOS_DEPLOYMENT_TARGET"
+      "TVOS_DEPLOYMENT_TARGET",
+      "XROS_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
@@ -2405,6 +2575,7 @@
   "arm64ec-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "arm64ec",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
     "crt-static-respected": true,
@@ -2533,7 +2704,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "E-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "emit-debug-gdb-scripts": false,
-    "features": "+vfp3,-d32,-fp16",
+    "features": "+vfp3d16",
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
@@ -3664,7 +3835,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "emit-debug-gdb-scripts": false,
-    "features": "+vfp3,-d32,-fp16",
+    "features": "+vfp3d16",
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
@@ -4192,6 +4363,7 @@
   "i586-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "x86",
+    "archive-format": "coff",
     "cpu": "pentium",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -4456,7 +4628,8 @@
     ],
     "link-env-remove": [
       "IPHONEOS_DEPLOYMENT_TARGET",
-      "TVOS_DEPLOYMENT_TARGET"
+      "TVOS_DEPLOYMENT_TARGET",
+      "XROS_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
@@ -4857,6 +5030,7 @@
   "i686-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "x86",
+    "archive-format": "coff",
     "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -5267,6 +5441,7 @@
     "abi-return-struct-as-int": true,
     "allows-weak-linkage": false,
     "arch": "x86",
+    "archive-format": "coff",
     "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
@@ -5516,6 +5691,7 @@
     "abi": "uwp",
     "abi-return-struct-as-int": true,
     "arch": "x86",
+    "archive-format": "coff",
     "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -5574,6 +5750,7 @@
   "i686-win7-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "x86",
+    "archive-format": "coff",
     "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -9044,6 +9221,7 @@
   "thumbv7a-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "arm",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
     "crt-static-respected": true,
@@ -9102,6 +9280,7 @@
     "abi": "uwp",
     "abi-return-struct-as-int": true,
     "arch": "arm",
+    "archive-format": "coff",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
     "crt-static-respected": true,
@@ -9188,7 +9367,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "emit-debug-gdb-scripts": false,
-    "features": "+vfp4,-d32,-fp64",
+    "features": "+vfp4d16sp",
     "frame-pointer": "always",
     "is-builtin": true,
     "linker": "rust-lld",
@@ -9455,7 +9634,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "emit-debug-gdb-scripts": false,
-    "features": "+fp-armv8,-fp64,-d32",
+    "features": "+fp-armv8d16sp",
     "frame-pointer": "always",
     "is-builtin": true,
     "linker": "rust-lld",
@@ -9974,7 +10153,8 @@
     ],
     "link-env-remove": [
       "IPHONEOS_DEPLOYMENT_TARGET",
-      "TVOS_DEPLOYMENT_TARGET"
+      "TVOS_DEPLOYMENT_TARGET",
+      "XROS_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
@@ -10970,6 +11150,7 @@
   "x86_64-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "x86_64",
+    "archive-format": "coff",
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -11802,6 +11983,7 @@
     "abi-return-struct-as-int": true,
     "allows-weak-linkage": false,
     "arch": "x86_64",
+    "archive-format": "coff",
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
@@ -12056,6 +12238,7 @@
     "abi": "uwp",
     "abi-return-struct-as-int": true,
     "arch": "x86_64",
+    "archive-format": "coff",
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -12116,6 +12299,7 @@
   "x86_64-win7-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "x86_64",
+    "archive-format": "coff",
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "crt-static-allows-dylibs": true,
@@ -12237,7 +12421,8 @@
     ],
     "link-env-remove": [
       "IPHONEOS_DEPLOYMENT_TARGET",
-      "TVOS_DEPLOYMENT_TARGET"
+      "TVOS_DEPLOYMENT_TARGET",
+      "XROS_DEPLOYMENT_TARGET"
     ],
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
