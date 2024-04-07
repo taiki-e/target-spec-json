@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::visionos`.
+
 ## [0.1.14] - 2024-03-12
 
 - Add `TargetSpec::metadata`.
