@@ -2354,7 +2354,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64_32-apple-watchos",
+    "llvm-target": "arm64_32-apple-watchos5.0.0",
     "max-atomic-width": 128,
     "metadata": {
       "description": null,
