@@ -3491,6 +3491,7 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_os="windows"
 target_pointer_width="32"
+target_thread_local
 target_vendor="pc"
 ub_checks
 windows
@@ -3769,6 +3770,7 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_os="windows"
 target_pointer_width="32"
+target_thread_local
 target_vendor="pc"
 ub_checks
 windows
@@ -4147,6 +4149,7 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_os="windows"
 target_pointer_width="32"
+target_thread_local
 target_vendor="win7"
 ub_checks
 windows
