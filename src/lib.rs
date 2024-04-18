@@ -13,8 +13,6 @@ Add this to your `Cargo.toml`:
 target-spec-json = "0.1"
 ```
 
-*Compiler support: requires rustc 1.57+*
-
 <!-- tidy:crate-doc:end -->
 */
 
