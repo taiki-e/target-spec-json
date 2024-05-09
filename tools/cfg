@@ -7255,7 +7255,7 @@ ub_checks
 wasm32-wasip2:
 overflow_checks
 panic="abort"
-relocation_model="static"
+relocation_model="pic"
 target_abi=""
 target_arch="wasm32"
 target_endian="little"
