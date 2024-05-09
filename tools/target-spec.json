@@ -10016,7 +10016,7 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
-    "llvm-target": "wasm32-unknown-unknown",
+    "llvm-target": "wasm32-wasip2",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
@@ -10061,7 +10061,6 @@
         "crt1-reactor.o"
       ]
     },
-    "relocation-model": "static",
     "singlethread": true,
     "target-family": [
       "wasm"
