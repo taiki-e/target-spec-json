@@ -4759,6 +4759,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -4768,6 +4769,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -4777,6 +4779,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -4786,6 +4789,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ]
@@ -10878,6 +10882,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -10887,6 +10892,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -10896,6 +10902,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ],
@@ -10905,6 +10912,7 @@
         "-lmingw32",
         "-lgcc",
         "-lmsvcrt",
+        "-lmingwex",
         "-luser32",
         "-lkernel32"
       ]
