@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::link_self_contained`.
+
 ## [0.1.15] - 2024-04-07
 
 - Add `Os::visionos`.

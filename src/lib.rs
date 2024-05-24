@@ -188,6 +188,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub link_env_remove: Option<Vec<String>>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub link_self_contained: Option<BTreeMap<String, Vec<String>>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub link_script: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub linker: Option<String>,
