@@ -9002,6 +9002,16 @@
     "has-rpath": true,
     "has-thread-local": true,
     "is-builtin": true,
+    "late-link-args": {
+      "gnu-cc": [
+        "-mcpu=v9",
+        "-m32"
+      ],
+      "gnu-lld-cc": [
+        "-mcpu=v9",
+        "-m32"
+      ]
+    },
     "linker-flavor": "gnu-cc",
     "llvm-target": "sparc-unknown-linux-gnu",
     "max-atomic-width": 32,
@@ -9013,14 +9023,6 @@
     },
     "os": "linux",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-mv8plus"
-      ],
-      "gnu-lld-cc": [
-        "-mv8plus"
-      ]
-    },
     "relro-level": "full",
     "supported-split-debuginfo": [
       "packed",
