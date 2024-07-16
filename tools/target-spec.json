@@ -31,10 +31,10 @@
     "llvm-target": "arm64-apple-macosx11.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 macOS (11.0+, Big Sur+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "macos",
     "pre-link-args": {
@@ -115,10 +115,10 @@
     "llvm-target": "arm64-apple-ios10.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 iOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "ios",
     "pre-link-args": {
@@ -198,10 +198,10 @@
     "llvm-target": "arm64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Apple Catalyst on ARM64",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "ios",
     "pre-link-args": {
@@ -282,10 +282,10 @@
     "llvm-target": "arm64-apple-ios10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Apple iOS Simulator on ARM64",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "ios",
     "pre-link-args": {
@@ -364,10 +364,10 @@
     "llvm-target": "arm64-apple-tvos10.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 tvOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "tvos",
     "pre-link-args": {
@@ -443,10 +443,10 @@
     "llvm-target": "arm64-apple-tvos10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 tvOS Simulator",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "tvos",
     "pre-link-args": {
@@ -685,10 +685,10 @@
     "llvm-target": "aarch64-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Apple WatchOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "watchos",
     "position-independent-executables": true,
@@ -765,10 +765,10 @@
     "llvm-target": "arm64-apple-watchos5.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Apple WatchOS Simulator",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "watchos",
     "pre-link-args": {
@@ -826,10 +826,10 @@
     "llvm-target": "aarch64-unknown-fuchsia",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Fuchsia",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "fuchsia",
     "position-independent-executables": true,
@@ -903,10 +903,10 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 SOLID with TOPPERS/ASP3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "solid_asp3",
     "relocation-model": "static",
@@ -932,10 +932,10 @@
     "llvm-target": "aarch64-linux-android",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Android",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "position-independent-executables": true,
@@ -975,10 +975,10 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Nintendo Switch, Horizon",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "horizon",
     "panic-strategy": "abort",
@@ -1030,10 +1030,10 @@
     "llvm-target": "aarch64-pc-windows-gnu",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 MinGW (Windows 10+), LLVM ABI",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -1081,10 +1081,10 @@
     "llvm-target": "aarch64-pc-windows-msvc",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Windows MSVC",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -1125,10 +1125,10 @@
     "llvm-target": "aarch64-unknown-freebsd",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 FreeBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -1161,10 +1161,10 @@
     "llvm-target": "aarch64-unknown-fuchsia",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Fuchsia",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "fuchsia",
     "position-independent-executables": true,
@@ -1235,10 +1235,10 @@
     "llvm-target": "aarch64-unknown-hermit",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Hermit",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "hermit",
     "panic-strategy": "abort",
@@ -1273,10 +1273,10 @@
     "llvm-target": "aarch64-unknown-solaris2.11",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 illumos",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "illumos",
     "pre-link-args": {
@@ -1308,10 +1308,10 @@
     "llvm-target": "aarch64-unknown-linux-gnu",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Linux (kernel 4.1, glibc 2.17+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -1357,10 +1357,10 @@
     "llvm-target": "aarch64-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Linux (ILP32 ABI)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -1395,10 +1395,10 @@
     "llvm-target": "aarch64-unknown-linux-musl",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Linux with musl 1.2.3",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -1495,10 +1495,10 @@
     "llvm-target": "aarch64-unknown-linux-musl",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 OpenHarmony",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -1541,10 +1541,10 @@
     "llvm-target": "aarch64-unknown-netbsd",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 NetBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -1572,10 +1572,10 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARM64, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "pre-link-args": {
@@ -1609,10 +1609,10 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARM64, softfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -1636,10 +1636,10 @@
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 QNX Neutrino 7.1 RTOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "nto",
     "position-independent-executables": true,
@@ -1673,10 +1673,10 @@
     "llvm-target": "aarch64-unknown-openbsd",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 OpenBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -1715,10 +1715,10 @@
     "llvm-target": "aarch64-unknown-redox",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "ARM64 RedoxOS",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "redox",
     "position-independent-executables": true,
@@ -1743,10 +1743,10 @@
     "llvm-target": "aarch64-unknown-none",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "ARM64 TEEOS",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "teeos",
     "panic-strategy": "abort",
@@ -1807,10 +1807,10 @@
     "llvm-target": "aarch64-unknown-windows",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "ARM64 UEFI",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 2
     },
     "os": "uefi",
     "panic-strategy": "abort",
@@ -1867,9 +1867,9 @@
     "max-atomic-width": 128,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -1918,9 +1918,9 @@
     "max-atomic-width": 128,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "stack-probes": {
@@ -1948,10 +1948,10 @@
     "llvm-target": "aarch64_be-unknown-linux-gnu",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Linux (big-endian)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -1987,10 +1987,10 @@
     "llvm-target": "aarch64_be-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 Linux (big-endian, ILP32 ABI)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2023,10 +2023,10 @@
     "llvm-target": "aarch64_be-unknown-netbsd",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64 NetBSD (big-endian)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -2060,10 +2060,10 @@
     "llvm-target": "arm-linux-androideabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 Android",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "position-independent-executables": true,
@@ -2099,10 +2099,10 @@
     "llvm-target": "arm-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 Linux (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2135,10 +2135,10 @@
     "llvm-target": "arm-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 Linux, hardfloat (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2171,10 +2171,10 @@
     "llvm-target": "arm-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2263,10 +2263,10 @@
     "llvm-target": "arm-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 Linux with musl 1.2.3, hardfloat",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2368,10 +2368,10 @@
     "llvm-target": "arm64_32-apple-watchos5.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Arm Apple WatchOS 64-bit with 32-bit pointers",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "watchos",
     "position-independent-executables": true,
@@ -2448,10 +2448,10 @@
     "llvm-target": "arm64e-apple-macosx11.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64e Apple Darwin",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "macos",
     "pre-link-args": {
@@ -2532,10 +2532,10 @@
     "llvm-target": "arm64e-apple-ios14.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "ARM64e Apple iOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "ios",
     "pre-link-args": {
@@ -2620,10 +2620,10 @@
     "llvm-target": "arm64ec-pc-windows-msvc",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Arm64EC Windows MSVC",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -2665,10 +2665,10 @@
     "llvm-target": "armeb-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
+      "description": "Arm BE8 the default Arm big-endian architecture since Armv6",
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2698,10 +2698,10 @@
     "llvm-target": "armebv7r-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv7-R, Big Endian",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2722,10 +2722,10 @@
     "llvm-target": "armebv7r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv7-R, Big Endian, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2753,10 +2753,10 @@
     "llvm-target": "armv4t-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv4T",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2780,10 +2780,10 @@
     "llvm-target": "armv4t-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Armv4T Linux",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2820,10 +2820,10 @@
     "llvm-target": "armv5te-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv5TE",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2846,10 +2846,10 @@
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv5TE Linux (kernel 4.4, glibc 2.23)",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2883,10 +2883,10 @@
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv5TE Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -2975,10 +2975,10 @@
     "llvm-target": "armv5te-unknown-linux-uclibcgnueabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Armv5TE Linux with uClibc",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3013,10 +3013,10 @@
     "llvm-target": "armv6-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 FreeBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -3042,10 +3042,10 @@
     "llvm-target": "armv6-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv6 NetBSD w/hard-float",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -3073,10 +3073,10 @@
     "linker-flavor": "gnu-cc",
     "llvm-target": "armv6k-none-eabihf",
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Armv6K Nintendo 3DS, Horizon (Requires devkitARM toolchain)",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "horizon",
@@ -3118,10 +3118,10 @@
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Android",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "position-independent-executables": true,
@@ -3164,10 +3164,10 @@
     "llvm-target": "thumbv7a-vita-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Cortex-A9 Sony PlayStation Vita (requires VITASDK toolchain)",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "vita",
@@ -3206,10 +3206,10 @@
     "llvm-target": "armv7-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A FreeBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -3237,10 +3237,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Linux (kernel 4.15, glibc 2.27)",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3272,10 +3272,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Linux, hardfloat (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3308,10 +3308,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3400,10 +3400,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Linux with musl 1.2.3, hardfloat",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3490,10 +3490,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A OpenHarmony",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3526,10 +3526,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Linux with uClibc, softfloat",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3561,10 +3561,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
+      "description": "Armv7-A Linux with uClibc, hardfloat",
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -3595,10 +3595,10 @@
     "llvm-target": "armv7-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A NetBSD w/hard-float",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -3631,10 +3631,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Armv7-A for VxWorks",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "target-family": [
@@ -3659,10 +3659,10 @@
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Arm SOLID with TOPPERS/ASP3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "solid_asp3",
     "relocation-model": "static",
@@ -3684,10 +3684,10 @@
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Arm SOLID with TOPPERS/ASP3, hardfloat",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "solid_asp3",
     "relocation-model": "static",
@@ -3709,10 +3709,10 @@
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv7-A",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -3733,10 +3733,10 @@
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv7-A, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -3772,10 +3772,10 @@
     "llvm-target": "armv7k-apple-watchos",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Apple WatchOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "watchos",
     "position-independent-executables": true,
@@ -3830,10 +3830,10 @@
     "llvm-target": "armv7r-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-R",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -3853,10 +3853,10 @@
     "llvm-target": "armv7r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-R, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -3893,10 +3893,10 @@
     "llvm-target": "armv7s-apple-ios10.0.0",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Armv7-A Apple-A6 Apple iOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "ios",
     "pre-link-args": {
@@ -3951,10 +3951,10 @@
     "llvm-target": "armv8r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Armv8-R, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -4012,10 +4012,10 @@
     "max-atomic-width": 64,
     "merge-functions": "disabled",
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "BPF (big endian)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "min-atomic-width": 64,
     "no-builtins": true,
@@ -4039,10 +4039,10 @@
     "max-atomic-width": 64,
     "merge-functions": "disabled",
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "BPF (little endian)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "min-atomic-width": 64,
     "no-builtins": true,
@@ -4076,10 +4076,10 @@
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "C-SKY abiv2 Linux (little endian)",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -4121,10 +4121,10 @@
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "C-SKY abiv2 Linux, hardfloat (little endian)",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -4157,10 +4157,10 @@
     "llvm-target": "hexagon-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Hexagon Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -4245,10 +4245,10 @@
     "llvm-target": "hexagon-unknown-none-elf",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare Hexagon (v60+, HVX)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "target-pointer-width": "32"
@@ -4284,10 +4284,10 @@
     "llvm-target": "i386-apple-ios10.0.0-simulator",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit x86 iOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "ios",
     "pre-link-args": {
@@ -4346,10 +4346,10 @@
     "llvm-target": "i586-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit x86 QNX Neutrino 7.0 RTOS",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "nto",
     "position-independent-executables": true,
@@ -4448,10 +4448,10 @@
     "llvm-target": "i586-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Linux (kernel 3.2, glibc 2.17+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -4497,10 +4497,10 @@
     "llvm-target": "i586-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -4598,10 +4598,10 @@
     "llvm-target": "i586-unknown-netbsdelf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit x86, resricted to Pentium",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -4649,10 +4649,10 @@
     "llvm-target": "i686-apple-macosx10.12.0",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit macOS (10.12+, Sierra+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "macos",
     "pre-link-args": {
@@ -4716,10 +4716,10 @@
     "llvm-target": "i686-linux-android",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit x86 Android",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "position-independent-executables": true,
@@ -4840,10 +4840,10 @@
     "llvm-target": "i686-pc-windows-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit MinGW (Windows 10+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "windows",
     "post-link-objects": {
@@ -5009,10 +5009,10 @@
     "llvm-target": "i686-pc-windows-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit x86 MinGW (Windows 10+), LLVM ABI",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -5121,10 +5121,10 @@
     "llvm-target": "i686-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit FreeBSD",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -5158,10 +5158,10 @@
     "llvm-target": "i686-unknown-haiku",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Haiku",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "haiku",
     "pre-link-args": {
@@ -5196,10 +5196,10 @@
     "llvm-target": "i686-unknown-hurd-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit GNU/Hurd",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "hurd",
     "position-independent-executables": true,
@@ -5235,10 +5235,10 @@
     "llvm-target": "i686-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Linux (kernel 3.2, glibc 2.17+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -5284,10 +5284,10 @@
     "llvm-target": "i686-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -5385,10 +5385,10 @@
     "llvm-target": "i686-unknown-netbsdelf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "NetBSD/i386 with SSE2",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -5427,10 +5427,10 @@
     "llvm-target": "i686-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit OpenBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -5529,10 +5529,10 @@
     "llvm-target": "i686-unknown-windows-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "32-bit UEFI",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 2
     },
     "os": "uefi",
     "panic-strategy": "abort",
@@ -5628,9 +5628,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "windows",
     "post-link-objects": {
@@ -5783,9 +5783,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -5841,10 +5841,10 @@
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit Windows 7 support",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -5893,9 +5893,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "pre-link-args": {
@@ -5933,10 +5933,10 @@
     "llvm-target": "loongarch64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "LoongArch64 Linux, LP64D ABI (kernel 5.19, glibc 2.36)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -5967,10 +5967,10 @@
     "llvm-target": "loongarch64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "LoongArch64 Linux (LP64D ABI) with musl 1.2.3",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6055,9 +6055,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -6078,9 +6078,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -6101,10 +6101,10 @@
     "llvm-target": "m68k-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Motorola 680x0 Linux",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6137,10 +6137,10 @@
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS Linux (kernel 4.4, glibc 2.23)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6173,10 +6173,10 @@
     "llvm-target": "mips-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6265,10 +6265,10 @@
     "llvm-target": "mips-unknown-linux-uclibc",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS Linux with uClibc",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6302,10 +6302,10 @@
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "MIPS64 for OpenWrt Linux musl 1.2.3",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6395,10 +6395,10 @@
     "llvm-target": "mips64-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS64 Linux, N64 ABI (kernel 4.4, glibc 2.23)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6433,10 +6433,10 @@
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS64 Linux, N64 ABI, musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6526,10 +6526,10 @@
     "llvm-target": "mips64el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS64 Linux, N64 ABI (kernel 4.4, glibc 2.23)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6563,10 +6563,10 @@
     "llvm-target": "mips64el-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS64 Linux, N64 ABI, musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6653,10 +6653,10 @@
     ],
     "llvm-target": "mipsel-sony-psp",
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS (LE) Sony PlatStation Portable (PSP)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "psp",
     "pre-link-args": {
@@ -6691,10 +6691,10 @@
     "llvm-target": "mipsel-sony-psx",
     "max-atomic-width": 0,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS (LE) Sony PlayStation 1 (PSX)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -6717,10 +6717,10 @@
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS (little endian) Linux (kernel 4.4, glibc 2.23)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6752,10 +6752,10 @@
     "llvm-target": "mipsel-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS (little endian) Linux with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6843,10 +6843,10 @@
     "llvm-target": "mipsel-unknown-linux-uclibc",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "MIPS (LE) Linux with uClibc",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6877,10 +6877,10 @@
     "llvm-target": "mipsel-unknown-netbsd",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit MIPS (LE), requires mips32 cpu support",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -6906,10 +6906,10 @@
     "llvm-target": "mipsel-unknown-none",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare MIPS (LE) softfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -6931,10 +6931,10 @@
     "llvm-target": "mipsisa32r6-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "32-bit MIPS Release 6 Big Endian",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6967,10 +6967,10 @@
     "llvm-target": "mipsisa32r6el-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "32-bit MIPS Release 6 Little Endian",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7003,10 +7003,10 @@
     "llvm-target": "mipsisa64r6-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "64-bit MIPS Release 6 Big Endian",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7040,10 +7040,10 @@
     "llvm-target": "mipsisa64r6el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit MIPS Release 6 Little Endian",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7077,10 +7077,10 @@
     "llvm-target": "msp430-none-elf",
     "max-atomic-width": 0,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "16-bit MSP430 microcontrollers",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -7105,10 +7105,10 @@
     "max-atomic-width": 64,
     "merge-functions": "disabled",
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "--emit=asm generates PTX code that runs on NVIDIA GPUs",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "obj-is-bitcode": true,
     "only-cdylib": true,
@@ -7134,10 +7134,10 @@
     "llvm-target": "powerpc-unknown-freebsd13.0",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PowerPC FreeBSD",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -7176,10 +7176,10 @@
     "llvm-target": "powerpc-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PowerPC Linux (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7222,10 +7222,10 @@
     "llvm-target": "powerpc-unknown-linux-gnuspe",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PowerPC SPE Linux",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7268,10 +7268,10 @@
     "llvm-target": "powerpc-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "PowerPC Linux with musl 1.2.3",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7368,10 +7368,10 @@
     "llvm-target": "powerpc-unknown-netbsd",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "NetBSD 32-bit powerpc systems",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -7411,9 +7411,9 @@
     "max-atomic-width": 32,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -7448,9 +7448,9 @@
     "max-atomic-width": 32,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "pre-link-args": {
@@ -7495,9 +7495,9 @@
     "max-atomic-width": 32,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "pre-link-args": {
@@ -7543,10 +7543,10 @@
     "llvm-target": "powerpc64-ibm-aix",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "64-bit AIX (7.2 and newer)",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "aix",
     "pre-link-args": {
@@ -7590,10 +7590,10 @@
     "llvm-target": "powerpc64-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PPC64 FreeBSD (ELFv1 and ELFv2)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -7631,10 +7631,10 @@
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PowerPC Linux (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7678,10 +7678,10 @@
     "llvm-target": "powerpc64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "64-bit PowerPC Linux with musl 1.2.3",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7780,10 +7780,10 @@
     "llvm-target": "powerpc64-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "OpenBSD/powerpc64",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -7827,9 +7827,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "pre-link-args": {
@@ -7867,10 +7867,10 @@
     "llvm-target": "powerpc64le-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PPC64LE FreeBSD",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -7907,10 +7907,10 @@
     "llvm-target": "powerpc64le-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "PPC64LE Linux (kernel 3.10, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -7953,10 +7953,10 @@
     "llvm-target": "powerpc64le-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "64-bit PowerPC Linux with musl 1.2.3, Little Endian",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -8057,10 +8057,10 @@
     "llvm-target": "riscv32-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Linux (kernel 5.4, glibc 2.33)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -8089,10 +8089,10 @@
     "llvm-target": "riscv32-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Linux (kernel 5.4, musl 1.2.3 + RISCV32 support patches",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -8173,10 +8173,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV32I ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8196,10 +8196,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "RISC Zero's zero-knowledge Virtual Machine (RV32IM ISA)",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "zkvm",
     "panic-strategy": "abort",
@@ -8224,9 +8224,9 @@
     "max-atomic-width": 32,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8246,10 +8246,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV32IMA ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8270,10 +8270,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V ESP-IDF",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "espidf",
     "panic-strategy": "abort",
@@ -8298,10 +8298,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV32IMAC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8319,10 +8319,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "RISC-V Xous (RV32IMAC ISA)",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "xous",
     "relocation-model": "static",
@@ -8344,10 +8344,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V ESP-IDF",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "espidf",
     "panic-strategy": "abort",
@@ -8373,10 +8373,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV32IMAFC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8397,10 +8397,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V ESP-IDF",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "espidf",
     "panic-strategy": "abort",
@@ -8426,10 +8426,10 @@
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV32IMC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8454,10 +8454,10 @@
     "llvm-target": "riscv64-linux-android",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V 64-bit Android",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "android",
     "position-independent-executables": true,
@@ -8490,10 +8490,10 @@
     "llvm-target": "riscv64-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V FreeBSD",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "freebsd",
     "position-independent-executables": true,
@@ -8520,10 +8520,10 @@
     "llvm-target": "riscv64-unknown-fuchsia",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Fuchsia",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "fuchsia",
     "position-independent-executables": true,
@@ -8592,10 +8592,10 @@
     "llvm-target": "riscv64-unknown-hermit",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Hermit",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "hermit",
     "panic-strategy": "abort",
@@ -8622,10 +8622,10 @@
     "llvm-target": "riscv64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Linux (kernel 4.20, glibc 2.29)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -8654,10 +8654,10 @@
     "llvm-target": "riscv64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V Linux (kernel 4.20, musl 1.2.3)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -8740,10 +8740,10 @@
     "llvm-target": "riscv64-unknown-netbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "RISC-V NetBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -8772,10 +8772,10 @@
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV64IMAFDC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8802,10 +8802,10 @@
     "llvm-target": "riscv64-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "OpenBSD/riscv64",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -8831,10 +8831,10 @@
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare RISC-V (RV64IMAC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -8859,10 +8859,10 @@
     "llvm-target": "s390x-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "S390x Linux (kernel 3.2, glibc 2.17)",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "min-global-align": 16,
     "os": "linux",
@@ -8905,10 +8905,10 @@
     "llvm-target": "s390x-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "S390x Linux (kernel 3.2, musl 1.2.3)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "min-global-align": 16,
     "os": "linux",
@@ -9016,10 +9016,10 @@
     "llvm-target": "sparc-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "32-bit SPARC Linux",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -9049,10 +9049,10 @@
     "llvm-target": "sparc-unknown-none-elf",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare 32-bit SPARC V7+",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "no-default-libraries": false,
     "panic-strategy": "abort",
@@ -9075,10 +9075,10 @@
     "llvm-target": "sparc64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "SPARC Linux (kernel 4.4, glibc 2.23)",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -9108,10 +9108,10 @@
     "llvm-target": "sparc64-unknown-netbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "NetBSD/sparc64",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -9148,10 +9148,10 @@
     "llvm-target": "sparc64-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "OpenBSD/sparc64",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "position-independent-executables": true,
@@ -9187,10 +9187,10 @@
     "llvm-target": "sparcv9-sun-solaris",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "SPARC Solaris 11, illumos",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "solaris",
     "pre-link-args": {
@@ -9226,10 +9226,10 @@
     "llvm-target": "thumbv4t-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Thumb-mode Bare ARMv4T",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9256,10 +9256,10 @@
     "llvm-target": "thumbv5te-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Thumb-mode Bare ARMv5TE",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9280,10 +9280,10 @@
     "linker-flavor": "gnu-lld",
     "llvm-target": "thumbv6m-none-eabi",
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv6-M",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9317,9 +9317,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -9376,9 +9376,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -9422,10 +9422,10 @@
     "llvm-target": "thumbv7em-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv7E-M",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9446,10 +9446,10 @@
     "llvm-target": "thumbv7em-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv7E-M, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9469,10 +9469,10 @@
     "llvm-target": "thumbv7m-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv7-M",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9495,10 +9495,10 @@
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Thumb2-mode ARMv7-A Android with NEON",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "position-independent-executables": true,
@@ -9541,10 +9541,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Thumb2-mode ARMv7-A Linux with NEON (kernel 4.4, glibc 2.23)",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -9576,10 +9576,10 @@
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "Thumb2-mode ARMv7-A Linux with NEON, musl 1.2.3",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -9666,10 +9666,10 @@
     "llvm-target": "thumbv8m.base-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv8-M Baseline",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9689,10 +9689,10 @@
     "llvm-target": "thumbv8m.main-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv8-M Mainline",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9713,10 +9713,10 @@
     "llvm-target": "thumbv8m.main-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Bare ARMv8-M Mainline, hardfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -9742,10 +9742,10 @@
     "llvm-target": "wasm32-unknown-emscripten",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "WebAssembly via Emscripten",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "only-cdylib": true,
@@ -9785,10 +9785,10 @@
     "llvm-target": "wasm32-unknown-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "WebAssembly",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "only-cdylib": true,
     "os": "unknown",
@@ -9848,10 +9848,10 @@
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "WebAssembly with WASI",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "only-cdylib": true,
     "os": "wasi",
@@ -9926,10 +9926,10 @@
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "WebAssembly with WASI",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "only-cdylib": true,
     "os": "wasi",
@@ -10006,9 +10006,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "only-cdylib": true,
     "os": "wasi",
@@ -10088,10 +10088,10 @@
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "WebAssembly",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "only-cdylib": true,
     "os": "wasi",
@@ -10159,10 +10159,10 @@
     "llvm-target": "wasm64-unknown-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "WebAssembly",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "only-cdylib": true,
     "os": "unknown",
@@ -10227,10 +10227,10 @@
     "llvm-target": "x86_64-apple-macosx10.12.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit macOS (10.12+, Sierra+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "macos",
     "pre-link-args": {
@@ -10314,10 +10314,10 @@
     "llvm-target": "x86_64-apple-ios10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit x86 iOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "ios",
     "pre-link-args": {
@@ -10396,10 +10396,10 @@
     "llvm-target": "x86_64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Apple Catalyst on x86_64",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "ios",
     "pre-link-args": {
@@ -10479,10 +10479,10 @@
     "llvm-target": "x86_64-apple-tvos10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "x86 64-bit tvOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "tvos",
     "pre-link-args": {
@@ -10557,10 +10557,10 @@
     "llvm-target": "x86_64-apple-watchos5.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "x86 64-bit Apple WatchOS simulator",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "watchos",
     "pre-link-args": {
@@ -10621,10 +10621,10 @@
     "llvm-target": "x86_64-elf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Fortanix ABI for 64-bit Intel SGX",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "unknown",
     "override-export-symbols": [
@@ -10723,10 +10723,10 @@
     "llvm-target": "x86_64-unknown-fuchsia",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit x86 Fuchsia",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "fuchsia",
     "plt-by-default": false,
@@ -10804,10 +10804,10 @@
     "llvm-target": "x86_64-linux-android",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit x86 Android",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "android",
     "plt-by-default": false,
@@ -10854,10 +10854,10 @@
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "x86 64-bit QNX Neutrino 7.1 RTOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "nto",
     "plt-by-default": false,
@@ -10893,10 +10893,10 @@
     "llvm-target": "x86_64-pc-solaris",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Solaris 11, illumos",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "solaris",
     "plt-by-default": false,
@@ -11018,10 +11018,10 @@
     "llvm-target": "x86_64-pc-windows-gnu",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit MinGW (Windows 10+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "windows",
     "plt-by-default": false,
@@ -11190,10 +11190,10 @@
     "llvm-target": "x86_64-pc-windows-gnu",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit x86 MinGW (Windows 10+), LLVM ABI",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -11290,10 +11290,10 @@
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Unikraft with musl 1.2.3",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "linux",
     "panic-strategy": "abort",
@@ -11330,10 +11330,10 @@
     "llvm-target": "x86_64-unknown-dragonfly",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit DragonFlyBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "dragonfly",
     "plt-by-default": false,
@@ -11371,10 +11371,10 @@
     "llvm-target": "x86_64-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit FreeBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "freebsd",
     "plt-by-default": false,
@@ -11417,10 +11417,10 @@
     "llvm-target": "x86_64-unknown-fuchsia",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit x86 Fuchsia",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "fuchsia",
     "plt-by-default": false,
@@ -11492,10 +11492,10 @@
     "llvm-target": "x86_64-unknown-haiku",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Haiku",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "haiku",
     "plt-by-default": false,
@@ -11530,10 +11530,10 @@
     "llvm-target": "x86_64-unknown-hermit",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "x86_64 Hermit",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "hermit",
     "panic-strategy": "abort",
@@ -11569,10 +11569,10 @@
     "llvm-target": "x86_64-pc-solaris",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "illumos",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "illumos",
     "plt-by-default": false,
@@ -11606,9 +11606,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "l4re",
     "panic-strategy": "abort",
@@ -11638,10 +11638,10 @@
     "llvm-target": "x86_64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Linux (kernel 3.2+, glibc 2.17+)",
+      "host_tools": true,
+      "std": true,
+      "tier": 1
     },
     "os": "linux",
     "plt-by-default": false,
@@ -11695,10 +11695,10 @@
     "llvm-target": "x86_64-unknown-linux-gnux32",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Linux (x32 ABI) (kernel 4.15, glibc 2.27)",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -11740,10 +11740,10 @@
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Linux with musl 1.2.3",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "plt-by-default": false,
@@ -11885,10 +11885,10 @@
     "llvm-target": "x86_64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "x86_64 OpenHarmony",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -11938,10 +11938,10 @@
     "llvm-target": "x86_64-unknown-netbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "NetBSD/amd64",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "netbsd",
@@ -11988,10 +11988,10 @@
     "llvm-target": "x86_64-unknown-none-elf",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Freestanding/bare-metal x86_64 softfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
     },
     "panic-strategy": "abort",
     "plt-by-default": false,
@@ -12022,10 +12022,10 @@
     "llvm-target": "x86_64-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit OpenBSD",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "openbsd",
     "plt-by-default": false,
@@ -12074,10 +12074,10 @@
     "llvm-target": "x86_64-unknown-redox",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "Redox OS",
+      "host_tools": false,
+      "std": true,
+      "tier": 2
     },
     "os": "redox",
     "plt-by-default": false,
@@ -12125,10 +12125,10 @@
     "llvm-target": "x86_64-unknown-windows",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
+      "description": "64-bit UEFI",
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 2
     },
     "os": "uefi",
     "panic-strategy": "abort",
@@ -12225,9 +12225,9 @@
     "max-atomic-width": 128,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "os": "windows",
     "plt-by-default": false,
@@ -12384,9 +12384,9 @@
     "max-atomic-width": 128,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -12443,10 +12443,10 @@
     "llvm-target": "x86_64-win7-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "64-bit Windows 7 support",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -12493,9 +12493,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
-      "host_tools": null,
+      "host_tools": false,
       "std": null,
-      "tier": null
+      "tier": 3
     },
     "os": "vxworks",
     "plt-by-default": false,
@@ -12550,10 +12550,10 @@
     "llvm-target": "x86_64h-apple-macosx10.12.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "description": "macOS with late-gen Intel (at least Haswell)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
     },
     "os": "macos",
     "pre-link-args": {
