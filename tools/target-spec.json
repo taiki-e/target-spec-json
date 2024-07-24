@@ -8307,6 +8307,30 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
+  "riscv32imac-unknown-nuttx-elf": {
+    "arch": "riscv32",
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "features": "+m,+a,+c",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "riscv32imac-unknown-xous-elf": {
     "arch": "riscv32",
     "cpu": "generic-rv32",
@@ -8382,6 +8406,34 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
+  "riscv32imafc-unknown-nuttx-elf": {
+    "arch": "riscv32",
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+m,+a,+c,+f",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32f",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "riscv32imc-esp-espidf": {
     "arch": "riscv32",
     "cpu": "generic-rv32",
@@ -8433,6 +8485,30 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "riscv32imc-unknown-nuttx-elf": {
+    "arch": "riscv32",
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "features": "+m,+c",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
     "target-pointer-width": "32"
   },
   "riscv64-linux-android": {
@@ -8784,6 +8860,38 @@
     ],
     "target-pointer-width": "64"
   },
+  "riscv64gc-unknown-nuttx-elf": {
+    "arch": "riscv64",
+    "code-model": "medium",
+    "cpu": "generic-rv64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+m,+a,+f,+d,+c",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "supported-sanitizers": [
+      "kernel-address"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
+  },
   "riscv64gc-unknown-openbsd": {
     "abi-return-struct-as-int": true,
     "arch": "riscv64",
@@ -8840,6 +8948,38 @@
     "relocation-model": "static",
     "supported-sanitizers": [
       "kernel-address"
+    ],
+    "target-pointer-width": "64"
+  },
+  "riscv64imac-unknown-nuttx-elf": {
+    "arch": "riscv64",
+    "code-model": "medium",
+    "cpu": "generic-rv64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+m,+a,+c",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "supported-sanitizers": [
+      "kernel-address"
+    ],
+    "target-family": [
+      "unix"
     ],
     "target-pointer-width": "64"
   },
@@ -9289,6 +9429,34 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
+  "thumbv6m-nuttx-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "atomic-cas": false,
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+strict-align,+atomics-32",
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv6m-none-eabi",
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "thumbv7a-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "arm",
@@ -9455,6 +9623,61 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
+  "thumbv7em-nuttx-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv7em-none-eabi",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
+  "thumbv7em-nuttx-eabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+vfp4d16sp",
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv7em-none-eabihf",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "thumbv7m-none-eabi": {
     "abi": "eabi",
     "arch": "arm",
@@ -9476,6 +9699,33 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "thumbv7m-nuttx-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv7m-none-eabi",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
     "target-pointer-width": "32"
   },
   "thumbv7neon-linux-androideabi": {
@@ -9675,6 +9925,34 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
+  "thumbv8m.base-nuttx-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+strict-align",
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv8m.base-none-eabi",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "thumbv8m.main-none-eabi": {
     "abi": "eabi",
     "arch": "arm",
@@ -9720,6 +9998,61 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "thumbv8m.main-nuttx-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv8m.main-none-eabi",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
+  "thumbv8m.main-nuttx-eabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+fp-armv8d16sp",
+    "frame-pointer": "always",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "thumbv8m.main-none-eabihf",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "nuttx",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
     "target-pointer-width": "32"
   },
   "wasm32-unknown-emscripten": {
