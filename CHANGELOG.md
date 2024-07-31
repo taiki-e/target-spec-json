@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::nuttx`.
+
 ## [0.1.17] - 2024-06-14
 
 - Add `Env::p1`.
