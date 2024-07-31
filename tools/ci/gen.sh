@@ -24,7 +24,7 @@ for path in tools src/gen/*; do
     if ! git diff --exit-code -- "${path}"; then
         git add "${path}"
         if [[ "${path}" == tools ]]; then
-            git commit -m "Update target-spec"
+            git commit -m "codegen: Update target-spec"
         else
             git commit -m "codegen: Update ${path}"
         fi
