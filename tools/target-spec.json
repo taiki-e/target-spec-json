@@ -5967,10 +5967,10 @@
     "llvm-target": "loongarch64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "LoongArch64 Linux (LP64D ABI) with musl 1.2.3",
-      "host_tools": false,
-      "std": null,
-      "tier": 3
+      "description": "LoongArch64 Linux (LP64D ABI) with musl 1.2.5",
+      "host_tools": true,
+      "std": true,
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -6054,7 +6054,7 @@
     "llvm-target": "loongarch64-unknown-none",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
+      "description": "Freestanding/bare-metal LoongArch64",
       "host_tools": false,
       "std": false,
       "tier": 2
@@ -6077,7 +6077,7 @@
     "llvm-target": "loongarch64-unknown-none",
     "max-atomic-width": 64,
     "metadata": {
-      "description": null,
+      "description": "Freestanding/bare-metal LoongArch64 softfloat",
       "host_tools": false,
       "std": false,
       "tier": 2
