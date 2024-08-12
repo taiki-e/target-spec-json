@@ -34,7 +34,7 @@
       "description": "ARM64 macOS (11.0+, Big Sur+)",
       "host_tools": true,
       "std": true,
-      "tier": 2
+      "tier": 1
     },
     "os": "macos",
     "pre-link-args": {
