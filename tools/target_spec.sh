@@ -20,8 +20,8 @@ mkdir -p "$(dirname "${file}")"
 
 target_arch=(
     # Architectures that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.70.0/compiler/rustc_target/src/abi/call/mod.rs#L663
-    # and https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L134.
+    # See also https://github.com/rust-lang/rust/blob/1.80.0/compiler/rustc_target/src/abi/call/mod.rs#L850
+    # and https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L98.
     amdgpu
     asmjs
     nvptx
@@ -30,13 +30,15 @@ target_arch=(
 )
 target_os=(
     # Operating systems that do not included in builtin targets.
+    # See also https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L97
     zephyr # https://github.com/rust-lang/compiler-team/issues/629
 )
 target_env=(
     # Environments that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.70.0/src/bootstrap/lib.rs#L131.
+    # See also https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L96.
     libnx
-    preview2 # https://github.com/rust-lang/rust/pull/119616
+    # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616
+    preview2
     # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590
     eabihf
     gnueabihf
