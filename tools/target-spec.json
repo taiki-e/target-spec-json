@@ -1783,6 +1783,31 @@
     },
     "target-pointer-width": "64"
   },
+  "aarch64-unknown-trusty": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "musl",
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "features": "+neon,+fp-armv8,+reserve-x18",
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64-unknown-unknown-musl",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Trusty",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
+    },
+    "os": "trusty",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-mcount": "\u0001_mcount",
+    "target-pointer-width": "64"
+  },
   "aarch64-unknown-uefi": {
     "abi-return-struct-as-int": true,
     "allows-weak-linkage": false,
@@ -3610,6 +3635,32 @@
     "target-mcount": "__mcount",
     "target-pointer-width": "32",
     "use-ctors-section": true
+  },
+  "armv7-unknown-trusty": {
+    "abi": "eabi",
+    "arch": "arm",
+    "crt-objects-fallback": "musl",
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "features": "+v7,+thumb2,+soft-float,-neon",
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "armv7-unknown-unknown-gnueabi",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Armv7-A Trusty",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
+    },
+    "os": "trusty",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-mcount": "\u0001mcount",
+    "target-pointer-width": "32"
   },
   "armv7-wrs-vxworks-eabihf": {
     "abi": "eabihf",
