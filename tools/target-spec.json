@@ -1798,7 +1798,7 @@
       "description": "ARM64 Trusty",
       "host_tools": false,
       "std": false,
-      "tier": 2
+      "tier": 3
     },
     "os": "trusty",
     "panic-strategy": "abort",
@@ -3652,7 +3652,7 @@
       "description": "Armv7-A Trusty",
       "host_tools": false,
       "std": false,
-      "tier": 2
+      "tier": 3
     },
     "os": "trusty",
     "panic-strategy": "abort",
@@ -9009,6 +9009,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "supported-sanitizers": [
+      "shadow-call-stack",
       "kernel-address"
     ],
     "target-pointer-width": "64"
@@ -9100,6 +9101,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "supported-sanitizers": [
+      "shadow-call-stack",
       "kernel-address"
     ],
     "target-pointer-width": "64"
