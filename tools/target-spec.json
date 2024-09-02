@@ -1621,6 +1621,43 @@
     },
     "target-pointer-width": "64"
   },
+  "aarch64-unknown-nto-qnx700": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "dynamic-linking": true,
+    "env": "nto70",
+    "features": "+v8a",
+    "has-rpath": true,
+    "is-builtin": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64-unknown-unknown",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 QNX Neutrino 7.0 RTOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "nto",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
+  },
   "aarch64-unknown-nto-qnx710": {
     "arch": "aarch64",
     "crt-objects-fallback": "false",
