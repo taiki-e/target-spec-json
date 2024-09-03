@@ -9155,7 +9155,6 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
-    "llvm-abiname": "lp64d",
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
     "metadata": {
