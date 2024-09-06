@@ -3210,6 +3210,35 @@
     "target-pointer-width": "32",
     "tls-model": "emulated"
   },
+  "armv7-rtems-eabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "env": "newlib",
+    "features": "+thumb2,+neon,+vfp3",
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "armv7-unknown-none-eabihf",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Armv7 RTEMS (Requires RTEMS toolchain and kernel",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "no-default-libraries": false,
+    "os": "rtems",
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "armv7-sony-vita-newlibeabihf": {
     "abi": "eabihf",
     "arch": "arm",
