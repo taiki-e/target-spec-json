@@ -10,6 +10,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.20] - 2024-09-06
+
 - Add `Os::rtems`.
 
 ## [0.1.19] - 2024-08-28
@@ -98,7 +100,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.19...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.20...HEAD
+[0.1.20]: https://github.com/taiki-e/target-spec-json/compare/v0.1.19...v0.1.20
 [0.1.19]: https://github.com/taiki-e/target-spec-json/compare/v0.1.18...v0.1.19
 [0.1.18]: https://github.com/taiki-e/target-spec-json/compare/v0.1.17...v0.1.18
 [0.1.17]: https://github.com/taiki-e/target-spec-json/compare/v0.1.16...v0.1.17
