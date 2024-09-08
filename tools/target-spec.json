@@ -43,8 +43,8 @@
         "arm64",
         "-platform_version",
         "macos",
-        "11.0",
-        "11.0"
+        "11.0.0",
+        "11.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -55,8 +55,8 @@
         "arm64",
         "-platform_version",
         "macos",
-        "11.0",
-        "11.0"
+        "11.0.0",
+        "11.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -127,8 +127,8 @@
         "arm64",
         "-platform_version",
         "ios",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -139,8 +139,8 @@
         "arm64",
         "-platform_version",
         "ios",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -210,8 +210,8 @@
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "13.1",
-        "13.1"
+        "13.1.0",
+        "13.1.0"
       ],
       "darwin-cc": [
         "-target",
@@ -222,8 +222,8 @@
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "13.1",
-        "13.1"
+        "13.1.0",
+        "13.1.0"
       ],
       "darwin-lld-cc": [
         "-target",
@@ -294,8 +294,8 @@
         "arm64",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -306,8 +306,8 @@
         "arm64",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -376,8 +376,8 @@
         "arm64",
         "-platform_version",
         "tvos",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -388,8 +388,8 @@
         "arm64",
         "-platform_version",
         "tvos",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -455,8 +455,8 @@
         "arm64",
         "-platform_version",
         "tvos-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -467,8 +467,8 @@
         "arm64",
         "-platform_version",
         "tvos-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -518,7 +518,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-visionos1.0.0",
+    "llvm-target": "arm64-apple-xros1.0.0",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple visionOS",
@@ -533,8 +533,8 @@
         "arm64",
         "-platform_version",
         "visionos",
-        "1.0",
-        "1.0"
+        "1.0.0",
+        "1.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -545,8 +545,8 @@
         "arm64",
         "-platform_version",
         "visionos",
-        "1.0",
-        "1.0"
+        "1.0.0",
+        "1.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -601,7 +601,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-visionos1.0.0-simulator",
+    "llvm-target": "arm64-apple-xros1.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple visionOS simulator",
@@ -616,8 +616,8 @@
         "arm64",
         "-platform_version",
         "visionos-simulator",
-        "1.0",
-        "1.0"
+        "1.0.0",
+        "1.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -628,8 +628,8 @@
         "arm64",
         "-platform_version",
         "visionos-simulator",
-        "1.0",
-        "1.0"
+        "1.0.0",
+        "1.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -682,7 +682,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "aarch64-apple-watchos",
+    "llvm-target": "arm64-apple-watchos5.0.0",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple WatchOS",
@@ -698,8 +698,8 @@
         "arm64",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -710,8 +710,8 @@
         "arm64",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -777,8 +777,8 @@
         "arm64",
         "-platform_version",
         "watchos-simulator",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -789,8 +789,8 @@
         "arm64",
         "-platform_version",
         "watchos-simulator",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -2443,8 +2443,8 @@
         "arm64_32",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -2455,8 +2455,8 @@
         "arm64_32",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -2522,8 +2522,8 @@
         "arm64e",
         "-platform_version",
         "macos",
-        "11.0",
-        "11.0"
+        "11.0.0",
+        "11.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -2534,8 +2534,8 @@
         "arm64e",
         "-platform_version",
         "macos",
-        "11.0",
-        "11.0"
+        "11.0.0",
+        "11.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -2606,8 +2606,8 @@
         "arm64e",
         "-platform_version",
         "ios",
-        "14.0",
-        "14.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -2618,8 +2618,8 @@
         "arm64e",
         "-platform_version",
         "ios",
-        "14.0",
-        "14.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -3886,7 +3886,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "armv7k-apple-watchos",
+    "llvm-target": "armv7k-apple-watchos5.0.0",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A Apple WatchOS",
@@ -3902,8 +3902,8 @@
         "armv7k",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -3914,8 +3914,8 @@
         "armv7k",
         "-platform_version",
         "watchos",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -4022,8 +4022,8 @@
         "armv7s",
         "-platform_version",
         "ios",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -4034,8 +4034,8 @@
         "armv7s",
         "-platform_version",
         "ios",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -4413,8 +4413,8 @@
         "i386",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -4425,8 +4425,8 @@
         "i386",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -4778,8 +4778,8 @@
         "i386",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -4791,8 +4791,8 @@
         "i386",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -10792,8 +10792,8 @@
         "x86_64",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -10805,8 +10805,8 @@
         "x86_64",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -10879,8 +10879,8 @@
         "x86_64",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -10891,8 +10891,8 @@
         "x86_64",
         "-platform_version",
         "ios-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -10961,8 +10961,8 @@
         "x86_64",
         "-platform_version",
         "mac-catalyst",
-        "13.1",
-        "13.1"
+        "13.1.0",
+        "13.1.0"
       ],
       "darwin-cc": [
         "-target",
@@ -10973,8 +10973,8 @@
         "x86_64",
         "-platform_version",
         "mac-catalyst",
-        "13.1",
-        "13.1"
+        "13.1.0",
+        "13.1.0"
       ],
       "darwin-lld-cc": [
         "-target",
@@ -11044,8 +11044,8 @@
         "x86_64",
         "-platform_version",
         "tvos-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -11056,8 +11056,8 @@
         "x86_64",
         "-platform_version",
         "tvos-simulator",
-        "10.0",
-        "10.0"
+        "10.0.0",
+        "10.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -11122,8 +11122,8 @@
         "x86_64",
         "-platform_version",
         "watchos-simulator",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -11134,8 +11134,8 @@
         "x86_64",
         "-platform_version",
         "watchos-simulator",
-        "5.0",
-        "5.0"
+        "5.0.0",
+        "5.0.0"
       ],
       "darwin-lld-cc": [
         "-arch",
@@ -13115,8 +13115,8 @@
         "x86_64h",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-cc": [
         "-arch",
@@ -13128,8 +13128,8 @@
         "x86_64h",
         "-platform_version",
         "macos",
-        "10.12",
-        "10.12"
+        "10.12.0",
+        "10.12.0"
       ],
       "darwin-lld-cc": [
         "-arch",
