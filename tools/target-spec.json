@@ -48,7 +48,8 @@
       ],
       "darwin-cc": [
         "-arch",
-        "arm64"
+        "arm64",
+        "-mmacosx-version-min=11.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -60,7 +61,8 @@
       ],
       "darwin-lld-cc": [
         "-arch",
-        "arm64"
+        "arm64",
+        "-mmacosx-version-min=11.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -131,8 +133,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-ios10.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -143,8 +145,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-ios10.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -195,7 +197,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios13.1.0-macabi",
+    "llvm-target": "arm64-apple-ios14.0.0-macabi",
     "max-atomic-width": 128,
     "metadata": {
       "description": "Apple Catalyst on ARM64",
@@ -210,24 +212,24 @@
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "13.1.0",
-        "13.1.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-cc": [
         "-target",
-        "arm64-apple-ios13.1.0-macabi"
+        "arm64-apple-ios14.0.0-macabi"
       ],
       "darwin-lld": [
         "-arch",
         "arm64",
         "-platform_version",
         "mac-catalyst",
-        "13.1.0",
-        "13.1.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-lld-cc": [
         "-target",
-        "arm64-apple-ios13.1.0-macabi"
+        "arm64-apple-ios14.0.0-macabi"
       ]
     },
     "split-debuginfo": "packed",
@@ -279,7 +281,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios10.0.0-simulator",
+    "llvm-target": "arm64-apple-ios14.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "Apple iOS Simulator on ARM64",
@@ -294,24 +296,24 @@
         "arm64",
         "-platform_version",
         "ios-simulator",
-        "10.0.0",
-        "10.0.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-ios14.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
         "arm64",
         "-platform_version",
         "ios-simulator",
-        "10.0.0",
-        "10.0.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-ios14.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -380,8 +382,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-tvos10.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -392,8 +394,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-tvos10.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -440,7 +442,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-tvos10.0.0-simulator",
+    "llvm-target": "arm64-apple-tvos14.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 tvOS Simulator",
@@ -455,24 +457,24 @@
         "arm64",
         "-platform_version",
         "tvos-simulator",
-        "10.0.0",
-        "10.0.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-tvos14.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
         "arm64",
         "-platform_version",
         "tvos-simulator",
-        "10.0.0",
-        "10.0.0"
+        "14.0.0",
+        "14.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-tvos14.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -537,8 +539,8 @@
         "1.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-xros1.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -549,8 +551,8 @@
         "1.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-xros1.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -620,8 +622,8 @@
         "1.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-xros1.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
@@ -632,8 +634,8 @@
         "1.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-xros1.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -702,8 +704,8 @@
         "5.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-watchos5.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -714,8 +716,8 @@
         "5.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-watchos5.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -762,7 +764,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-watchos5.0.0-simulator",
+    "llvm-target": "arm64-apple-watchos7.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple WatchOS Simulator",
@@ -777,24 +779,24 @@
         "arm64",
         "-platform_version",
         "watchos-simulator",
-        "5.0.0",
-        "5.0.0"
+        "7.0.0",
+        "7.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-watchos7.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
         "arm64",
         "-platform_version",
         "watchos-simulator",
-        "5.0.0",
-        "5.0.0"
+        "7.0.0",
+        "7.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64"
+        "-target",
+        "arm64-apple-watchos7.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -2447,8 +2449,8 @@
         "5.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64_32"
+        "-target",
+        "arm64_32-apple-watchos5.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -2459,8 +2461,8 @@
         "5.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64_32"
+        "-target",
+        "arm64_32-apple-watchos5.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -2527,7 +2529,8 @@
       ],
       "darwin-cc": [
         "-arch",
-        "arm64e"
+        "arm64e",
+        "-mmacosx-version-min=11.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -2539,7 +2542,8 @@
       ],
       "darwin-lld-cc": [
         "-arch",
-        "arm64e"
+        "arm64e",
+        "-mmacosx-version-min=11.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -2610,8 +2614,8 @@
         "14.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "arm64e"
+        "-target",
+        "arm64e-apple-ios14.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -2622,8 +2626,8 @@
         "14.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "arm64e"
+        "-target",
+        "arm64e-apple-ios14.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -3906,8 +3910,8 @@
         "5.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "armv7k"
+        "-target",
+        "armv7k-apple-watchos5.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -3918,8 +3922,8 @@
         "5.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "armv7k"
+        "-target",
+        "armv7k-apple-watchos5.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -4026,8 +4030,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "armv7s"
+        "-target",
+        "armv7s-apple-ios10.0.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -4038,8 +4042,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "armv7s"
+        "-target",
+        "armv7s-apple-ios10.0.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -4417,8 +4421,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "i386"
+        "-target",
+        "i386-apple-ios10.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
@@ -4429,8 +4433,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "i386"
+        "-target",
+        "i386-apple-ios10.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -4784,7 +4788,7 @@
       "darwin-cc": [
         "-arch",
         "i386",
-        "-m32"
+        "-mmacosx-version-min=10.12.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -4797,7 +4801,7 @@
       "darwin-lld-cc": [
         "-arch",
         "i386",
-        "-m32"
+        "-mmacosx-version-min=10.12.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -10798,7 +10802,7 @@
       "darwin-cc": [
         "-arch",
         "x86_64",
-        "-m64"
+        "-mmacosx-version-min=10.12.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -10811,7 +10815,7 @@
       "darwin-lld-cc": [
         "-arch",
         "x86_64",
-        "-m64"
+        "-mmacosx-version-min=10.12.0"
       ]
     },
     "split-debuginfo": "packed",
@@ -10883,8 +10887,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-ios10.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
@@ -10895,8 +10899,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-ios10.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -11048,8 +11052,8 @@
         "10.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-tvos10.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
@@ -11060,8 +11064,8 @@
         "10.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-tvos10.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -11126,8 +11130,8 @@
         "5.0.0"
       ],
       "darwin-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-watchos5.0.0-simulator"
       ],
       "darwin-lld": [
         "-arch",
@@ -11138,8 +11142,8 @@
         "5.0.0"
       ],
       "darwin-lld-cc": [
-        "-arch",
-        "x86_64"
+        "-target",
+        "x86_64-apple-watchos5.0.0-simulator"
       ]
     },
     "split-debuginfo": "packed",
@@ -13162,7 +13166,7 @@
       "darwin-cc": [
         "-arch",
         "x86_64h",
-        "-m64"
+        "-mmacosx-version-min=10.12.0"
       ],
       "darwin-lld": [
         "-arch",
@@ -13175,7 +13179,7 @@
       "darwin-lld-cc": [
         "-arch",
         "x86_64h",
-        "-m64"
+        "-mmacosx-version-min=10.12.0"
       ]
     },
     "split-debuginfo": "packed",
