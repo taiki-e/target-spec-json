@@ -6039,6 +6039,7 @@
   },
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
@@ -6074,6 +6075,7 @@
   },
   "loongarch64-unknown-linux-musl": {
     "arch": "loongarch64",
+    "code-model": "medium",
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
@@ -6164,7 +6166,7 @@
   },
   "loongarch64-unknown-none": {
     "arch": "loongarch64",
-    "code-model": "small",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "features": "+f,+d",
@@ -6187,7 +6189,7 @@
   "loongarch64-unknown-none-softfloat": {
     "abi": "softfloat",
     "arch": "loongarch64",
-    "code-model": "small",
+    "code-model": "medium",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "features": "-f,-d",
