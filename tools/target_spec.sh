@@ -48,6 +48,14 @@ bail() {
 rustc -Z unstable-options --print all-target-specs-json >|tools/target-spec.json
 eval "$(jq -r '. | to_entries[].value | @sh "target_arch+=(\(.arch)) target_os+=(\(.os // "none")) target_env+=(\(.env // "none"))"' tools/target-spec.json)"
 
+{
+    for target in $(rustc --print target-list); do
+        printf '%s:\n' "${target}"
+        rustc --print cfg --target "${target}" | { grep -Fv debug_assertions || :; }
+        printf '\n'
+    done
+} >|tools/cfg
+
 enum() {
     local name="$1"
     shift

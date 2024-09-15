@@ -5,8 +5,6 @@
 #[macro_use]
 mod file;
 
-mod cfgs;
-
 use std::{
     collections::{BTreeSet, HashSet},
     path::Path,
@@ -19,7 +17,6 @@ use syn::visit_mut::{self, VisitMut};
 use crate::file::*;
 
 fn main() {
-    cfgs::gen();
     gen_assert_impl();
 }
 
