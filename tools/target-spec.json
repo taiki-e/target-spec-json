@@ -9222,7 +9222,7 @@
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-target": "s390x-unknown-linux-gnu",
-    "max-atomic-width": 64,
+    "max-atomic-width": 128,
     "metadata": {
       "description": "S390x Linux (kernel 3.2, glibc 2.17)",
       "host_tools": true,
@@ -9268,7 +9268,7 @@
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-target": "s390x-unknown-linux-musl",
-    "max-atomic-width": 64,
+    "max-atomic-width": 128,
     "metadata": {
       "description": "S390x Linux (kernel 3.2, musl 1.2.3)",
       "host_tools": false,
