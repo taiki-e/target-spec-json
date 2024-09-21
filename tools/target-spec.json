@@ -2649,6 +2649,84 @@
     "target-pointer-width": "64",
     "vendor": "apple"
   },
+  "arm64e-apple-tvos": {
+    "abi-return-struct-as-int": true,
+    "arch": "aarch64",
+    "archive-format": "darwin",
+    "cpu": "apple-a12",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:o-i64:64-i128:128-n32:64-S128-Fn32",
+    "debuginfo-kind": "dwarf-dsym",
+    "dll-suffix": ".dylib",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+neon,+fp-armv8,+apple-a12,+v8.3a,+pauth",
+    "frame-pointer": "non-leaf",
+    "function-sections": false,
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "is-like-osx": true,
+    "link-env": [
+      "ZERO_AR_DATE=1"
+    ],
+    "link-env-remove": [
+      "MACOSX_DEPLOYMENT_TARGET"
+    ],
+    "linker-flavor": "darwin-cc",
+    "linker-is-gnu": false,
+    "lld-flavor": "darwin",
+    "llvm-target": "arm64e-apple-tvos10.0.0",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64e Apple tvOS",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "tvos",
+    "pre-link-args": {
+      "darwin": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "tvos",
+        "10.0.0",
+        "10.0.0"
+      ],
+      "darwin-cc": [
+        "-target",
+        "arm64e-apple-tvos10.0.0"
+      ],
+      "darwin-lld": [
+        "-arch",
+        "arm64e",
+        "-platform_version",
+        "tvos",
+        "10.0.0",
+        "10.0.0"
+      ],
+      "darwin-lld-cc": [
+        "-target",
+        "arm64e-apple-tvos10.0.0"
+      ]
+    },
+    "split-debuginfo": "packed",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "apple"
+  },
   "arm64ec-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
     "arch": "arm64ec",
