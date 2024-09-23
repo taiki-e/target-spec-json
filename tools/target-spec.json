@@ -31,7 +31,7 @@
     "llvm-target": "arm64-apple-macosx11.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 macOS (11.0+, Big Sur+)",
+      "description": "ARM64 Apple macOS (11.0+, Big Sur+)",
       "host_tools": true,
       "std": true,
       "tier": 1
@@ -117,7 +117,7 @@
     "llvm-target": "arm64-apple-ios10.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 iOS",
+      "description": "ARM64 Apple iOS",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -200,7 +200,7 @@
     "llvm-target": "arm64-apple-ios14.0.0-macabi",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "Apple Catalyst on ARM64",
+      "description": "ARM64 Apple Mac Catalyst",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -284,7 +284,7 @@
     "llvm-target": "arm64-apple-ios14.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "Apple iOS Simulator on ARM64",
+      "description": "ARM64 Apple iOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -366,7 +366,7 @@
     "llvm-target": "arm64-apple-tvos10.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 tvOS",
+      "description": "ARM64 Apple tvOS",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -445,7 +445,7 @@
     "llvm-target": "arm64-apple-tvos14.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 tvOS Simulator",
+      "description": "ARM64 Apple tvOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -687,7 +687,7 @@
     "llvm-target": "arm64-apple-watchos5.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 Apple WatchOS",
+      "description": "ARM64 Apple watchOS",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -767,7 +767,7 @@
     "llvm-target": "arm64-apple-watchos7.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 Apple WatchOS Simulator",
+      "description": "ARM64 Apple watchOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -2432,7 +2432,7 @@
     "llvm-target": "arm64_32-apple-watchos5.0.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "Arm Apple WatchOS 64-bit with 32-bit pointers",
+      "description": "ARM64 Apple watchOS with 32-bit pointers",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -4092,7 +4092,7 @@
     "llvm-target": "armv7s-apple-ios10.0.0",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "Armv7-A Apple-A6 Apple iOS",
+      "description": "ARMv7-A Apple-A6 Apple iOS",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -4482,7 +4482,7 @@
     "llvm-target": "i386-apple-ios10.0.0-simulator",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit x86 iOS",
+      "description": "x86 Apple iOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -4847,7 +4847,7 @@
     "llvm-target": "i686-apple-macosx10.12.0",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit macOS (10.12+, Sierra+)",
+      "description": "x86 Apple macOS (10.12+, Sierra+)",
       "host_tools": true,
       "std": true,
       "tier": 3
@@ -10863,7 +10863,7 @@
     "llvm-target": "x86_64-apple-macosx10.12.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "64-bit macOS (10.12+, Sierra+)",
+      "description": "x86_64 Apple macOS (10.12+, Sierra+)",
       "host_tools": true,
       "std": true,
       "tier": 1
@@ -10950,7 +10950,7 @@
     "llvm-target": "x86_64-apple-ios10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "64-bit x86 iOS",
+      "description": "x86_64 Apple iOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -11032,7 +11032,7 @@
     "llvm-target": "x86_64-apple-ios13.1.0-macabi",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "Apple Catalyst on x86_64",
+      "description": "x86_64 Apple Mac Catalyst",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -11115,7 +11115,7 @@
     "llvm-target": "x86_64-apple-tvos10.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "x86 64-bit tvOS",
+      "description": "x86_64 Apple tvOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -11193,7 +11193,7 @@
     "llvm-target": "x86_64-apple-watchos5.0.0-simulator",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "x86 64-bit Apple WatchOS simulator",
+      "description": "x86_64 Apple watchOS Simulator",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -13227,7 +13227,7 @@
     "llvm-target": "x86_64h-apple-macosx10.12.0",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "macOS with late-gen Intel (at least Haswell)",
+      "description": "x86_64 Apple macOS with Intel Haswell+",
       "host_tools": true,
       "std": true,
       "tier": 3
