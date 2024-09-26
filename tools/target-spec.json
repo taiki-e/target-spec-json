@@ -1418,7 +1418,7 @@
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "aarch64-unknown-linux-musl",
+    "llvm-target": "aarch64-unknown-linux-ohos",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 OpenHarmony",
@@ -1907,7 +1907,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "vxworks",
@@ -3584,7 +3584,7 @@
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "armv7-unknown-linux-gnueabi",
+    "llvm-target": "armv7-unknown-linux-ohos",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A OpenHarmony",
@@ -6016,7 +6016,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "vxworks",
@@ -6177,7 +6177,7 @@
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "lp64d",
-    "llvm-target": "loongarch64-unknown-linux-musl",
+    "llvm-target": "loongarch64-unknown-linux-ohos",
     "max-atomic-width": 64,
     "metadata": {
       "description": "LoongArch64 OpenHarmony",
@@ -7710,7 +7710,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "vxworks",
@@ -8089,7 +8089,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "vxworks",
@@ -8299,6 +8299,43 @@
     ],
     "target-mcount": "_mcount",
     "target-pointer-width": "64"
+  },
+  "riscv32-wrs-vxworks": {
+    "arch": "riscv32",
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "crt-static-allows-dylibs": true,
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "dynamic-linking": true,
+    "env": "gnu",
+    "exe-suffix": ".vxe",
+    "features": "+m,+a,+f,+d,+c",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "linker": "wr-c++",
+    "linker-flavor": "gnu-cc",
+    "llvm-abiname": "ilp32d",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": null,
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "vxworks",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "_mcount",
+    "target-pointer-width": "32",
+    "vendor": "wrs"
   },
   "riscv32gc-unknown-linux-gnu": {
     "arch": "riscv32",
@@ -8807,6 +8844,43 @@
     ],
     "target-pointer-width": "64",
     "tls-model": "emulated"
+  },
+  "riscv64-wrs-vxworks": {
+    "arch": "riscv64",
+    "cpu": "generic-rv64",
+    "crt-objects-fallback": "false",
+    "crt-static-allows-dylibs": true,
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "dynamic-linking": true,
+    "env": "gnu",
+    "exe-suffix": ".vxe",
+    "features": "+m,+a,+f,+d,+c",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "is-builtin": true,
+    "linker": "wr-c++",
+    "linker-flavor": "gnu-cc",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "vxworks",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "_mcount",
+    "target-pointer-width": "64",
+    "vendor": "wrs"
   },
   "riscv64gc-unknown-freebsd": {
     "abi-return-struct-as-int": true,
@@ -12439,7 +12513,7 @@
     "has-rpath": true,
     "is-builtin": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "x86_64-unknown-linux-musl",
+    "llvm-target": "x86_64-unknown-linux-ohos",
     "max-atomic-width": 64,
     "metadata": {
       "description": "x86_64 OpenHarmony",
@@ -13051,7 +13125,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "vxworks",
