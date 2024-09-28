@@ -37,34 +37,6 @@
       "tier": 1
     },
     "os": "macos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "macos",
-        "11.0.0",
-        "11.0.0"
-      ],
-      "darwin-cc": [
-        "-arch",
-        "arm64",
-        "-mmacosx-version-min=11.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "macos",
-        "11.0.0",
-        "11.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-arch",
-        "arm64",
-        "-mmacosx-version-min=11.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -123,32 +95,6 @@
       "tier": 2
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "ios",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-ios10.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "ios",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-ios10.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -206,32 +152,6 @@
       "tier": 2
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "mac-catalyst",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-ios14.0.0-macabi"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "mac-catalyst",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-ios14.0.0-macabi"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -290,32 +210,6 @@
       "tier": 2
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "ios-simulator",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-ios14.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "ios-simulator",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-ios14.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -372,32 +266,6 @@
       "tier": 3
     },
     "os": "tvos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "tvos",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-tvos10.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "tvos",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-tvos10.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -451,32 +319,6 @@
       "tier": 3
     },
     "os": "tvos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "tvos-simulator",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-tvos14.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "tvos-simulator",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-tvos14.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -529,32 +371,6 @@
       "tier": 3
     },
     "os": "visionos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "visionos",
-        "1.0.0",
-        "1.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-xros1.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "visionos",
-        "1.0.0",
-        "1.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-xros1.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -612,32 +428,6 @@
       "tier": 3
     },
     "os": "visionos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "visionos-simulator",
-        "1.0.0",
-        "1.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-xros1.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "visionos-simulator",
-        "1.0.0",
-        "1.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-xros1.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -694,32 +484,6 @@
     },
     "os": "watchos",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-watchos5.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-watchos5.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -773,32 +537,6 @@
       "tier": 3
     },
     "os": "watchos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "watchos-simulator",
-        "7.0.0",
-        "7.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64-apple-watchos7.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64",
-        "-platform_version",
-        "watchos-simulator",
-        "7.0.0",
-        "7.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64-apple-watchos7.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -2363,32 +2101,6 @@
     },
     "os": "watchos",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64_32",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64_32-apple-watchos5.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64_32",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64_32-apple-watchos5.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -2442,34 +2154,6 @@
       "tier": 3
     },
     "os": "macos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "macos",
-        "11.0.0",
-        "11.0.0"
-      ],
-      "darwin-cc": [
-        "-arch",
-        "arm64e",
-        "-mmacosx-version-min=11.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "macos",
-        "11.0.0",
-        "11.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-arch",
-        "arm64e",
-        "-mmacosx-version-min=11.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -2528,32 +2212,6 @@
       "tier": 3
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "ios",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64e-apple-ios14.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "ios",
-        "14.0.0",
-        "14.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64e-apple-ios14.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -2610,32 +2268,6 @@
       "tier": 3
     },
     "os": "tvos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "tvos",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "arm64e-apple-tvos10.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "arm64e",
-        "-platform_version",
-        "tvos",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "arm64e-apple-tvos10.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -3902,32 +3534,6 @@
     },
     "os": "watchos",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "armv7k",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "armv7k-apple-watchos5.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "armv7k",
-        "-platform_version",
-        "watchos",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "armv7k-apple-watchos5.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "supported-split-debuginfo": [
       "packed",
@@ -4022,32 +3628,6 @@
       "tier": 3
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "armv7s",
-        "-platform_version",
-        "ios",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "armv7s-apple-ios10.0.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "armv7s",
-        "-platform_version",
-        "ios",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "armv7s-apple-ios10.0.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "supported-split-debuginfo": [
       "packed",
@@ -4412,32 +3992,6 @@
       "tier": 3
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "i386",
-        "-platform_version",
-        "ios-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "i386-apple-ios10.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "i386",
-        "-platform_version",
-        "ios-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "i386-apple-ios10.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -4777,34 +4331,6 @@
       "tier": 3
     },
     "os": "macos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "i386",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-cc": [
-        "-arch",
-        "i386",
-        "-mmacosx-version-min=10.12.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "i386",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-lld-cc": [
-        "-arch",
-        "i386",
-        "-mmacosx-version-min=10.12.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -10901,34 +10427,6 @@
       "tier": 1
     },
     "os": "macos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-cc": [
-        "-arch",
-        "x86_64",
-        "-mmacosx-version-min=10.12.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-lld-cc": [
-        "-arch",
-        "x86_64",
-        "-mmacosx-version-min=10.12.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -10988,32 +10486,6 @@
       "tier": 2
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "ios-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "x86_64-apple-ios10.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "ios-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "x86_64-apple-ios10.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -11070,32 +10542,6 @@
       "tier": 2
     },
     "os": "ios",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "mac-catalyst",
-        "13.1.0",
-        "13.1.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "x86_64-apple-ios13.1.0-macabi"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "mac-catalyst",
-        "13.1.0",
-        "13.1.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "x86_64-apple-ios13.1.0-macabi"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -11153,32 +10599,6 @@
       "tier": 3
     },
     "os": "tvos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "tvos-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "x86_64-apple-tvos10.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "tvos-simulator",
-        "10.0.0",
-        "10.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "x86_64-apple-tvos10.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -11231,32 +10651,6 @@
       "tier": 3
     },
     "os": "watchos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "watchos-simulator",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-cc": [
-        "-target",
-        "x86_64-apple-watchos5.0.0-simulator"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64",
-        "-platform_version",
-        "watchos-simulator",
-        "5.0.0",
-        "5.0.0"
-      ],
-      "darwin-lld-cc": [
-        "-target",
-        "x86_64-apple-watchos5.0.0-simulator"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
@@ -13187,34 +12581,6 @@
       "tier": 3
     },
     "os": "macos",
-    "pre-link-args": {
-      "darwin": [
-        "-arch",
-        "x86_64h",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-cc": [
-        "-arch",
-        "x86_64h",
-        "-mmacosx-version-min=10.12.0"
-      ],
-      "darwin-lld": [
-        "-arch",
-        "x86_64h",
-        "-platform_version",
-        "macos",
-        "10.12.0",
-        "10.12.0"
-      ],
-      "darwin-lld-cc": [
-        "-arch",
-        "x86_64h",
-        "-mmacosx-version-min=10.12.0"
-      ]
-    },
     "split-debuginfo": "packed",
     "stack-probes": {
       "kind": "inline"
