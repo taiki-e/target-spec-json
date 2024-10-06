@@ -651,7 +651,8 @@
     "stack-probes": {
       "kind": "inline"
     },
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "vendor": "nintendo"
   },
   "aarch64-pc-windows-gnullvm": {
     "abi": "llvm",
@@ -3400,6 +3401,7 @@
     "vendor": "wrs"
   },
   "armv7a-kmc-solid_asp3-eabi": {
+    "abi": "eabi",
     "arch": "arm",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
@@ -3425,6 +3427,7 @@
     "vendor": "kmc"
   },
   "armv7a-kmc-solid_asp3-eabihf": {
+    "abi": "eabihf",
     "arch": "arm",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
@@ -3669,6 +3672,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-P1-p:16:8-i8:8-i16:8-i32:8-i64:8-f32:8-f64:8-n8-a:8",
     "eh-frame-header": false,
+    "env": "gnu",
     "exe-suffix": ".elf",
     "is-builtin": true,
     "late-link-args": {
@@ -7863,6 +7867,81 @@
     "target-pointer-width": "32",
     "vendor": "wrs"
   },
+  "riscv32e-unknown-none-elf": {
+    "arch": "riscv32",
+    "atomic-cas": false,
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S32",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+e,+forced-atomics",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32e",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Bare RISC-V (RV32E ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "riscv32em-unknown-none-elf": {
+    "arch": "riscv32",
+    "atomic-cas": false,
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S32",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+e,+m,+forced-atomics",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32e",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Bare RISC-V (RV32EM ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "riscv32emc-unknown-none-elf": {
+    "arch": "riscv32",
+    "atomic-cas": false,
+    "cpu": "generic-rv32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S32",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+e,+m,+c,+forced-atomics",
+    "is-builtin": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32e",
+    "llvm-target": "riscv32",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Bare RISC-V (RV32EMC ISA)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
   "riscv32gc-unknown-linux-gnu": {
     "arch": "riscv32",
     "code-model": "medium",
@@ -9037,7 +9116,6 @@
     "target-pointer-width": "32"
   },
   "sparc-unknown-none-elf": {
-    "abi": "elf",
     "arch": "sparc",
     "cpu": "v7",
     "crt-objects-fallback": "false",
@@ -12122,6 +12200,34 @@
     "target-family": [
       "unix"
     ],
+    "target-pointer-width": "64"
+  },
+  "x86_64-unknown-trusty": {
+    "arch": "x86_64",
+    "crt-objects-fallback": "musl",
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "is-builtin": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "x86_64-unknown-unknown-musl",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "x86_64 Trusty",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "trusty",
+    "panic-strategy": "abort",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
+    "target-mcount": "\u0001_mcount",
     "target-pointer-width": "64"
   },
   "x86_64-unknown-uefi": {
