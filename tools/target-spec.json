@@ -12755,7 +12755,8 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "vendor": "espressif"
   },
   "xtensa-esp32s2-espidf": {
     "arch": "xtensa",
@@ -12804,7 +12805,8 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "vendor": "espressif"
   },
   "xtensa-esp32s3-espidf": {
     "arch": "xtensa",
@@ -12852,6 +12854,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "vendor": "espressif"
   }
 }
