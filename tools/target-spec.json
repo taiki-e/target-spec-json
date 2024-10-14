@@ -5594,6 +5594,13 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi"
+    ],
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -5685,6 +5692,13 @@
       ]
     },
     "relro-level": "full",
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi"
+    ],
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -5718,6 +5732,13 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi"
+    ],
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
