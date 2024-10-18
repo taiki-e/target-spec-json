@@ -5606,6 +5606,7 @@
       "unpacked",
       "off"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
@@ -5617,6 +5618,7 @@
     "crt-objects-fallback": "musl",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "direct-access-external-data": false,
     "dynamic-linking": true,
     "env": "musl",
     "features": "+f,+d",
@@ -5704,6 +5706,7 @@
       "unpacked",
       "off"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
@@ -5714,6 +5717,7 @@
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "direct-access-external-data": false,
     "dynamic-linking": true,
     "env": "ohos",
     "features": "+f,+d",
@@ -5744,6 +5748,7 @@
       "unpacked",
       "off"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
