@@ -8100,6 +8100,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8123,6 +8124,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 64,
     "metadata": {
@@ -8150,6 +8152,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8173,6 +8176,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8197,6 +8201,7 @@
     "is-builtin": true,
     "linker": "riscv32-esp-elf-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8225,6 +8230,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8246,6 +8252,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8270,6 +8277,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8376,6 +8384,7 @@
     "is-builtin": true,
     "linker": "riscv32-esp-elf-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8405,6 +8414,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8426,6 +8436,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32",
     "llvm-target": "riscv32",
     "max-atomic-width": 32,
     "metadata": {
@@ -8903,6 +8914,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "lp64",
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
     "metadata": {
@@ -8931,6 +8943,7 @@
     "is-builtin": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "lp64",
     "llvm-target": "riscv64",
     "max-atomic-width": 64,
     "metadata": {
