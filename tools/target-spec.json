@@ -4049,7 +4049,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": "32",
+    "vendor": "pc"
   },
   "i586-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
@@ -11035,7 +11036,8 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "vendor": "pc"
   },
   "x86_64-pc-solaris": {
     "arch": "x86_64",
