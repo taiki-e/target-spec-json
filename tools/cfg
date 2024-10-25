@@ -3732,7 +3732,7 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_os="nto"
 target_pointer_width="32"
-target_vendor="unknown"
+target_vendor="pc"
 ub_checks
 unix
 
@@ -8790,7 +8790,7 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_os="nto"
 target_pointer_width="64"
-target_vendor="unknown"
+target_vendor="pc"
 ub_checks
 unix
 
