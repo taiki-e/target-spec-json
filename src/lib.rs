@@ -43,10 +43,9 @@ mod assert_impl;
 
 #[path = "gen/target_spec.rs"]
 mod target_spec;
-pub use target_spec::{Arch, Env, Os, PanicStrategy, TargetEndian};
-pub use Arch as TargetArch;
-pub use Env as TargetEnv;
-pub use Os as TargetOs;
+pub use self::target_spec::{Arch, Env, Os, PanicStrategy, TargetEndian};
+#[doc(no_inline)]
+pub use self::{Arch as TargetArch, Env as TargetEnv, Os as TargetOs};
 
 #[macro_use]
 mod process;
