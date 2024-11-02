@@ -33,6 +33,8 @@ target_env=(
     # Environments that do not included in builtin targets.
     # See also https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L96.
     libnx
+    # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168
+    psx
     # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616
     preview2
     # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590
