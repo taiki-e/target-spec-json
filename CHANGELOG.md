@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::psx`.
+
 ## [0.1.20] - 2024-09-06
 
 - Add `Os::rtems`.
