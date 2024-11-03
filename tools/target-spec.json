@@ -28,7 +28,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-macosx11.0.0",
+    "llvm-target": "arm64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple macOS (11.0+, Big Sur+)",
@@ -86,7 +86,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios10.0.0",
+    "llvm-target": "arm64-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple iOS",
@@ -143,7 +143,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios14.0.0-macabi",
+    "llvm-target": "arm64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple Mac Catalyst",
@@ -201,7 +201,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-ios14.0.0-simulator",
+    "llvm-target": "arm64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple iOS Simulator",
@@ -257,7 +257,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-tvos10.0.0",
+    "llvm-target": "arm64-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple tvOS",
@@ -310,7 +310,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-tvos14.0.0-simulator",
+    "llvm-target": "arm64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple tvOS Simulator",
@@ -362,7 +362,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-xros1.0.0",
+    "llvm-target": "arm64-apple-xros",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple visionOS",
@@ -419,7 +419,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-xros1.0.0-simulator",
+    "llvm-target": "arm64-apple-xros-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple visionOS simulator",
@@ -474,7 +474,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-watchos5.0.0",
+    "llvm-target": "arm64-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple watchOS",
@@ -528,7 +528,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64-apple-watchos7.0.0-simulator",
+    "llvm-target": "arm64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple watchOS Simulator",
@@ -2092,7 +2092,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64_32-apple-watchos5.0.0",
+    "llvm-target": "arm64_32-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 Apple watchOS with 32-bit pointers",
@@ -2146,7 +2146,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64e-apple-macosx11.0.0",
+    "llvm-target": "arm64e-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64e Apple Darwin",
@@ -2204,7 +2204,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64e-apple-ios14.0.0",
+    "llvm-target": "arm64e-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64e Apple iOS",
@@ -2260,7 +2260,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "arm64e-apple-tvos10.0.0",
+    "llvm-target": "arm64e-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64e Apple tvOS",
@@ -3527,7 +3527,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "armv7k-apple-watchos5.0.0",
+    "llvm-target": "armv7k-apple-watchos",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A Apple WatchOS",
@@ -3622,7 +3622,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "armv7s-apple-ios10.0.0",
+    "llvm-target": "armv7s-apple-ios",
     "max-atomic-width": 64,
     "metadata": {
       "description": "ARMv7-A Apple-A6 Apple iOS",
@@ -3987,7 +3987,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "i386-apple-ios10.0.0-simulator",
+    "llvm-target": "i386-apple-ios-simulator",
     "max-atomic-width": 64,
     "metadata": {
       "description": "x86 Apple iOS Simulator",
@@ -4327,7 +4327,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "i686-apple-macosx10.12.0",
+    "llvm-target": "i686-apple-macosx",
     "max-atomic-width": 64,
     "metadata": {
       "description": "x86 Apple macOS (10.12+, Sierra+)",
@@ -10595,7 +10595,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-macosx10.12.0",
+    "llvm-target": "x86_64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple macOS (10.12+, Sierra+)",
@@ -10654,7 +10654,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-ios10.0.0-simulator",
+    "llvm-target": "x86_64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple iOS Simulator",
@@ -10710,7 +10710,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-ios13.1.0-macabi",
+    "llvm-target": "x86_64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple Mac Catalyst",
@@ -10767,7 +10767,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-tvos10.0.0-simulator",
+    "llvm-target": "x86_64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple tvOS Simulator",
@@ -10819,7 +10819,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64-apple-watchos5.0.0-simulator",
+    "llvm-target": "x86_64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple watchOS Simulator",
@@ -12778,7 +12778,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-target": "x86_64h-apple-macosx10.12.0",
+    "llvm-target": "x86_64h-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
       "description": "x86_64 Apple macOS with Intel Haswell+",
