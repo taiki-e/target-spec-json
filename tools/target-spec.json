@@ -12329,7 +12329,7 @@
     "linker-flavor": "msvc",
     "linker-is-gnu": false,
     "lld-flavor": "link",
-    "llvm-target": "x86_64-win7-windows-msvc",
+    "llvm-target": "x86_64-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
       "description": "64-bit Windows 7 support",
