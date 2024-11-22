@@ -8778,7 +8778,6 @@
     "data-layout": "E-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
     "dynamic-linking": true,
     "env": "gnu",
-    "features": "-vector",
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
@@ -8823,7 +8822,6 @@
     "data-layout": "E-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
     "dynamic-linking": true,
     "env": "musl",
-    "features": "-vector",
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
@@ -9842,7 +9840,8 @@
     "os": "emscripten",
     "post-link-args": {
       "em-cc": [
-        "-sABORTING_MALLOC=0"
+        "-sABORTING_MALLOC=0",
+        "-sWASM_BIGINT"
       ]
     },
     "singlethread": true,
