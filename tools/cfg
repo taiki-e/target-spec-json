@@ -1311,6 +1311,7 @@ target_endian="little"
 target_env=""
 target_feature="crt-static"
 target_feature="neon"
+target_feature="reserve-x18"
 target_has_atomic
 target_has_atomic="128"
 target_has_atomic="16"
