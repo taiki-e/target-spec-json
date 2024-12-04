@@ -378,8 +378,7 @@ mod tests {
         // TODO: custom targets
         // for spec_path in fs::read_dir(fixtures_path().join("target-specs"))
         //     .unwrap()
-        //     .filter_map(Result::ok)
-        //     .map(|e| e.path())
+        //     .map(|e| e.unwrap().path())
         // {
         // }
     }
