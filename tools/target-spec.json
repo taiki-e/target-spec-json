@@ -7191,7 +7191,7 @@
     "abi": "vec-extabi",
     "arch": "powerpc64",
     "archive-format": "aix_big",
-    "code-model": "small",
+    "code-model": "large",
     "cpu": "pwr7",
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
