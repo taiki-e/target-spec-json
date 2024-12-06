@@ -2429,7 +2429,7 @@
     "metadata": {
       "description": "Armv4T Linux",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -2620,7 +2620,7 @@
     "metadata": {
       "description": "Armv5TE Linux with uClibc",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -5696,7 +5696,7 @@
     "metadata": {
       "description": "Motorola 680x0 Linux",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -5893,7 +5893,7 @@
     "metadata": {
       "description": "MIPS64 for OpenWrt Linux musl 1.2.3",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -6510,7 +6510,7 @@
     "metadata": {
       "description": "32-bit MIPS Release 6 Big Endian",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -6545,7 +6545,7 @@
     "metadata": {
       "description": "32-bit MIPS Release 6 Little Endian",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -6580,7 +6580,7 @@
     "metadata": {
       "description": "64-bit MIPS Release 6 Big Endian",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -6707,7 +6707,7 @@
     "metadata": {
       "description": "PowerPC FreeBSD",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "freebsd",
@@ -6838,7 +6838,7 @@
     "metadata": {
       "description": "PowerPC Linux with musl 1.2.3",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -7080,7 +7080,7 @@
     "metadata": {
       "description": null,
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "openbsd",
@@ -7342,7 +7342,7 @@
     "metadata": {
       "description": "64-bit PowerPC Linux with musl 1.2.3",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -7527,8 +7527,8 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "PPC64LE FreeBSD",
-      "host_tools": false,
-      "std": false,
+      "host_tools": true,
+      "std": true,
       "tier": 3
     },
     "os": "freebsd",
@@ -7612,7 +7612,7 @@
     "metadata": {
       "description": "64-bit PowerPC Linux with musl 1.2.3, Little Endian",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -7823,7 +7823,7 @@
     "metadata": {
       "description": "RISC-V Linux (kernel 5.4, glibc 2.33)",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -7854,7 +7854,7 @@
     "metadata": {
       "description": "RISC-V Linux (kernel 5.4, musl 1.2.3 + RISCV32 support patches",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -8291,7 +8291,7 @@
     "metadata": {
       "description": "RISC-V 64-bit Android",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "android",
@@ -8362,7 +8362,7 @@
     "metadata": {
       "description": "RISC-V FreeBSD",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "freebsd",
@@ -8391,7 +8391,7 @@
     "metadata": {
       "description": "RISC-V Fuchsia",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "fuchsia",
@@ -8521,7 +8521,7 @@
     "metadata": {
       "description": "RISC-V Linux (kernel 4.20, musl 1.2.3)",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -8829,7 +8829,7 @@
     "metadata": {
       "description": "S390x Linux (kernel 3.2, musl 1.2.3)",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "min-global-align": 16,
@@ -9589,7 +9589,7 @@
     "metadata": {
       "description": "Thumb2-mode ARMv7-A Linux with NEON, musl 1.2.3",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "linux",
@@ -11721,7 +11721,7 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
+      "std": true,
       "tier": null
     },
     "os": "linux",
