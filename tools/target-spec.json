@@ -7258,7 +7258,7 @@
     "llvm-target": "powerpc64-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "PPC64 FreeBSD (ELFv1 and ELFv2)",
+      "description": "PPC64 FreeBSD (ELFv2)",
       "host_tools": true,
       "std": true,
       "tier": 3
