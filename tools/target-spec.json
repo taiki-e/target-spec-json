@@ -9107,7 +9107,7 @@
     "llvm-target": "sparcv9-sun-solaris",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "SPARC Solaris 11, illumos",
+      "description": "SPARC Solaris 11.4",
       "host_tools": false,
       "std": true,
       "tier": 2
@@ -10741,7 +10741,7 @@
     "llvm-target": "x86_64-pc-solaris",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "64-bit Solaris 11, illumos",
+      "description": "64-bit Solaris 11.4",
       "host_tools": false,
       "std": true,
       "tier": 2
