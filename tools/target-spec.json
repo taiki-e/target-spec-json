@@ -7615,9 +7615,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "64-bit PowerPC Linux with musl 1.2.3, Little Endian",
-      "host_tools": false,
+      "host_tools": true,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
