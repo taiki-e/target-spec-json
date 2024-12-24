@@ -5382,7 +5382,7 @@
     "llvm-target": "i686-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit Windows 7 support",
+      "description": "32-bit MSVC (Windows 7+)",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -5405,6 +5405,9 @@
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
+    "supported-sanitizers": [
+      "address"
+    ],
     "supported-split-debuginfo": [
       "packed"
     ],
@@ -12336,7 +12339,7 @@
     "llvm-target": "x86_64-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "64-bit Windows 7 support",
+      "description": "64-bit MSVC (Windows 7+)",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -12356,6 +12359,9 @@
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
+    "supported-sanitizers": [
+      "address"
+    ],
     "supported-split-debuginfo": [
       "packed"
     ],
