@@ -5610,7 +5610,7 @@
     "direct-access-external-data": false,
     "dynamic-linking": true,
     "env": "ohos",
-    "features": "+f,+d",
+    "features": "+f,+d,+lsx",
     "has-rpath": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "lp64d",
