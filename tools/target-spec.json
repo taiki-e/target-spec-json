@@ -11730,10 +11730,11 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": true,
+      "std": false,
       "tier": null
     },
     "os": "linux",
+    "panic-strategy": "abort",
     "position-independent-executables": true,
     "relro-level": "full",
     "stack-probes": {

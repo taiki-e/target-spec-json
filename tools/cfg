@@ -9451,7 +9451,7 @@ unix
 x86_64-unknown-linux-none:
 fmt_debug="full"
 overflow_checks
-panic="unwind"
+panic="abort"
 relocation_model="pic"
 target_abi=""
 target_arch="x86_64"
