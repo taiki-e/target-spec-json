@@ -27,6 +27,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -84,6 +85,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
@@ -140,6 +142,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
@@ -197,6 +200,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -252,6 +256,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
@@ -304,6 +309,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -355,6 +361,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-xros",
     "max-atomic-width": 128,
     "metadata": {
@@ -411,6 +418,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-xros-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -465,6 +473,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
@@ -518,6 +527,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -1746,6 +1756,7 @@
     "has-rpath": true,
     "is-like-android": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "arm-linux-androideabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -1783,6 +1794,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabi",
     "max-atomic-width": 64,
@@ -1818,6 +1830,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
@@ -1854,7 +1867,8 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "arm-unknown-linux-gnueabi",
+    "llvm-floatabi": "soft",
+    "llvm-target": "arm-unknown-linux-musleabi",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv6 Linux with musl 1.2.3",
@@ -1945,7 +1959,8 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "arm-unknown-linux-gnueabihf",
+    "llvm-floatabi": "hard",
+    "llvm-target": "arm-unknown-linux-musleabihf",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv6 Linux with musl 1.2.3, hardfloat",
@@ -2049,6 +2064,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64_32-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
@@ -2102,6 +2118,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -2159,6 +2176,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
@@ -2214,6 +2232,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
@@ -2314,6 +2333,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armeb-unknown-linux-gnueabi",
     "max-atomic-width": 64,
@@ -2347,6 +2367,7 @@
     "emit-debug-gdb-scripts": false,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "armebv7r-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -2370,6 +2391,7 @@
     "features": "+vfp3d16",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "armebv7r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2400,6 +2422,7 @@
     "has-thumb-interworking": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv4t-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
@@ -2425,6 +2448,7 @@
     "has-thread-local": true,
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv4t-unknown-linux-gnueabi",
     "max-atomic-width": 32,
@@ -2465,6 +2489,7 @@
     "has-thumb-interworking": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv5te-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
@@ -2490,6 +2515,7 @@
     "has-thread-local": true,
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -2526,7 +2552,8 @@
     "has-thread-local": true,
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "armv5te-unknown-linux-gnueabi",
+    "llvm-floatabi": "soft",
+    "llvm-target": "armv5te-unknown-linux-musleabi",
     "max-atomic-width": 32,
     "metadata": {
       "description": "Armv5TE Linux with musl 1.2.3",
@@ -2617,6 +2644,7 @@
     "has-thread-local": true,
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv5te-unknown-linux-uclibcgnueabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -2652,6 +2680,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv6-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
@@ -2681,6 +2710,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv6-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2712,6 +2742,7 @@
     "has-thread-local": true,
     "linker": "arm-none-eabi-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv6k-none-eabihf",
     "metadata": {
       "description": "Armv6K Nintendo 3DS, Horizon (Requires devkitARM toolchain)",
@@ -2755,6 +2786,7 @@
     "has-rpath": true,
     "is-like-android": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
     "metadata": {
@@ -2799,6 +2831,7 @@
     "env": "newlib",
     "features": "+thumb2,+neon,+vfp3",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2828,6 +2861,7 @@
     "has-thumb-interworking": true,
     "linker": "arm-vita-eabi-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv7a-vita-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2868,6 +2902,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-freebsd-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2897,6 +2932,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
@@ -2932,6 +2968,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -2967,7 +3004,8 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "armv7-unknown-linux-gnueabi",
+    "llvm-floatabi": "soft",
+    "llvm-target": "armv7-unknown-linux-musleabi",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A Linux with musl 1.2.3",
@@ -3058,7 +3096,8 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "armv7-unknown-linux-gnueabihf",
+    "llvm-floatabi": "hard",
+    "llvm-target": "armv7-unknown-linux-musleabihf",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A Linux with musl 1.2.3, hardfloat",
@@ -3147,6 +3186,7 @@
     "features": "+v7,+thumb2,+soft-float,-neon",
     "has-rpath": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7-unknown-linux-ohos",
     "max-atomic-width": 64,
     "metadata": {
@@ -3182,6 +3222,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7-unknown-linux-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -3216,6 +3257,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3249,6 +3291,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-netbsdelf-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3277,6 +3320,7 @@
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "features": "+v7,+thumb2,+soft-float,-neon",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7-unknown-unknown-gnueabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -3309,6 +3353,7 @@
     "has-thread-local": true,
     "linker": "wr-c++",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3337,6 +3382,7 @@
     "has-thread-local": true,
     "linker": "arm-kmc-eabi-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -3362,6 +3408,7 @@
     "has-thread-local": true,
     "linker": "arm-kmc-eabi-gcc",
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3386,6 +3433,7 @@
     "features": "+v7,+thumb2,+soft-float,-neon,+strict-align",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7a-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -3409,6 +3457,7 @@
     "features": "+v7,+vfp3,-d32,+thumb2,-neon,+strict-align",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7a-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3447,6 +3496,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7k-apple-watchos",
     "max-atomic-width": 64,
     "metadata": {
@@ -3478,6 +3528,7 @@
     "emit-debug-gdb-scripts": false,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7r-none-eabi",
     "max-atomic-width": 64,
     "metadata": {
@@ -3500,6 +3551,7 @@
     "features": "+vfp3d16",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3539,6 +3591,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7s-apple-ios",
     "max-atomic-width": 64,
     "metadata": {
@@ -3569,6 +3622,7 @@
     "emit-debug-gdb-scripts": false,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv8r-none-eabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3895,6 +3949,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "i386-apple-ios-simulator",
     "max-atomic-width": 64,
     "metadata": {
@@ -4229,6 +4284,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "i686-apple-macosx",
     "max-atomic-width": 64,
     "metadata": {
@@ -9145,6 +9201,7 @@
     "has-thumb-interworking": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv4t-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
@@ -9174,6 +9231,7 @@
     "has-thumb-interworking": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv5te-none-eabi",
     "main-needs-argc-argv": false,
     "metadata": {
@@ -9198,6 +9256,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv6m-none-eabi",
     "metadata": {
       "description": "Bare ARMv6-M",
@@ -9221,6 +9280,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv6m-none-eabi",
     "metadata": {
       "description": null,
@@ -9259,6 +9319,7 @@
     "linker-flavor": "msvc",
     "linker-is-gnu": false,
     "lld-flavor": "link",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv7a-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
@@ -9317,6 +9378,7 @@
     "linker-flavor": "msvc",
     "linker-is-gnu": false,
     "lld-flavor": "link",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv7a-pc-windows-msvc",
     "max-atomic-width": 64,
     "metadata": {
@@ -9363,6 +9425,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv7em-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9386,6 +9449,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv7em-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
@@ -9408,6 +9472,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv7em-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9435,6 +9500,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv7em-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
@@ -9461,6 +9527,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv7m-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9483,6 +9550,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv7m-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9512,6 +9580,7 @@
     "has-rpath": true,
     "is-like-android": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "soft",
     "llvm-target": "armv7-none-linux-android",
     "max-atomic-width": 64,
     "metadata": {
@@ -9557,6 +9626,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -9591,7 +9661,8 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "armv7-unknown-linux-gnueabihf",
+    "llvm-floatabi": "hard",
+    "llvm-target": "armv7-unknown-linux-musleabihf",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Thumb2-mode ARMv7-A Linux with NEON, musl 1.2.3",
@@ -9680,6 +9751,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv8m.base-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9703,6 +9775,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv8m.base-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9729,6 +9802,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv8m.main-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9752,6 +9826,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv8m.main-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
@@ -9774,6 +9849,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
     "llvm-target": "thumbv8m.main-none-eabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -9801,6 +9877,7 @@
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
     "llvm-target": "thumbv8m.main-none-eabihf",
     "max-atomic-width": 32,
     "metadata": {
@@ -10292,6 +10369,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -10350,6 +10428,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -10405,6 +10484,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
@@ -10461,6 +10541,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -10512,6 +10593,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -12445,6 +12527,7 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
+    "llvm-floatabi": "hard",
     "llvm-target": "x86_64h-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
