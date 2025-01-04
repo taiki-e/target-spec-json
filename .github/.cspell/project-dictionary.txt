@@ -5,6 +5,7 @@ bitcode
 cabi
 cmdline
 dylibs
+floatabi
 interworking
 mcount
 rdylib

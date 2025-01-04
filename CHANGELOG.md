@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::llvm_floatabi`.
+
 ## [0.1.21] - 2024-11-02
 
 - Add `Os::psx`.
