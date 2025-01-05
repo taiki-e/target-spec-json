@@ -2842,7 +2842,6 @@
     },
     "no-default-libraries": false,
     "os": "rtems",
-    "panic-strategy": "abort",
     "relocation-model": "static",
     "target-family": [
       "unix"
