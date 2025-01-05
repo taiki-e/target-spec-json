@@ -2485,7 +2485,7 @@ unix
 armv7-rtems-eabihf:
 fmt_debug="full"
 overflow_checks
-panic="abort"
+panic="unwind"
 relocation_model="static"
 target_abi="eabihf"
 target_arch="arm"
