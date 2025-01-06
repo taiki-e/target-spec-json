@@ -5776,6 +5776,31 @@
     "target-mcount": "_mcount",
     "target-pointer-width": "32"
   },
+  "mips-mti-none-elf": {
+    "arch": "mips",
+    "cpu": "mips32r2",
+    "crt-objects-fallback": "false",
+    "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+mips32r2,+soft-float,+noabicalls",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "mips",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "MIPS32r2 BE Baremetal Softfloat",
+      "host_tools": false,
+      "std": null,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "singlethread": true,
+    "target-endian": "big",
+    "target-pointer-width": "32",
+    "vendor": "mti"
+  },
   "mips-unknown-linux-gnu": {
     "arch": "mips",
     "cpu": "mips32r2",
@@ -6284,6 +6309,30 @@
     ],
     "target-mcount": "_mcount",
     "target-pointer-width": "64"
+  },
+  "mipsel-mti-none-elf": {
+    "arch": "mips",
+    "cpu": "mips32r2",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "features": "+mips32r2,+soft-float,+noabicalls",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "mipsel",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "MIPS32r2 LE Baremetal Softfloat",
+      "host_tools": false,
+      "std": null,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "singlethread": true,
+    "target-pointer-width": "32",
+    "vendor": "mti"
   },
   "mipsel-sony-psp": {
     "arch": "mips",
