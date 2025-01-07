@@ -5776,6 +5776,26 @@
     "target-mcount": "_mcount",
     "target-pointer-width": "32"
   },
+  "m68k-unknown-none-elf": {
+    "arch": "m68k",
+    "code-model": "medium",
+    "cpu": "M68010",
+    "crt-objects-fallback": "false",
+    "data-layout": "E-m:e-p:32:16:32-i8:8:8-i16:16:16-i32:16:32-n8:16:32-a:0:16-S16",
+    "linker": "m68k-linux-gnu-ld",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "m68k",
+    "metadata": {
+      "description": "Motorola 680x0",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-endian": "big",
+    "target-pointer-width": "32"
+  },
   "mips-mti-none-elf": {
     "arch": "mips",
     "cpu": "mips32r2",
