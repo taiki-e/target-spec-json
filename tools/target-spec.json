@@ -1612,7 +1612,7 @@
     "dynamic-linking": true,
     "env": "gnu",
     "exe-suffix": ".vxe",
-    "features": "+v8a",
+    "features": "+v8a,+reserve-x18",
     "has-rpath": true,
     "has-thread-local": true,
     "linker": "wr-c++",
