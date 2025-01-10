@@ -750,7 +750,7 @@ if [[ -f .cspell.json ]]; then
                 if [[ "${manifest_path}" != "Cargo.toml" ]] && [[ "$(tomlq -c '.workspace' "${manifest_path}")" == "null" ]]; then
                     continue
                 fi
-                m=$(cargo metadata --format-version=1 --no-deps --manifest-path "${manifest_path}" || :)
+                m=$(cargo metadata --format-version=1 --no-deps --manifest-path "${manifest_path}" || true)
                 if [[ -z "${m}" ]]; then
                     continue # Ignore broken manifest
                 fi

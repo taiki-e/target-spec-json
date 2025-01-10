@@ -53,7 +53,7 @@ eval "$(jq -r '. | to_entries[].value | @sh "target_arch+=(\(.arch)) target_os+=
 {
     for target in $(rustc --print target-list); do
         printf '%s:\n' "${target}"
-        rustc --print cfg --target "${target}" | { grep -Fv debug_assertions || :; }
+        rustc --print cfg --target "${target}" | { grep -Fv debug_assertions || true; }
         printf '\n'
     done
 } >|tools/cfg
