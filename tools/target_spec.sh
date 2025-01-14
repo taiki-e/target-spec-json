@@ -16,30 +16,25 @@ cd -- "$(dirname -- "$0")"/..
 file=src/gen/target_spec.rs
 target_arch=(
     # Architectures that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.80.0/compiler/rustc_target/src/abi/call/mod.rs#L850
-    # and https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L98.
-    amdgpu
-    asmjs
-    nvptx
-    spirv
-    xtensa
+    # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
+    # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
+    amdgpu # Will be added in https://github.com/rust-lang/rust/pull/134740.
+    asmjs  # Removed in https://github.com/rust-lang/rust/pull/117338.
+    nvptx  # Removed in https://github.com/rust-lang/rust/pull/100317.
+    spirv  # Used in https://github.com/Rust-GPU/rust-gpu.
 )
 target_os=(
     # Operating systems that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L97
-    zephyr # https://github.com/rust-lang/compiler-team/issues/629
+    zephyr # Proposed in https://github.com/rust-lang/compiler-team/issues/629
 )
 target_env=(
     # Environments that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.80.0/src/bootstrap/src/lib.rs#L96.
+    # See also ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
     libnx
-    # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168
-    psx
-    # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616
-    preview2
-    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590
-    eabihf
-    gnueabihf
+    psx       # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168.
+    preview2  # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616.
+    eabihf    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
+    gnueabihf # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
 )
 
 bail() {
