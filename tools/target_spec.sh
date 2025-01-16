@@ -15,61 +15,61 @@ cd -- "$(dirname -- "$0")"/..
 
 file=src/gen/target_spec.rs
 target_arch=(
-    # Architectures that do not included in builtin targets.
-    # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
-    # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
-    amdgpu # Will be added in https://github.com/rust-lang/rust/pull/134740.
-    asmjs  # Removed in https://github.com/rust-lang/rust/pull/117338.
-    nvptx  # Removed in https://github.com/rust-lang/rust/pull/100317.
-    spirv  # Used in https://github.com/Rust-GPU/rust-gpu.
+  # Architectures that do not included in builtin targets.
+  # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
+  # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
+  amdgpu # Will be added in https://github.com/rust-lang/rust/pull/134740.
+  asmjs  # Removed in https://github.com/rust-lang/rust/pull/117338.
+  nvptx  # Removed in https://github.com/rust-lang/rust/pull/100317.
+  spirv  # Used in https://github.com/Rust-GPU/rust-gpu.
 )
 target_os=(
-    # Operating systems that do not included in builtin targets.
-    zephyr # Proposed in https://github.com/rust-lang/compiler-team/issues/629
+  # Operating systems that do not included in builtin targets.
+  zephyr # Proposed in https://github.com/rust-lang/compiler-team/issues/629
 )
 target_env=(
-    # Environments that do not included in builtin targets.
-    # See also ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
-    libnx
-    psx       # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168.
-    preview2  # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616.
-    eabihf    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
-    gnueabihf # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
+  # Environments that do not included in builtin targets.
+  # See also ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
+  libnx
+  psx       # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168.
+  preview2  # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616.
+  eabihf    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
+  gnueabihf # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
 )
 
 bail() {
-    printf >&2 'error: %s\n' "$*"
-    exit 1
+  printf >&2 'error: %s\n' "$*"
+  exit 1
 }
 
 rustc -Z unstable-options --print all-target-specs-json >|tools/target-spec.json
 eval "$(jq -r '. | to_entries[].value | @sh "target_arch+=(\(.arch)) target_os+=(\(.os // "none")) target_env+=(\(.env // "none"))"' tools/target-spec.json)"
 
 {
-    for target in $(rustc --print target-list); do
-        printf '%s:\n' "${target}"
-        rustc --print cfg --target "${target}" | { grep -Fv debug_assertions || true; }
-        printf '\n'
-    done
+  for target in $(rustc --print target-list); do
+    printf '%s:\n' "${target}"
+    rustc --print cfg --target "${target}" | { grep -Fv debug_assertions || true; }
+    printf '\n'
+  done
 } >|tools/cfg
 
 enum() {
-    local name="$1"
-    shift
-    local variants=("$@")
-    # sort and dedup
-    IFS=$'\n'
-    variants=($(LC_ALL=C sort -u <<<"${variants[*]}"))
-    IFS=$'\n\t'
-    if [[ -z ${EXHAUSTIVE:-} ]]; then
-        local non_exhaustive='#[non_exhaustive]'
-    else
-        local non_exhaustive='#[allow(clippy::exhaustive_enums)]'
-    fi
-    if [[ -n "${DEFAULT_EMPTY_STR:-}" ]] && [[ -z "${DEFAULT:-}" ]]; then
-        bail "DEFAULT_EMPTY_STR requires DEFAULT"
-    fi
-    cat <<EOF
+  local name="$1"
+  shift
+  local variants=("$@")
+  # sort and dedup
+  IFS=$'\n'
+  variants=($(LC_ALL=C sort -u <<<"${variants[*]}"))
+  IFS=$'\n\t'
+  if [[ -z ${EXHAUSTIVE:-} ]]; then
+    local non_exhaustive='#[non_exhaustive]'
+  else
+    local non_exhaustive='#[allow(clippy::exhaustive_enums)]'
+  fi
+  if [[ -n "${DEFAULT_EMPTY_STR:-}" ]] && [[ -z "${DEFAULT:-}" ]]; then
+    bail "DEFAULT_EMPTY_STR requires DEFAULT"
+  fi
+  cat <<EOF
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 ${non_exhaustive}
 pub enum ${name} {
@@ -80,21 +80,21 @@ impl ${name} {
     pub fn as_str(self) -> &'static str {
         match self {
 EOF
-    for v in "${variants[@]}"; do
-        if [[ -n "${DEFAULT:-}" ]] && [[ -n "${DEFAULT_EMPTY_STR:-}" ]] && [[ "${v}" == "${DEFAULT}" ]]; then
-            printf '            Self::%s => "",\n' "${v}"
-        else
-            printf '            Self::%s => "%s",\n' "${v}" "${v}"
-        fi
-    done
-    cat <<EOF
+  for v in "${variants[@]}"; do
+    if [[ -n "${DEFAULT:-}" ]] && [[ -n "${DEFAULT_EMPTY_STR:-}" ]] && [[ "${v}" == "${DEFAULT}" ]]; then
+      printf '            Self::%s => "",\n' "${v}"
+    else
+      printf '            Self::%s => "%s",\n' "${v}" "${v}"
+    fi
+  done
+  cat <<EOF
         }
     }
 }
 EOF
-    if [[ -n "${DEFAULT:-}" ]]; then
-        # take &self for skip_serializing_if
-        cat <<EOF
+  if [[ -n "${DEFAULT:-}" ]]; then
+    # take &self for skip_serializing_if
+    cat <<EOF
 impl ${name} {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_${DEFAULT}(&self) -> bool {
@@ -107,8 +107,8 @@ impl Default for ${name} {
     }
 }
 EOF
-    fi
-    cat <<EOF
+  fi
+  cat <<EOF
 impl core::fmt::Display for ${name} {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
