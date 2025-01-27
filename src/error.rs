@@ -18,8 +18,8 @@ pub(crate) enum ErrorKind {
 
     Json(serde_json::Error),
 
-    Other(String),
-    WithContext(String, Option<Box<dyn std::error::Error + Send + Sync + 'static>>),
+    Other(Box<str>),
+    WithContext(Box<str>, Option<Box<dyn std::error::Error + Send + Sync + 'static>>),
 }
 
 impl Error {
@@ -56,7 +56,7 @@ impl From<io::Error> for ErrorKind {
 }
 impl From<String> for ErrorKind {
     fn from(e: String) -> Self {
-        Self::Other(e)
+        Self::Other(e.into_boxed_str())
     }
 }
 impl From<serde_json::Error> for ErrorKind {
@@ -91,7 +91,10 @@ where
     // {
     //     match self {
     //         Ok(ok) => Ok(ok),
-    //         Err(e) => Err(Error(ErrorKind::WithContext(context.to_string(), Some(Box::new(e))))),
+    //         Err(e) => Err(Error(ErrorKind::WithContext(
+    //             context.to_string().into_boxed_str(),
+    //             Some(Box::new(e)),
+    //         ))),
     //     }
     // }
     fn with_context<C, F>(self, context: F) -> Result<T, Error>
@@ -101,7 +104,10 @@ where
     {
         match self {
             Ok(ok) => Ok(ok),
-            Err(e) => Err(Error(ErrorKind::WithContext(context().to_string(), Some(Box::new(e))))),
+            Err(e) => Err(Error(ErrorKind::WithContext(
+                context().to_string().into_boxed_str(),
+                Some(Box::new(e)),
+            ))),
         }
     }
 }
@@ -112,7 +118,7 @@ impl<T> Context<T, core::convert::Infallible> for Option<T> {
     // {
     //     match self {
     //         Some(ok) => Ok(ok),
-    //         None => Err(Error(ErrorKind::WithContext(context.to_string(), None))),
+    //         None => Err(Error(ErrorKind::WithContext(context.to_string().into_boxed_str(), None))),
     //     }
     // }
     fn with_context<C, F>(self, context: F) -> Result<T, Error>
@@ -122,7 +128,9 @@ impl<T> Context<T, core::convert::Infallible> for Option<T> {
     {
         match self {
             Some(ok) => Ok(ok),
-            None => Err(Error(ErrorKind::WithContext(context().to_string(), None))),
+            None => {
+                Err(Error(ErrorKind::WithContext(context().to_string().into_boxed_str(), None)))
+            }
         }
     }
 }
