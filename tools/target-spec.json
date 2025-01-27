@@ -1324,7 +1324,81 @@
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 QNX Neutrino 7.1 RTOS",
+      "description": "ARM64 QNX Neutrino 7.1 RTOS with io-pkt network stack",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "nto",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
+  },
+  "aarch64-unknown-nto-qnx710_iosock": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "dynamic-linking": true,
+    "env": "nto71_iosock",
+    "features": "+v8a",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64-unknown-unknown",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 QNX Neutrino 7.1 RTOS with io-sock network stack",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "nto",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntoaarch64le_cxx",
+        "-LQNX_TARGET_not_set_please_source_qnxsdp-env.sh/aarch64le/io-sock/lib"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntoaarch64le_cxx",
+        "-LQNX_TARGET_not_set_please_source_qnxsdp-env.sh/aarch64le/io-sock/lib"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
+  },
+  "aarch64-unknown-nto-qnx800": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "dynamic-linking": true,
+    "env": "nto80",
+    "features": "+v8a",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64-unknown-unknown",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 QNX Neutrino 8.0 RTOS",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -8183,6 +8257,7 @@
     "vendor": "wrs"
   },
   "riscv32e-unknown-none-elf": {
+    "abi": "ilp32e",
     "arch": "riscv32",
     "atomic-cas": false,
     "cpu": "generic-rv32",
@@ -8207,6 +8282,7 @@
     "target-pointer-width": "32"
   },
   "riscv32em-unknown-none-elf": {
+    "abi": "ilp32e",
     "arch": "riscv32",
     "atomic-cas": false,
     "cpu": "generic-rv32",
@@ -8231,6 +8307,7 @@
     "target-pointer-width": "32"
   },
   "riscv32emc-unknown-none-elf": {
+    "abi": "ilp32e",
     "arch": "riscv32",
     "atomic-cas": false,
     "cpu": "generic-rv32",
@@ -11230,7 +11307,85 @@
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "x86 64-bit QNX Neutrino 7.1 RTOS",
+      "description": "x86 64-bit QNX Neutrino 7.1 RTOS with io-pkt network stack",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "nto",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntox86_64_cxx"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntox86_64_cxx"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "pc"
+  },
+  "x86_64-pc-nto-qnx710_iosock": {
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "dynamic-linking": true,
+    "env": "nto71_iosock",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "x86_64-pc-unknown",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "x86 64-bit QNX Neutrino 7.1 RTOS with io-sock network stack",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "nto",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntox86_64_cxx",
+        "-LQNX_TARGET_not_set_please_source_qnxsdp-env.sh/x86_64/io-sock/lib"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntox86_64_cxx",
+        "-LQNX_TARGET_not_set_please_source_qnxsdp-env.sh/x86_64/io-sock/lib"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "pc"
+  },
+  "x86_64-pc-nto-qnx800": {
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "dynamic-linking": true,
+    "env": "nto80",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "x86_64-pc-unknown",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "x86 64-bit QNX Neutrino 8.0 RTOS",
       "host_tools": false,
       "std": true,
       "tier": 3
