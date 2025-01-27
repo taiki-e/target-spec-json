@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.23] - 2025-01-27
+
 - Add `Env::{nto71_iosock,nto80}`.
 
 ## [0.1.22] - 2025-01-04
@@ -112,7 +114,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.22...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.23...HEAD
+[0.1.23]: https://github.com/taiki-e/target-spec-json/compare/v0.1.22...v0.1.23
 [0.1.22]: https://github.com/taiki-e/target-spec-json/compare/v0.1.21...v0.1.22
 [0.1.21]: https://github.com/taiki-e/target-spec-json/compare/v0.1.20...v0.1.21
 [0.1.20]: https://github.com/taiki-e/target-spec-json/compare/v0.1.19...v0.1.20
