@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Env::{nto71_iosock,nto80}`.
+
 ## [0.1.22] - 2025-01-04
 
 - Add `TargetSpec::llvm_floatabi`.
