@@ -1433,7 +1433,7 @@
     "metadata": {
       "description": "AArch64 NuttX",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "nuttx",
@@ -3602,7 +3602,7 @@
     "metadata": {
       "description": "ARMv7-A Cortex-A with NuttX",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "nuttx",
@@ -3630,7 +3630,7 @@
     "metadata": {
       "description": "ARMv7-A Cortex-A with NuttX (hard float)",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "nuttx",
@@ -8611,8 +8611,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "relocation-model": "static",
@@ -8710,8 +8710,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -8788,8 +8788,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "relocation-model": "static",
@@ -9192,8 +9192,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -9282,8 +9282,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -9735,22 +9735,22 @@
   "thumbv6m-nuttx-eabi": {
     "abi": "eabi",
     "arch": "arm",
-    "atomic-cas": false,
     "c-enum-min-bits": 8,
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "emit-debug-gdb-scripts": false,
-    "features": "+strict-align,+atomics-32",
+    "features": "+strict-align",
     "frame-pointer": "always",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-floatabi": "soft",
     "llvm-target": "thumbv6m-none-eabi",
+    "max-atomic-width": 32,
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -9777,8 +9777,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -9805,8 +9805,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -9998,8 +9998,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -10026,8 +10026,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -10076,8 +10076,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -10301,8 +10301,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -10375,8 +10375,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
@@ -10403,8 +10403,8 @@
     "metadata": {
       "description": null,
       "host_tools": null,
-      "std": null,
-      "tier": null
+      "std": true,
+      "tier": 3
     },
     "os": "nuttx",
     "panic-strategy": "abort",
