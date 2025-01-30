@@ -38,7 +38,7 @@ target-spec-json = "0.1"
 )]
 
 #[cfg(test)]
-#[path = "gen/assert_impl.rs"]
+#[path = "gen/tests/assert_impl.rs"]
 mod assert_impl;
 
 #[path = "gen/target_spec.rs"]
