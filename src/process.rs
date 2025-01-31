@@ -7,10 +7,7 @@ use std::{
     str,
 };
 
-use crate::{
-    error::{Context as _, Result},
-    Error,
-};
+use crate::error::{Context as _, Error, Result};
 
 #[cfg(test)]
 macro_rules! cmd {
@@ -43,6 +40,13 @@ impl ProcessBuilder {
     /// Adds multiple arguments to pass to the program.
     pub(crate) fn args(&mut self, args: impl IntoIterator<Item = impl AsRef<OsStr>>) -> &mut Self {
         self.cmd.args(args);
+        self
+    }
+
+    /// Set a variable in the process's environment.
+    #[cfg(test)]
+    pub(crate) fn env(&mut self, key: impl AsRef<OsStr>, val: impl AsRef<OsStr>) -> &mut Self {
+        self.cmd.env(key.as_ref(), val.as_ref());
         self
     }
 

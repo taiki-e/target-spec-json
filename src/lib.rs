@@ -338,7 +338,7 @@ mod tests {
     use super::*;
 
     fn target_spec_json(target: &str) -> Result<(TargetSpec, String)> {
-        let raw = cmd!(
+        let mut cmd = cmd!(
             "rustc",
             "-Z",
             "unstable-options",
@@ -346,14 +346,20 @@ mod tests {
             "target-spec-json",
             "--target",
             target
-        )
-        .read()?;
+        );
+        if !rustversion::cfg!(nightly) {
+            cmd.env("RUSTC_BOOTSTRAP", "1");
+        }
+        let raw = cmd.read()?;
         Ok((serde_json::from_str(&raw).map_err(Error::new)?, raw))
     }
 
     fn all_target_specs_json() -> Result<(AllTargetSpecs, String)> {
-        let raw =
-            cmd!("rustc", "-Z", "unstable-options", "--print", "all-target-specs-json").read()?;
+        let mut cmd = cmd!("rustc", "-Z", "unstable-options", "--print", "all-target-specs-json");
+        if !rustversion::cfg!(nightly) {
+            cmd.env("RUSTC_BOOTSTRAP", "1");
+        }
+        let raw = cmd.read()?;
         Ok((serde_json::from_str(&raw).map_err(Error::new)?, raw))
     }
 
