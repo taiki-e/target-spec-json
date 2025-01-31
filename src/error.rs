@@ -19,7 +19,7 @@ pub(crate) enum ErrorKind {
     Json(serde_json::Error),
 
     Other(Box<str>),
-    WithContext(Box<str>, Option<Box<dyn std::error::Error + Send + Sync + 'static>>),
+    WithContext(Box<str>, Option<Box<dyn std::error::Error + Send + Sync>>),
 }
 
 impl Error {
