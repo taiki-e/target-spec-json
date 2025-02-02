@@ -6,7 +6,8 @@
 [![msrv](https://img.shields.io/badge/msrv-1.57-blue?style=flat-square&logo=rust)](https://www.rust-lang.org)
 [![github actions](https://img.shields.io/github/actions/workflow/status/taiki-e/target-spec-json/ci.yml?branch=main&style=flat-square&logo=github)](https://github.com/taiki-e/target-spec-json/actions)
 
-<!-- tidy:crate-doc:start -->
+<!-- tidy:sync-markdown-to-rustdoc:start:src/lib.rs -->
+
 Structured access to rustc `--print target-spec-json` and `--print all-target-specs-json`.
 
 ## Usage
@@ -18,7 +19,7 @@ Add this to your `Cargo.toml`:
 target-spec-json = "0.1"
 ```
 
-<!-- tidy:crate-doc:end -->
+<!-- tidy:sync-markdown-to-rustdoc:end -->
 
 ## License
 
