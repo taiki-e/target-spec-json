@@ -5317,6 +5317,7 @@
         "/subsystem:efi_application"
       ]
     },
+    "rustc-abi": "x86-softfloat",
     "singlethread": true,
     "split-debuginfo": "packed",
     "stack-probes": {
@@ -12551,6 +12552,7 @@
     "plt-by-default": false,
     "position-independent-executables": true,
     "relro-level": "full",
+    "rustc-abi": "x86-softfloat",
     "stack-probes": {
       "kind": "inline"
     },
@@ -12723,6 +12725,7 @@
         "/subsystem:efi_application"
       ]
     },
+    "rustc-abi": "x86-softfloat",
     "singlethread": true,
     "split-debuginfo": "packed",
     "stack-probes": {
