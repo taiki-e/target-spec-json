@@ -16,7 +16,7 @@ fn size() {
     assert_eq!(mem::size_of::<TargetEndian>(), 1);
     assert_eq!(mem::size_of::<PanicStrategy>(), 1);
     assert_eq!(mem::size_of::<AllTargetSpecs>(), 24);
-    assert_eq!(mem::size_of::<TargetSpec>(), 1568);
+    assert_eq!(mem::size_of::<TargetSpec>(), 1592);
     assert_eq!(mem::size_of::<Metadata>(), 48);
     assert_eq!(mem::size_of::<StackProbes>(), 40);
 }

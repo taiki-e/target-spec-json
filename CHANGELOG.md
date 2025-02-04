@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::rustc_abi`.
+
 ## [0.1.23] - 2025-01-27
 
 - Add `Env::{nto71_iosock,nto80}`.

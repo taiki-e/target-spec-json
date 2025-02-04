@@ -262,6 +262,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub requires_uwtable: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub rustc_abi: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub split_debuginfo: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub stack_probes: Option<StackProbes>,
