@@ -43,6 +43,9 @@ target-spec-json = "0.1"
 #[cfg(test)]
 #[path = "gen/tests/assert_impl.rs"]
 mod assert_impl;
+#[cfg(test)]
+#[path = "gen/tests/track_size.rs"]
+mod track_size;
 
 #[path = "gen/target_spec.rs"]
 mod target_spec;
