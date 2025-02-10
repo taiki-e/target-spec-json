@@ -277,8 +277,10 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub target_mcount: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub target_c_int_width: Option<String>, // TODO: int string
-    pub target_pointer_width: String, // TODO: int string
+    #[serde(with = "opt_int_string")]
+    pub target_c_int_width: Option<u32>,
+    #[serde(with = "int_string")]
+    pub target_pointer_width: u32,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub tls_model: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -313,6 +315,39 @@ pub fn all_target_specs_json(rustc: Command) -> Result<AllTargetSpecs> {
         .args(["-Z", "unstable-options", "--print", "all-target-specs-json"])
         .read()?;
     serde_json::from_str(&raw).map_err(Error::new)
+}
+
+mod int_string {
+    use serde::{Deserializer, Serializer};
+
+    pub(crate) fn serialize<S>(v: &u32, serializer: S) -> Result<S::Ok, S::Error>
+    where
+        S: Serializer,
+    {
+        todo!()
+    }
+    pub(crate) fn deserialize<'de, D>(deserializer: D) -> Result<u32, D::Error>
+    where
+        D: Deserializer<'de>,
+    {
+        todo!()
+    }
+}
+mod opt_int_string {
+    use serde::{Deserializer, Serializer};
+
+    pub(crate) fn serialize<S>(v: &Option<u32>, serializer: S) -> Result<S::Ok, S::Error>
+    where
+        S: Serializer,
+    {
+        todo!()
+    }
+    pub(crate) fn deserialize<'de, D>(deserializer: D) -> Result<Option<u32>, D::Error>
+    where
+        D: Deserializer<'de>,
+    {
+        todo!()
+    }
 }
 
 #[cfg(test)]
