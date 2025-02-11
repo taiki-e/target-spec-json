@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.25] - 2025-02-11
+
 - Add `TargetSpec::{need_explicit_cpu,requires_lto,simd_types_indirect}`.
 
 - Add `Os::amdhsa`.
@@ -122,7 +124,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.24...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.25...HEAD
+[0.1.25]: https://github.com/taiki-e/target-spec-json/compare/v0.1.24...v0.1.25
 [0.1.24]: https://github.com/taiki-e/target-spec-json/compare/v0.1.23...v0.1.24
 [0.1.23]: https://github.com/taiki-e/target-spec-json/compare/v0.1.22...v0.1.23
 [0.1.22]: https://github.com/taiki-e/target-spec-json/compare/v0.1.21...v0.1.22
