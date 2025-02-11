@@ -12,6 +12,10 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::{need_explicit_cpu,requires_lto,simd_types_indirect}`.
+
+- Add `Os::amdhsa`.
+
 ## [0.1.24] - 2025-02-04
 
 - Add `TargetSpec::rustc_abi`.
