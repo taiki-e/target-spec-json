@@ -89,6 +89,7 @@ impl core::fmt::Display for Arch {
 #[non_exhaustive]
 pub enum Os {
     aix,
+    amdhsa,
     android,
     cuda,
     dragonfly,
@@ -136,6 +137,7 @@ impl Os {
     pub fn as_str(self) -> &'static str {
         match self {
             Self::aix => "aix",
+            Self::amdhsa => "amdhsa",
             Self::android => "android",
             Self::cuda => "cuda",
             Self::dragonfly => "dragonfly",
