@@ -1859,6 +1859,35 @@
     "target-pointer-width": "64",
     "use-ctors-section": true
   },
+  "amdgcn-amd-amdhsa": {
+    "arch": "amdgpu",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-p7:160:256:256:32-p8:128:128-p9:192:256:256:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7:8:9",
+    "dll-prefix": "",
+    "dll-suffix": ".elf",
+    "dynamic-linking": true,
+    "executables": false,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "amdgcn-amd-amdhsa",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "AMD GPU",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "need-explicit-cpu": true,
+    "no-builtins": true,
+    "only-cdylib": true,
+    "os": "amdhsa",
+    "panic-strategy": "abort",
+    "requires-lto": true,
+    "simd-types-indirect": false,
+    "supports-stack-protector": false,
+    "target-pointer-width": "64",
+    "vendor": "amd"
+  },
   "arm-linux-androideabi": {
     "abi": "eabi",
     "arch": "arm",
@@ -5305,6 +5334,14 @@
     },
     "os": "uefi",
     "panic-strategy": "abort",
+    "post-link-args": {
+      "msvc": [
+        "/DEBUG:NODWARF"
+      ],
+      "msvc-lld": [
+        "/DEBUG:NODWARF"
+      ]
+    },
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
