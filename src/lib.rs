@@ -225,6 +225,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub min_global_align: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub need_explicit_cpu: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub needs_plt: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub no_builtins: Option<bool>,
@@ -263,6 +265,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub relro_level: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub requires_lto: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub requires_uwtable: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub rustc_abi: Option<String>,
@@ -284,6 +288,8 @@ pub struct TargetSpec {
     pub supports_stack_protector: Option<bool>, // TODO: default true?
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub supports_xray: bool,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub simd_types_indirect: Option<bool>,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub singlethread: bool,
     #[serde(default, skip_serializing_if = "TargetEndian::is_little")]

@@ -18,10 +18,9 @@ target_arch=(
   # Architectures that do not included in builtin targets.
   # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
   # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
-  amdgpu # Will be added in https://github.com/rust-lang/rust/pull/134740.
-  asmjs  # Removed in https://github.com/rust-lang/rust/pull/117338.
-  nvptx  # Removed in https://github.com/rust-lang/rust/pull/100317.
-  spirv  # Used in https://github.com/Rust-GPU/rust-gpu.
+  asmjs # Removed in https://github.com/rust-lang/rust/pull/117338.
+  nvptx # Removed in https://github.com/rust-lang/rust/pull/100317.
+  spirv # Used in https://github.com/Rust-GPU/rust-gpu.
 )
 target_os=(
   # Operating systems that do not included in builtin targets.
