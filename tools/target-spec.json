@@ -4456,6 +4456,55 @@
     "target-pointer-width": "32",
     "use-ctors-section": true
   },
+  "i586-unknown-redox": {
+    "arch": "x86",
+    "cpu": "pentiumpro",
+    "crt-objects-fallback": "false",
+    "crt-static-allows-dylibs": true,
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
+    "dynamic-linking": true,
+    "env": "relibc",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "late-link-args": {
+      "gnu-cc": [
+        "-lgcc"
+      ],
+      "gnu-lld-cc": [
+        "-lgcc"
+      ]
+    },
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "i586-unknown-redox",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": null,
+      "host_tools": null,
+      "std": null,
+      "tier": null
+    },
+    "os": "redox",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-m32"
+      ],
+      "gnu-lld-cc": [
+        "-m32"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "call"
+    },
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32"
+  },
   "i686-apple-darwin": {
     "abi-return-struct-as-int": true,
     "arch": "x86",
@@ -4512,7 +4561,7 @@
   },
   "i686-linux-android": {
     "arch": "x86",
-    "cpu": "pentiumpro",
+    "cpu": "pentium4",
     "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
@@ -5253,55 +5302,6 @@
     ],
     "target-pointer-width": "32",
     "tls-model": "emulated"
-  },
-  "i686-unknown-redox": {
-    "arch": "x86",
-    "cpu": "pentiumpro",
-    "crt-objects-fallback": "false",
-    "crt-static-allows-dylibs": true,
-    "crt-static-default": true,
-    "crt-static-respected": true,
-    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "dynamic-linking": true,
-    "env": "relibc",
-    "has-rpath": true,
-    "has-thread-local": true,
-    "late-link-args": {
-      "gnu-cc": [
-        "-lgcc"
-      ],
-      "gnu-lld-cc": [
-        "-lgcc"
-      ]
-    },
-    "linker-flavor": "gnu-cc",
-    "llvm-target": "i686-unknown-redox",
-    "max-atomic-width": 64,
-    "metadata": {
-      "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
-    },
-    "os": "redox",
-    "plt-by-default": false,
-    "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-m32"
-      ],
-      "gnu-lld-cc": [
-        "-m32"
-      ]
-    },
-    "relro-level": "full",
-    "stack-probes": {
-      "kind": "call"
-    },
-    "target-family": [
-      "unix"
-    ],
-    "target-pointer-width": "32"
   },
   "i686-unknown-uefi": {
     "abi-return-struct-as-int": true,
