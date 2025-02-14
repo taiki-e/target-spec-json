@@ -11333,6 +11333,97 @@
     "target-pointer-width": "64",
     "tls-model": "emulated"
   },
+  "x86_64-pc-cygwin": {
+    "abi-return-struct-as-int": true,
+    "allows-weak-linkage": false,
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "dll-prefix": "",
+    "dll-suffix": ".dll",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "exe-suffix": ".exe",
+    "function-sections": false,
+    "is-like-windows": true,
+    "late-link-args": {
+      "gnu": [
+        "-lcygwin",
+        "-lgcc",
+        "-lcygwin",
+        "-luser32",
+        "-lkernel32",
+        "-lgcc_s"
+      ],
+      "gnu-cc": [
+        "-lcygwin",
+        "-lgcc",
+        "-lcygwin",
+        "-luser32",
+        "-lkernel32",
+        "-lgcc_s"
+      ],
+      "gnu-lld": [
+        "-lcygwin",
+        "-lgcc",
+        "-lcygwin",
+        "-luser32",
+        "-lkernel32",
+        "-lgcc_s"
+      ],
+      "gnu-lld-cc": [
+        "-lcygwin",
+        "-lgcc",
+        "-lcygwin",
+        "-luser32",
+        "-lkernel32",
+        "-lgcc_s"
+      ]
+    },
+    "linker": "x86_64-pc-cygwin-gcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "x86_64-pc-cygwin",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "64-bit x86 Cygwin",
+      "host_tools": false,
+      "std": null,
+      "tier": 3
+    },
+    "os": "cygwin",
+    "pre-link-args": {
+      "gnu": [
+        "--disable-dynamicbase",
+        "--enable-auto-image-base",
+        "-m",
+        "i386pep"
+      ],
+      "gnu-cc": [
+        "-Wl,--disable-dynamicbase",
+        "-Wl,--enable-auto-image-base",
+        "-m64"
+      ],
+      "gnu-lld": [
+        "--disable-dynamicbase",
+        "--enable-auto-image-base",
+        "-m",
+        "i386pep"
+      ],
+      "gnu-lld-cc": [
+        "-Wl,--disable-dynamicbase",
+        "-Wl,--enable-auto-image-base",
+        "-m64"
+      ]
+    },
+    "requires-uwtable": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64",
+    "vendor": "pc"
+  },
   "x86_64-pc-nto-qnx710": {
     "arch": "x86_64",
     "cpu": "x86-64",
