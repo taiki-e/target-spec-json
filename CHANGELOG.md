@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.26] - 2025-02-15
+
 - Add `Os::cygwin`.
 
 ## [0.1.25] - 2025-02-11
@@ -126,7 +128,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.25...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.26...HEAD
+[0.1.26]: https://github.com/taiki-e/target-spec-json/compare/v0.1.25...v0.1.26
 [0.1.25]: https://github.com/taiki-e/target-spec-json/compare/v0.1.24...v0.1.25
 [0.1.24]: https://github.com/taiki-e/target-spec-json/compare/v0.1.23...v0.1.24
 [0.1.23]: https://github.com/taiki-e/target-spec-json/compare/v0.1.22...v0.1.23
