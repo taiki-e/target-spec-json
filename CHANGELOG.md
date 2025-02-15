@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::cygwin`.
+
 ## [0.1.25] - 2025-02-11
 
 - Add `TargetSpec::{need_explicit_cpu,requires_lto,simd_types_indirect}`.
