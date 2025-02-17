@@ -7246,7 +7246,7 @@
     "arch": "nvptx64",
     "cpu": "sm_30",
     "crt-objects-fallback": "true",
-    "data-layout": "e-i64:64-i128:128-v16:16-v32:32-n16:32:64",
+    "data-layout": "e-p6:32:32-i64:64-i128:128-v16:16-v32:32-n16:32:64",
     "dll-prefix": "",
     "dll-suffix": ".ptx",
     "dynamic-linking": true,
