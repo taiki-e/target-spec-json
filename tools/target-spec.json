@@ -4262,7 +4262,6 @@
       ]
     },
     "requires-uwtable": true,
-    "rustc-abi": "x86-sse2",
     "split-debuginfo": "packed",
     "staticlib-prefix": "",
     "staticlib-suffix": ".lib",
