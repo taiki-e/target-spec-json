@@ -3835,14 +3835,12 @@
     "relocation-model": "static",
     "target-pointer-width": "32"
   },
-  "avr-unknown-gnu-atmega328": {
+  "avr-none": {
     "arch": "avr",
     "atomic-cas": false,
-    "cpu": "atmega328",
     "crt-objects-fallback": "false",
     "data-layout": "e-P1-p:16:8-i8:8-i16:8-i32:8-i64:8-f32:8-f64:8-n8-a:8",
     "eh-frame-header": false,
-    "env": "gnu",
     "exe-suffix": ".elf",
     "late-link-args": {
       "gnu-cc": [
@@ -3862,13 +3860,10 @@
       "std": null,
       "tier": null
     },
+    "need-explicit-cpu": true,
     "pre-link-args": {
-      "gnu-cc": [
-        "-mmcu=atmega328"
-      ],
-      "gnu-lld-cc": [
-        "-mmcu=atmega328"
-      ]
+      "gnu-cc": [],
+      "gnu-lld-cc": []
     },
     "relocation-model": "static",
     "target-c-int-width": "16",
@@ -4174,47 +4169,6 @@
     ],
     "target-pointer-width": "32",
     "vendor": "apple"
-  },
-  "i586-pc-nto-qnx700": {
-    "arch": "x86",
-    "cpu": "pentium4",
-    "crt-objects-fallback": "false",
-    "crt-static-respected": true,
-    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
-    "dynamic-linking": true,
-    "env": "nto70",
-    "has-rpath": true,
-    "linker": "qcc",
-    "linker-flavor": "gnu-cc",
-    "llvm-target": "i586-pc-unknown",
-    "max-atomic-width": 64,
-    "metadata": {
-      "description": "32-bit x86 QNX Neutrino 7.0 RTOS",
-      "host_tools": false,
-      "std": false,
-      "tier": 3
-    },
-    "os": "nto",
-    "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-Vgcc_ntox86_cxx"
-      ],
-      "gnu-lld-cc": [
-        "-Vgcc_ntox86_cxx"
-      ]
-    },
-    "relro-level": "full",
-    "rustc-abi": "x86-sse2",
-    "stack-probes": {
-      "kind": "inline"
-    },
-    "static-position-independent-executables": true,
-    "target-family": [
-      "unix"
-    ],
-    "target-pointer-width": "32",
-    "vendor": "pc"
   },
   "i586-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
@@ -4603,6 +4557,47 @@
     ],
     "target-pointer-width": "32",
     "tls-model": "emulated"
+  },
+  "i686-pc-nto-qnx700": {
+    "arch": "x86",
+    "cpu": "pentium4",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
+    "dynamic-linking": true,
+    "env": "nto70",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "i586-pc-unknown",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "32-bit x86 QNX Neutrino 7.0 RTOS",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "nto",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntox86_cxx"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntox86_cxx"
+      ]
+    },
+    "relro-level": "full",
+    "rustc-abi": "x86-sse2",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "32",
+    "vendor": "pc"
   },
   "i686-pc-windows-gnu": {
     "abi-return-struct-as-int": true,
