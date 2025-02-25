@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.1.27] - 2025-02-25
+
 - Add `TargetSpec::binary_format`.
 
 ## [0.1.26] - 2025-02-15
@@ -130,7 +132,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.26...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.27...HEAD
+[0.1.27]: https://github.com/taiki-e/target-spec-json/compare/v0.1.26...v0.1.27
 [0.1.26]: https://github.com/taiki-e/target-spec-json/compare/v0.1.25...v0.1.26
 [0.1.25]: https://github.com/taiki-e/target-spec-json/compare/v0.1.24...v0.1.25
 [0.1.24]: https://github.com/taiki-e/target-spec-json/compare/v0.1.23...v0.1.24
