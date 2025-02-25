@@ -89,6 +89,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub atomic_cas: Option<bool>, // TODO: default true
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub binary_format: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub bitcode_llvm_cmdline: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub c_enum_min_bits: Option<u32>,
