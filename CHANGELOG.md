@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::binary_format`.
+
 ## [0.1.26] - 2025-02-15
 
 - Add `Os::cygwin`.
