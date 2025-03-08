@@ -13633,7 +13633,7 @@
   },
   "xtensa-esp32s2-espidf": {
     "arch": "xtensa",
-    "cpu": "esp32-s2",
+    "cpu": "esp32s2",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-v1:8:8-i64:64-i128:128-n32",
     "emit-debug-gdb-scripts": false,
@@ -13660,7 +13660,7 @@
   "xtensa-esp32s2-none-elf": {
     "arch": "xtensa",
     "atomic-cas": false,
-    "cpu": "esp32-s2",
+    "cpu": "esp32s2",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-v1:8:8-i64:64-i128:128-n32",
     "emit-debug-gdb-scripts": false,
@@ -13682,7 +13682,7 @@
   },
   "xtensa-esp32s3-espidf": {
     "arch": "xtensa",
-    "cpu": "esp32-s3",
+    "cpu": "esp32s3",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-v1:8:8-i64:64-i128:128-n32",
     "emit-debug-gdb-scripts": false,
@@ -13708,7 +13708,7 @@
   },
   "xtensa-esp32s3-none-elf": {
     "arch": "xtensa",
-    "cpu": "esp32-s3",
+    "cpu": "esp32s3",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p:32:32-v1:8:8-i64:64-i128:128-n32",
     "emit-debug-gdb-scripts": false,
