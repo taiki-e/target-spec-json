@@ -4192,68 +4192,6 @@
     "target-pointer-width": "32",
     "vendor": "apple"
   },
-  "i586-pc-windows-msvc": {
-    "abi-return-struct-as-int": true,
-    "arch": "x86",
-    "archive-format": "coff",
-    "binary-format": "coff",
-    "cpu": "pentium",
-    "crt-objects-fallback": "false",
-    "crt-static-allows-dylibs": true,
-    "crt-static-respected": true,
-    "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32-a:0:32-S32",
-    "debuginfo-kind": "pdb",
-    "dll-prefix": "",
-    "dll-suffix": ".dll",
-    "dll-tls-export": false,
-    "dynamic-linking": true,
-    "emit-debug-gdb-scripts": false,
-    "env": "msvc",
-    "exe-suffix": ".exe",
-    "has-thread-local": true,
-    "is-like-msvc": true,
-    "is-like-windows": true,
-    "linker-flavor": "msvc",
-    "linker-is-gnu": false,
-    "lld-flavor": "link",
-    "llvm-target": "i586-pc-windows-msvc",
-    "max-atomic-width": 64,
-    "metadata": {
-      "description": "32-bit MSVC (Windows 10+)",
-      "host_tools": true,
-      "std": true,
-      "tier": 1
-    },
-    "no-default-libraries": false,
-    "os": "windows",
-    "pre-link-args": {
-      "msvc": [
-        "/NOLOGO",
-        "/LARGEADDRESSAWARE",
-        "/SAFESEH"
-      ],
-      "msvc-lld": [
-        "/NOLOGO",
-        "/LARGEADDRESSAWARE",
-        "/SAFESEH"
-      ]
-    },
-    "requires-uwtable": true,
-    "split-debuginfo": "packed",
-    "staticlib-prefix": "",
-    "staticlib-suffix": ".lib",
-    "supported-sanitizers": [
-      "address"
-    ],
-    "supported-split-debuginfo": [
-      "packed"
-    ],
-    "target-family": [
-      "windows"
-    ],
-    "target-pointer-width": "32",
-    "vendor": "pc"
-  },
   "i586-unknown-linux-gnu": {
     "arch": "x86",
     "cpu": "pentium",
