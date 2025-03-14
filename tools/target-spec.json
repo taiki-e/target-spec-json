@@ -8262,7 +8262,7 @@
     "linker": "wr-c++",
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "ilp32d",
-    "llvm-target": "riscv32",
+    "llvm-target": "riscv32-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
       "description": null,
@@ -8875,7 +8875,7 @@
     "linker": "wr-c++",
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "lp64d",
-    "llvm-target": "riscv64",
+    "llvm-target": "riscv64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
