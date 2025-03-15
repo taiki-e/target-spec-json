@@ -824,7 +824,7 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "dynamic-linking": true,
-    "features": "+v8a",
+    "features": "+v8a,+crc,+aes,+sha2,+neon",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "linker": "rust-lld",
@@ -848,10 +848,16 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
-        "--pack-dyn-relocs=relr"
+        "-z",
+        "rel",
+        "--pack-dyn-relocs=relr",
+        "--execute-only",
+        "--fix-cortex-a53-843419"
       ],
       "gnu-lld": [
         "--build-id",
@@ -861,10 +867,16 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
-        "--pack-dyn-relocs=relr"
+        "-z",
+        "rel",
+        "--pack-dyn-relocs=relr",
+        "--execute-only",
+        "--fix-cortex-a53-843419"
       ]
     },
     "pre-link-objects": {
@@ -886,9 +898,11 @@
     },
     "supported-sanitizers": [
       "address",
+      "leak",
       "cfi",
       "shadow-call-stack"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
@@ -8957,9 +8971,13 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
+        "-z",
+        "rel",
         "--pack-dyn-relocs=relr"
       ],
       "gnu-lld": [
@@ -8970,9 +8988,13 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
+        "-z",
+        "rel",
         "--pack-dyn-relocs=relr"
       ]
     },
@@ -8990,9 +9012,13 @@
         "Scrt1.o"
       ]
     },
+    "stack-probes": {
+      "kind": "inline"
+    },
     "supported-sanitizers": [
       "shadow-call-stack"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
@@ -12150,12 +12176,13 @@
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "dynamic-linking": true,
+    "features": "+cx16,+sahf,+popcnt,+sse3,+sse4.1,+sse4.2,+ssse3",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-target": "x86_64-unknown-fuchsia",
-    "max-atomic-width": 64,
+    "max-atomic-width": 128,
     "metadata": {
       "description": "64-bit x86 Fuchsia",
       "host_tools": false,
@@ -12174,9 +12201,13 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
+        "-z",
+        "rel",
         "--pack-dyn-relocs=relr"
       ],
       "gnu-lld": [
@@ -12187,9 +12218,13 @@
         "-z",
         "now",
         "-z",
+        "start-stop-visibility=hidden",
+        "-z",
         "rodynamic",
         "-z",
         "separate-loadable-segments",
+        "-z",
+        "rel",
         "--pack-dyn-relocs=relr"
       ]
     },
