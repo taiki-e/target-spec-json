@@ -11497,7 +11497,7 @@
     "metadata": {
       "description": "64-bit x86 Cygwin",
       "host_tools": false,
-      "std": null,
+      "std": true,
       "tier": 3
     },
     "os": "cygwin",
