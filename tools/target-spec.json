@@ -2823,7 +2823,7 @@
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
     "llvm-floatabi": "soft",
-    "llvm-target": "armv5te-unknown-linux-uclibcgnueabi",
+    "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
       "description": "Armv5TE Linux with uClibc",
@@ -6387,7 +6387,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "mips-unknown-linux-uclibc",
+    "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
       "description": "MIPS Linux with uClibc",
@@ -6500,7 +6500,8 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": "64",
+    "vendor": "openwrt"
   },
   "mips64-unknown-linux-gnuabi64": {
     "abi": "abi64",
@@ -6979,7 +6980,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
-    "llvm-target": "mipsel-unknown-linux-uclibc",
+    "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
       "description": "MIPS (LE) Linux with uClibc",
@@ -12413,7 +12414,7 @@
     "linker": "l4-bender",
     "linker-flavor": "unix",
     "linker-is-gnu": false,
-    "llvm-target": "x86_64-unknown-l4re-uclibc",
+    "llvm-target": "x86_64-unknown-l4re-gnu",
     "max-atomic-width": 64,
     "metadata": {
       "description": null,
