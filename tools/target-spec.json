@@ -3039,7 +3039,7 @@
     "linker": "arm-vita-eabi-gcc",
     "linker-flavor": "gnu-cc",
     "llvm-floatabi": "hard",
-    "llvm-target": "thumbv7a-vita-eabihf",
+    "llvm-target": "thumbv7a-sony-vita-eabihf",
     "max-atomic-width": 64,
     "metadata": {
       "description": "Armv7-A Cortex-A9 Sony PlayStation Vita (requires VITASDK toolchain)",
