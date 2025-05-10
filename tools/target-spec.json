@@ -16,7 +16,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -77,7 +77,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -135,7 +135,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -194,7 +194,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -251,7 +251,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -305,7 +305,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -358,7 +358,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -416,7 +416,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -472,7 +472,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -527,7 +527,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -745,6 +745,7 @@
     "env": "msvc",
     "exe-suffix": ".exe",
     "features": "+v8a,+neon,+fp-armv8",
+    "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "is-like-msvc": true,
     "is-like-windows": true,
@@ -763,10 +764,14 @@
     "os": "windows",
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286",
+        "/arm64hazardfree"
       ],
       "msvc-lld": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286",
+        "/arm64hazardfree"
       ]
     },
     "requires-uwtable": true,
@@ -1665,12 +1670,14 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application",
         "/machine:arm64"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application",
         "/machine:arm64"
@@ -1724,11 +1731,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -2228,7 +2237,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -2281,7 +2290,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -2342,7 +2351,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -2399,7 +2408,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -2480,10 +2489,12 @@
     "os": "windows",
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ],
       "msvc-lld": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ]
     },
     "requires-uwtable": true,
@@ -2694,6 +2705,7 @@
     "has-thumb-interworking": true,
     "linker-flavor": "gnu-cc",
     "llvm-floatabi": "soft",
+    "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv5te-unknown-linux-gnueabi",
     "max-atomic-width": 32,
     "metadata": {
@@ -3146,6 +3158,7 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-floatabi": "hard",
+    "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
     "metadata": {
@@ -3720,7 +3733,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -3816,7 +3829,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -4170,7 +4183,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -4453,7 +4466,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -4676,7 +4689,7 @@
       "description": "32-bit MinGW (Windows 10+)",
       "host_tools": true,
       "std": true,
-      "tier": 1
+      "tier": 2
     },
     "os": "windows",
     "post-link-objects": {
@@ -4916,11 +4929,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ]
@@ -5333,11 +5348,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ]
@@ -5587,11 +5604,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -5854,7 +5873,6 @@
     "emit-debug-gdb-scripts": false,
     "env": "msvc",
     "exe-suffix": ".exe",
-    "has-thread-local": true,
     "is-like-msvc": true,
     "is-like-windows": true,
     "linker-flavor": "msvc",
@@ -5873,11 +5891,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ]
@@ -6423,6 +6443,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -6516,6 +6537,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mips64-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -6553,6 +6575,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -6645,6 +6668,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mips64el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -6681,6 +6705,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mips64el-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -7135,6 +7160,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mipsisa64r6-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -7171,6 +7197,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "n64",
     "llvm-target": "mipsisa64r6el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -8848,7 +8875,7 @@
     "default-dwarf-version": 2,
     "default-uwtable": true,
     "dynamic-linking": true,
-    "features": "+m,+a,+f,+d,+c,+zicsr,+zifencei,+zba,+zbb,+zbs,+v",
+    "features": "+m,+a,+f,+d,+c,+b,+v,+zicsr,+zifencei",
     "has-rpath": true,
     "is-like-android": true,
     "linker-flavor": "gnu-cc",
@@ -9907,10 +9934,12 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/OPT:NOLBR"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/OPT:NOLBR"
       ]
     },
@@ -9967,11 +9996,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -11021,7 +11052,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -11083,7 +11114,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -11140,7 +11171,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -11198,7 +11229,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -11251,7 +11282,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
@@ -11440,6 +11471,53 @@
     ],
     "target-pointer-width": "64",
     "tls-model": "emulated"
+  },
+  "x86_64-lynx-lynxos178": {
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "eh-frame-header": false,
+    "linker": "x86_64-lynx-lynxos178-gcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "x86_64-unknown-unknown-gnu",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "LynxOS-178",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "no-default-libraries": false,
+    "os": "lynxos178",
+    "panic-strategy": "abort",
+    "plt-by-default": false,
+    "relocation-model": "static",
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi",
+      "kcfi",
+      "safestack",
+      "dataflow"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-xray": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
   },
   "x86_64-pc-cygwin": {
     "abi-return-struct-as-int": true,
@@ -12026,10 +12104,12 @@
     "plt-by-default": false,
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ],
       "msvc-lld": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ]
     },
     "requires-uwtable": true,
@@ -12968,11 +13048,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ]
@@ -13226,11 +13308,13 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
+        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -13512,10 +13596,12 @@
     "plt-by-default": false,
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ],
       "msvc-lld": [
-        "/NOLOGO"
+        "/NOLOGO",
+        "/IGNORE:4286"
       ]
     },
     "requires-uwtable": true,
@@ -13596,7 +13682,7 @@
     "function-sections": false,
     "has-rpath": true,
     "has-thread-local": true,
-    "is-like-osx": true,
+    "is-like-darwin": true,
     "link-env": [
       "ZERO_AR_DATE=1"
     ],
