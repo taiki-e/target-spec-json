@@ -173,6 +173,9 @@ pub struct TargetSpec {
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_aix: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
+    pub is_like_darwin: bool,
+    /// replaced by `is_like_darwin`
+    #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_osx: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_solaris: bool,
