@@ -62,6 +62,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="macos"
 target_pointer_width="64"
 target_thread_local
@@ -103,6 +106,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -161,6 +167,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -219,6 +228,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -260,6 +272,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="tvos"
 target_pointer_width="64"
 target_thread_local
@@ -318,6 +333,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="tvos"
 target_pointer_width="64"
 target_thread_local
@@ -359,6 +377,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="visionos"
 target_pointer_width="64"
 target_thread_local
@@ -417,6 +438,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="visionos"
 target_pointer_width="64"
 target_thread_local
@@ -458,6 +482,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="watchos"
 target_pointer_width="64"
 target_thread_local
@@ -516,6 +543,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="watchos"
 target_pointer_width="64"
 target_thread_local
@@ -553,6 +583,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="solid_asp3"
 target_pointer_width="64"
 target_thread_local
@@ -590,6 +623,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -626,6 +662,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="horizon"
 target_pointer_width="64"
 target_vendor="nintendo"
@@ -662,6 +701,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -700,6 +742,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -738,6 +783,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="64"
 target_thread_local
@@ -779,6 +827,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="fuchsia"
 target_pointer_width="64"
 target_thread_local
@@ -816,6 +867,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="hermit"
 target_pointer_width="64"
 target_thread_local
@@ -853,6 +907,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="illumos"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -890,6 +947,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -928,6 +989,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -967,6 +1031,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -1005,6 +1073,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1042,6 +1114,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -1079,6 +1154,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1113,6 +1191,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1149,6 +1230,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1186,6 +1270,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1223,6 +1310,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1260,6 +1350,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1297,6 +1390,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1334,6 +1430,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1372,6 +1471,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="redox"
 target_pointer_width="64"
 target_thread_local
@@ -1409,6 +1511,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="teeos"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1446,6 +1551,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="trusty"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1481,6 +1589,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="uefi"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -1517,6 +1628,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -1557,6 +1671,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="64"
 target_thread_local
@@ -1595,6 +1712,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -1633,6 +1754,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -1671,6 +1795,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -1704,6 +1831,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="amdhsa"
 target_pointer_width="64"
 target_vendor="amd"
@@ -1734,6 +1864,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -1769,6 +1902,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -1807,6 +1943,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -1844,6 +1983,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -1883,6 +2025,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -1941,6 +2086,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="watchos"
 target_pointer_width="32"
 target_thread_local
@@ -2012,6 +2160,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="macos"
 target_pointer_width="64"
 target_thread_local
@@ -2070,6 +2221,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -2128,6 +2282,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="tvos"
 target_pointer_width="64"
 target_thread_local
@@ -2208,6 +2365,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2249,6 +2409,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2290,6 +2453,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2314,6 +2480,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2344,6 +2513,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2371,6 +2543,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2402,6 +2577,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2436,6 +2614,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2469,6 +2650,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2508,6 +2692,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="32"
 target_thread_local
@@ -2547,6 +2734,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -2583,6 +2773,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="horizon"
 target_pointer_width="32"
 target_thread_local
@@ -2628,6 +2821,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2674,6 +2870,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="rtems"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -2722,6 +2921,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vita"
 target_pointer_width="32"
 target_vendor="sony"
@@ -2765,6 +2967,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="32"
 target_thread_local
@@ -2812,6 +3017,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2856,6 +3064,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2904,6 +3115,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2949,6 +3163,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -2996,6 +3213,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3042,6 +3262,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -3086,6 +3309,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -3130,6 +3356,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -3177,6 +3406,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="trusty"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3220,6 +3452,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="32"
 target_thread_local
@@ -3266,6 +3501,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="solid_asp3"
 target_pointer_width="32"
 target_thread_local
@@ -3308,6 +3546,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="solid_asp3"
 target_pointer_width="32"
 target_thread_local
@@ -3353,6 +3594,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3394,6 +3638,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3439,6 +3686,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3485,6 +3735,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3533,6 +3786,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="watchos"
 target_pointer_width="32"
 target_thread_local
@@ -3574,6 +3830,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3615,6 +3874,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3660,6 +3922,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="32"
 target_thread_local
@@ -3705,6 +3970,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3724,6 +3992,9 @@ target_has_atomic_load_store
 target_has_atomic_load_store="16"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="16"
 target_vendor="unknown"
@@ -3743,6 +4014,9 @@ target_has_atomic_equal_alignment="ptr"
 target_has_atomic_load_store
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -3762,6 +4036,9 @@ target_has_atomic_equal_alignment="ptr"
 target_has_atomic_load_store
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -3808,6 +4085,7 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -3870,6 +4148,7 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -3903,6 +4182,7 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -3935,6 +4215,7 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -3975,6 +4256,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="32"
 target_thread_local
@@ -4009,6 +4292,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4044,6 +4329,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4078,6 +4365,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -4113,6 +4402,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="redox"
 target_pointer_width="32"
 target_thread_local
@@ -4155,6 +4446,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="macos"
 target_pointer_width="32"
 target_thread_local
@@ -4194,6 +4487,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -4230,6 +4525,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="32"
 target_vendor="pc"
@@ -4267,6 +4564,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_vendor="pc"
@@ -4304,6 +4603,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_thread_local
@@ -4342,6 +4643,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_thread_local
@@ -4379,6 +4682,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="32"
 target_thread_local
@@ -4416,6 +4721,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="haiku"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -4452,6 +4759,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="hurd"
 target_pointer_width="32"
 target_thread_local
@@ -4489,6 +4798,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4527,6 +4838,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4564,6 +4877,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -4601,6 +4916,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -4636,6 +4953,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="uefi"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -4672,6 +4991,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_vendor="uwp"
@@ -4709,6 +5030,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_thread_local
@@ -4747,6 +5070,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_vendor="win7"
@@ -4784,9 +5109,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
-target_thread_local
 target_vendor="win7"
 ub_checks
 windows
@@ -4822,6 +5148,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="32"
 target_thread_local
@@ -4860,6 +5188,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -4898,6 +5230,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -4936,6 +5272,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -4972,6 +5312,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -5004,6 +5347,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -5034,6 +5380,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5064,6 +5413,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -5092,6 +5444,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="mti"
@@ -5121,6 +5476,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5152,6 +5510,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5183,6 +5544,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5218,6 +5582,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5253,6 +5619,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5289,6 +5657,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5324,6 +5694,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5360,6 +5732,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5390,6 +5764,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="mti"
@@ -5418,6 +5795,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="psp"
 target_pointer_width="32"
 target_vendor="sony"
@@ -5432,6 +5812,9 @@ target_abi=""
 target_arch="mips"
 target_endian="little"
 target_env=""
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="psx"
 target_pointer_width="32"
 target_vendor="sony"
@@ -5461,6 +5844,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5492,6 +5878,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5523,6 +5912,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5554,6 +5946,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -5584,6 +5979,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -5614,6 +6012,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5646,6 +6047,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -5681,6 +6085,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5716,6 +6122,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -5732,6 +6140,9 @@ target_abi=""
 target_arch="msp430"
 target_endian="little"
 target_env=""
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="16"
 target_vendor="unknown"
@@ -5763,6 +6174,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="cuda"
 target_pointer_width="64"
 target_vendor="nvidia"
@@ -6423,6 +6836,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="32"
 target_thread_local
@@ -6449,6 +6865,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6474,6 +6893,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6500,6 +6922,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6538,6 +6963,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -6579,6 +7007,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -6604,6 +7035,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6636,6 +7070,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="zkvm"
 target_pointer_width="32"
 target_vendor="risc0"
@@ -6660,6 +7097,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6692,6 +7132,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6726,6 +7169,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -6760,6 +7206,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6794,6 +7243,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6828,6 +7280,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="xous"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6864,6 +7319,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -6900,6 +7358,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6936,6 +7397,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -6968,6 +7432,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -6994,6 +7461,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7025,6 +7495,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7042,6 +7515,7 @@ target_endian="little"
 target_env=""
 target_family="unix"
 target_feature="a"
+target_feature="b"
 target_feature="c"
 target_feature="d"
 target_feature="f"
@@ -7079,6 +7553,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7122,6 +7599,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="64"
 target_thread_local
@@ -7165,6 +7645,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="64"
 target_thread_local
@@ -7208,6 +7691,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="fuchsia"
 target_pointer_width="64"
 target_thread_local
@@ -7250,6 +7736,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="hermit"
 target_pointer_width="64"
 target_thread_local
@@ -7292,6 +7781,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7335,6 +7828,10 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7378,6 +7875,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -7420,6 +7920,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7461,6 +7964,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7503,6 +8009,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7540,6 +8049,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7577,6 +8089,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7613,6 +8128,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7651,6 +8168,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7747,6 +8266,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7782,6 +8303,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -7817,6 +8339,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7851,6 +8374,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="solaris"
 target_pointer_width="64"
 target_vendor="sun"
@@ -7877,6 +8401,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7903,6 +8430,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7930,6 +8460,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7963,6 +8496,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8010,6 +8546,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8057,6 +8596,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8104,6 +8646,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_thread_local
@@ -8152,6 +8697,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="32"
 target_thread_local
@@ -8191,6 +8739,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8229,6 +8780,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8267,6 +8821,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8307,6 +8864,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8344,6 +8904,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8381,6 +8944,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8428,6 +8994,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8475,6 +9044,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -8524,6 +9096,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -8558,6 +9133,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8591,6 +9169,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8628,6 +9209,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8665,6 +9249,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8702,6 +9289,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8741,6 +9331,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nuttx"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -8781,6 +9374,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="emscripten"
 target_pointer_width="32"
 target_thread_local
@@ -8821,6 +9415,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="unknown"
 target_pointer_width="32"
 target_thread_local
@@ -8863,6 +9458,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -8904,6 +9500,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -8945,6 +9542,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -8985,6 +9583,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -9019,6 +9618,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="none"
 target_pointer_width="32"
 target_thread_local
@@ -9058,6 +9658,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_os="unknown"
 target_pointer_width="64"
 target_thread_local
@@ -9103,6 +9704,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="macos"
 target_pointer_width="64"
 target_thread_local
@@ -9149,6 +9753,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -9195,6 +9802,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="ios"
 target_pointer_width="64"
 target_thread_local
@@ -9241,6 +9851,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="tvos"
 target_pointer_width="64"
 target_thread_local
@@ -9287,6 +9900,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="watchos"
 target_pointer_width="64"
 target_thread_local
@@ -9326,6 +9942,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="unknown"
 target_pointer_width="64"
 target_vendor="fortanix"
@@ -9366,7 +9985,50 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="android"
+target_pointer_width="64"
+target_vendor="unknown"
+ub_checks
+unix
+
+x86_64-lynx-lynxos178:
+fmt_debug="full"
+overflow_checks
+panic="abort"
+relocation_model="static"
+target_abi=""
+target_arch="x86_64"
+target_endian="little"
+target_env=""
+target_family="unix"
+target_feature="fxsr"
+target_feature="sse"
+target_feature="sse2"
+target_feature="x87"
+target_has_atomic
+target_has_atomic="16"
+target_has_atomic="32"
+target_has_atomic="64"
+target_has_atomic="8"
+target_has_atomic="ptr"
+target_has_atomic_equal_alignment="16"
+target_has_atomic_equal_alignment="32"
+target_has_atomic_equal_alignment="64"
+target_has_atomic_equal_alignment="8"
+target_has_atomic_equal_alignment="ptr"
+target_has_atomic_load_store
+target_has_atomic_load_store="16"
+target_has_atomic_load_store="32"
+target_has_atomic_load_store="64"
+target_has_atomic_load_store="8"
+target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
+target_os="lynxos178"
 target_pointer_width="64"
 target_vendor="unknown"
 ub_checks
@@ -9403,6 +10065,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="cygwin"
 target_pointer_width="64"
 target_vendor="pc"
@@ -9440,6 +10105,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="pc"
@@ -9477,6 +10145,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="pc"
@@ -9514,6 +10185,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="nto"
 target_pointer_width="64"
 target_vendor="pc"
@@ -9551,6 +10225,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="solaris"
 target_pointer_width="64"
 target_vendor="pc"
@@ -9637,6 +10314,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -9681,6 +10361,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -9719,6 +10402,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -9757,6 +10443,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="dragonfly"
 target_pointer_width="64"
 target_thread_local
@@ -9795,6 +10484,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="64"
 target_thread_local
@@ -9842,6 +10534,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="fuchsia"
 target_pointer_width="64"
 target_thread_local
@@ -9880,6 +10575,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="haiku"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -9918,6 +10616,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="hermit"
 target_pointer_width="64"
 target_thread_local
@@ -9955,6 +10656,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="hurd"
 target_pointer_width="64"
 target_thread_local
@@ -9993,6 +10697,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="illumos"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10030,6 +10737,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="l4re"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10067,6 +10777,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -10105,6 +10818,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -10143,6 +10859,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -10181,6 +10900,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -10219,6 +10941,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10256,6 +10981,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -10292,6 +11020,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10328,6 +11059,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10366,6 +11100,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="redox"
 target_pointer_width="64"
 target_thread_local
@@ -10403,6 +11140,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="trusty"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10437,6 +11177,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="uefi"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -10522,6 +11265,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -10597,6 +11343,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -10636,6 +11385,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="64"
 target_thread_local
@@ -10695,6 +11447,9 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="macos"
 target_pointer_width="64"
 target_thread_local
@@ -10726,6 +11481,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -10755,6 +11513,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -10784,6 +11545,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -10808,6 +11572,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -10837,6 +11604,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="espidf"
 target_pointer_width="32"
 target_vendor="espressif"
@@ -10866,6 +11636,9 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="espressif"
