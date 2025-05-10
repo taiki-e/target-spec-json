@@ -12,6 +12,10 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::is_like_darwin`.
+
+- Add `Os::lynxos178`.
+
 ## [0.1.27] - 2025-02-25
 
 - Add `TargetSpec::binary_format`.
