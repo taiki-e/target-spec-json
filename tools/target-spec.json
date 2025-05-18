@@ -765,12 +765,10 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/arm64hazardfree"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/arm64hazardfree"
       ]
     },
@@ -1670,14 +1668,12 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application",
         "/machine:arm64"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application",
         "/machine:arm64"
@@ -1731,13 +1727,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -2490,12 +2484,10 @@
     "os": "windows",
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ],
       "msvc-lld": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ]
     },
     "requires-uwtable": true,
@@ -4930,13 +4922,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ]
@@ -5349,13 +5339,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ]
@@ -5605,13 +5593,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -5892,13 +5878,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/LARGEADDRESSAWARE",
         "/SAFESEH"
       ]
@@ -9935,12 +9919,10 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/OPT:NOLBR"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/OPT:NOLBR"
       ]
     },
@@ -9997,13 +9979,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -12105,12 +12085,10 @@
     "plt-by-default": false,
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ],
       "msvc-lld": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ]
     },
     "requires-uwtable": true,
@@ -13049,13 +13027,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/entry:efi_main",
         "/subsystem:efi_application"
       ]
@@ -13309,13 +13285,11 @@
     "pre-link-args": {
       "msvc": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ],
       "msvc-lld": [
         "/NOLOGO",
-        "/IGNORE:4286",
         "/APPCONTAINER",
         "mincore.lib"
       ]
@@ -13597,12 +13571,10 @@
     "plt-by-default": false,
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ],
       "msvc-lld": [
-        "/NOLOGO",
-        "/IGNORE:4286"
+        "/NOLOGO"
       ]
     },
     "requires-uwtable": true,
