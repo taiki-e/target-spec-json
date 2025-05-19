@@ -764,12 +764,10 @@
     "os": "windows",
     "pre-link-args": {
       "msvc": [
-        "/NOLOGO",
-        "/arm64hazardfree"
+        "/NOLOGO"
       ],
       "msvc-lld": [
-        "/NOLOGO",
-        "/arm64hazardfree"
+        "/NOLOGO"
       ]
     },
     "requires-uwtable": true,
