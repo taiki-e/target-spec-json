@@ -52,6 +52,7 @@
       "unpacked",
       "off"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
@@ -11075,6 +11076,7 @@
       "unpacked",
       "off"
     ],
+    "supports-xray": true,
     "target-family": [
       "unix"
     ],
