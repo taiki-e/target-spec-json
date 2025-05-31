@@ -11522,6 +11522,7 @@
     "emit-debug-gdb-scripts": false,
     "exe-suffix": ".exe",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -11597,6 +11598,7 @@
       "unix"
     ],
     "target-pointer-width": "64",
+    "tls-model": "emulated",
     "vendor": "pc"
   },
   "x86_64-pc-nto-qnx710": {
