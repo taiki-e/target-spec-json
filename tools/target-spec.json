@@ -682,6 +682,7 @@
     "env": "gnu",
     "exe-suffix": ".exe",
     "features": "+v8a,+neon,+fp-armv8",
+    "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
