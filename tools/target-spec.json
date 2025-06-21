@@ -3914,7 +3914,7 @@
       "gnu-lld-cc": []
     },
     "relocation-model": "static",
-    "target-c-int-width": "16",
+    "target-c-int-width": 16,
     "target-pointer-width": "16"
   },
   "bpfeb-unknown-none": {
@@ -5954,6 +5954,47 @@
     "target-pointer-width": "32",
     "vendor": "wrs"
   },
+  "loongarch32-unknown-none": {
+    "arch": "loongarch32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "features": "+f,+d",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32d",
+    "llvm-target": "loongarch32-unknown-none",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Freestanding/bare-metal LoongArch32",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
+  "loongarch32-unknown-none-softfloat": {
+    "abi": "softfloat",
+    "arch": "loongarch32",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+    "features": "-f,-d",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-abiname": "ilp32s",
+    "llvm-target": "loongarch32-unknown-none",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Freestanding/bare-metal LoongArch32 softfloat",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": "32"
+  },
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
     "code-model": "medium",
@@ -7236,7 +7277,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-c-int-width": "16",
+    "target-c-int-width": 16,
     "target-pointer-width": "16",
     "trap-unreachable": false
   },
@@ -7834,6 +7875,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
@@ -7874,6 +7916,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv1",
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -7920,6 +7963,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -8021,6 +8065,7 @@
     "frame-pointer": "always",
     "has-rpath": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64-unknown-openbsd",
     "max-atomic-width": 64,
     "metadata": {
@@ -8066,6 +8111,7 @@
     "has-thread-local": true,
     "linker": "wr-c++",
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv1",
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -8106,6 +8152,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64le-unknown-freebsd",
     "max-atomic-width": 64,
     "metadata": {
@@ -8145,6 +8192,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64le-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -8190,6 +8238,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64le-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
