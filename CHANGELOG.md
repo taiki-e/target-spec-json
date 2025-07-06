@@ -12,6 +12,29 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `BinaryFormat` enum and change `TargetSpec::binary_format` from `Option<String>` to `BinaryFormat`.
+
+- Add `Sanitizer` enum and change `TargetSpec::supported_sanitizers` from `Vec<String>` to `Vec<Sanitizer>`.
+
+- Add `TargetFamily` enum and change `TargetSpec::target_family` from `Vec<String>` to `Vec<TargetFamily>`.
+
+- Add `Arch::loongarch32`.
+
+- Change `TargetSpec::{atomic_cas,supports_stack_protector}` from `Option<bool>` to `bool`.
+
+- Change `TargetSpec::target_c_int_width` from `Option<String>` to `Option<u32>`.
+
+- Change `TargetSpec::target_pointer_width` from `String` to `u32`.
+
+- Change `Metadata::tier` from `Option<u64>` to `Option<u32>`.
+
+- Remove `TargetSpec::description`, `Arch::{asmjs,nvptx}`, and `Env::{preview2,psx,eabihf,gnueabihf}`, which removed in upstream.
+
+- Remove type aliases for obsoleted names:
+  - `TargetArch` (renamed to `Arch` in 0.1.3)
+  - `TargetEnv` (renamed to `Env` in 0.1.3)
+  - `TargetOs` (renamed to `Os` in 0.1.3)
+
 ## [0.1.28] - 2025-05-10
 
 - Add `TargetSpec::is_like_darwin`.

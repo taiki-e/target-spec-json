@@ -24,6 +24,9 @@ fn track_size() {
     write_size::<crate::target_spec::Arch>(&mut out);
     write_size::<crate::target_spec::Os>(&mut out);
     write_size::<crate::target_spec::Env>(&mut out);
+    write_size::<crate::target_spec::TargetFamily>(&mut out);
+    write_size::<crate::target_spec::Sanitizer>(&mut out);
+    write_size::<crate::target_spec::BinaryFormat>(&mut out);
     write_size::<crate::target_spec::TargetEndian>(&mut out);
     write_size::<crate::target_spec::PanicStrategy>(&mut out);
     write_size::<crate::TargetSpec>(&mut out);
