@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-07-06
+
 - Add `BinaryFormat` enum and change `TargetSpec::binary_format` from `Option<String>` to `BinaryFormat`.
 
 - Add `Sanitizer` enum and change `TargetSpec::supported_sanitizers` from `Vec<String>` to `Vec<Sanitizer>`.
@@ -161,7 +163,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.1.28...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/taiki-e/target-spec-json/compare/v0.1.28...v0.2.0
 [0.1.28]: https://github.com/taiki-e/target-spec-json/compare/v0.1.27...v0.1.28
 [0.1.27]: https://github.com/taiki-e/target-spec-json/compare/v0.1.26...v0.1.27
 [0.1.26]: https://github.com/taiki-e/target-spec-json/compare/v0.1.25...v0.1.26

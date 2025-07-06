@@ -13,7 +13,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-target-spec-json = "0.1"
+target-spec-json = "0.2"
 ```
 
 <!-- tidy:sync-markdown-to-rustdoc:end -->
