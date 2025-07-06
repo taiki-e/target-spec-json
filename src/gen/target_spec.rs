@@ -13,7 +13,6 @@ pub enum Arch {
     amdgpu,
     arm,
     arm64ec,
-    asmjs,
     avr,
     bpf,
     csky,
@@ -26,7 +25,6 @@ pub enum Arch {
     mips64,
     mips64r6,
     msp430,
-    nvptx,
     nvptx64,
     powerpc,
     powerpc64,
@@ -50,7 +48,6 @@ impl Arch {
             Self::amdgpu => "amdgpu",
             Self::arm => "arm",
             Self::arm64ec => "arm64ec",
-            Self::asmjs => "asmjs",
             Self::avr => "avr",
             Self::bpf => "bpf",
             Self::csky => "csky",
@@ -63,7 +60,6 @@ impl Arch {
             Self::mips64 => "mips64",
             Self::mips64r6 => "mips64r6",
             Self::msp430 => "msp430",
-            Self::nvptx => "nvptx",
             Self::nvptx64 => "nvptx64",
             Self::powerpc => "powerpc",
             Self::powerpc64 => "powerpc64",
@@ -208,9 +204,7 @@ impl core::fmt::Display for Os {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
 pub enum Env {
-    eabihf,
     gnu,
-    gnueabihf,
     libnx,
     msvc,
     musl,
@@ -223,8 +217,6 @@ pub enum Env {
     ohos,
     p1,
     p2,
-    preview2,
-    psx,
     relibc,
     sgx,
     uclibc,
@@ -233,9 +225,7 @@ impl Env {
     #[must_use]
     pub fn as_str(self) -> &'static str {
         match self {
-            Self::eabihf => "eabihf",
             Self::gnu => "gnu",
-            Self::gnueabihf => "gnueabihf",
             Self::libnx => "libnx",
             Self::msvc => "msvc",
             Self::musl => "musl",
@@ -248,8 +238,6 @@ impl Env {
             Self::ohos => "ohos",
             Self::p1 => "p1",
             Self::p2 => "p2",
-            Self::preview2 => "preview2",
-            Self::psx => "psx",
             Self::relibc => "relibc",
             Self::sgx => "sgx",
             Self::uclibc => "uclibc",
@@ -268,6 +256,111 @@ impl Default for Env {
     }
 }
 impl core::fmt::Display for Env {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        f.write_str(self.as_str())
+    }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[non_exhaustive]
+pub enum TargetFamily {
+    unix,
+    wasm,
+    windows,
+}
+impl TargetFamily {
+    #[must_use]
+    pub fn as_str(self) -> &'static str {
+        match self {
+            Self::unix => "unix",
+            Self::wasm => "wasm",
+            Self::windows => "windows",
+        }
+    }
+}
+impl core::fmt::Display for TargetFamily {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        f.write_str(self.as_str())
+    }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[non_exhaustive]
+pub enum Sanitizer {
+    address,
+    cfi,
+    dataflow,
+    hwaddress,
+    kcfi,
+    #[serde(rename = "kernel-address")]
+    kernel_address,
+    leak,
+    memory,
+    memtag,
+    safestack,
+    #[serde(rename = "shadow-call-stack")]
+    shadow_call_stack,
+    thread,
+}
+impl Sanitizer {
+    #[must_use]
+    pub fn as_str(self) -> &'static str {
+        match self {
+            Self::address => "address",
+            Self::cfi => "cfi",
+            Self::dataflow => "dataflow",
+            Self::hwaddress => "hwaddress",
+            Self::kcfi => "kcfi",
+            Self::kernel_address => "kernel-address",
+            Self::leak => "leak",
+            Self::memory => "memory",
+            Self::memtag => "memtag",
+            Self::safestack => "safestack",
+            Self::shadow_call_stack => "shadow-call-stack",
+            Self::thread => "thread",
+        }
+    }
+}
+impl core::fmt::Display for Sanitizer {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        f.write_str(self.as_str())
+    }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[non_exhaustive]
+pub enum BinaryFormat {
+    coff,
+    elf,
+    #[serde(rename = "mach-o")]
+    mach_o,
+    wasm,
+    xcoff,
+}
+impl BinaryFormat {
+    #[must_use]
+    pub fn as_str(self) -> &'static str {
+        match self {
+            Self::coff => "coff",
+            Self::elf => "elf",
+            Self::mach_o => "mach-o",
+            Self::wasm => "wasm",
+            Self::xcoff => "xcoff",
+        }
+    }
+}
+impl BinaryFormat {
+    #[allow(clippy::trivially_copy_pass_by_ref)]
+    pub(crate) fn is_elf(&self) -> bool {
+        matches!(self, Self::elf)
+    }
+}
+impl Default for BinaryFormat {
+    fn default() -> Self {
+        Self::elf
+    }
+}
+impl core::fmt::Display for BinaryFormat {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }

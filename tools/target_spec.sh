@@ -18,8 +18,6 @@ target_arch=(
   # Architectures that do not included in builtin targets.
   # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
   # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
-  asmjs # Removed in https://github.com/rust-lang/rust/pull/117338.
-  nvptx # Removed in https://github.com/rust-lang/rust/pull/100317.
   spirv # Used in https://github.com/Rust-GPU/rust-gpu.
 )
 target_os=(
@@ -30,11 +28,10 @@ target_env=(
   # Environments that do not included in builtin targets.
   # See also ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
   libnx
-  psx       # Used in the old rustc before https://github.com/rust-lang/rust/pull/131168.
-  preview2  # Used in the old nightly in few days https://github.com/rust-lang/rust/pull/119616.
-  eabihf    # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
-  gnueabihf # Used in the old rustc before https://github.com/rust-lang/rust/pull/119590.
 )
+binary_format=()
+target_family=()
+supported_sanitizers=()
 
 bail() {
   printf >&2 'error: %s\n' "$*"
@@ -42,7 +39,9 @@ bail() {
 }
 
 rustc -Z unstable-options --print all-target-specs-json >|tools/target-spec.json
-eval "$(jq -r '. | to_entries[].value | @sh "target_arch+=(\(.arch)) target_os+=(\(.os // "none")) target_env+=(\(.env // "none"))"' tools/target-spec.json)"
+eval "$(jq -r '. | to_entries[].value | @sh "target_arch+=(\(.arch)) target_os+=(\(.os // "none")) target_env+=(\(.env // "none")) binary_format+=(\(."binary-format" // "elf")) "' tools/target-spec.json)"
+target_family+=($(jq -r '. | to_entries[].value | if ."target-family" then ."target-family"[] else empty end' tools/target-spec.json))
+supported_sanitizers+=($(jq -r '. | to_entries[].value | if ."supported-sanitizers" then ."supported-sanitizers"[] else empty end' tools/target-spec.json))
 
 {
   for target in $(rustc --print target-list); do
@@ -72,7 +71,14 @@ enum() {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 ${non_exhaustive}
 pub enum ${name} {
-$(sed -E 's/^/    /g; s/$/,/g' <<<"${variants[*]}")
+EOF
+  for v in "${variants[@]}"; do
+    if [[ "${v}" == *"-"* ]]; then
+      printf '    #[serde(rename = "%s")]\n' "${v}"
+    fi
+    printf '    %s,\n' "${v//-/_}"
+  done
+  cat <<EOF
 }
 impl ${name} {
     #[must_use]
@@ -81,9 +87,9 @@ impl ${name} {
 EOF
   for v in "${variants[@]}"; do
     if [[ -n "${DEFAULT:-}" ]] && [[ -n "${DEFAULT_EMPTY_STR:-}" ]] && [[ "${v}" == "${DEFAULT}" ]]; then
-      printf '            Self::%s => "",\n' "${v}"
+      printf '            Self::%s => "",\n' "${v//-/_}"
     else
-      printf '            Self::%s => "%s",\n' "${v}" "${v}"
+      printf '            Self::%s => "%s",\n' "${v//-/_}" "${v}"
     fi
   done
   cat <<EOF
@@ -134,6 +140,12 @@ $(enum Arch "${target_arch[@]}")
 $(DEFAULT=none enum Os "${target_os[@]}")
 
 $(DEFAULT_EMPTY_STR=1 DEFAULT=none enum Env "${target_env[@]}")
+
+$(enum TargetFamily "${target_family[@]}")
+
+$(enum Sanitizer "${supported_sanitizers[@]}")
+
+$(DEFAULT=elf enum BinaryFormat "${binary_format[@]}")
 
 $(EXHAUSTIVE=1 DEFAULT=little enum TargetEndian big little)
 

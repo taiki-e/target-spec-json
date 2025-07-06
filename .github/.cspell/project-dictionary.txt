@@ -6,11 +6,16 @@ cabi
 cmdline
 dylibs
 floatabi
+hwaddress
 interworking
+kcfi
 mcount
+memtag
 rdylib
 redzone
 relro
 rpath
+safestack
 singlethread
 uwtable
+xcoff

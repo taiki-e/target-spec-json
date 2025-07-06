@@ -49,9 +49,9 @@ mod track_size;
 
 #[path = "gen/target_spec.rs"]
 mod target_spec;
-pub use self::target_spec::{Arch, Env, Os, PanicStrategy, TargetEndian};
-#[doc(no_inline)]
-pub use self::{Arch as TargetArch, Env as TargetEnv, Os as TargetOs};
+pub use self::target_spec::{
+    Arch, BinaryFormat, Env, Os, PanicStrategy, Sanitizer, TargetEndian, TargetFamily,
+};
 
 #[macro_use]
 mod process;
@@ -86,10 +86,10 @@ pub struct TargetSpec {
     pub archive_format: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub asm_args: Option<Vec<String>>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub atomic_cas: Option<bool>, // TODO: default true
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub binary_format: Option<String>,
+    #[serde(default = "default_true", skip_serializing_if = "Clone::clone")]
+    pub atomic_cas: bool,
+    #[serde(default, skip_serializing_if = "BinaryFormat::is_elf")]
+    pub binary_format: BinaryFormat,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub bitcode_llvm_cmdline: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -119,9 +119,6 @@ pub struct TargetSpec {
     pub default_hidden_visibility: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub default_uwtable: Option<bool>,
-    // Field removed 3 days after it was added.
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub description: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub direct_access_external_data: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -286,11 +283,11 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub staticlib_suffix: Option<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub supported_sanitizers: Vec<String>, // TODO: enum
+    pub supported_sanitizers: Vec<Sanitizer>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub supported_split_debuginfo: Vec<String>, // TODO: enum (packed|unpacked|off)
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub supports_stack_protector: Option<bool>, // TODO: default true?
+    pub supported_split_debuginfo: Vec<String>,
+    #[serde(default = "default_true", skip_serializing_if = "Clone::clone")]
+    pub supports_stack_protector: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub supports_xray: bool,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -300,12 +297,14 @@ pub struct TargetSpec {
     #[serde(default, skip_serializing_if = "TargetEndian::is_little")]
     pub target_endian: TargetEndian,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    pub target_family: Vec<String>, // TODO: enum (unix|windows|wasm)
+    pub target_family: Vec<TargetFamily>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub target_mcount: Option<String>,
+    // Integer since 1.89
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub target_c_int_width: Option<String>, // TODO: int string
-    pub target_pointer_width: String, // TODO: int string
+    pub target_c_int_width: Option<u32>,
+    #[serde(with = "int_string")]
+    pub target_pointer_width: u32,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub tls_model: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -323,7 +322,7 @@ pub struct Metadata {
     pub description: Option<String>,
     pub host_tools: Option<bool>,
     pub std: Option<bool>,
-    pub tier: Option<u64>,
+    pub tier: Option<u32>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -334,6 +333,31 @@ pub struct StackProbes {
     pub kind: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub min_llvm_version_for_inline: Option<(u32, u32, u32)>,
+}
+
+fn default_true() -> bool {
+    true
+}
+mod int_string {
+    use serde::{
+        de::{Deserialize as _, Deserializer, Error as _},
+        ser::Serializer,
+    };
+
+    #[allow(clippy::trivially_copy_pass_by_ref)]
+    pub(crate) fn serialize<S>(v: &u32, serializer: S) -> Result<S::Ok, S::Error>
+    where
+        S: Serializer,
+    {
+        serializer.serialize_str(&v.to_string())
+    }
+    pub(crate) fn deserialize<'de, D>(deserializer: D) -> Result<u32, D::Error>
+    where
+        D: Deserializer<'de>,
+    {
+        let i = String::deserialize(deserializer)?;
+        i.parse().map_err(D::Error::custom)
+    }
 }
 
 /// `<rustc> -Z unstable-options --print target-spec-json --target <target>`
@@ -388,6 +412,12 @@ mod tests {
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
             eprintln!("target={}:", target);
+            // Skip pre-1.89 because target-c-int-width change
+            if rustversion::cfg!(before(1.89))
+                && (target.starts_with("avr") || target.starts_with("msp430"))
+            {
+                continue;
+            }
             let (parsed, raw) = target_spec_json(target).unwrap();
             let deserialized = serde_json::to_string(&parsed).unwrap();
             assert_eq!(
@@ -395,18 +425,21 @@ mod tests {
                 serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
             );
         }
-        eprintln!("all-targets:");
-        let (parsed, raw) = all_target_specs_json().unwrap();
-        let deserialized = serde_json::to_string(&parsed).unwrap();
-        assert_eq!(
-            serde_json::from_str::<serde_json::Value>(&raw).unwrap(),
-            serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
-        );
-        // TODO: custom targets
-        // for spec_path in fs::read_dir(fixtures_path().join("target-specs"))
-        //     .unwrap()
-        //     .map(|e| e.unwrap().path())
-        // {
-        // }
+        // Skip pre-1.89 because target-c-int-width change
+        if rustversion::cfg!(since(1.89)) {
+            eprintln!("all-targets:");
+            let (parsed, raw) = all_target_specs_json().unwrap();
+            let deserialized = serde_json::to_string(&parsed).unwrap();
+            assert_eq!(
+                serde_json::from_str::<serde_json::Value>(&raw).unwrap(),
+                serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
+            );
+            // TODO: custom targets
+            // for spec_path in fs::read_dir(fixtures_path().join("target-specs"))
+            //     .unwrap()
+            //     .map(|e| e.unwrap().path())
+            // {
+            // }
+        }
     }
 }

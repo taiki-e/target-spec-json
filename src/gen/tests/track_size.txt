@@ -2,8 +2,11 @@ target_spec_json::error::Error: 40
 target_spec_json::target_spec::Arch: 1
 target_spec_json::target_spec::Os: 1
 target_spec_json::target_spec::Env: 1
+target_spec_json::target_spec::TargetFamily: 1
+target_spec_json::target_spec::Sanitizer: 1
+target_spec_json::target_spec::BinaryFormat: 1
 target_spec_json::target_spec::TargetEndian: 1
 target_spec_json::target_spec::PanicStrategy: 1
-target_spec_json::TargetSpec: 1624
-target_spec_json::Metadata: 48
+target_spec_json::TargetSpec: 1528
+target_spec_json::Metadata: 40
 target_spec_json::StackProbes: 40
