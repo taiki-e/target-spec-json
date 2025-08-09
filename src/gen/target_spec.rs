@@ -122,6 +122,7 @@ pub enum Os {
     tvos,
     uefi,
     unknown,
+    vexos,
     visionos,
     vita,
     vxworks,
@@ -172,6 +173,7 @@ impl Os {
             Self::tvos => "tvos",
             Self::uefi => "uefi",
             Self::unknown => "unknown",
+            Self::vexos => "vexos",
             Self::visionos => "visionos",
             Self::vita => "vita",
             Self::vxworks => "vxworks",
@@ -220,6 +222,7 @@ pub enum Env {
     relibc,
     sgx,
     uclibc,
+    v5,
 }
 impl Env {
     #[must_use]
@@ -241,6 +244,7 @@ impl Env {
             Self::relibc => "relibc",
             Self::sgx => "sgx",
             Self::uclibc => "uclibc",
+            Self::v5 => "v5",
         }
     }
 }
