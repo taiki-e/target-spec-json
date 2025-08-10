@@ -124,7 +124,7 @@ relocation_model="pic"
 target_abi="macabi"
 target_arch="aarch64"
 target_endian="little"
-target_env=""
+target_env="macabi"
 target_family="unix"
 target_feature="aes"
 target_feature="crc"
@@ -185,7 +185,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="aarch64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="aes"
 target_feature="crc"
@@ -290,7 +290,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="aarch64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="aes"
 target_feature="crc"
@@ -395,7 +395,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="aarch64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="aes"
 target_feature="crc"
@@ -500,7 +500,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="aarch64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="aes"
 target_feature="crc"
@@ -3740,6 +3740,54 @@ target_vendor="unknown"
 ub_checks
 unix
 
+armv7a-vex-v5:
+fmt_debug="full"
+overflow_checks
+panic="abort"
+relocation_model="static"
+target_abi="eabihf"
+target_arch="arm"
+target_endian="little"
+target_env="v5"
+target_feature="aclass"
+target_feature="d32"
+target_feature="dsp"
+target_feature="fpregs"
+target_feature="neon"
+target_feature="thumb2"
+target_feature="trustzone"
+target_feature="v5te"
+target_feature="v6"
+target_feature="v6k"
+target_feature="v6t2"
+target_feature="v7"
+target_feature="vfp2"
+target_feature="vfp3"
+target_has_atomic
+target_has_atomic="16"
+target_has_atomic="32"
+target_has_atomic="64"
+target_has_atomic="8"
+target_has_atomic="ptr"
+target_has_atomic_equal_alignment="16"
+target_has_atomic_equal_alignment="32"
+target_has_atomic_equal_alignment="64"
+target_has_atomic_equal_alignment="8"
+target_has_atomic_equal_alignment="ptr"
+target_has_atomic_load_store
+target_has_atomic_load_store="16"
+target_has_atomic_load_store="32"
+target_has_atomic_load_store="64"
+target_has_atomic_load_store="8"
+target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
+target_os="vexos"
+target_pointer_width="32"
+target_vendor="vex"
+ub_checks
+
 armv7k-apple-watchos:
 fmt_debug="full"
 overflow_checks
@@ -4179,6 +4227,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4212,6 +4262,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -4225,7 +4277,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="x86"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="cmpxchg16b"
 target_feature="fxsr"
@@ -4252,6 +4304,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="ios"
@@ -4288,6 +4341,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -4325,6 +4379,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -4361,6 +4416,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="netbsd"
@@ -4398,6 +4454,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="redox"
@@ -4442,6 +4499,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="macos"
@@ -4483,6 +4541,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="android"
@@ -4521,6 +4580,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="nto"
@@ -4560,6 +4620,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -4599,6 +4660,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -4639,6 +4701,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -4678,6 +4741,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="freebsd"
@@ -4717,6 +4781,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="haiku"
@@ -4755,6 +4820,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="hurd"
@@ -4794,6 +4860,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -4834,6 +4901,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -4873,6 +4941,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="netbsd"
@@ -4912,6 +4981,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="openbsd"
@@ -4949,6 +5019,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="uefi"
@@ -4987,6 +5058,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -5026,6 +5098,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -5066,6 +5139,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -5105,6 +5179,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="windows"
@@ -5144,6 +5219,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="vxworks"
@@ -5641,6 +5717,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -5678,6 +5755,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -5715,6 +5794,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -5752,6 +5832,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -5790,6 +5872,7 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -6143,6 +6226,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -6180,6 +6265,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f128_math
 target_has_reliable_f16
 target_has_reliable_f16_math
 target_os="linux"
@@ -8212,6 +8299,8 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
 target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -8249,6 +8338,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -9800,7 +9891,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="x86_64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="cmpxchg16b"
 target_feature="fxsr"
@@ -9849,7 +9940,7 @@ relocation_model="pic"
 target_abi="macabi"
 target_arch="x86_64"
 target_endian="little"
-target_env=""
+target_env="macabi"
 target_family="unix"
 target_feature="cmpxchg16b"
 target_feature="fxsr"
@@ -9898,7 +9989,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="x86_64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="cmpxchg16b"
 target_feature="fxsr"
@@ -9947,7 +10038,7 @@ relocation_model="pic"
 target_abi="sim"
 target_arch="x86_64"
 target_endian="little"
-target_env=""
+target_env="sim"
 target_family="unix"
 target_feature="cmpxchg16b"
 target_feature="fxsr"
