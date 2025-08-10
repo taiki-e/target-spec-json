@@ -12,6 +12,12 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::vexos`.
+
+- Add `Env::{macabi,sim,v5}`.
+
+- Add `TargetSpec::is_like_vexos`.
+
 ## [0.2.0] - 2025-07-06
 
 - Add `BinaryFormat` enum and change `TargetSpec::binary_format` from `Option<String>` to `BinaryFormat`.
