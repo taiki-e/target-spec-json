@@ -122,6 +122,7 @@ pub enum Os {
     tvos,
     uefi,
     unknown,
+    vexos,
     visionos,
     vita,
     vxworks,
@@ -172,6 +173,7 @@ impl Os {
             Self::tvos => "tvos",
             Self::uefi => "uefi",
             Self::unknown => "unknown",
+            Self::vexos => "vexos",
             Self::visionos => "visionos",
             Self::vita => "vita",
             Self::vxworks => "vxworks",
@@ -206,6 +208,7 @@ impl core::fmt::Display for Os {
 pub enum Env {
     gnu,
     libnx,
+    macabi,
     msvc,
     musl,
     newlib,
@@ -219,7 +222,9 @@ pub enum Env {
     p2,
     relibc,
     sgx,
+    sim,
     uclibc,
+    v5,
 }
 impl Env {
     #[must_use]
@@ -227,6 +232,7 @@ impl Env {
         match self {
             Self::gnu => "gnu",
             Self::libnx => "libnx",
+            Self::macabi => "macabi",
             Self::msvc => "msvc",
             Self::musl => "musl",
             Self::newlib => "newlib",
@@ -240,7 +246,9 @@ impl Env {
             Self::p2 => "p2",
             Self::relibc => "relibc",
             Self::sgx => "sgx",
+            Self::sim => "sim",
             Self::uclibc => "uclibc",
+            Self::v5 => "v5",
         }
     }
 }
