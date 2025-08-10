@@ -179,6 +179,8 @@ pub struct TargetSpec {
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_msvc: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
+    pub is_like_vexos: bool,
+    #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_wasm: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_windows: bool,
