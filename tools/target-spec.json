@@ -1897,6 +1897,108 @@
     "target-mcount": "\u0001_mcount",
     "target-pointer-width": "32"
   },
+  "aarch64_be-unknown-linux-musl": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "musl",
+    "crt-static-respected": true,
+    "data-layout": "E-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "dynamic-linking": true,
+    "env": "musl",
+    "features": "+v8a,+outline-atomics",
+    "frame-pointer": "non-leaf",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64_be-unknown-linux-musl",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Linux (big-endian) with musl-libc 1.2.5",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "post-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crtendS.o",
+        "crtn.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ],
+      "dynamic-pic-exe": [
+        "crtendS.o",
+        "crtn.o"
+      ],
+      "static-dylib": [
+        "crtendS.o",
+        "crtn.o"
+      ],
+      "static-nopic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ],
+      "static-pic-exe": [
+        "crtendS.o",
+        "crtn.o"
+      ]
+    },
+    "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crti.o",
+        "crtbeginS.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbegin.o"
+      ],
+      "dynamic-pic-exe": [
+        "Scrt1.o",
+        "crti.o",
+        "crtbeginS.o"
+      ],
+      "static-dylib": [
+        "crti.o",
+        "crtbeginS.o"
+      ],
+      "static-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbegin.o"
+      ],
+      "static-pic-exe": [
+        "rcrt1.o",
+        "crti.o",
+        "crtbeginS.o"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-xray": true,
+    "target-endian": "big",
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001_mcount",
+    "target-pointer-width": "64"
+  },
   "aarch64_be-unknown-netbsd": {
     "arch": "aarch64",
     "crt-objects-fallback": "false",
@@ -9073,6 +9175,36 @@
     "target-mcount": "_mcount",
     "target-pointer-width": "64",
     "vendor": "wrs"
+  },
+  "riscv64a23-unknown-linux-gnu": {
+    "arch": "riscv64",
+    "code-model": "medium",
+    "cpu": "generic-rv64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+rva23u64",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64-unknown-linux-gnu",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "RISC-V Linux (kernel 6.8.0, glibc 2.39)",
+      "host_tools": true,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": "64"
   },
   "riscv64gc-unknown-freebsd": {
     "abi-return-struct-as-int": true,
