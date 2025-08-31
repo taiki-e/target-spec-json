@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.2] - 2025-08-31
+
 - Add `Os::managarm`.
 
 - Add `Env::mlibc`.
@@ -175,7 +177,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/taiki-e/target-spec-json/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/taiki-e/target-spec-json/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/taiki-e/target-spec-json/compare/v0.1.28...v0.2.0
 [0.1.28]: https://github.com/taiki-e/target-spec-json/compare/v0.1.27...v0.1.28
