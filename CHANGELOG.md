@@ -12,6 +12,10 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::managarm`.
+
+- Add `Env::mlibc`.
+
 ## [0.2.1] - 2025-08-10
 
 - Add `Os::vexos`.
