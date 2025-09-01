@@ -12,6 +12,10 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Update `TargetSpec::target_pointer_width` to accept integer instead of string to reflect [upstream change](https://github.com/rust-lang/rust/pull/144443).
+
+- Document combinations of Rust versions and `target-spec-json` versions that have been confirmed to work.
+
 ## [0.2.2] - 2025-08-31
 
 - Add `Os::managarm`.
