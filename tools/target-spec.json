@@ -57,7 +57,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-ios": {
@@ -114,7 +114,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-ios-macabi": {
@@ -174,7 +174,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-ios-sim": {
@@ -233,7 +233,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-tvos": {
@@ -286,7 +286,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-tvos-sim": {
@@ -341,7 +341,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-visionos": {
@@ -398,7 +398,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-visionos-sim": {
@@ -457,7 +457,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-watchos": {
@@ -510,7 +510,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-apple-watchos-sim": {
@@ -565,7 +565,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "aarch64-kmc-solid_asp3": {
@@ -592,7 +592,7 @@
     "stack-probes": {
       "kind": "inline"
     },
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "kmc"
   },
   "aarch64-linux-android": {
@@ -638,7 +638,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "aarch64-nintendo-switch-freestanding": {
@@ -665,7 +665,7 @@
     "stack-probes": {
       "kind": "inline"
     },
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "nintendo"
   },
   "aarch64-pc-windows-gnullvm": {
@@ -732,7 +732,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "aarch64-pc-windows-msvc": {
@@ -788,7 +788,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "aarch64-unknown-freebsd": {
@@ -826,7 +826,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-fuchsia": {
     "arch": "aarch64",
@@ -915,7 +915,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-hermit": {
     "arch": "aarch64",
@@ -940,7 +940,7 @@
       "kind": "inline"
     },
     "static-position-independent-executables": true,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "initial-exec"
   },
   "aarch64-unknown-illumos": {
@@ -983,7 +983,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-linux-gnu": {
     "arch": "aarch64",
@@ -1031,7 +1031,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-linux-gnu_ilp32": {
     "abi": "ilp32",
@@ -1069,7 +1069,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "aarch64-unknown-linux-musl": {
     "arch": "aarch64",
@@ -1171,7 +1171,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-linux-ohos": {
     "arch": "aarch64",
@@ -1215,7 +1215,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "aarch64-unknown-managarm-mlibc": {
@@ -1246,7 +1246,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-netbsd": {
     "arch": "aarch64",
@@ -1277,7 +1277,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "use-ctors-section": true
   },
   "aarch64-unknown-none": {
@@ -1313,7 +1313,7 @@
       "kcfi",
       "kernel-address"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-none-softfloat": {
     "abi": "softfloat",
@@ -1341,7 +1341,7 @@
       "kcfi",
       "kernel-address"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-nto-qnx700": {
     "arch": "aarch64",
@@ -1377,7 +1377,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-nto-qnx710": {
     "arch": "aarch64",
@@ -1413,7 +1413,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-nto-qnx710_iosock": {
     "arch": "aarch64",
@@ -1451,7 +1451,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-nto-qnx800": {
     "arch": "aarch64",
@@ -1487,7 +1487,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-nuttx": {
     "arch": "aarch64",
@@ -1526,7 +1526,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-openbsd": {
     "abi-return-struct-as-int": true,
@@ -1556,7 +1556,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "aarch64-unknown-redox": {
@@ -1597,7 +1597,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-teeos": {
     "arch": "aarch64",
@@ -1648,7 +1648,7 @@
     "stack-probes": {
       "kind": "inline"
     },
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-trusty": {
     "arch": "aarch64",
@@ -1672,7 +1672,7 @@
     "relro-level": "full",
     "static-position-independent-executables": true,
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-unknown-uefi": {
     "abi-return-struct-as-int": true,
@@ -1727,7 +1727,7 @@
     "supported-split-debuginfo": [
       "packed"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64-uwp-windows-msvc": {
     "abi": "uwp",
@@ -1786,7 +1786,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "uwp"
   },
   "aarch64-wrs-vxworks": {
@@ -1820,7 +1820,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "wrs"
   },
   "aarch64_be-unknown-hermit": {
@@ -1847,7 +1847,7 @@
     },
     "static-position-independent-executables": true,
     "target-endian": "big",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "initial-exec"
   },
   "aarch64_be-unknown-linux-gnu": {
@@ -1886,7 +1886,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64_be-unknown-linux-gnu_ilp32": {
     "abi": "ilp32",
@@ -1925,7 +1925,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "aarch64_be-unknown-linux-musl": {
     "arch": "aarch64",
@@ -2027,7 +2027,7 @@
       "unix"
     ],
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "aarch64_be-unknown-netbsd": {
     "arch": "aarch64",
@@ -2058,7 +2058,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "use-ctors-section": true
   },
   "aarch64_be-unknown-none-softfloat": {
@@ -2088,7 +2088,7 @@
       "kernel-address"
     ],
     "target-endian": "big",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "amdgcn-amd-amdhsa": {
     "arch": "amdgpu",
@@ -2116,7 +2116,7 @@
     "requires-lto": true,
     "simd-types-indirect": false,
     "supports-stack-protector": false,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "amd"
   },
   "arm-linux-androideabi": {
@@ -2155,7 +2155,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "arm-unknown-linux-gnueabi": {
@@ -2192,7 +2192,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "arm-unknown-linux-gnueabihf": {
     "abi": "eabihf",
@@ -2228,7 +2228,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "arm-unknown-linux-musleabi": {
     "abi": "eabi",
@@ -2320,7 +2320,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "arm-unknown-linux-musleabihf": {
     "abi": "eabihf",
@@ -2412,7 +2412,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "arm64_32-apple-watchos": {
     "abi-return-struct-as-int": true,
@@ -2464,7 +2464,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "apple"
   },
   "arm64e-apple-darwin": {
@@ -2524,7 +2524,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "arm64e-apple-ios": {
@@ -2581,7 +2581,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "arm64e-apple-tvos": {
@@ -2634,7 +2634,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "arm64ec-pc-windows-msvc": {
@@ -2700,7 +2700,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "armeb-unknown-linux-gnueabi": {
@@ -2738,7 +2738,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armebv7r-none-eabi": {
     "abi": "eabi",
@@ -2761,7 +2761,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armebv7r-none-eabihf": {
     "abi": "eabihf",
@@ -2785,7 +2785,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv4t-none-eabi": {
     "abi": "eabi",
@@ -2815,7 +2815,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv4t-unknown-linux-gnueabi": {
     "abi": "eabi",
@@ -2852,7 +2852,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv5te-none-eabi": {
     "abi": "eabi",
@@ -2882,7 +2882,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv5te-unknown-linux-gnueabi": {
     "abi": "eabi",
@@ -2919,7 +2919,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv5te-unknown-linux-musleabi": {
     "abi": "eabi",
@@ -3012,7 +3012,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv5te-unknown-linux-uclibceabi": {
     "abi": "eabi",
@@ -3048,7 +3048,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv6-unknown-freebsd": {
     "abi": "eabihf",
@@ -3080,7 +3080,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv6-unknown-netbsd-eabihf": {
     "abi": "eabihf",
@@ -3110,7 +3110,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "armv6k-nintendo-3ds": {
@@ -3153,7 +3153,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "nintendo"
   },
   "armv7-linux-androideabi": {
@@ -3200,7 +3200,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "armv7-rtems-eabihf": {
@@ -3229,7 +3229,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-sony-vita-newlibeabihf": {
     "abi": "eabihf",
@@ -3268,7 +3268,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "sony"
   },
   "armv7-unknown-freebsd": {
@@ -3300,7 +3300,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-gnueabi": {
     "abi": "eabi",
@@ -3336,7 +3336,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-gnueabihf": {
     "abi": "eabihf",
@@ -3372,7 +3372,7 @@
       "unix"
     ],
     "target-mcount": "\u0001__gnu_mcount_nc",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-musleabi": {
     "abi": "eabi",
@@ -3464,7 +3464,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-musleabihf": {
     "abi": "eabihf",
@@ -3556,7 +3556,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-ohos": {
     "abi": "eabi",
@@ -3590,7 +3590,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "armv7-unknown-linux-uclibceabi": {
@@ -3626,7 +3626,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-linux-uclibceabihf": {
     "abi": "eabihf",
@@ -3661,7 +3661,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-unknown-netbsd-eabihf": {
     "abi": "eabihf",
@@ -3691,7 +3691,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "armv7-unknown-trusty": {
@@ -3718,7 +3718,7 @@
     "relro-level": "full",
     "static-position-independent-executables": true,
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7-wrs-vxworks-eabihf": {
     "abi": "eabihf",
@@ -3750,7 +3750,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "wrs"
   },
   "armv7a-kmc-solid_asp3-eabi": {
@@ -3776,7 +3776,7 @@
     },
     "os": "solid_asp3",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "kmc"
   },
   "armv7a-kmc-solid_asp3-eabihf": {
@@ -3802,7 +3802,7 @@
     },
     "os": "solid_asp3",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "kmc"
   },
   "armv7a-none-eabi": {
@@ -3827,7 +3827,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7a-none-eabihf": {
     "abi": "eabihf",
@@ -3851,7 +3851,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7a-nuttx-eabi": {
     "abi": "eabi",
@@ -3879,7 +3879,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7a-nuttx-eabihf": {
     "abi": "eabihf",
@@ -3907,7 +3907,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7a-vex-v5": {
     "abi": "eabihf",
@@ -3938,7 +3938,7 @@
     "os": "vexos",
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "vex"
   },
   "armv7k-apple-watchos": {
@@ -3988,7 +3988,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "apple"
   },
   "armv7r-none-eabi": {
@@ -4011,7 +4011,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7r-none-eabihf": {
     "abi": "eabihf",
@@ -4034,7 +4034,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "armv7s-apple-ios": {
     "abi-return-struct-as-int": true,
@@ -4083,7 +4083,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "apple"
   },
   "armv8r-none-eabihf": {
@@ -4106,7 +4106,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "avr-none": {
     "arch": "avr",
@@ -4140,7 +4140,7 @@
     },
     "relocation-model": "static",
     "target-c-int-width": 16,
-    "target-pointer-width": "16"
+    "target-pointer-width": 16
   },
   "bpfeb-unknown-none": {
     "arch": "bpf",
@@ -4166,7 +4166,7 @@
     "position-independent-executables": true,
     "singlethread": true,
     "target-endian": "big",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "bpfel-unknown-none": {
     "arch": "bpf",
@@ -4191,7 +4191,7 @@
     "panic-strategy": "abort",
     "position-independent-executables": true,
     "singlethread": true,
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "csky-unknown-linux-gnuabiv2": {
     "abi": "abiv2",
@@ -4232,7 +4232,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "csky-unknown-linux-gnuabiv2hf": {
     "abi": "abiv2hf",
@@ -4276,7 +4276,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "hexagon-unknown-linux-musl": {
     "arch": "hexagon",
@@ -4367,7 +4367,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "hexagon-unknown-none-elf": {
     "arch": "hexagon",
@@ -4388,7 +4388,7 @@
       "tier": 3
     },
     "panic-strategy": "abort",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i386-apple-ios": {
     "abi": "sim",
@@ -4442,7 +4442,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "apple"
   },
   "i586-unknown-linux-gnu": {
@@ -4489,7 +4489,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i586-unknown-linux-musl": {
     "arch": "x86",
@@ -4592,7 +4592,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i586-unknown-netbsd": {
     "arch": "x86",
@@ -4623,7 +4623,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "i586-unknown-redox": {
@@ -4673,7 +4673,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-apple-darwin": {
     "abi-return-struct-as-int": true,
@@ -4728,7 +4728,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "apple"
   },
   "i686-linux-android": {
@@ -4770,7 +4770,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "i686-pc-nto-qnx700": {
@@ -4811,7 +4811,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "pc"
   },
   "i686-pc-windows-gnu": {
@@ -5037,7 +5037,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "pc"
   },
   "i686-pc-windows-gnullvm": {
@@ -5115,7 +5115,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "pc"
   },
   "i686-pc-windows-msvc": {
@@ -5178,7 +5178,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "pc"
   },
   "i686-unknown-freebsd": {
@@ -5221,7 +5221,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-unknown-haiku": {
     "arch": "x86",
@@ -5255,7 +5255,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-unknown-hurd-gnu": {
     "arch": "x86",
@@ -5293,7 +5293,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-unknown-linux-gnu": {
     "arch": "x86",
@@ -5340,7 +5340,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-unknown-linux-musl": {
     "arch": "x86",
@@ -5444,7 +5444,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-unknown-netbsd": {
     "arch": "x86",
@@ -5484,7 +5484,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "i686-unknown-openbsd": {
@@ -5526,7 +5526,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "i686-unknown-uefi": {
@@ -5590,7 +5590,7 @@
     "supported-split-debuginfo": [
       "packed"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "i686-uwp-windows-gnu": {
     "abi": "uwp",
@@ -5785,7 +5785,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "uwp"
   },
   "i686-uwp-windows-msvc": {
@@ -5846,7 +5846,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "uwp"
   },
   "i686-win7-windows-gnu": {
@@ -6072,7 +6072,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "win7"
   },
   "i686-win7-windows-msvc": {
@@ -6134,7 +6134,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "win7"
   },
   "i686-wrs-vxworks": {
@@ -6177,7 +6177,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "wrs"
   },
   "loongarch32-unknown-none": {
@@ -6198,7 +6198,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "loongarch32-unknown-none-softfloat": {
     "abi": "softfloat",
@@ -6219,7 +6219,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
@@ -6262,7 +6262,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "loongarch64-unknown-linux-musl": {
     "arch": "loongarch64",
@@ -6361,7 +6361,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "loongarch64-unknown-linux-ohos": {
     "arch": "loongarch64",
@@ -6403,7 +6403,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "loongarch64-unknown-none": {
@@ -6425,7 +6425,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "loongarch64-unknown-none-softfloat": {
     "abi": "softfloat",
@@ -6447,7 +6447,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "m68k-unknown-linux-gnu": {
     "arch": "m68k",
@@ -6481,7 +6481,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "m68k-unknown-none-elf": {
     "arch": "m68k",
@@ -6501,7 +6501,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mips-mti-none-elf": {
     "arch": "mips",
@@ -6525,7 +6525,7 @@
     "relocation-model": "static",
     "singlethread": true,
     "target-endian": "big",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "mti"
   },
   "mips-unknown-linux-gnu": {
@@ -6561,7 +6561,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mips-unknown-linux-musl": {
     "arch": "mips",
@@ -6652,7 +6652,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mips-unknown-linux-uclibc": {
     "arch": "mips",
@@ -6687,7 +6687,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mips64-openwrt-linux-musl": {
     "abi": "abi64",
@@ -6780,7 +6780,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "openwrt"
   },
   "mips64-unknown-linux-gnuabi64": {
@@ -6818,7 +6818,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "mips64-unknown-linux-muslabi64": {
     "abi": "abi64",
@@ -6911,7 +6911,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "mips64el-unknown-linux-gnuabi64": {
     "abi": "abi64",
@@ -6947,7 +6947,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "mips64el-unknown-linux-muslabi64": {
     "abi": "abi64",
@@ -7040,7 +7040,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "mipsel-mti-none-elf": {
     "arch": "mips",
@@ -7063,7 +7063,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "singlethread": true,
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "mti"
   },
   "mipsel-sony-psp": {
@@ -7097,7 +7097,7 @@
       ]
     },
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "sony"
   },
   "mipsel-sony-psx": {
@@ -7124,7 +7124,7 @@
     "os": "psx",
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "sony"
   },
   "mipsel-unknown-linux-gnu": {
@@ -7159,7 +7159,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsel-unknown-linux-musl": {
     "arch": "mips",
@@ -7249,7 +7249,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsel-unknown-linux-uclibc": {
     "arch": "mips",
@@ -7283,7 +7283,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsel-unknown-netbsd": {
     "arch": "mips",
@@ -7312,7 +7312,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "mipsel-unknown-none": {
@@ -7334,7 +7334,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsisa32r6-unknown-linux-gnu": {
     "arch": "mips32r6",
@@ -7369,7 +7369,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsisa32r6el-unknown-linux-gnu": {
     "arch": "mips32r6",
@@ -7403,7 +7403,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "mipsisa64r6-unknown-linux-gnuabi64": {
     "abi": "abi64",
@@ -7440,7 +7440,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "mipsisa64r6el-unknown-linux-gnuabi64": {
     "abi": "abi64",
@@ -7476,7 +7476,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "msp430-none-elf": {
     "arch": "msp430",
@@ -7503,7 +7503,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-c-int-width": 16,
-    "target-pointer-width": "16",
+    "target-pointer-width": 16,
     "trap-unreachable": false
   },
   "nvptx64-nvidia-cuda": {
@@ -7532,7 +7532,7 @@
     "os": "cuda",
     "panic-strategy": "abort",
     "supports-stack-protector": false,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "nvidia"
   },
   "powerpc-unknown-freebsd": {
@@ -7576,7 +7576,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "powerpc-unknown-linux-gnu": {
     "arch": "powerpc",
@@ -7621,7 +7621,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "powerpc-unknown-linux-gnuspe": {
     "abi": "spe",
@@ -7667,7 +7667,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "powerpc-unknown-linux-musl": {
     "arch": "powerpc",
@@ -7767,7 +7767,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "powerpc-unknown-linux-muslspe": {
     "abi": "spe",
@@ -7869,7 +7869,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "powerpc-unknown-netbsd": {
     "arch": "powerpc",
@@ -7908,7 +7908,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "use-ctors-section": true
   },
   "powerpc-unknown-openbsd": {
@@ -7939,7 +7939,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "powerpc-wrs-vxworks": {
@@ -7984,7 +7984,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "wrs"
   },
   "powerpc-wrs-vxworks-spe": {
@@ -8030,7 +8030,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "wrs"
   },
   "powerpc64-ibm-aix": {
@@ -8083,7 +8083,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "ibm"
   },
   "powerpc64-unknown-freebsd": {
@@ -8127,7 +8127,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "powerpc64-unknown-linux-gnu": {
     "abi": "elfv1",
@@ -8174,7 +8174,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "powerpc64-unknown-linux-musl": {
     "abi": "elfv2",
@@ -8277,7 +8277,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "powerpc64-unknown-openbsd": {
     "abi": "elfv2",
@@ -8319,7 +8319,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "powerpc64-wrs-vxworks": {
@@ -8364,7 +8364,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "wrs"
   },
   "powerpc64le-unknown-freebsd": {
@@ -8407,7 +8407,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "powerpc64le-unknown-linux-gnu": {
     "abi": "elfv2",
@@ -8453,7 +8453,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "powerpc64le-unknown-linux-musl": {
     "abi": "elfv2",
@@ -8556,7 +8556,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv32-wrs-vxworks": {
     "arch": "riscv32",
@@ -8591,7 +8591,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "wrs"
   },
   "riscv32e-unknown-none-elf": {
@@ -8617,7 +8617,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32em-unknown-none-elf": {
     "abi": "ilp32e",
@@ -8642,7 +8642,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32emc-unknown-none-elf": {
     "abi": "ilp32e",
@@ -8667,7 +8667,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32gc-unknown-linux-gnu": {
     "arch": "riscv32",
@@ -8697,7 +8697,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32gc-unknown-linux-musl": {
     "arch": "riscv32",
@@ -8783,7 +8783,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32i-unknown-none-elf": {
     "arch": "riscv32",
@@ -8807,7 +8807,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32im-risc0-zkvm-elf": {
     "arch": "riscv32",
@@ -8832,7 +8832,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "singlethread": true,
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "risc0"
   },
   "riscv32im-unknown-none-elf": {
@@ -8857,7 +8857,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32ima-unknown-none-elf": {
     "arch": "riscv32",
@@ -8880,7 +8880,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imac-esp-espidf": {
     "arch": "riscv32",
@@ -8908,7 +8908,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "riscv32imac-unknown-none-elf": {
@@ -8932,7 +8932,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imac-unknown-nuttx-elf": {
     "arch": "riscv32",
@@ -8956,7 +8956,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imac-unknown-xous-elf": {
     "arch": "riscv32",
@@ -8977,7 +8977,7 @@
     },
     "os": "xous",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imafc-esp-espidf": {
     "arch": "riscv32",
@@ -9005,7 +9005,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "riscv32imafc-unknown-none-elf": {
@@ -9029,7 +9029,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imafc-unknown-nuttx-elf": {
     "arch": "riscv32",
@@ -9056,7 +9056,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imc-esp-espidf": {
     "arch": "riscv32",
@@ -9084,7 +9084,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "riscv32imc-unknown-none-elf": {
@@ -9109,7 +9109,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv32imc-unknown-nuttx-elf": {
     "arch": "riscv32",
@@ -9133,7 +9133,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "riscv64-linux-android": {
     "arch": "riscv64",
@@ -9167,7 +9167,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "riscv64-wrs-vxworks": {
@@ -9203,7 +9203,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "wrs"
   },
   "riscv64a23-unknown-linux-gnu": {
@@ -9234,7 +9234,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-freebsd": {
     "abi-return-struct-as-int": true,
@@ -9265,7 +9265,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-fuchsia": {
     "arch": "riscv64",
@@ -9350,7 +9350,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-hermit": {
     "arch": "riscv64",
@@ -9375,7 +9375,7 @@
     "panic-strategy": "abort",
     "position-independent-executables": true,
     "static-position-independent-executables": true,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "local-exec"
   },
   "riscv64gc-unknown-linux-gnu": {
@@ -9406,7 +9406,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-linux-musl": {
     "arch": "riscv64",
@@ -9492,7 +9492,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-managarm-mlibc": {
     "arch": "riscv64",
@@ -9522,7 +9522,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-netbsd": {
     "arch": "riscv64",
@@ -9553,7 +9553,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "use-ctors-section": true
   },
   "riscv64gc-unknown-none-elf": {
@@ -9582,7 +9582,7 @@
       "shadow-call-stack",
       "kernel-address"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-nuttx-elf": {
     "arch": "riscv64",
@@ -9613,7 +9613,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64gc-unknown-openbsd": {
     "abi-return-struct-as-int": true,
@@ -9643,7 +9643,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "riscv64imac-unknown-none-elf": {
@@ -9672,7 +9672,7 @@
       "shadow-call-stack",
       "kernel-address"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "riscv64imac-unknown-nuttx-elf": {
     "arch": "riscv64",
@@ -9703,7 +9703,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "s390x-unknown-linux-gnu": {
     "arch": "s390x",
@@ -9746,7 +9746,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "s390x-unknown-linux-musl": {
     "arch": "s390x",
@@ -9846,7 +9846,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "sparc-unknown-linux-gnu": {
     "arch": "sparc",
@@ -9890,7 +9890,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "sparc-unknown-none-elf": {
     "arch": "sparc",
@@ -9913,7 +9913,7 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-endian": "big",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "sparc64-unknown-linux-gnu": {
     "arch": "sparc64",
@@ -9946,7 +9946,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "sparc64-unknown-netbsd": {
     "arch": "sparc64",
@@ -9983,7 +9983,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "use-ctors-section": true
   },
   "sparc64-unknown-openbsd": {
@@ -10020,7 +10020,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "sparcv9-sun-solaris": {
@@ -10053,7 +10053,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "sun"
   },
   "thumbv4t-none-eabi": {
@@ -10084,7 +10084,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv5te-none-eabi": {
     "abi": "eabi",
@@ -10114,7 +10114,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv6m-none-eabi": {
     "abi": "eabi",
@@ -10138,7 +10138,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv6m-nuttx-eabi": {
     "abi": "eabi",
@@ -10166,7 +10166,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7a-nuttx-eabi": {
     "abi": "eabi",
@@ -10194,7 +10194,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7a-nuttx-eabihf": {
     "abi": "eabihf",
@@ -10222,7 +10222,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7a-pc-windows-msvc": {
     "abi-return-struct-as-int": true,
@@ -10280,7 +10280,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "pc"
   },
   "thumbv7a-uwp-windows-msvc": {
@@ -10342,7 +10342,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "uwp"
   },
   "thumbv7em-none-eabi": {
@@ -10366,7 +10366,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7em-none-eabihf": {
     "abi": "eabihf",
@@ -10390,7 +10390,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7em-nuttx-eabi": {
     "abi": "eabi",
@@ -10417,7 +10417,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7em-nuttx-eabihf": {
     "abi": "eabihf",
@@ -10445,7 +10445,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7m-none-eabi": {
     "abi": "eabi",
@@ -10468,7 +10468,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7m-nuttx-eabi": {
     "abi": "eabi",
@@ -10495,7 +10495,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7neon-linux-androideabi": {
     "abi": "eabi",
@@ -10541,7 +10541,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "emulated"
   },
   "thumbv7neon-unknown-linux-gnueabihf": {
@@ -10576,7 +10576,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv7neon-unknown-linux-musleabihf": {
     "abi": "eabihf",
@@ -10667,7 +10667,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.base-none-eabi": {
     "abi": "eabi",
@@ -10691,7 +10691,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.base-nuttx-eabi": {
     "abi": "eabi",
@@ -10719,7 +10719,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.main-none-eabi": {
     "abi": "eabi",
@@ -10742,7 +10742,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.main-none-eabihf": {
     "abi": "eabihf",
@@ -10766,7 +10766,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.main-nuttx-eabi": {
     "abi": "eabi",
@@ -10793,7 +10793,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "thumbv8m.main-nuttx-eabihf": {
     "abi": "eabihf",
@@ -10821,7 +10821,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "wasm32-unknown-emscripten": {
     "arch": "wasm32",
@@ -10862,7 +10862,7 @@
       "unix",
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32-unknown-unknown": {
@@ -10919,7 +10919,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32-wali-linux-musl": {
@@ -11001,7 +11001,7 @@
       "wasm",
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32-wasip1": {
@@ -11079,7 +11079,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32-wasip1-threads": {
@@ -11163,7 +11163,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32-wasip2": {
@@ -11239,7 +11239,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm32v1-none": {
@@ -11297,7 +11297,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
   "wasm64-unknown-unknown": {
@@ -11356,7 +11356,7 @@
     "target-family": [
       "wasm"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "local-exec"
   },
   "x86_64-apple-darwin": {
@@ -11418,7 +11418,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "x86_64-apple-ios": {
@@ -11476,7 +11476,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "x86_64-apple-ios-macabi": {
@@ -11535,7 +11535,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "x86_64-apple-tvos": {
@@ -11589,7 +11589,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "x86_64-apple-watchos-sim": {
@@ -11643,7 +11643,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "x86_64-fortanix-unknown-sgx": {
@@ -11747,7 +11747,7 @@
       ]
     },
     "relax-elf-relocations": true,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "fortanix"
   },
   "x86_64-linux-android": {
@@ -11798,7 +11798,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "x86_64-lynx-lynxos178": {
@@ -11846,7 +11846,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-pc-cygwin": {
     "abi-return-struct-as-int": true,
@@ -11938,7 +11938,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated",
     "vendor": "pc"
   },
@@ -11977,7 +11977,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-nto-qnx710_iosock": {
@@ -12017,7 +12017,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-nto-qnx800": {
@@ -12055,7 +12055,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-solaris": {
@@ -12096,7 +12096,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-windows-gnu": {
@@ -12324,7 +12324,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-windows-gnullvm": {
@@ -12394,7 +12394,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-pc-windows-msvc": {
@@ -12454,7 +12454,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "pc"
   },
   "x86_64-unikraft-linux-musl": {
@@ -12492,7 +12492,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "unikraft"
   },
   "x86_64-unknown-dragonfly": {
@@ -12531,7 +12531,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-freebsd": {
     "abi-return-struct-as-int": true,
@@ -12578,7 +12578,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-fuchsia": {
     "arch": "x86_64",
@@ -12664,7 +12664,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-haiku": {
     "arch": "x86_64",
@@ -12699,7 +12699,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-hermit": {
     "arch": "x86_64",
@@ -12726,7 +12726,7 @@
       "kind": "inline"
     },
     "static-position-independent-executables": true,
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "initial-exec"
   },
   "x86_64-unknown-hurd-gnu": {
@@ -12767,7 +12767,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-illumos": {
     "arch": "x86_64",
@@ -12812,7 +12812,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-l4re-uclibc": {
     "arch": "x86_64",
@@ -12838,7 +12838,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-linux-gnu": {
     "arch": "x86_64",
@@ -12898,7 +12898,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-linux-gnux32": {
     "abi": "x32",
@@ -12941,7 +12941,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32"
+    "target-pointer-width": 32
   },
   "x86_64-unknown-linux-musl": {
     "arch": "x86_64",
@@ -13051,7 +13051,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-linux-none": {
     "arch": "x86_64",
@@ -13087,7 +13087,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-linux-ohos": {
     "arch": "x86_64",
@@ -13138,7 +13138,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "x86_64-unknown-managarm-mlibc": {
@@ -13177,7 +13177,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-netbsd": {
     "arch": "x86_64",
@@ -13225,7 +13225,7 @@
       "unix"
     ],
     "target-mcount": "__mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "use-ctors-section": true
   },
   "x86_64-unknown-none": {
@@ -13259,7 +13259,7 @@
       "kcfi",
       "kernel-address"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-openbsd": {
     "abi-return-struct-as-int": true,
@@ -13299,7 +13299,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "tls-model": "emulated"
   },
   "x86_64-unknown-redox": {
@@ -13349,7 +13349,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-trusty": {
     "arch": "x86_64",
@@ -13376,7 +13376,7 @@
     },
     "static-position-independent-executables": true,
     "target-mcount": "\u0001_mcount",
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-unknown-uefi": {
     "abi-return-struct-as-int": true,
@@ -13433,7 +13433,7 @@
     "supported-split-debuginfo": [
       "packed"
     ],
-    "target-pointer-width": "64"
+    "target-pointer-width": 64
   },
   "x86_64-uwp-windows-gnu": {
     "abi": "uwp",
@@ -13630,7 +13630,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "uwp"
   },
   "x86_64-uwp-windows-msvc": {
@@ -13692,7 +13692,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "uwp"
   },
   "x86_64-win7-windows-gnu": {
@@ -13919,7 +13919,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "win7"
   },
   "x86_64-win7-windows-msvc": {
@@ -13978,7 +13978,7 @@
     "target-family": [
       "windows"
     ],
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "win7"
   },
   "x86_64-wrs-vxworks": {
@@ -14022,7 +14022,7 @@
       "unix"
     ],
     "target-mcount": "_mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "wrs"
   },
   "x86_64h-apple-darwin": {
@@ -14084,7 +14084,7 @@
       "unix"
     ],
     "target-mcount": "\u0001mcount",
-    "target-pointer-width": "64",
+    "target-pointer-width": 64,
     "vendor": "apple"
   },
   "xtensa-esp32-espidf": {
@@ -14110,7 +14110,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "xtensa-esp32-none-elf": {
@@ -14131,7 +14131,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "xtensa-esp32s2-espidf": {
@@ -14157,7 +14157,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "xtensa-esp32s2-none-elf": {
@@ -14180,7 +14180,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "xtensa-esp32s3-espidf": {
@@ -14206,7 +14206,7 @@
     "target-family": [
       "unix"
     ],
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   },
   "xtensa-esp32s3-none-elf": {
@@ -14227,7 +14227,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
-    "target-pointer-width": "32",
+    "target-pointer-width": 32,
     "vendor": "espressif"
   }
 }
