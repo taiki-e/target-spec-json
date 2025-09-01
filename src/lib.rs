@@ -16,6 +16,17 @@ Add this to your `Cargo.toml`:
 target-spec-json = "0.2"
 ```
 
+Both `--print target-spec-json` and `--print all-target-specs-json` are unstable interfaces and may not work with certain version combinations of Rust versions and `target-spec-json` versions.
+
+The following are combinations that have been confirmed to work:
+
+| target-spec-json | Rust                                    |
+| ---------------- | --------------------------------------- |
+| 0.2.3            | nightly-2025-09-01                      |
+| 0.2.2            | nightly-2025-08-31                      |
+| 0.2.1            | nightly-2025-08-10 - nightly-2025-08-30 |
+| 0.2.0            | nightly-2025-07-06 - nightly-2025-08-08 |
+
 <!-- tidy:sync-markdown-to-rustdoc:end -->
 */
 
@@ -68,7 +79,9 @@ use crate::{error::Result, process::ProcessBuilder};
 
 pub type AllTargetSpecs = BTreeMap<String, TargetSpec>;
 
-// Refs: https://github.com/rust-lang/rust/blob/HEAD/compiler/rustc_target/src/spec/mod.rs
+// Refs:
+// - https://github.com/rust-lang/rust/blob/HEAD/compiler/rustc_target/src/spec/mod.rs
+// - https://github.com/rust-lang/rust/blob/c0bb3b98bb7aac24a37635e5d36d961e0b14f435/compiler/rustc_target/src/spec/json.rs
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "kebab-case")]
@@ -305,7 +318,7 @@ pub struct TargetSpec {
     // Integer since 1.89
     #[serde(skip_serializing_if = "Option::is_none")]
     pub target_c_int_width: Option<u32>,
-    #[serde(with = "int_string")]
+    // Integer since 1.91
     pub target_pointer_width: u32,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub tls_model: Option<String>,
@@ -339,27 +352,6 @@ pub struct StackProbes {
 
 fn default_true() -> bool {
     true
-}
-mod int_string {
-    use serde::{
-        de::{Deserialize as _, Deserializer, Error as _},
-        ser::Serializer,
-    };
-
-    #[allow(clippy::trivially_copy_pass_by_ref)]
-    pub(crate) fn serialize<S>(v: &u32, serializer: S) -> Result<S::Ok, S::Error>
-    where
-        S: Serializer,
-    {
-        serializer.serialize_str(&v.to_string())
-    }
-    pub(crate) fn deserialize<'de, D>(deserializer: D) -> Result<u32, D::Error>
-    where
-        D: Deserializer<'de>,
-    {
-        let i = String::deserialize(deserializer)?;
-        i.parse().map_err(D::Error::custom)
-    }
 }
 
 /// `<rustc> -Z unstable-options --print target-spec-json --target <target>`
@@ -408,18 +400,14 @@ mod tests {
         Ok((serde_json::from_str(&raw).map_err(Error::new)?, raw))
     }
 
+    // Skip pre-1.91 because target-pointer-width change
+    #[rustversion::attr(before(1.91), ignore)]
     #[test]
     #[cfg_attr(miri, ignore)] // Miri doesn't support pipe2 (inside std::process::Command)
     fn parse_target_spec_json() {
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
             eprintln!("target={}:", target);
-            // Skip pre-1.89 because target-c-int-width change
-            if rustversion::cfg!(before(1.89))
-                && (target.starts_with("avr") || target.starts_with("msp430"))
-            {
-                continue;
-            }
             let (parsed, raw) = target_spec_json(target).unwrap();
             let deserialized = serde_json::to_string(&parsed).unwrap();
             assert_eq!(
@@ -427,21 +415,18 @@ mod tests {
                 serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
             );
         }
-        // Skip pre-1.89 because target-c-int-width change
-        if rustversion::cfg!(since(1.89)) {
-            eprintln!("all-targets:");
-            let (parsed, raw) = all_target_specs_json().unwrap();
-            let deserialized = serde_json::to_string(&parsed).unwrap();
-            assert_eq!(
-                serde_json::from_str::<serde_json::Value>(&raw).unwrap(),
-                serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
-            );
-            // TODO: custom targets
-            // for spec_path in fs::read_dir(fixtures_path().join("target-specs"))
-            //     .unwrap()
-            //     .map(|e| e.unwrap().path())
-            // {
-            // }
-        }
+        eprintln!("all-targets:");
+        let (parsed, raw) = all_target_specs_json().unwrap();
+        let deserialized = serde_json::to_string(&parsed).unwrap();
+        assert_eq!(
+            serde_json::from_str::<serde_json::Value>(&raw).unwrap(),
+            serde_json::from_str::<serde_json::Value>(&deserialized).unwrap()
+        );
+        // TODO: custom targets
+        // for spec_path in fs::read_dir(fixtures_path().join("target-specs"))
+        //     .unwrap()
+        //     .map(|e| e.unwrap().path())
+        // {
+        // }
     }
 }
