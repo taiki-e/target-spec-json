@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.3] - 2025-09-01
+
 - Update `TargetSpec::target_pointer_width` to accept integer instead of string to reflect [upstream change](https://github.com/rust-lang/rust/pull/144443).
 
 - Document combinations of Rust versions and `target-spec-json` versions that have been confirmed to work.
@@ -181,7 +183,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.3...HEAD
+[0.2.3]: https://github.com/taiki-e/target-spec-json/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/taiki-e/target-spec-json/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/taiki-e/target-spec-json/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/taiki-e/target-spec-json/compare/v0.1.28...v0.2.0
