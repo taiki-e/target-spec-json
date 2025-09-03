@@ -1663,7 +1663,7 @@
     "metadata": {
       "description": "ARM64 Trusty",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "trusty",
@@ -2677,8 +2677,8 @@
     "metadata": {
       "description": "Arm64EC Windows MSVC",
       "host_tools": false,
-      "std": null,
-      "tier": 3
+      "std": true,
+      "tier": 2
     },
     "no-default-libraries": false,
     "os": "windows",
@@ -3709,7 +3709,7 @@
     "metadata": {
       "description": "Armv7-A Trusty",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "trusty",
@@ -13363,7 +13363,7 @@
     "metadata": {
       "description": "x86_64 Trusty",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "trusty",
