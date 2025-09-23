@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.4] - 2025-09-23
+
 - Add `Os::motor`.
 
 ## [0.2.3] - 2025-09-01
@@ -185,7 +187,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.3...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.4...HEAD
+[0.2.4]: https://github.com/taiki-e/target-spec-json/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/taiki-e/target-spec-json/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/taiki-e/target-spec-json/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/taiki-e/target-spec-json/compare/v0.2.0...v0.2.1
