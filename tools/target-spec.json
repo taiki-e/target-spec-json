@@ -6954,7 +6954,6 @@
     "arch": "mips64",
     "cpu": "mips64r2",
     "crt-objects-fallback": "musl",
-    "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "dynamic-linking": true,
@@ -10837,7 +10836,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker-flavor": "em-cc",
     "linker-is-gnu": false,
     "llvm-target": "wasm32-unknown-emscripten",
@@ -10879,7 +10877,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "rust-lld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -11023,7 +11020,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "rust-lld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -11102,7 +11098,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "rust-lld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -11185,7 +11180,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "wasm-component-ld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -11258,7 +11252,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "rust-lld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -11315,7 +11308,6 @@
     "generate-arange-section": false,
     "has-thread-local": true,
     "is-like-wasm": true,
-    "limit-rdylib-exports": false,
     "linker": "rust-lld",
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
@@ -13177,6 +13169,54 @@
     "target-family": [
       "unix"
     ],
+    "target-pointer-width": 64
+  },
+  "x86_64-unknown-motor": {
+    "arch": "x86_64",
+    "code-model": "small",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "true",
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "frame-pointer": "non-leaf",
+    "linker-flavor": "gnu",
+    "llvm-target": "x86_64-unknown-none-elf",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Motor OS",
+      "host_tools": null,
+      "std": null,
+      "tier": 3
+    },
+    "os": "motor",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu": [
+        "-e",
+        "motor_start",
+        "--no-undefined",
+        "--error-unresolved-symbols",
+        "--no-undefined-version",
+        "-u",
+        "__rust_abort"
+      ],
+      "gnu-lld": [
+        "-e",
+        "motor_start",
+        "--no-undefined",
+        "--error-unresolved-symbols",
+        "--no-undefined-version",
+        "-u",
+        "__rust_abort"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
     "target-pointer-width": 64
   },
   "x86_64-unknown-netbsd": {
