@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::motor`.
+
 ## [0.2.3] - 2025-09-01
 
 - Update `TargetSpec::target_pointer_width` to accept integer instead of string to reflect [upstream change](https://github.com/rust-lang/rust/pull/144443).
