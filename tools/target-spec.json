@@ -3932,7 +3932,7 @@
     "metadata": {
       "description": "ARMv7-A Cortex-A9 VEX V5 Brain",
       "host_tools": false,
-      "std": false,
+      "std": true,
       "tier": 3
     },
     "os": "vexos",
