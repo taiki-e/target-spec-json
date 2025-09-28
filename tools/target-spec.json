@@ -2756,7 +2756,7 @@
       "description": "Bare Armv7-R, Big Endian",
       "host_tools": false,
       "std": false,
-      "tier": 2
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -2780,7 +2780,7 @@
       "description": "Bare Armv7-R, Big Endian, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 2
+      "tier": 3
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -5666,46 +5666,6 @@
       "tier": 3
     },
     "os": "windows",
-    "post-link-objects": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
     "pre-link-args": {
       "gnu": [
         "--dynamicbase",
@@ -5734,50 +5694,24 @@
         "-Wl,--large-address-aware"
       ]
     },
-    "pre-link-objects": {
-      "dynamic-dylib": [
-        "rsbegin.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsbegin.o"
-      ],
-      "static-dylib": [
-        "rsbegin.o"
-      ],
-      "static-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "static-pic-exe": [
-        "rsbegin.o"
-      ]
-    },
     "pre-link-objects-fallback": {
       "dynamic-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "dynamic-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "dynamic-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "static-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ]
     },
     "requires-uwtable": true,
@@ -5953,46 +5887,6 @@
       "tier": 3
     },
     "os": "windows",
-    "post-link-objects": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
     "pre-link-args": {
       "gnu": [
         "--dynamicbase",
@@ -6021,50 +5915,24 @@
         "-Wl,--large-address-aware"
       ]
     },
-    "pre-link-objects": {
-      "dynamic-dylib": [
-        "rsbegin.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsbegin.o"
-      ],
-      "static-dylib": [
-        "rsbegin.o"
-      ],
-      "static-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "static-pic-exe": [
-        "rsbegin.o"
-      ]
-    },
     "pre-link-objects-fallback": {
       "dynamic-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "dynamic-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "dynamic-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "static-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ]
     },
     "requires-uwtable": true,
@@ -12196,46 +12064,6 @@
     },
     "os": "windows",
     "plt-by-default": false,
-    "post-link-objects": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
     "pre-link-args": {
       "gnu": [
         "--dynamicbase",
@@ -12266,50 +12094,24 @@
         "-Wl,--high-entropy-va"
       ]
     },
-    "pre-link-objects": {
-      "dynamic-dylib": [
-        "rsbegin.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsbegin.o"
-      ],
-      "static-dylib": [
-        "rsbegin.o"
-      ],
-      "static-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "static-pic-exe": [
-        "rsbegin.o"
-      ]
-    },
     "pre-link-objects-fallback": {
       "dynamic-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "dynamic-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "dynamic-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "static-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ]
     },
     "requires-uwtable": true,
@@ -13550,46 +13352,6 @@
     },
     "os": "windows",
     "plt-by-default": false,
-    "post-link-objects": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
     "pre-link-args": {
       "gnu": [
         "--dynamicbase",
@@ -13620,50 +13382,24 @@
         "-Wl,--high-entropy-va"
       ]
     },
-    "pre-link-objects": {
-      "dynamic-dylib": [
-        "rsbegin.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsbegin.o"
-      ],
-      "static-dylib": [
-        "rsbegin.o"
-      ],
-      "static-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "static-pic-exe": [
-        "rsbegin.o"
-      ]
-    },
     "pre-link-objects-fallback": {
       "dynamic-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "dynamic-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "dynamic-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "static-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ]
     },
     "requires-uwtable": true,
@@ -13839,46 +13575,6 @@
     },
     "os": "windows",
     "plt-by-default": false,
-    "post-link-objects": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
-    "post-link-objects-fallback": {
-      "dynamic-dylib": [
-        "rsend.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsend.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsend.o"
-      ],
-      "static-dylib": [
-        "rsend.o"
-      ],
-      "static-nopic-exe": [
-        "rsend.o"
-      ],
-      "static-pic-exe": [
-        "rsend.o"
-      ]
-    },
     "pre-link-args": {
       "gnu": [
         "--dynamicbase",
@@ -13909,50 +13605,24 @@
         "-Wl,--high-entropy-va"
       ]
     },
-    "pre-link-objects": {
-      "dynamic-dylib": [
-        "rsbegin.o"
-      ],
-      "dynamic-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "dynamic-pic-exe": [
-        "rsbegin.o"
-      ],
-      "static-dylib": [
-        "rsbegin.o"
-      ],
-      "static-nopic-exe": [
-        "rsbegin.o"
-      ],
-      "static-pic-exe": [
-        "rsbegin.o"
-      ]
-    },
     "pre-link-objects-fallback": {
       "dynamic-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "dynamic-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "dynamic-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-dylib": [
-        "dllcrt2.o",
-        "rsbegin.o"
+        "dllcrt2.o"
       ],
       "static-nopic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ],
       "static-pic-exe": [
-        "crt2.o",
-        "rsbegin.o"
+        "crt2.o"
       ]
     },
     "requires-uwtable": true,
