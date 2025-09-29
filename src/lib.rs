@@ -75,8 +75,8 @@ use std::{collections::BTreeMap, process::Command};
 
 use serde_derive::{Deserialize, Serialize};
 
-pub use crate::error::Error;
-use crate::{error::Result, process::ProcessBuilder};
+pub use self::error::Error;
+use self::{error::Result, process::ProcessBuilder};
 
 pub type AllTargetSpecs = BTreeMap<String, TargetSpec>;
 
