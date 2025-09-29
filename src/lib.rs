@@ -408,7 +408,7 @@ mod tests {
     fn parse_target_spec_json() {
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
-            eprintln!("target={}:", target);
+            eprintln!("target={target}:");
             let (parsed, raw) = target_spec_json(target).unwrap();
             let deserialized = serde_json::to_string(&parsed).unwrap();
             assert_eq!(
