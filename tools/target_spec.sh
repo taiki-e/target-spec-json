@@ -16,7 +16,7 @@ cd -- "$(dirname -- "$0")"/..
 file=src/gen/target_spec.rs
 target_arch=(
   # Architectures that do not included in builtin targets.
-  # See also https://github.com/rust-lang/rust/blob/1.84.0/compiler/rustc_target/src/callconv/mod.rs#L651
+  # See also https://github.com/rust-lang/rust/blob/1.90.0/compiler/rustc_target/src/callconv/mod.rs#L634
   # and ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
   spirv # Used in https://github.com/Rust-GPU/rust-gpu.
 )
