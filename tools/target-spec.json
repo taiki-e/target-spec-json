@@ -10831,7 +10831,8 @@
         "--allow-undefined",
         "--no-demangle",
         "--export-memory",
-        "--shared-memory"
+        "--shared-memory",
+        "--max-memory=1073741824"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
@@ -10841,7 +10842,8 @@
         "-Wl,--no-demangle",
         "--target=wasm32-wasi-threads",
         "-Wl,--export-memory,",
-        "-Wl,--shared-memory"
+        "-Wl,--shared-memory",
+        "-Wl,--max-memory=1073741824"
       ]
     },
     "pre-link-objects-fallback": {
@@ -10991,7 +10993,8 @@
         "--no-demangle",
         "--import-memory",
         "--export-memory",
-        "--shared-memory"
+        "--shared-memory",
+        "--max-memory=1073741824"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
@@ -11002,7 +11005,8 @@
         "--target=wasm32-wasip1-threads",
         "-Wl,--import-memory",
         "-Wl,--export-memory,",
-        "-Wl,--shared-memory"
+        "-Wl,--shared-memory",
+        "-Wl,--max-memory=1073741824"
       ]
     },
     "pre-link-objects-fallback": {
