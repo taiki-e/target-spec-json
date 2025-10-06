@@ -4151,9 +4151,9 @@
     "max-atomic-width": 16,
     "metadata": {
       "description": null,
-      "host_tools": null,
-      "std": null,
-      "tier": null
+      "host_tools": false,
+      "std": false,
+      "tier": 3
     },
     "need-explicit-cpu": true,
     "pre-link-args": {
