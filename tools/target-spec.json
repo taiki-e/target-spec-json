@@ -11175,6 +11175,81 @@
     "target-pointer-width": 32,
     "tls-model": "local-exec"
   },
+  "wasm32-wasip3": {
+    "arch": "wasm32",
+    "binary-format": "wasm",
+    "crt-objects-fallback": "true",
+    "crt-static-allows-dylibs": true,
+    "crt-static-default": true,
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-i128:128-n32:64-S128-ni:1:10:20",
+    "dll-prefix": "",
+    "dll-suffix": ".wasm",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "entry-name": "__main_void",
+    "env": "p3",
+    "exe-suffix": ".wasm",
+    "generate-arange-section": false,
+    "has-thread-local": true,
+    "is-like-wasm": true,
+    "linker": "wasm-component-ld",
+    "linker-flavor": "wasm-lld",
+    "linker-is-gnu": false,
+    "lld-flavor": "wasm",
+    "llvm-target": "wasm32-wasip3",
+    "main-needs-argc-argv": false,
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "WebAssembly",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "only-cdylib": true,
+    "os": "wasi",
+    "panic-strategy": "abort",
+    "pre-link-args": {
+      "wasm-lld": [
+        "-z",
+        "stack-size=1048576",
+        "--stack-first",
+        "--allow-undefined",
+        "--no-demangle"
+      ],
+      "wasm-lld-cc": [
+        "-Wl,-z",
+        "-Wl,stack-size=1048576",
+        "-Wl,--stack-first",
+        "-Wl,--allow-undefined",
+        "-Wl,--no-demangle"
+      ]
+    },
+    "pre-link-objects-fallback": {
+      "dynamic-nopic-exe": [
+        "crt1-command.o"
+      ],
+      "dynamic-pic-exe": [
+        "crt1-command.o"
+      ],
+      "static-nopic-exe": [
+        "crt1-command.o"
+      ],
+      "static-pic-exe": [
+        "crt1-command.o"
+      ],
+      "wasi-reactor-exe": [
+        "crt1-reactor.o"
+      ]
+    },
+    "singlethread": true,
+    "target-family": [
+      "wasm"
+    ],
+    "target-pointer-width": 32,
+    "tls-model": "local-exec"
+  },
   "wasm32v1-none": {
     "arch": "wasm32",
     "binary-format": "wasm",
