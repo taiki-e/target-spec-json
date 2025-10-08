@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Env::p3`.
+
 ## [0.2.4] - 2025-09-23
 
 - Add `Os::motor`.
