@@ -3869,7 +3869,7 @@
       "description": "Bare Armv7-A, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -4124,7 +4124,7 @@
       "description": "Bare Armv8-R, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
