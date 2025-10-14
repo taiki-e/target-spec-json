@@ -987,7 +987,6 @@
   },
   "aarch64-unknown-linux-gnu": {
     "arch": "aarch64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-uwtable": true,
@@ -997,7 +996,12 @@
     "frame-pointer": "non-leaf",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "aarch64-unknown-linux-gnu",
     "max-atomic-width": 128,
     "metadata": {
@@ -1037,7 +1041,6 @@
   "aarch64-unknown-linux-gnu_ilp32": {
     "abi": "ilp32",
     "arch": "aarch64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-uwtable": true,
@@ -1047,7 +1050,12 @@
     "frame-pointer": "non-leaf",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "aarch64-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
     "metadata": {
@@ -1856,7 +1864,6 @@
   },
   "aarch64_be-unknown-linux-gnu": {
     "arch": "aarch64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-uwtable": true,
@@ -1866,7 +1873,12 @@
     "frame-pointer": "non-leaf",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "aarch64_be-unknown-linux-gnu",
     "max-atomic-width": 128,
     "metadata": {
@@ -1896,7 +1908,6 @@
   "aarch64_be-unknown-linux-gnu_ilp32": {
     "abi": "ilp32",
     "arch": "aarch64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-uwtable": true,
@@ -1906,7 +1917,12 @@
     "frame-pointer": "non-leaf",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "aarch64_be-unknown-linux-gnu_ilp32",
     "max-atomic-width": 128,
     "metadata": {
@@ -2168,7 +2184,6 @@
   "arm-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -2177,7 +2192,12 @@
     "features": "+strict-align,+v6",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabi",
@@ -2205,7 +2225,6 @@
   "arm-unknown-linux-gnueabihf": {
     "abi": "eabihf",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "dynamic-linking": true,
@@ -2213,7 +2232,12 @@
     "features": "+strict-align,+v6,+vfp2,-d32",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "hard",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "arm-unknown-linux-gnueabihf",
@@ -2716,7 +2740,6 @@
   "armeb-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -2725,7 +2748,12 @@
     "features": "+strict-align,+v8,+crc",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armeb-unknown-linux-gnueabi",
@@ -2831,7 +2859,6 @@
   "armv4t-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -2841,7 +2868,12 @@
     "has-rpath": true,
     "has-thread-local": true,
     "has-thumb-interworking": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv4t-unknown-linux-gnueabi",
@@ -2899,7 +2931,6 @@
   "armv5te-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -2909,7 +2940,12 @@
     "has-rpath": true,
     "has-thread-local": true,
     "has-thumb-interworking": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv5te-unknown-linux-gnueabi",
@@ -3320,7 +3356,6 @@
   "armv7-unknown-linux-gnueabi": {
     "abi": "eabi",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -3329,7 +3364,12 @@
     "features": "+v7,+thumb2,+soft-float,-neon",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "soft",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv7-unknown-linux-gnueabi",
@@ -3357,7 +3397,6 @@
   "armv7-unknown-linux-gnueabihf": {
     "abi": "eabihf",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -3366,7 +3405,12 @@
     "features": "+v7,+vfp3,-d32,+thumb2,-neon",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "hard",
     "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
@@ -4218,7 +4262,6 @@
   "csky-unknown-linux-gnuabiv2": {
     "abi": "abiv2",
     "arch": "csky",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-S32-p:32:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:32-v128:32:32-a:0:32-Fi32-n32",
     "default-uwtable": true,
@@ -4235,7 +4278,12 @@
         "-l:libatomic.a"
       ]
     },
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
     "metadata": {
@@ -4261,7 +4309,6 @@
     "abi": "abiv2hf",
     "arch": "csky",
     "cpu": "ck860fv",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-S32-p:32:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:32-v128:32:32-a:0:32-Fi32-n32",
     "default-uwtable": true,
@@ -4280,7 +4327,12 @@
         "-mhard-float"
       ]
     },
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "csky-unknown-linux-gnuabiv2",
     "max-atomic-width": 32,
     "metadata": {
@@ -4473,7 +4525,6 @@
   "i586-unknown-linux-gnu": {
     "arch": "x86",
     "cpu": "pentium",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-uwtable": true,
@@ -4481,7 +4532,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "i586-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -5325,7 +5381,6 @@
   "i686-unknown-linux-gnu": {
     "arch": "x86",
     "cpu": "pentium4",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
     "default-uwtable": true,
@@ -5333,7 +5388,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "i686-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -6121,7 +6181,6 @@
   "loongarch64-unknown-linux-gnu": {
     "arch": "loongarch64",
     "code-model": "medium",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -6131,7 +6190,12 @@
     "features": "+f,+d,+lsx",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "lp64d",
     "llvm-target": "loongarch64-unknown-linux-gnu",
     "max-atomic-width": 64,
@@ -6360,7 +6424,7 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "m68k-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -6432,7 +6496,6 @@
   "mips-unknown-linux-gnu": {
     "arch": "mips",
     "cpu": "mips32r2",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
     "default-uwtable": true,
@@ -6441,7 +6504,12 @@
     "features": "+mips32r2,+fpxx,+nooddspreg",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -6692,7 +6760,6 @@
     "abi": "abi64",
     "arch": "mips64",
     "cpu": "mips64r2",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -6701,7 +6768,12 @@
     "features": "+mips64r2,+xgot",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
     "llvm-target": "mips64-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
@@ -6824,7 +6896,6 @@
     "abi": "abi64",
     "arch": "mips64",
     "cpu": "mips64r2",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -6833,7 +6904,12 @@
     "features": "+mips64r2,+xgot",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
     "llvm-target": "mips64el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
@@ -7038,7 +7114,6 @@
   "mipsel-unknown-linux-gnu": {
     "arch": "mips",
     "cpu": "mips32r2",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
     "default-uwtable": true,
@@ -7047,7 +7122,12 @@
     "features": "+mips32r2,+fpxx,+nooddspreg",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7250,7 +7330,6 @@
   "mipsisa32r6-unknown-linux-gnu": {
     "arch": "mips32r6",
     "cpu": "mips32r6",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
     "default-uwtable": true,
@@ -7259,7 +7338,12 @@
     "features": "+mips32r6",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "mipsisa32r6-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7286,7 +7370,6 @@
   "mipsisa32r6el-unknown-linux-gnu": {
     "arch": "mips32r6",
     "cpu": "mips32r6",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
     "default-uwtable": true,
@@ -7295,7 +7378,12 @@
     "features": "+mips32r6",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "mipsisa32r6el-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7322,7 +7410,6 @@
     "abi": "abi64",
     "arch": "mips64r6",
     "cpu": "mips64r6",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -7331,7 +7418,12 @@
     "features": "+mips64r6",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
     "llvm-target": "mipsisa64r6-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
@@ -7360,7 +7452,6 @@
     "abi": "abi64",
     "arch": "mips64r6",
     "cpu": "mips64r6",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -7369,7 +7460,12 @@
     "features": "+mips64r6",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
     "llvm-target": "mipsisa64r6el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
@@ -7495,7 +7591,6 @@
   },
   "powerpc-unknown-linux-gnu": {
     "arch": "powerpc",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
     "default-uwtable": true,
@@ -7504,7 +7599,12 @@
     "features": "+secure-plt",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "powerpc-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7542,7 +7642,6 @@
   "powerpc-unknown-linux-gnuspe": {
     "abi": "spe",
     "arch": "powerpc",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-Fn32-i64:64-n32",
     "default-uwtable": true,
@@ -7551,7 +7650,12 @@
     "features": "+secure-plt,+msync",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "powerpc-unknown-linux-gnuspe",
     "max-atomic-width": 32,
     "metadata": {
@@ -8052,7 +8156,6 @@
     "abi": "elfv1",
     "arch": "powerpc64",
     "cpu": "ppc64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-Fi64-i64:64-i128:128-n32:64-S128-v256:256:256-v512:512:512",
     "default-uwtable": true,
@@ -8060,7 +8163,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "elfv1",
     "llvm-target": "powerpc64-unknown-linux-gnu",
     "max-atomic-width": 64,
@@ -8334,7 +8442,6 @@
     "abi": "elfv2",
     "arch": "powerpc64",
     "cpu": "ppc64le",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-Fn32-i64:64-i128:128-n32:64-S128-v256:256:256-v512:512:512",
     "default-uwtable": true,
@@ -8342,7 +8449,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64le-unknown-linux-gnu",
     "max-atomic-width": 64,
@@ -8596,7 +8708,6 @@
     "arch": "riscv32",
     "code-model": "medium",
     "cpu": "generic-rv32",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
     "default-uwtable": true,
@@ -8605,7 +8716,12 @@
     "features": "+m,+a,+f,+d,+c,+zicsr,+zifencei",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "ilp32d",
     "llvm-target": "riscv32-unknown-linux-gnu",
     "max-atomic-width": 32,
@@ -9135,7 +9251,6 @@
     "arch": "riscv64",
     "code-model": "medium",
     "cpu": "generic-rv64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -9144,7 +9259,12 @@
     "features": "+rva23u64",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-linux-gnu",
     "max-atomic-width": 64,
@@ -9308,7 +9428,6 @@
     "arch": "riscv64",
     "code-model": "medium",
     "cpu": "generic-rv64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -9317,7 +9436,12 @@
     "features": "+m,+a,+f,+d,+c,+zicsr,+zifencei",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "lp64d",
     "llvm-target": "riscv64-unknown-linux-gnu",
     "max-atomic-width": 64,
@@ -9636,7 +9760,6 @@
   "s390x-unknown-linux-gnu": {
     "arch": "s390x",
     "cpu": "z10",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
     "default-uwtable": true,
@@ -9644,7 +9767,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "s390x-unknown-linux-gnu",
     "max-atomic-width": 128,
     "metadata": {
@@ -9781,7 +9909,6 @@
   "sparc-unknown-linux-gnu": {
     "arch": "sparc",
     "cpu": "v9",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-p:32:32-i64:64-i128:128-f128:64-n32-S64",
     "default-uwtable": true,
@@ -9800,7 +9927,12 @@
         "-m32"
       ]
     },
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "sparc-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -9849,7 +9981,6 @@
   "sparc64-unknown-linux-gnu": {
     "arch": "sparc64",
     "cpu": "v9",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "E-m:e-i64:64-i128:128-n32:64-S128",
     "default-uwtable": true,
@@ -9857,7 +9988,12 @@
     "env": "gnu",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "sparc64-unknown-linux-gnu",
     "max-atomic-width": 64,
     "metadata": {
@@ -10479,7 +10615,6 @@
   "thumbv7neon-unknown-linux-gnueabihf": {
     "abi": "eabihf",
     "arch": "arm",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
     "default-uwtable": true,
@@ -10488,7 +10623,12 @@
     "features": "+v7,+thumb-mode,+thumb2,+vfp3,+neon",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-floatabi": "hard",
     "llvm-target": "armv7-unknown-linux-gnueabihf",
     "max-atomic-width": 64,
@@ -12845,14 +12985,18 @@
     "abi": "x32",
     "arch": "x86_64",
     "cpu": "x86-64",
-    "crt-objects-fallback": "false",
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-uwtable": true,
     "dynamic-linking": true,
     "env": "gnu",
     "has-rpath": true,
-    "linker-flavor": "gnu-cc",
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker-flavor": "gnu-lld-cc",
     "llvm-target": "x86_64-unknown-linux-gnux32",
     "max-atomic-width": 64,
     "metadata": {
