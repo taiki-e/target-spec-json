@@ -14,7 +14,6 @@ memtag
 rdylib
 redzone
 relro
-rpath
 safestack
 singlethread
 uwtable
