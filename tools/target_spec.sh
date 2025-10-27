@@ -68,13 +68,16 @@ enum() {
     bail "DEFAULT_EMPTY_STR requires DEFAULT"
   fi
   cat <<EOF
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, ${DEFAULT:+"Default, "}PartialEq, Eq, Serialize, Deserialize)]
 ${non_exhaustive}
 pub enum ${name} {
 EOF
   for v in "${variants[@]}"; do
     if [[ "${v}" == *"-"* ]]; then
       printf '    #[serde(rename = "%s")]\n' "${v}"
+    fi
+    if [[ "${v}" == "${DEFAULT:-}" ]]; then
+      printf '    #[default]\n'
     fi
     printf '    %s,\n' "${v//-/_}"
   done
@@ -104,11 +107,6 @@ impl ${name} {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_${DEFAULT}(&self) -> bool {
         matches!(self, Self::${DEFAULT})
-    }
-}
-impl Default for ${name} {
-    fn default() -> Self {
-        Self::${DEFAULT}
     }
 }
 EOF

@@ -83,7 +83,7 @@ impl core::fmt::Display for Arch {
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
 pub enum Os {
     aix,
@@ -109,6 +109,7 @@ pub enum Os {
     managarm,
     motor,
     netbsd,
+    #[default]
     none,
     nto,
     nuttx,
@@ -196,18 +197,13 @@ impl Os {
         matches!(self, Self::none)
     }
 }
-impl Default for Os {
-    fn default() -> Self {
-        Self::none
-    }
-}
 impl core::fmt::Display for Os {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
 pub enum Env {
     gnu,
@@ -217,6 +213,7 @@ pub enum Env {
     msvc,
     musl,
     newlib,
+    #[default]
     none,
     nto70,
     nto71,
@@ -264,11 +261,6 @@ impl Env {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_none(&self) -> bool {
         matches!(self, Self::none)
-    }
-}
-impl Default for Env {
-    fn default() -> Self {
-        Self::none
     }
 }
 impl core::fmt::Display for Env {
@@ -343,10 +335,11 @@ impl core::fmt::Display for Sanitizer {
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[non_exhaustive]
 pub enum BinaryFormat {
     coff,
+    #[default]
     elf,
     #[serde(rename = "mach-o")]
     mach_o,
@@ -371,21 +364,17 @@ impl BinaryFormat {
         matches!(self, Self::elf)
     }
 }
-impl Default for BinaryFormat {
-    fn default() -> Self {
-        Self::elf
-    }
-}
 impl core::fmt::Display for BinaryFormat {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[allow(clippy::exhaustive_enums)]
 pub enum TargetEndian {
     big,
+    #[default]
     little,
 }
 impl TargetEndian {
@@ -403,21 +392,17 @@ impl TargetEndian {
         matches!(self, Self::little)
     }
 }
-impl Default for TargetEndian {
-    fn default() -> Self {
-        Self::little
-    }
-}
 impl core::fmt::Display for TargetEndian {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         f.write_str(self.as_str())
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 #[allow(clippy::exhaustive_enums)]
 pub enum PanicStrategy {
     abort,
+    #[default]
     unwind,
 }
 impl PanicStrategy {
@@ -433,11 +418,6 @@ impl PanicStrategy {
     #[allow(clippy::trivially_copy_pass_by_ref)]
     pub(crate) fn is_unwind(&self) -> bool {
         matches!(self, Self::unwind)
-    }
-}
-impl Default for PanicStrategy {
-    fn default() -> Self {
-        Self::unwind
     }
 }
 impl core::fmt::Display for PanicStrategy {
