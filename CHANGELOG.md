@@ -12,6 +12,12 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::{helenos,qurt}`.
+
+- Add `Sanitizer::realtime`.
+
+- Add `TargetSpec::{default_sanitizers,is_like_gpu}`
+
 ## [0.2.5] - 2025-10-08
 
 - Add `Env::p3`.
