@@ -84,6 +84,7 @@ pub type AllTargetSpecs = BTreeMap<String, TargetSpec>;
 // Refs:
 // - https://github.com/rust-lang/rust/blob/HEAD/compiler/rustc_target/src/spec/mod.rs
 // - https://github.com/rust-lang/rust/blob/c0bb3b98bb7aac24a37635e5d36d961e0b14f435/compiler/rustc_target/src/spec/json.rs
+// TODO: use https://github.com/rust-lang/rust/pull/144498
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "kebab-case")]
@@ -132,6 +133,8 @@ pub struct TargetSpec {
     pub default_dwarf_version: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub default_hidden_visibility: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub default_sanitizers: Option<Vec<Sanitizer>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub default_uwtable: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -186,6 +189,8 @@ pub struct TargetSpec {
     pub is_like_aix: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_darwin: bool,
+    #[serde(default, skip_serializing_if = "ops::Not::not")]
+    pub is_like_gpu: bool,
     /// replaced by `is_like_darwin`
     #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub is_like_osx: bool,
