@@ -1,4 +1,5 @@
 aarch64-apple-darwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -73,6 +74,7 @@ ub_checks
 unix
 
 aarch64-apple-ios:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -117,6 +119,7 @@ ub_checks
 unix
 
 aarch64-apple-ios-macabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -178,6 +181,7 @@ ub_checks
 unix
 
 aarch64-apple-ios-sim:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -239,6 +243,7 @@ ub_checks
 unix
 
 aarch64-apple-tvos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -283,6 +288,7 @@ ub_checks
 unix
 
 aarch64-apple-tvos-sim:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -344,6 +350,7 @@ ub_checks
 unix
 
 aarch64-apple-visionos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -388,6 +395,7 @@ ub_checks
 unix
 
 aarch64-apple-visionos-sim:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -449,6 +457,7 @@ ub_checks
 unix
 
 aarch64-apple-watchos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -493,6 +502,7 @@ ub_checks
 unix
 
 aarch64-apple-watchos-sim:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -554,6 +564,7 @@ ub_checks
 unix
 
 aarch64-kmc-solid_asp3:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -593,6 +604,7 @@ target_vendor="kmc"
 ub_checks
 
 aarch64-linux-android:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -633,6 +645,7 @@ ub_checks
 unix
 
 aarch64-nintendo-switch-freestanding:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -674,6 +687,7 @@ target_vendor="nintendo"
 ub_checks
 
 aarch64-pc-windows-gnullvm:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -715,6 +729,7 @@ ub_checks
 windows
 
 aarch64-pc-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -756,6 +771,7 @@ ub_checks
 windows
 
 aarch64-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -797,6 +813,7 @@ ub_checks
 unix
 
 aarch64-unknown-fuchsia:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -842,6 +859,7 @@ ub_checks
 unix
 
 aarch64-unknown-helenos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -880,6 +898,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-hermit:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -919,6 +938,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-illumos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -959,6 +979,7 @@ ub_checks
 unix
 
 aarch64-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1002,6 +1023,7 @@ ub_checks
 unix
 
 aarch64-unknown-linux-gnu_ilp32:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1044,6 +1066,7 @@ ub_checks
 unix
 
 aarch64-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1087,6 +1110,7 @@ ub_checks
 unix
 
 aarch64-unknown-linux-ohos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1128,6 +1152,7 @@ ub_checks
 unix
 
 aarch64-unknown-managarm-mlibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1169,6 +1194,7 @@ ub_checks
 unix
 
 aarch64-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1210,6 +1236,7 @@ ub_checks
 unix
 
 aarch64-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1248,6 +1275,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-none-softfloat:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1285,6 +1313,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-nto-qnx700:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1325,6 +1354,7 @@ ub_checks
 unix
 
 aarch64-unknown-nto-qnx710:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1365,6 +1395,7 @@ ub_checks
 unix
 
 aarch64-unknown-nto-qnx710_iosock:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1405,6 +1436,7 @@ ub_checks
 unix
 
 aarch64-unknown-nto-qnx800:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1445,6 +1477,7 @@ ub_checks
 unix
 
 aarch64-unknown-nuttx:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1485,6 +1518,7 @@ ub_checks
 unix
 
 aarch64-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1525,6 +1559,7 @@ ub_checks
 unix
 
 aarch64-unknown-redox:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1567,6 +1602,7 @@ ub_checks
 unix
 
 aarch64-unknown-teeos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1605,6 +1641,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-trusty:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1644,6 +1681,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-unknown-uefi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1682,6 +1720,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64-uwp-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1723,6 +1762,7 @@ ub_checks
 windows
 
 aarch64-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1765,6 +1805,7 @@ ub_checks
 unix
 
 aarch64_be-unknown-hermit:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -1804,6 +1845,7 @@ target_vendor="unknown"
 ub_checks
 
 aarch64_be-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1847,6 +1889,7 @@ ub_checks
 unix
 
 aarch64_be-unknown-linux-gnu_ilp32:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1889,6 +1932,7 @@ ub_checks
 unix
 
 aarch64_be-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1931,6 +1975,7 @@ ub_checks
 unix
 
 aarch64_be-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -1972,6 +2017,7 @@ ub_checks
 unix
 
 aarch64_be-unknown-none-softfloat:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2009,6 +2055,7 @@ target_vendor="unknown"
 ub_checks
 
 amdgcn-amd-amdhsa:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2042,6 +2089,7 @@ target_vendor="amd"
 ub_checks
 
 arm-linux-androideabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2076,6 +2124,7 @@ ub_checks
 unix
 
 arm-unknown-linux-gnueabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2115,6 +2164,7 @@ ub_checks
 unix
 
 arm-unknown-linux-gnueabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2156,6 +2206,7 @@ ub_checks
 unix
 
 arm-unknown-linux-musleabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2196,6 +2247,7 @@ ub_checks
 unix
 
 arm-unknown-linux-musleabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2238,6 +2290,7 @@ ub_checks
 unix
 
 arm64_32-apple-watchos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2299,6 +2352,7 @@ ub_checks
 unix
 
 arm64e-apple-darwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2373,6 +2427,7 @@ ub_checks
 unix
 
 arm64e-apple-ios:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2434,6 +2489,7 @@ ub_checks
 unix
 
 arm64e-apple-tvos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2495,6 +2551,7 @@ ub_checks
 unix
 
 arm64ec-pc-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2533,6 +2590,7 @@ ub_checks
 windows
 
 armeb-unknown-linux-gnueabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2578,6 +2636,7 @@ ub_checks
 unix
 
 armebv7r-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2620,6 +2679,7 @@ target_vendor="unknown"
 ub_checks
 
 armebv7r-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2664,6 +2724,7 @@ target_vendor="unknown"
 ub_checks
 
 armv4t-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2682,6 +2743,7 @@ target_vendor="unknown"
 ub_checks
 
 armv4t-unknown-linux-gnueabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2717,6 +2779,7 @@ ub_checks
 unix
 
 armv5te-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -2736,6 +2799,7 @@ target_vendor="unknown"
 ub_checks
 
 armv5te-unknown-linux-gnueabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2772,6 +2836,7 @@ ub_checks
 unix
 
 armv5te-unknown-linux-musleabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2809,6 +2874,7 @@ ub_checks
 unix
 
 armv5te-unknown-linux-uclibceabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2845,6 +2911,7 @@ ub_checks
 unix
 
 armv6-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2887,6 +2954,7 @@ ub_checks
 unix
 
 armv6-unknown-netbsd-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2929,6 +2997,7 @@ ub_checks
 unix
 
 armv6k-nintendo-3ds:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -2968,6 +3037,7 @@ ub_checks
 unix
 
 armv7-linux-androideabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3015,6 +3085,7 @@ ub_checks
 unix
 
 armv7-rtems-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3064,6 +3135,7 @@ ub_checks
 unix
 
 armv7-sony-vita-newlibeabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3115,6 +3187,7 @@ ub_checks
 unix
 
 armv7-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3162,6 +3235,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-gnueabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3212,6 +3286,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-gnueabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3259,6 +3334,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-musleabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3310,6 +3386,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-musleabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3358,6 +3435,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-ohos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3407,6 +3485,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-uclibceabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3457,6 +3536,7 @@ ub_checks
 unix
 
 armv7-unknown-linux-uclibceabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3504,6 +3584,7 @@ ub_checks
 unix
 
 armv7-unknown-netbsd-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3551,6 +3632,7 @@ ub_checks
 unix
 
 armv7-unknown-trusty:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3599,6 +3681,7 @@ target_vendor="unknown"
 ub_checks
 
 armv7-wrs-vxworks-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3647,6 +3730,7 @@ ub_checks
 unix
 
 armv7a-kmc-solid_asp3-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3695,6 +3779,7 @@ target_vendor="kmc"
 ub_checks
 
 armv7a-kmc-solid_asp3-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -3740,6 +3825,7 @@ target_vendor="kmc"
 ub_checks
 
 armv7a-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3787,6 +3873,7 @@ target_vendor="unknown"
 ub_checks
 
 armv7a-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3831,6 +3918,7 @@ target_vendor="unknown"
 ub_checks
 
 armv7a-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3880,6 +3968,7 @@ ub_checks
 unix
 
 armv7a-nuttx-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3929,6 +4018,7 @@ ub_checks
 unix
 
 armv7a-vex-v5:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -3977,6 +4067,7 @@ target_vendor="vex"
 ub_checks
 
 armv7k-apple-watchos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4029,6 +4120,7 @@ ub_checks
 unix
 
 armv7r-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4071,6 +4163,7 @@ target_vendor="unknown"
 ub_checks
 
 armv7r-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4115,6 +4208,7 @@ target_vendor="unknown"
 ub_checks
 
 armv7s-apple-ios:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4165,6 +4259,7 @@ ub_checks
 unix
 
 armv8r-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4211,6 +4306,7 @@ target_vendor="unknown"
 ub_checks
 
 avr-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4233,6 +4329,7 @@ target_vendor="unknown"
 ub_checks
 
 bpfeb-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4255,6 +4352,7 @@ target_vendor="unknown"
 ub_checks
 
 bpfel-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4277,6 +4375,7 @@ target_vendor="unknown"
 ub_checks
 
 csky-unknown-linux-gnuabiv2:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4326,6 +4425,7 @@ ub_checks
 unix
 
 csky-unknown-linux-gnuabiv2hf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4389,6 +4489,7 @@ ub_checks
 unix
 
 hexagon-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4425,6 +4526,7 @@ ub_checks
 unix
 
 hexagon-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -4458,6 +4560,7 @@ target_vendor="unknown"
 ub_checks
 
 hexagon-unknown-qurt:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4494,6 +4597,7 @@ ub_checks
 unix
 
 i386-apple-ios:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4539,6 +4643,7 @@ ub_checks
 unix
 
 i586-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4576,6 +4681,7 @@ ub_checks
 unix
 
 i586-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4614,6 +4720,7 @@ ub_checks
 unix
 
 i586-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4651,6 +4758,7 @@ ub_checks
 unix
 
 i586-unknown-redox:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4689,6 +4797,7 @@ ub_checks
 unix
 
 i686-apple-darwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4734,6 +4843,7 @@ ub_checks
 unix
 
 i686-linux-android:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4775,6 +4885,7 @@ ub_checks
 unix
 
 i686-pc-nto-qnx700:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4814,6 +4925,7 @@ ub_checks
 unix
 
 i686-pc-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4854,6 +4966,7 @@ ub_checks
 windows
 
 i686-pc-windows-gnullvm:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4895,6 +5008,7 @@ ub_checks
 windows
 
 i686-pc-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4936,6 +5050,7 @@ ub_checks
 windows
 
 i686-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -4976,6 +5091,7 @@ ub_checks
 unix
 
 i686-unknown-haiku:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5015,6 +5131,7 @@ ub_checks
 unix
 
 i686-unknown-helenos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5052,6 +5169,7 @@ target_vendor="unknown"
 ub_checks
 
 i686-unknown-hurd-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5092,6 +5210,7 @@ ub_checks
 unix
 
 i686-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5132,6 +5251,7 @@ ub_checks
 unix
 
 i686-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5173,6 +5293,7 @@ ub_checks
 unix
 
 i686-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5213,6 +5334,7 @@ ub_checks
 unix
 
 i686-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5252,6 +5374,7 @@ ub_checks
 unix
 
 i686-unknown-uefi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5289,6 +5412,7 @@ target_vendor="unknown"
 ub_checks
 
 i686-uwp-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5329,6 +5453,7 @@ ub_checks
 windows
 
 i686-uwp-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5370,6 +5495,7 @@ ub_checks
 windows
 
 i686-win7-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5410,6 +5536,7 @@ ub_checks
 windows
 
 i686-win7-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5450,6 +5577,7 @@ ub_checks
 windows
 
 i686-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5491,6 +5619,7 @@ ub_checks
 unix
 
 loongarch32-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5524,6 +5653,7 @@ target_vendor="unknown"
 ub_checks
 
 loongarch32-unknown-none-softfloat:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5555,6 +5685,7 @@ target_vendor="unknown"
 ub_checks
 
 loongarch64-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5598,6 +5729,7 @@ ub_checks
 unix
 
 loongarch64-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5640,6 +5772,7 @@ ub_checks
 unix
 
 loongarch64-unknown-linux-ohos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5682,6 +5815,7 @@ ub_checks
 unix
 
 loongarch64-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5720,6 +5854,7 @@ target_vendor="unknown"
 ub_checks
 
 loongarch64-unknown-none-softfloat:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5756,6 +5891,7 @@ target_vendor="unknown"
 ub_checks
 
 m68k-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5791,6 +5927,7 @@ ub_checks
 unix
 
 m68k-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5822,6 +5959,7 @@ target_vendor="unknown"
 ub_checks
 
 mips-mti-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -5853,6 +5991,7 @@ target_vendor="mti"
 ub_checks
 
 mips-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5887,6 +6026,7 @@ ub_checks
 unix
 
 mips-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5921,6 +6061,7 @@ ub_checks
 unix
 
 mips-unknown-linux-uclibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5955,6 +6096,7 @@ ub_checks
 unix
 
 mips64-openwrt-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -5993,6 +6135,7 @@ ub_checks
 unix
 
 mips64-unknown-linux-gnuabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6032,6 +6175,7 @@ ub_checks
 unix
 
 mips64-unknown-linux-muslabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6070,6 +6214,7 @@ ub_checks
 unix
 
 mips64el-unknown-linux-gnuabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6109,6 +6254,7 @@ ub_checks
 unix
 
 mips64el-unknown-linux-muslabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6147,6 +6293,7 @@ ub_checks
 unix
 
 mipsel-mti-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6178,6 +6325,7 @@ target_vendor="mti"
 ub_checks
 
 mipsel-sony-psp:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6209,6 +6357,7 @@ target_vendor="sony"
 ub_checks
 
 mipsel-sony-psx:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6226,6 +6375,7 @@ target_vendor="sony"
 ub_checks
 
 mipsel-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6260,6 +6410,7 @@ ub_checks
 unix
 
 mipsel-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6294,6 +6445,7 @@ ub_checks
 unix
 
 mipsel-unknown-linux-uclibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6328,6 +6480,7 @@ ub_checks
 unix
 
 mipsel-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6362,6 +6515,7 @@ ub_checks
 unix
 
 mipsel-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6393,6 +6547,7 @@ target_vendor="unknown"
 ub_checks
 
 mipsisa32r6-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6428,6 +6583,7 @@ ub_checks
 unix
 
 mipsisa32r6el-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6463,6 +6619,7 @@ ub_checks
 unix
 
 mipsisa64r6-unknown-linux-gnuabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6502,6 +6659,7 @@ ub_checks
 unix
 
 mipsisa64r6el-unknown-linux-gnuabi64:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6541,6 +6699,7 @@ ub_checks
 unix
 
 msp430-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6558,6 +6717,7 @@ target_vendor="unknown"
 ub_checks
 
 nvptx64-nvidia-cuda:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6594,6 +6754,7 @@ target_vendor="nvidia"
 ub_checks
 
 powerpc-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6625,6 +6786,7 @@ ub_checks
 unix
 
 powerpc-unknown-helenos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -6653,6 +6815,7 @@ target_vendor="unknown"
 ub_checks
 
 powerpc-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6684,6 +6847,7 @@ ub_checks
 unix
 
 powerpc-unknown-linux-gnuspe:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6716,6 +6880,7 @@ ub_checks
 unix
 
 powerpc-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6747,6 +6912,7 @@ ub_checks
 unix
 
 powerpc-unknown-linux-muslspe:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6779,6 +6945,7 @@ ub_checks
 unix
 
 powerpc-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6810,6 +6977,7 @@ ub_checks
 unix
 
 powerpc-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6840,6 +7008,7 @@ ub_checks
 unix
 
 powerpc-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6872,6 +7041,7 @@ ub_checks
 unix
 
 powerpc-wrs-vxworks-spe:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6905,6 +7075,7 @@ ub_checks
 unix
 
 powerpc64-ibm-aix:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6941,6 +7112,7 @@ ub_checks
 unix
 
 powerpc64-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -6976,6 +7148,7 @@ ub_checks
 unix
 
 powerpc64-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7011,6 +7184,7 @@ ub_checks
 unix
 
 powerpc64-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7046,6 +7220,7 @@ ub_checks
 unix
 
 powerpc64-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7080,6 +7255,7 @@ ub_checks
 unix
 
 powerpc64-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7116,6 +7292,7 @@ ub_checks
 unix
 
 powerpc64le-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7157,6 +7334,7 @@ ub_checks
 unix
 
 powerpc64le-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7198,6 +7376,7 @@ ub_checks
 unix
 
 powerpc64le-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7240,6 +7419,7 @@ ub_checks
 unix
 
 riscv32-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7285,6 +7465,7 @@ ub_checks
 unix
 
 riscv32e-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7312,6 +7493,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32em-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7340,6 +7522,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32emc-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7370,6 +7553,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32gc-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7414,6 +7598,7 @@ ub_checks
 unix
 
 riscv32gc-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7458,6 +7643,7 @@ ub_checks
 unix
 
 riscv32i-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7484,6 +7670,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32im-risc0-zkvm-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7519,6 +7706,7 @@ target_vendor="risc0"
 ub_checks
 
 riscv32im-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7546,6 +7734,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32ima-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7581,6 +7770,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32imac-esp-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7620,6 +7810,7 @@ ub_checks
 unix
 
 riscv32imac-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7657,6 +7848,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32imac-unknown-nuttx-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7696,6 +7888,7 @@ ub_checks
 unix
 
 riscv32imac-unknown-xous-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7733,6 +7926,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32imafc-esp-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7774,6 +7968,7 @@ ub_checks
 unix
 
 riscv32imafc-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7813,6 +8008,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32imafc-unknown-nuttx-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7854,6 +8050,7 @@ ub_checks
 unix
 
 riscv32imc-esp-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7890,6 +8087,7 @@ ub_checks
 unix
 
 riscv32imc-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -7919,6 +8117,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv32imc-unknown-nuttx-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -7955,6 +8154,7 @@ ub_checks
 unix
 
 riscv64-linux-android:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8014,6 +8214,7 @@ ub_checks
 unix
 
 riscv64-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8062,6 +8263,7 @@ ub_checks
 unix
 
 riscv64a23-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8150,6 +8352,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8197,6 +8400,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-fuchsia:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8245,6 +8449,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-hermit:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8290,6 +8495,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv64gc-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8338,6 +8544,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8385,6 +8592,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-managarm-mlibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8431,6 +8639,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8478,6 +8687,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8522,6 +8732,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv64gc-unknown-nuttx-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8568,6 +8779,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8614,6 +8826,7 @@ ub_checks
 unix
 
 riscv64gc-unknown-redox:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8661,6 +8874,7 @@ ub_checks
 unix
 
 riscv64imac-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8701,6 +8915,7 @@ target_vendor="unknown"
 ub_checks
 
 riscv64imac-unknown-nuttx-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8743,6 +8958,7 @@ ub_checks
 unix
 
 s390x-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8783,6 +8999,7 @@ ub_checks
 unix
 
 s390x-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8822,6 +9039,7 @@ ub_checks
 unix
 
 sparc-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8855,6 +9073,7 @@ ub_checks
 unix
 
 sparc-unknown-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8883,6 +9102,7 @@ target_vendor="unknown"
 ub_checks
 
 sparc64-unknown-helenos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -8916,6 +9136,7 @@ target_vendor="unknown"
 ub_checks
 
 sparc64-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8953,6 +9174,7 @@ ub_checks
 unix
 
 sparc64-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -8989,6 +9211,7 @@ ub_checks
 unix
 
 sparc64-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -9024,6 +9247,7 @@ ub_checks
 unix
 
 sparcv9-sun-solaris:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -9059,6 +9283,7 @@ ub_checks
 unix
 
 thumbv4t-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9078,6 +9303,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv5te-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9098,6 +9324,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv6m-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9128,6 +9355,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv6m-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9165,6 +9393,7 @@ ub_checks
 unix
 
 thumbv7a-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9215,6 +9444,7 @@ ub_checks
 unix
 
 thumbv7a-nuttx-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9265,6 +9495,7 @@ ub_checks
 unix
 
 thumbv7a-pc-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9316,6 +9547,7 @@ ub_checks
 windows
 
 thumbv7a-uwp-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9367,6 +9599,7 @@ ub_checks
 windows
 
 thumbv7em-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9407,6 +9640,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv7em-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9448,6 +9682,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv7em-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9490,6 +9725,7 @@ ub_checks
 unix
 
 thumbv7em-nuttx-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9533,6 +9769,7 @@ ub_checks
 unix
 
 thumbv7m-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9572,6 +9809,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv7m-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9613,6 +9851,7 @@ ub_checks
 unix
 
 thumbv7neon-linux-androideabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -9663,6 +9902,7 @@ ub_checks
 unix
 
 thumbv7neon-unknown-linux-gnueabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -9714,6 +9954,7 @@ ub_checks
 unix
 
 thumbv7neon-unknown-linux-musleabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -9765,6 +10006,7 @@ ub_checks
 unix
 
 thumbv8m.base-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9800,6 +10042,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv8m.base-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9837,6 +10080,7 @@ ub_checks
 unix
 
 thumbv8m.main-none-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9876,6 +10120,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv8m.main-none-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9916,6 +10161,7 @@ target_vendor="unknown"
 ub_checks
 
 thumbv8m.main-nuttx-eabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9957,6 +10203,7 @@ ub_checks
 unix
 
 thumbv8m.main-nuttx-eabihf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -9999,6 +10246,7 @@ ub_checks
 unix
 
 wasm32-unknown-emscripten:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10010,6 +10258,7 @@ target_env=""
 target_family="unix"
 target_family="wasm"
 target_feature="bulk-memory"
+target_feature="exception-handling"
 target_feature="multivalue"
 target_feature="mutable-globals"
 target_feature="nontrapping-fptoint"
@@ -10041,6 +10290,7 @@ ub_checks
 unix
 
 wasm32-unknown-unknown:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10081,6 +10331,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm32-wali-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10125,6 +10376,7 @@ ub_checks
 unix
 
 wasm32-wasip1:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10166,6 +10418,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm32-wasip1-threads:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10208,6 +10461,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm32-wasip2:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10249,6 +10503,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm32-wasip3:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10290,6 +10545,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm32v1-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10325,6 +10581,7 @@ target_vendor="unknown"
 ub_checks
 
 wasm64-unknown-unknown:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10365,6 +10622,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-apple-darwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10414,6 +10672,7 @@ ub_checks
 unix
 
 x86_64-apple-ios:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10463,6 +10722,7 @@ ub_checks
 unix
 
 x86_64-apple-ios-macabi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10512,6 +10772,7 @@ ub_checks
 unix
 
 x86_64-apple-tvos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10561,6 +10822,7 @@ ub_checks
 unix
 
 x86_64-apple-watchos-sim:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10610,6 +10872,7 @@ ub_checks
 unix
 
 x86_64-fortanix-unknown-sgx:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10650,6 +10913,7 @@ target_vendor="fortanix"
 ub_checks
 
 x86_64-linux-android:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10695,6 +10959,7 @@ ub_checks
 unix
 
 x86_64-lynx-lynxos178:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -10735,6 +11000,7 @@ ub_checks
 unix
 
 x86_64-pc-cygwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10776,6 +11042,7 @@ ub_checks
 unix
 
 x86_64-pc-nto-qnx710:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10816,6 +11083,7 @@ ub_checks
 unix
 
 x86_64-pc-nto-qnx710_iosock:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10856,6 +11124,7 @@ ub_checks
 unix
 
 x86_64-pc-nto-qnx800:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10896,6 +11165,7 @@ ub_checks
 unix
 
 x86_64-pc-solaris:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10936,6 +11206,7 @@ ub_checks
 unix
 
 x86_64-pc-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -10979,6 +11250,7 @@ ub_checks
 windows
 
 x86_64-pc-windows-gnullvm:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11026,6 +11298,7 @@ ub_checks
 windows
 
 x86_64-pc-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11073,6 +11346,7 @@ ub_checks
 windows
 
 x86_64-unikraft-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11114,6 +11388,7 @@ ub_checks
 unix
 
 x86_64-unknown-dragonfly:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11155,6 +11430,7 @@ ub_checks
 unix
 
 x86_64-unknown-freebsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11196,6 +11472,7 @@ ub_checks
 unix
 
 x86_64-unknown-fuchsia:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11247,6 +11524,7 @@ ub_checks
 unix
 
 x86_64-unknown-haiku:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11287,6 +11565,7 @@ ub_checks
 unix
 
 x86_64-unknown-helenos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11325,6 +11604,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-unknown-hermit:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11366,6 +11646,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-unknown-hurd-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11407,6 +11688,7 @@ ub_checks
 unix
 
 x86_64-unknown-illumos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11447,6 +11729,7 @@ ub_checks
 unix
 
 x86_64-unknown-l4re-uclibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11487,6 +11770,7 @@ ub_checks
 unix
 
 x86_64-unknown-linux-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11528,6 +11812,7 @@ ub_checks
 unix
 
 x86_64-unknown-linux-gnux32:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11568,6 +11853,7 @@ ub_checks
 unix
 
 x86_64-unknown-linux-musl:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11610,6 +11896,7 @@ ub_checks
 unix
 
 x86_64-unknown-linux-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11651,6 +11938,7 @@ ub_checks
 unix
 
 x86_64-unknown-linux-ohos:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11691,6 +11979,7 @@ ub_checks
 unix
 
 x86_64-unknown-managarm-mlibc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11732,6 +12021,7 @@ ub_checks
 unix
 
 x86_64-unknown-motor:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11771,6 +12061,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-unknown-netbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11812,6 +12103,7 @@ ub_checks
 unix
 
 x86_64-unknown-none:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11849,6 +12141,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-unknown-openbsd:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11889,6 +12182,7 @@ ub_checks
 unix
 
 x86_64-unknown-redox:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -11931,6 +12225,7 @@ ub_checks
 unix
 
 x86_64-unknown-trusty:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -11969,6 +12264,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-unknown-uefi:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12006,6 +12302,7 @@ target_vendor="unknown"
 ub_checks
 
 x86_64-uwp-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12049,6 +12346,7 @@ ub_checks
 windows
 
 x86_64-uwp-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12096,6 +12394,7 @@ ub_checks
 windows
 
 x86_64-win7-windows-gnu:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12133,6 +12432,7 @@ ub_checks
 windows
 
 x86_64-win7-windows-msvc:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12174,6 +12474,7 @@ ub_checks
 windows
 
 x86_64-wrs-vxworks:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12216,6 +12517,7 @@ ub_checks
 unix
 
 x86_64h-apple-darwin:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="unwind"
@@ -12278,6 +12580,7 @@ ub_checks
 unix
 
 xtensa-esp32-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12311,6 +12614,7 @@ ub_checks
 unix
 
 xtensa-esp32-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12342,6 +12646,7 @@ target_vendor="espressif"
 ub_checks
 
 xtensa-esp32s2-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12375,6 +12680,7 @@ ub_checks
 unix
 
 xtensa-esp32s2-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12401,6 +12707,7 @@ target_vendor="espressif"
 ub_checks
 
 xtensa-esp32s3-espidf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
@@ -12434,6 +12741,7 @@ ub_checks
 unix
 
 xtensa-esp32s3-none-elf:
+emscripten_wasm_eh
 fmt_debug="full"
 overflow_checks
 panic="abort"
