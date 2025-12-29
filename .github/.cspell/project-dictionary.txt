@@ -18,3 +18,4 @@ safestack
 singlethread
 uwtable
 xcoff
+zmij
