@@ -7740,6 +7740,7 @@
     "only-cdylib": true,
     "os": "cuda",
     "panic-strategy": "abort",
+    "static-initializer-must-be-acyclic": true,
     "supports-stack-protector": false,
     "target-pointer-width": 64,
     "vendor": "nvidia"
