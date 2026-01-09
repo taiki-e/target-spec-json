@@ -16,13 +16,16 @@ Add this to your `Cargo.toml`:
 target-spec-json = "0.2"
 ```
 
+## Compatibility
+
 Both `--print target-spec-json` and `--print all-target-specs-json` are unstable interfaces and may not work with certain version combinations of Rust versions and `target-spec-json` versions.
 
-The following are combinations that have been confirmed to work:
+The following combinations have been confirmed to work:
 
 | target-spec-json | Rust                                    |
 | ---------------- | --------------------------------------- |
-| 0.2.6            | nightly-2025-11-29                      |
+| 0.2.7            | nightly-2026-01-09                      |
+| 0.2.6            | nightly-2025-11-29 - nightly-2026-01-08 |
 | 0.2.5            | nightly-2025-10-08 - nightly-2025-10-30 |
 | 0.2.4            | nightly-2025-09-23 - nightly-2025-10-07 |
 | 0.2.3            | nightly-2025-09-01 - nightly-2025-09-22 |
