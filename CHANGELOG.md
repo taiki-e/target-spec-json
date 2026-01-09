@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.7] - 2026-01-09
+
 - Add `TargetSpec::static_initializer_must_be_acyclic`.
 
 - Enable [release immutability](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/immutable-releases).
@@ -203,7 +205,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.6...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.7...HEAD
+[0.2.7]: https://github.com/taiki-e/target-spec-json/compare/v0.2.6...v0.2.7
 [0.2.6]: https://github.com/taiki-e/target-spec-json/compare/v0.2.5...v0.2.6
 [0.2.5]: https://github.com/taiki-e/target-spec-json/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/taiki-e/target-spec-json/compare/v0.2.3...v0.2.4
