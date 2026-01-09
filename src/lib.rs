@@ -300,6 +300,8 @@ pub struct TargetSpec {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub stack_probes: Option<StackProbes>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub static_initializer_must_be_acyclic: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub static_position_independent_executables: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub staticlib_prefix: Option<String>,
