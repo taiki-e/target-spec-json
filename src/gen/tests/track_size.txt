@@ -7,6 +7,6 @@ target_spec_json::target_spec::Sanitizer: 1
 target_spec_json::target_spec::BinaryFormat: 1
 target_spec_json::target_spec::TargetEndian: 1
 target_spec_json::target_spec::PanicStrategy: 1
-target_spec_json::TargetSpec: 1552
+target_spec_json::TargetSpec: 1560
 target_spec_json::Metadata: 40
 target_spec_json::StackProbes: 40
