@@ -3186,6 +3186,66 @@
     "target-mcount": "\u0001__gnu_mcount_nc",
     "target-pointer-width": 32
   },
+  "armv6-none-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "asm-args": [
+      "-mthumb-interwork",
+      "-march=armv6",
+      "-mlittle-endian"
+    ],
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+soft-float,+strict-align,+v6k",
+    "frame-pointer": "always",
+    "has-thumb-interworking": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
+    "llvm-target": "armv6-none-eabi",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Bare ARMv6 soft-float",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": 32
+  },
+  "armv6-none-eabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "asm-args": [
+      "-mthumb-interwork",
+      "-march=armv6",
+      "-mlittle-endian"
+    ],
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+strict-align,+v6k,+vfp2,-d32",
+    "frame-pointer": "always",
+    "has-thumb-interworking": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "hard",
+    "llvm-target": "armv6-none-eabihf",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Bare ARMv6 hard-float",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": 32
+  },
   "armv6-unknown-freebsd": {
     "abi": "eabihf",
     "abi-return-struct-as-int": true,
@@ -8450,9 +8510,9 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "64-bit PowerPC Linux with musl 1.2.5",
-      "host_tools": false,
+      "host_tools": true,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "linux",
     "position-independent-executables": true,
@@ -10509,6 +10569,36 @@
     "max-atomic-width": 0,
     "metadata": {
       "description": "Thumb-mode Bare ARMv5TE",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "target-pointer-width": 32
+  },
+  "thumbv6-none-eabi": {
+    "abi": "eabi",
+    "arch": "arm",
+    "asm-args": [
+      "-mthumb-interwork",
+      "-march=armv6",
+      "-mlittle-endian"
+    ],
+    "c-enum-min-bits": 8,
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "emit-debug-gdb-scripts": false,
+    "features": "+soft-float,+strict-align,+v6k",
+    "frame-pointer": "always",
+    "has-thumb-interworking": true,
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-floatabi": "soft",
+    "llvm-target": "thumbv6-none-eabi",
+    "max-atomic-width": 32,
+    "metadata": {
+      "description": "Thumb-mode Bare ARMv6 soft-float",
       "host_tools": false,
       "std": false,
       "tier": 3
