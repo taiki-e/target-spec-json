@@ -2687,6 +2687,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="windows"
 target_pointer_width="64"
 target_thread_local
@@ -4621,6 +4623,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -4685,6 +4689,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -6991,6 +6997,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="32"
 target_thread_local
@@ -7022,6 +7030,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="helenos"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7052,6 +7062,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -7085,6 +7097,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -7117,6 +7131,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -7150,6 +7166,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -7182,6 +7200,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="32"
 target_thread_local
@@ -7214,6 +7234,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -7246,6 +7268,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="32"
 target_thread_local
@@ -7280,6 +7304,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="32"
 target_thread_local
@@ -7317,6 +7343,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="aix"
 target_pointer_width="64"
 target_thread_local
@@ -7353,6 +7381,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="64"
 target_thread_local
@@ -7389,6 +7419,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7425,6 +7457,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7461,6 +7495,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -7497,6 +7533,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="vxworks"
 target_pointer_width="64"
 target_thread_local
@@ -7539,6 +7577,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="freebsd"
 target_pointer_width="64"
 target_thread_local
@@ -7581,6 +7621,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -7624,6 +7666,8 @@ target_has_atomic_load_store="32"
 target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -9308,6 +9352,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -9339,6 +9385,8 @@ target_has_atomic_load_store="16"
 target_has_atomic_load_store="32"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_vendor="unknown"
@@ -9373,6 +9421,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="helenos"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -9409,6 +9459,8 @@ target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
 target_has_reliable_f128_math
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="64"
 target_thread_local
@@ -9446,6 +9498,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="netbsd"
 target_pointer_width="64"
 target_thread_local
@@ -9483,6 +9537,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="openbsd"
 target_pointer_width="64"
 target_vendor="unknown"
@@ -9519,6 +9575,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="solaris"
 target_pointer_width="64"
 target_vendor="sun"
@@ -10798,6 +10856,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="emscripten"
 target_pointer_width="32"
 target_thread_local
@@ -10840,6 +10900,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="unknown"
 target_pointer_width="32"
 target_thread_local
@@ -10884,6 +10946,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="linux"
 target_pointer_width="32"
 target_thread_local
@@ -10927,6 +10991,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -10970,6 +11036,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -11012,6 +11080,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -11054,6 +11124,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="wasi"
 target_pointer_width="32"
 target_thread_local
@@ -11090,6 +11162,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="none"
 target_pointer_width="32"
 target_thread_local
@@ -11131,6 +11205,8 @@ target_has_atomic_load_store="64"
 target_has_atomic_load_store="8"
 target_has_atomic_load_store="ptr"
 target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
 target_os="unknown"
 target_pointer_width="64"
 target_thread_local
