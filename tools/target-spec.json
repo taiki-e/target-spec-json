@@ -4577,9 +4577,8 @@
     "features": "-small-data,+hvx-length128b",
     "has-rpath": true,
     "has-thread-local": true,
-    "linker": "rust-lld",
-    "linker-flavor": "unix-cc",
-    "linker-is-gnu": false,
+    "linker": "hexagon-unknown-linux-musl-clang",
+    "linker-flavor": "gnu-cc",
     "llvm-target": "hexagon-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
@@ -4667,7 +4666,7 @@
     "emit-debug-gdb-scripts": false,
     "features": "-small-data,+hvx-length128b",
     "linker": "rust-lld",
-    "linker-flavor": "gnu-cc",
+    "linker-flavor": "gnu-lld",
     "llvm-target": "hexagon-unknown-none-elf",
     "max-atomic-width": 32,
     "metadata": {
@@ -4691,8 +4690,8 @@
     "exe-suffix": ".elf",
     "features": "-small-data,+hvx-length128b",
     "has-thread-local": true,
-    "linker": "rust-lld",
-    "linker-flavor": "gnu-lld",
+    "linker": "hexagon-clang",
+    "linker-flavor": "gnu-cc",
     "llvm-target": "hexagon-unknown-elf",
     "max-atomic-width": 32,
     "metadata": {
