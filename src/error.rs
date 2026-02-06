@@ -1,5 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0 OR MIT
 
+use alloc::{
+    boxed::Box,
+    string::{String, ToString as _},
+};
 use core::fmt;
 use std::io;
 

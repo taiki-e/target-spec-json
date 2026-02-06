@@ -36,6 +36,7 @@ The following combinations have been confirmed to work:
 <!-- tidy:sync-markdown-to-rustdoc:end -->
 */
 
+#![no_std]
 #![doc(test(
     no_crate_inject,
     attr(allow(
@@ -60,6 +61,7 @@ The following combinations have been confirmed to work:
 )]
 
 extern crate alloc;
+extern crate std;
 
 #[cfg(test)]
 #[path = "gen/tests/assert_impl.rs"]
@@ -79,7 +81,7 @@ mod process;
 
 mod error;
 
-use alloc::collections::BTreeMap;
+use alloc::{collections::BTreeMap, string::String, vec::Vec};
 use core::ops;
 use std::process::Command;
 
@@ -390,6 +392,8 @@ pub fn all_target_specs_json(rustc: Command) -> Result<AllTargetSpecs> {
 
 #[cfg(test)]
 mod tests {
+    use std::eprintln;
+
     use super::*;
 
     fn target_spec_json(target: &str) -> Result<(TargetSpec, String)> {
