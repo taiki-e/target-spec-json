@@ -3,7 +3,7 @@ name = "target-spec-json"
 version = "0.2.7" #publish:version
 edition = "2021"
 # NB: Sync with msrv badge in README.md
-rust-version = "1.68" # For syn (dep of serde_derive)
+rust-version = "1.71" # For syn (dep of serde_derive)
 license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/target-spec-json"
 keywords = ["serde", "serialization"]
