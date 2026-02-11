@@ -48,5 +48,5 @@
       "dictionaries": ["bash", "cpp-refined", "rust"]
     }
   ],
-  "ignorePaths": ["tools/cfg", "tools/target-spec.json"]
+  "ignorePaths": ["tools/target-spec.json"]
 }

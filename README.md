@@ -36,6 +36,12 @@ The following combinations have been confirmed to work:
 | 0.2.1            | nightly-2025-08-10 - nightly-2025-08-30 |
 | 0.2.0            | nightly-2025-07-06 - nightly-2025-08-08 |
 
+## Related Projects
+
+- [cargo-config2]: Library to load and resolve Cargo configuration.
+
+[cargo-config2]: https://github.com/taiki-e/cargo-config2
+
 <!-- tidy:sync-markdown-to-rustdoc:end -->
 
 ## License
