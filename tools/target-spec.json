@@ -5987,7 +5987,7 @@
         "/subsystem:efi_application"
       ]
     },
-    "rustc-abi": "x86-softfloat",
+    "rustc-abi": "softfloat",
     "singlethread": true,
     "split-debuginfo": "packed",
     "stack-probes": {
@@ -10318,6 +10318,36 @@
     ],
     "target-pointer-width": 64
   },
+  "s390x-unknown-none-softfloat": {
+    "abi": "softfloat",
+    "arch": "s390x",
+    "cpu": "z10",
+    "crt-objects-fallback": "false",
+    "data-layout": "E-S64-m:e-i1:8:16-i8:8:16-i64:64-f128:64-v128:64-a:8:16-n32:64",
+    "features": "+soft-float,-vector",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "s390x-unknown-linux-gnu",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "S390x Linux",
+      "host_tools": false,
+      "std": false,
+      "tier": 2
+    },
+    "min-global-align": 16,
+    "panic-strategy": "abort",
+    "relocation-model": "static",
+    "rustc-abi": "softfloat",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "kernel-address"
+    ],
+    "target-endian": "big",
+    "target-pointer-width": 64
+  },
   "sparc-unknown-linux-gnu": {
     "arch": "sparc",
     "cpu": "v9",
@@ -11503,6 +11533,7 @@
     "arch": "wasm32",
     "binary-format": "wasm",
     "crt-objects-fallback": "true",
+    "crt-static-allows-dylibs": true,
     "crt-static-default": true,
     "crt-static-respected": true,
     "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-i128:128-f128:64-n32:64-S128-ni:1:10:20",
@@ -14124,7 +14155,7 @@
     "plt-by-default": false,
     "position-independent-executables": true,
     "relro-level": "full",
-    "rustc-abi": "x86-softfloat",
+    "rustc-abi": "softfloat",
     "stack-probes": {
       "kind": "inline"
     },
@@ -14297,7 +14328,7 @@
         "/subsystem:efi_application"
       ]
     },
-    "rustc-abi": "x86-softfloat",
+    "rustc-abi": "softfloat",
     "singlethread": true,
     "split-debuginfo": "packed",
     "stack-probes": {
