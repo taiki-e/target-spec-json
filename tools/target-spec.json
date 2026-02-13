@@ -274,7 +274,7 @@
       "description": "ARM64 Apple tvOS",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "tvos",
     "split-debuginfo": "packed",
@@ -329,7 +329,7 @@
       "description": "ARM64 Apple tvOS Simulator",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "tvos",
     "split-debuginfo": "packed",
@@ -382,7 +382,7 @@
       "description": "ARM64 Apple visionOS",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "visionos",
     "split-debuginfo": "packed",
@@ -441,7 +441,7 @@
       "description": "ARM64 Apple visionOS simulator",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "visionos",
     "split-debuginfo": "packed",
@@ -497,7 +497,7 @@
       "description": "ARM64 Apple watchOS",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "watchos",
     "position-independent-executables": true,
@@ -553,7 +553,7 @@
       "description": "ARM64 Apple watchOS Simulator",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "os": "watchos",
     "split-debuginfo": "packed",
