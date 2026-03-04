@@ -1423,6 +1423,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "rustc-abi": "softfloat",
     "stack-probes": {
       "kind": "inline"
     },
@@ -2183,6 +2184,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "rustc-abi": "softfloat",
     "stack-probes": {
       "kind": "inline"
     },
@@ -2241,6 +2243,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "rustc-abi": "softfloat",
     "stack-probes": {
       "kind": "inline"
     },
