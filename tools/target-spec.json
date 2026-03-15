@@ -28,7 +28,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -89,7 +88,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
@@ -149,7 +147,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
@@ -209,7 +206,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -267,7 +263,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
@@ -322,7 +317,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -375,7 +369,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-xros",
     "max-atomic-width": 128,
     "metadata": {
@@ -434,7 +427,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-xros-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -490,7 +482,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
@@ -546,7 +537,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -2616,7 +2606,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64_32-apple-watchos",
     "max-atomic-width": 128,
     "metadata": {
@@ -2671,7 +2660,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -2730,7 +2718,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-ios",
     "max-atomic-width": 128,
     "metadata": {
@@ -2787,7 +2774,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "arm64e-apple-tvos",
     "max-atomic-width": 128,
     "metadata": {
@@ -4747,7 +4733,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "i386-apple-ios-simulator",
     "max-atomic-width": 64,
     "metadata": {
@@ -5037,7 +5022,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "i686-apple-macosx",
     "max-atomic-width": 64,
     "metadata": {
@@ -6798,6 +6782,7 @@
     "features": "+mips32r2,+soft-float,+noabicalls",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "o32",
     "llvm-target": "mips",
     "max-atomic-width": 32,
     "metadata": {
@@ -6830,6 +6815,7 @@
       ]
     },
     "linker-flavor": "gnu-lld-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -6866,6 +6852,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mips-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
@@ -6958,6 +6945,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7356,6 +7344,7 @@
     "features": "+mips32r2,+soft-float,+noabicalls",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel",
     "max-atomic-width": 32,
     "metadata": {
@@ -7379,6 +7368,7 @@
     "link-script": "ENTRY(module_start)\nSECTIONS\n{\n  /* PRX format requires text to begin at 0 */\n  .text 0 : { *(.text .text.*) }\n\n  /* Sort stubs for convenient ordering */\n  .sceStub.text : { *(.sceStub.text) *(SORT(.sceStub.text.*)) }\n\n  /* PSP import library stub sections. Bundles together `.lib.stub.entry.*`\n   * sections for better `--gc-sections` support. */\n  .lib.stub.top : { *(.lib.stub.top) }\n  .lib.stub :     { *(.lib.stub) *(.lib.stub.entry.*) }\n  .lib.stub.btm : { *(.lib.stub.btm) }\n\n  /* Keep these sections around, even though they may appear unused to the linker */\n  .lib.ent.top :  { KEEP(*(.lib.ent.top)) }\n  .lib.ent :      { KEEP(*(.lib.ent)) }\n  .lib.ent.btm :  { KEEP(*(.lib.ent.btm)) }\n\n  .eh_frame_hdr : { *(.eh_frame_hdr) }\n\n  /* Add symbols for LLVM's libunwind */\n  __eh_frame_hdr_start = SIZEOF(.eh_frame_hdr) > 0 ? ADDR(.eh_frame_hdr) : 0;\n  __eh_frame_hdr_end = SIZEOF(.eh_frame_hdr) > 0 ? . : 0;\n  .eh_frame :\n  {\n    __eh_frame_start = .;\n    KEEP(*(.eh_frame))\n    __eh_frame_end = .;\n  }\n\n  /* These are explicitly listed to avoid being merged into .rodata */\n  .rodata.sceResident : { *(.rodata.sceResident) *(.rodata.sceResident.*) }\n  .rodata.sceModuleInfo : { *(.rodata.sceModuleInfo) }\n  /* Sort NIDs for convenient ordering */\n  .rodata.sceNid : { *(.rodata.sceNid) *(SORT(.rodata.sceNid.*)) }\n\n  .rodata : { *(.rodata .rodata.*) }\n  .data : { *(.data .data.*) }\n  .gcc_except_table : { *(.gcc_except_table .gcc_except_table.*) }\n  .bss : { *(.bss .bss.*) }\n\n  /DISCARD/ : { *(.rel.sceStub.text .MIPS.abiflags .reginfo) }\n}\n",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "o32",
     "llvm-args": [
       "-mno-check-zero-division"
     ],
@@ -7448,6 +7438,7 @@
       ]
     },
     "linker-flavor": "gnu-lld-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7483,6 +7474,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
@@ -7574,6 +7566,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7607,6 +7600,7 @@
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel-unknown-netbsd",
     "max-atomic-width": 32,
     "metadata": {
@@ -7635,6 +7629,7 @@
     "features": "+mips32r2,+soft-float,+noabicalls",
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsel-unknown-none",
     "max-atomic-width": 32,
     "metadata": {
@@ -7664,6 +7659,7 @@
       ]
     },
     "linker-flavor": "gnu-lld-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsisa32r6-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7704,6 +7700,7 @@
       ]
     },
     "linker-flavor": "gnu-lld-cc",
+    "llvm-abiname": "o32",
     "llvm-target": "mipsisa32r6el-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -12172,7 +12169,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
@@ -12235,7 +12231,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-ios-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -12293,7 +12288,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-ios-macabi",
     "max-atomic-width": 128,
     "metadata": {
@@ -12352,7 +12346,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-tvos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -12406,7 +12399,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64-apple-watchos-simulator",
     "max-atomic-width": 128,
     "metadata": {
@@ -14830,7 +14822,6 @@
     "linker-flavor": "darwin-cc",
     "linker-is-gnu": false,
     "lld-flavor": "darwin",
-    "llvm-floatabi": "hard",
     "llvm-target": "x86_64h-apple-macosx",
     "max-atomic-width": 128,
     "metadata": {
