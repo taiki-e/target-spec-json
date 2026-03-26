@@ -306,6 +306,8 @@ pub enum Sanitizer {
     kcfi,
     #[serde(rename = "kernel-address")]
     kernel_address,
+    #[serde(rename = "kernel-hwaddress")]
+    kernel_hwaddress,
     leak,
     memory,
     memtag,
@@ -325,6 +327,7 @@ impl Sanitizer {
             Self::hwaddress => "hwaddress",
             Self::kcfi => "kcfi",
             Self::kernel_address => "kernel-address",
+            Self::kernel_hwaddress => "kernel-hwaddress",
             Self::leak => "leak",
             Self::memory => "memory",
             Self::memtag => "memtag",
