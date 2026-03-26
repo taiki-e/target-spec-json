@@ -431,7 +431,7 @@ mod tests {
     // Skip pre-1.91 because target-pointer-width change
     #[rustversion::attr(before(1.91), ignore)]
     #[test]
-    #[cfg_attr(miri, ignore)] // Miri doesn't support pipe2 (inside std::process::Command)
+    #[cfg_attr(miri, ignore)] // Miri doesn't support std::process::Command: https://github.com/rust-lang/miri/issues/3374
     fn parse_target_spec_json() {
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
