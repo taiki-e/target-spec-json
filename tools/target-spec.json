@@ -1389,7 +1389,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-pointer-width": 64
   },
@@ -1419,7 +1420,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-pointer-width": 64
   },
@@ -1605,7 +1607,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-family": [
       "unix"
@@ -2180,7 +2183,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-endian": "big",
     "target-pointer-width": 64
@@ -2209,7 +2213,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-pointer-width": 64
   },
@@ -2239,7 +2244,8 @@
     },
     "supported-sanitizers": [
       "kcfi",
-      "kernel-address"
+      "kernel-address",
+      "kernel-hwaddress"
     ],
     "target-pointer-width": 64
   },
