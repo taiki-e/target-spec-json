@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Sanitizer::kernel_hwaddress`.
+
 ## [0.2.7] - 2026-01-09
 
 - Add `TargetSpec::static_initializer_must_be_acyclic`.
