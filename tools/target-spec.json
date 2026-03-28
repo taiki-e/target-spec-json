@@ -767,6 +767,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "vendor": "pc"
   },
@@ -5361,6 +5362,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 32,
     "vendor": "pc"
   },
@@ -5473,6 +5475,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 32,
     "vendor": "pc"
   },
@@ -6118,6 +6121,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 32,
     "vendor": "uwp"
   },
@@ -6339,6 +6343,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 32,
     "vendor": "win7"
   },
@@ -13044,6 +13049,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "vendor": "pc"
   },
@@ -13156,6 +13162,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "vendor": "pc"
   },
@@ -14583,6 +14590,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "vendor": "uwp"
   },
@@ -14806,6 +14814,7 @@
     "target-family": [
       "windows"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "vendor": "win7"
   },
