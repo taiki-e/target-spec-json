@@ -6470,6 +6470,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-mcount": "_mcount",
     "target-pointer-width": 32
   },
   "loongarch32-unknown-none-softfloat": {
@@ -6491,6 +6492,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-mcount": "_mcount",
     "target-pointer-width": 32
   },
   "loongarch64-unknown-linux-gnu": {
@@ -6539,6 +6541,7 @@
     "target-family": [
       "unix"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64
   },
   "loongarch64-unknown-linux-musl": {
@@ -6639,6 +6642,7 @@
     "target-family": [
       "unix"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64
   },
   "loongarch64-unknown-linux-ohos": {
@@ -6682,6 +6686,7 @@
     "target-family": [
       "unix"
     ],
+    "target-mcount": "_mcount",
     "target-pointer-width": 64,
     "tls-model": "emulated"
   },
@@ -6704,6 +6709,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-mcount": "_mcount",
     "target-pointer-width": 64
   },
   "loongarch64-unknown-none-softfloat": {
@@ -6726,6 +6732,7 @@
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
+    "target-mcount": "_mcount",
     "target-pointer-width": 64
   },
   "m68k-unknown-linux-gnu": {
