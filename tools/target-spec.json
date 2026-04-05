@@ -11625,7 +11625,6 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle",
         "--no-entry"
       ],
@@ -11633,7 +11632,6 @@
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle",
         "--target=wasm32-unknown-unknown",
         "-Wl,--no-entry"
@@ -11771,14 +11769,12 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle",
         "--target=wasm32-wasip1"
       ]
@@ -11849,7 +11845,6 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle",
         "--import-memory",
         "--export-memory",
@@ -11860,7 +11855,6 @@
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle",
         "--target=wasm32-wasip1-threads",
         "-Wl,--import-memory",
@@ -11933,14 +11927,12 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle"
       ]
     },
@@ -12008,14 +12000,12 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle"
       ]
     },
@@ -12078,7 +12068,6 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle",
         "--no-entry"
       ],
@@ -12086,7 +12075,6 @@
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle",
         "--target=wasm32-unknown-unknown",
         "-Wl,--no-entry"
@@ -12135,7 +12123,6 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--allow-undefined",
         "--no-demangle",
         "--no-entry",
         "-mwasm64"
@@ -12144,7 +12131,6 @@
         "-Wl,-z",
         "-Wl,stack-size=1048576",
         "-Wl,--stack-first",
-        "-Wl,--allow-undefined",
         "-Wl,--no-demangle",
         "--target=wasm64-unknown-unknown",
         "-Wl,--no-entry"
