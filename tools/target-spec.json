@@ -9685,7 +9685,7 @@
       "shadow-call-stack"
     ],
     "dynamic-linking": true,
-    "features": "+m,+a,+f,+d,+c,+zicsr,+zifencei",
+    "features": "+m,+a,+f,+d,+c,+v,+zicsr,+zifencei",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "linker": "rust-lld",
