@@ -8457,7 +8457,7 @@
         "-b64",
         "-bpT:0x100000000",
         "-bpD:0x110000000",
-        "-bcdtors:all:0:s"
+        "-bcdtors:mbr:0:s"
       ]
     },
     "pre-link-objects": {
