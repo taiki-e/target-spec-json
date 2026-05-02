@@ -24,7 +24,8 @@ The following combinations have been confirmed to work:
 
 | target-spec-json | Rust                                    |
 | ---------------- | --------------------------------------- |
-| 0.2.8            | nightly-2026-03-26                      |
+| 0.2.9            | nightly-2026-04-29                      |
+| 0.2.8            | nightly-2026-03-26 - nightly-2026-04-29 |
 | 0.2.7            | nightly-2026-01-09 - nightly-2026-03-25 |
 | 0.2.6            | nightly-2025-11-29 - nightly-2026-01-08 |
 | 0.2.5            | nightly-2025-10-08 - nightly-2025-10-30 |
@@ -351,6 +352,8 @@ pub struct TargetSpec {
     pub tls_model: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub trap_unreachable: Option<bool>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub unsupported_cpus: Vec<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub use_ctors_section: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
