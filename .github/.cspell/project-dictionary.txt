@@ -4,6 +4,7 @@ asmjs
 bitcode
 cabi
 cmdline
+cpus
 dylibs
 floatabi
 hwaddress
