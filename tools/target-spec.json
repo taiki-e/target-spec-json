@@ -664,7 +664,6 @@
   "aarch64-pc-windows-gnullvm": {
     "abi": "llvm",
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "aarch64",
     "binary-format": "coff",
     "crt-objects-fallback": "mingw",
@@ -1393,6 +1392,7 @@
       "kernel-address",
       "kernel-hwaddress"
     ],
+    "supports-xray": true,
     "target-pointer-width": 64
   },
   "aarch64-unknown-none-softfloat": {
@@ -1424,6 +1424,7 @@
       "kernel-address",
       "kernel-hwaddress"
     ],
+    "supports-xray": true,
     "target-pointer-width": 64
   },
   "aarch64-unknown-nto-qnx700": {
@@ -1763,7 +1764,6 @@
   },
   "aarch64-unknown-uefi": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "aarch64",
     "archive-format": "coff",
     "binary-format": "coff",
@@ -5147,7 +5147,6 @@
   },
   "i686-pc-windows-gnu": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86",
     "binary-format": "coff",
     "cpu": "pentium4",
@@ -5375,7 +5374,6 @@
   "i686-pc-windows-gnullvm": {
     "abi": "llvm",
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86",
     "binary-format": "coff",
     "cpu": "pentium4",
@@ -5939,7 +5937,6 @@
   },
   "i686-unknown-uefi": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86",
     "archive-format": "coff",
     "binary-format": "coff",
@@ -6003,7 +6000,6 @@
   "i686-uwp-windows-gnu": {
     "abi": "uwp",
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86",
     "binary-format": "coff",
     "cpu": "pentium4",
@@ -6194,7 +6190,6 @@
   },
   "i686-win7-windows-gnu": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86",
     "binary-format": "coff",
     "cpu": "pentium4",
@@ -8471,7 +8466,8 @@
         "-b64",
         "-bpT:0x100000000",
         "-bpD:0x110000000",
-        "-bcdtors:mbr:0:s"
+        "-bcdtors:mbr:0:s",
+        "-bdbg:namedsects:ss"
       ]
     },
     "pre-link-objects": {
@@ -11632,7 +11628,11 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-unknown-unknown",
+    "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
       "description": "WebAssembly",
@@ -11775,6 +11775,9 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-wasip1",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
@@ -11851,6 +11854,9 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-wasi",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
@@ -11933,6 +11939,9 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-wasip2",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
@@ -12006,6 +12015,9 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-wasip3",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
@@ -12076,7 +12088,11 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm32-unknown-unknown",
+    "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
       "description": "WebAssembly",
@@ -12130,7 +12146,11 @@
     "linker-flavor": "wasm-lld",
     "linker-is-gnu": false,
     "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
     "llvm-target": "wasm64-unknown-unknown",
+    "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
       "description": "WebAssembly",
@@ -12654,7 +12674,6 @@
   },
   "x86_64-pc-cygwin": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "binary-format": "coff",
     "cpu": "x86-64",
@@ -12908,7 +12927,6 @@
   },
   "x86_64-pc-windows-gnu": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "binary-format": "coff",
     "cpu": "x86-64",
@@ -13072,7 +13090,6 @@
   "x86_64-pc-windows-gnullvm": {
     "abi": "llvm",
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "binary-format": "coff",
     "cpu": "x86-64",
@@ -14422,7 +14439,6 @@
   },
   "x86_64-unknown-uefi": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "archive-format": "coff",
     "binary-format": "coff",
@@ -14480,7 +14496,6 @@
   "x86_64-uwp-windows-gnu": {
     "abi": "uwp",
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "binary-format": "coff",
     "cpu": "x86-64",
@@ -14674,7 +14689,6 @@
   },
   "x86_64-win7-windows-gnu": {
     "abi-return-struct-as-int": true,
-    "allows-weak-linkage": false,
     "arch": "x86_64",
     "binary-format": "coff",
     "cpu": "x86-64",
