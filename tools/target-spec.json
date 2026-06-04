@@ -8052,6 +8052,7 @@
       ]
     },
     "relro-level": "full",
+    "rustc-abi": "powerpc-spe",
     "stack-probes": {
       "kind": "inline"
     },
@@ -8256,6 +8257,7 @@
       ]
     },
     "relro-level": "full",
+    "rustc-abi": "powerpc-spe",
     "stack-probes": {
       "kind": "inline"
     },
@@ -8422,6 +8424,7 @@
         "--secure-plt"
       ]
     },
+    "rustc-abi": "powerpc-spe",
     "stack-probes": {
       "kind": "inline"
     },
@@ -10801,7 +10804,7 @@
       "description": "Thumb-mode Bare Armv7-A",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -10826,7 +10829,7 @@
       "description": "Thumb-mode Bare Armv7-A, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -11357,7 +11360,7 @@
       "description": "Thumb-mode Bare Armv7-R",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -11382,7 +11385,7 @@
       "description": "Thumb-mode Bare Armv7-R, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
@@ -11560,7 +11563,7 @@
       "description": "Thumb-mode Bare Armv8-R, hardfloat",
       "host_tools": false,
       "std": false,
-      "tier": 3
+      "tier": 2
     },
     "panic-strategy": "abort",
     "relocation-model": "static",
