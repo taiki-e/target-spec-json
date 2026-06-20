@@ -6818,6 +6818,9 @@
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips",
     "max-atomic-width": 32,
     "metadata": {
@@ -6851,6 +6854,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -6888,6 +6894,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
@@ -6981,6 +6990,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7019,6 +7031,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -7118,6 +7133,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips64-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -7156,6 +7174,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips64-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -7254,6 +7275,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips64el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -7291,6 +7315,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mips64el-unknown-linux-musl",
     "max-atomic-width": 64,
     "metadata": {
@@ -7380,6 +7407,9 @@
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel",
     "max-atomic-width": 32,
     "metadata": {
@@ -7474,6 +7504,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7510,6 +7543,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel-unknown-linux-musl",
     "max-atomic-width": 32,
     "metadata": {
@@ -7602,6 +7638,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7636,6 +7675,9 @@
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel-unknown-netbsd",
     "max-atomic-width": 32,
     "metadata": {
@@ -7665,6 +7707,9 @@
     "linker": "rust-lld",
     "linker-flavor": "gnu-lld",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsel-unknown-none",
     "max-atomic-width": 32,
     "metadata": {
@@ -7695,6 +7740,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsisa32r6-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7736,6 +7784,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "o32",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsisa32r6el-unknown-linux-gnu",
     "max-atomic-width": 32,
     "metadata": {
@@ -7777,6 +7828,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsisa64r6-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -7819,6 +7873,9 @@
     },
     "linker-flavor": "gnu-lld-cc",
     "llvm-abiname": "n64",
+    "llvm-args": [
+      "-mno-check-zero-division"
+    ],
     "llvm-target": "mipsisa64r6el-unknown-linux-gnuabi64",
     "max-atomic-width": 64,
     "metadata": {
@@ -11929,7 +11986,7 @@
     "llvm-args": [
       "-wasm-use-legacy-eh=false"
     ],
-    "llvm-target": "wasm32-wasi",
+    "llvm-target": "wasm32-wasip1-threads",
     "main-needs-argc-argv": false,
     "max-atomic-width": 64,
     "metadata": {
