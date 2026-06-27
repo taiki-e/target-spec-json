@@ -24,7 +24,8 @@ The following combinations have been confirmed to work:
 
 | target-spec-json | Rust                                    |
 | ---------------- | --------------------------------------- |
-| 0.2.9            | nightly-2026-04-29                      |
+| 0.2.10           | nightly-2026-06-27                      |
+| 0.2.9            | nightly-2026-04-29 - nightly-2026-06-26 |
 | 0.2.8            | nightly-2026-03-26 - nightly-2026-04-29 |
 | 0.2.7            | nightly-2026-01-09 - nightly-2026-03-25 |
 | 0.2.6            | nightly-2025-11-29 - nightly-2026-01-08 |
