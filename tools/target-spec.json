@@ -4833,6 +4833,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-family": [
       "unix"
     ],
@@ -4937,6 +4938,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-family": [
       "unix"
     ],
@@ -5758,6 +5760,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-family": [
       "unix"
     ],
@@ -5863,6 +5866,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-family": [
       "unix"
     ],
@@ -10377,6 +10381,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-endian": "big",
     "target-family": [
       "unix"
@@ -10478,6 +10483,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-endian": "big",
     "target-family": [
       "unix"
@@ -10511,6 +10517,7 @@
     "supported-sanitizers": [
       "kernel-address"
     ],
+    "supports-fentry": true,
     "target-endian": "big",
     "target-pointer-width": 64
   },
@@ -13862,6 +13869,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "supports-xray": true,
     "target-family": [
       "unix"
@@ -13919,6 +13927,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "supports-xray": true,
     "target-family": [
       "unix"
@@ -13976,6 +13985,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "supports-xray": true,
     "target-family": [
       "unix"
@@ -14033,6 +14043,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "supports-xray": true,
     "target-family": [
       "unix"
@@ -14192,6 +14203,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "supports-xray": true,
     "target-family": [
       "unix"
@@ -14230,6 +14242,7 @@
       "unpacked",
       "off"
     ],
+    "supports-fentry": true,
     "target-family": [
       "unix"
     ],
