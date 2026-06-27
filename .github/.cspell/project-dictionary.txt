@@ -6,6 +6,7 @@ cabi
 cmdline
 cpus
 dylibs
+fentry
 floatabi
 hwaddress
 interworking

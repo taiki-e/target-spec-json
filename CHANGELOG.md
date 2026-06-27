@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::supports_fentry`.
+
 ## [0.2.9] - 2026-05-02
 
 - Add `TargetSpec::unsupported_cpus`.

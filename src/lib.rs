@@ -332,6 +332,8 @@ pub struct TargetSpec {
     #[serde(default = "default_true", skip_serializing_if = "Clone::clone")]
     pub supports_stack_protector: bool,
     #[serde(default, skip_serializing_if = "ops::Not::not")]
+    pub supports_fentry: bool,
+    #[serde(default, skip_serializing_if = "ops::Not::not")]
     pub supports_xray: bool,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub simd_types_indirect: Option<bool>,
