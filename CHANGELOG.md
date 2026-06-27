@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.10] - 2026-06-27
+
 - Add `TargetSpec::supports_fentry`.
 
 ## [0.2.9] - 2026-05-02
@@ -215,7 +217,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.9...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.10...HEAD
+[0.2.10]: https://github.com/taiki-e/target-spec-json/compare/v0.2.9...v0.2.10
 [0.2.9]: https://github.com/taiki-e/target-spec-json/compare/v0.2.8...v0.2.9
 [0.2.8]: https://github.com/taiki-e/target-spec-json/compare/v0.2.7...v0.2.8
 [0.2.7]: https://github.com/taiki-e/target-spec-json/compare/v0.2.6...v0.2.7
