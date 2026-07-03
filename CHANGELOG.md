@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::qnx`.
+
 ## [0.2.10] - 2026-06-27
 
 - Add `TargetSpec::supports_fentry`.
