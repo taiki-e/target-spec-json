@@ -661,6 +661,69 @@
     "target-pointer-width": 64,
     "vendor": "nintendo"
   },
+  "aarch64-oe-linux-gnu": {
+    "arch": "aarch64",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+v8a,+outline-atomics",
+    "frame-pointer": "non-leaf",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker": "aarch64-oe-linux-gcc",
+    "linker-flavor": "gnu-lld-cc",
+    "llvm-target": "aarch64-oe-linux-gnu",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "64-bit Linux (kernel 3.2+, glibc 2.17+) for yocto",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Wl,--fix-cortex-a53-843419"
+      ],
+      "gnu-lld-cc": [
+        "-Wl,--fix-cortex-a53-843419"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "hwaddress",
+      "cfi",
+      "memtag",
+      "kcfi",
+      "realtime"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-xray": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001_mcount",
+    "target-pointer-width": 64
+  },
   "aarch64-pc-windows-gnullvm": {
     "abi": "llvm",
     "abi-return-struct-as-int": true,
@@ -1311,6 +1374,46 @@
     "target-pointer-width": 64,
     "tls-model": "emulated"
   },
+  "aarch64-unknown-linux-pauthtest": {
+    "abi": "pauthtest",
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "musl",
+    "features": "+v8.3a,+pauth",
+    "frame-pointer": "non-leaf",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "linker-flavor": "gnu-cc",
+    "llvm-abiname": "pauthtest",
+    "llvm-target": "aarch64-unknown-linux-pauthtest",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Linux with pauth enabled musl",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001_mcount",
+    "target-pointer-width": 64
+  },
   "aarch64-unknown-managarm-mlibc": {
     "arch": "aarch64",
     "crt-objects-fallback": "false",
@@ -1458,7 +1561,7 @@
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 QNX Neutrino 7.0 RTOS",
+      "description": "ARM64 QNX SDP 7.0",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -1495,7 +1598,7 @@
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 QNX Neutrino 7.1 RTOS with io-pkt network stack",
+      "description": "ARM64 QNX SDP 7.1 with io-pkt network stack",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -1532,7 +1635,7 @@
     "llvm-target": "aarch64-unknown-unknown",
     "max-atomic-width": 128,
     "metadata": {
-      "description": "ARM64 QNX Neutrino 7.1 RTOS with io-sock network stack",
+      "description": "ARM64 QNX SDP 7.1 with io-sock network stack",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -1547,43 +1650,6 @@
       "gnu-lld-cc": [
         "-Vgcc_ntoaarch64le_cxx",
         "-LQNX_TARGET_not_set_please_source_qnxsdp-env.sh/aarch64le/io-sock/lib"
-      ]
-    },
-    "relro-level": "full",
-    "static-position-independent-executables": true,
-    "target-family": [
-      "unix"
-    ],
-    "target-pointer-width": 64
-  },
-  "aarch64-unknown-nto-qnx800": {
-    "arch": "aarch64",
-    "crt-objects-fallback": "false",
-    "crt-static-respected": true,
-    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
-    "default-uwtable": true,
-    "dynamic-linking": true,
-    "env": "nto80",
-    "features": "+v8a",
-    "has-rpath": true,
-    "linker": "qcc",
-    "linker-flavor": "gnu-cc",
-    "llvm-target": "aarch64-unknown-unknown",
-    "max-atomic-width": 128,
-    "metadata": {
-      "description": "ARM64 QNX Neutrino 8.0 RTOS",
-      "host_tools": false,
-      "std": true,
-      "tier": 3
-    },
-    "os": "nto",
-    "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-Vgcc_ntoaarch64le_cxx"
-      ],
-      "gnu-lld-cc": [
-        "-Vgcc_ntoaarch64le_cxx"
       ]
     },
     "relro-level": "full",
@@ -1663,6 +1729,42 @@
     ],
     "target-pointer-width": 64,
     "tls-model": "emulated"
+  },
+  "aarch64-unknown-qnx": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "features": "+v8a",
+    "has-rpath": true,
+    "linker": "qcc",
+    "linker-flavor": "gnu-cc",
+    "llvm-target": "aarch64-unknown-unknown",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 QNX SDP 8.0+",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "qnx",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ],
+      "gnu-lld-cc": [
+        "-Vgcc_ntoaarch64le_cxx"
+      ]
+    },
+    "relro-level": "full",
+    "static-position-independent-executables": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": 64
   },
   "aarch64-unknown-redox": {
     "arch": "aarch64",
@@ -3471,6 +3573,51 @@
     "target-pointer-width": 32,
     "tls-model": "emulated"
   },
+  "armv7-oe-linux-gnueabihf": {
+    "abi": "eabihf",
+    "arch": "arm",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+v7,+vfp3d16,+thumb2,-neon",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker": "arm-oe-linux-gnueabi-gcc",
+    "linker-flavor": "gnu-lld-cc",
+    "llvm-floatabi": "hard",
+    "llvm-mcount-intrinsic": "llvm.arm.gnu.eabi.mcount",
+    "llvm-target": "armv7-oe-linux-gnueabihf",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "Armv7-A Linux, hardfloat (kernel 3.2, glibc 2.17) for yocto",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "supported-sanitizers": [
+      "address"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001__gnu_mcount_nc",
+    "target-pointer-width": 32
+  },
   "armv7-rtems-eabihf": {
     "abi": "eabihf",
     "arch": "arm",
@@ -5121,6 +5268,61 @@
     "target-pointer-width": 32,
     "tls-model": "emulated"
   },
+  "i686-oe-linux-gnu": {
+    "arch": "x86",
+    "cpu": "core2",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:32:32-p270:32:32-p271:32:32-p272:64:64-i128:128-f64:32:64-f80:32-n8:16:32-S128",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+sse3",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker": "i686-oe-linux-gcc",
+    "linker-flavor": "gnu-lld-cc",
+    "llvm-target": "i686-oe-linux-gnu",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "32-bit Linux (kernel 3.2, glibc 2.17+) for yocto",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-m32"
+      ],
+      "gnu-lld-cc": [
+        "-m32"
+      ]
+    },
+    "relro-level": "full",
+    "rustc-abi": "x86-sse2",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "address"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-fentry": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": 32
+  },
   "i686-pc-nto-qnx700": {
     "arch": "x86",
     "cpu": "pentium4",
@@ -5136,7 +5338,7 @@
     "llvm-target": "i586-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "32-bit x86 QNX Neutrino 7.0 RTOS",
+      "description": "32-bit x86 QNX SDP 7.0",
       "host_tools": false,
       "std": false,
       "tier": 3
@@ -9722,6 +9924,43 @@
     "target-pointer-width": 64,
     "tls-model": "emulated"
   },
+  "riscv64-oe-linux-gnu": {
+    "arch": "riscv64",
+    "code-model": "medium",
+    "cpu": "generic-rv64",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p:64:64-i64:64-i128:128-n32:64-S128",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "gnu",
+    "features": "+m,+a,+f,+d,+c,+zicsr,+zifencei",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker": "riscv64-oe-linux-gcc",
+    "linker-flavor": "gnu-lld-cc",
+    "llvm-abiname": "lp64d",
+    "llvm-target": "riscv64-oe-linux-gnu",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "RISC-V Linux (kernel 4.20, glibc 2.29) for yocto",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "\u0001_mcount",
+    "target-pointer-width": 64
+  },
   "riscv64-wrs-vxworks": {
     "arch": "riscv64",
     "cpu": "generic-rv64",
@@ -12808,6 +13047,70 @@
     ],
     "target-pointer-width": 64
   },
+  "x86_64-oe-linux-gnu": {
+    "arch": "x86_64",
+    "cpu": "x86-64",
+    "crt-static-respected": true,
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "default-uwtable": true,
+    "dynamic-linking": true,
+    "env": "gnu",
+    "has-rpath": true,
+    "has-thread-local": true,
+    "link-self-contained": {
+      "components": [
+        "linker"
+      ]
+    },
+    "linker": "x86_64-oe-linux-gcc",
+    "linker-flavor": "gnu-lld-cc",
+    "llvm-target": "x86_64-oe-linux-gnu",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "64-bit Linux (kernel 3.2+, glibc 2.17+) for yocto",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "linux",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-m64"
+      ],
+      "gnu-lld-cc": [
+        "-m64"
+      ]
+    },
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
+    "supported-sanitizers": [
+      "address",
+      "leak",
+      "memory",
+      "thread",
+      "cfi",
+      "kcfi",
+      "safestack",
+      "dataflow",
+      "realtime"
+    ],
+    "supported-split-debuginfo": [
+      "packed",
+      "unpacked",
+      "off"
+    ],
+    "supports-fentry": true,
+    "supports-xray": true,
+    "target-family": [
+      "unix"
+    ],
+    "target-pointer-width": 64
+  },
   "x86_64-pc-cygwin": {
     "abi-return-struct-as-int": true,
     "arch": "x86_64",
@@ -12916,7 +13219,7 @@
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "x86 64-bit QNX Neutrino 7.1 RTOS with io-pkt network stack",
+      "description": "x86 64-bit QNX SDP 7.1 with io-pkt network stack",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -12955,7 +13258,7 @@
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "x86 64-bit QNX Neutrino 7.1 RTOS with io-sock network stack",
+      "description": "x86 64-bit QNX SDP 7.1 with io-sock network stack",
       "host_tools": false,
       "std": true,
       "tier": 3
@@ -12981,7 +13284,7 @@
     "target-pointer-width": 64,
     "vendor": "pc"
   },
-  "x86_64-pc-nto-qnx800": {
+  "x86_64-pc-qnx": {
     "arch": "x86_64",
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
@@ -12989,19 +13292,18 @@
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "default-uwtable": true,
     "dynamic-linking": true,
-    "env": "nto80",
     "has-rpath": true,
     "linker": "qcc",
     "linker-flavor": "gnu-cc",
     "llvm-target": "x86_64-pc-unknown",
     "max-atomic-width": 64,
     "metadata": {
-      "description": "x86 64-bit QNX Neutrino 8.0 RTOS",
+      "description": "x86 64-bit QNX SDP 8.0+",
       "host_tools": false,
       "std": true,
       "tier": 3
     },
-    "os": "nto",
+    "os": "qnx",
     "plt-by-default": false,
     "position-independent-executables": true,
     "pre-link-args": {
