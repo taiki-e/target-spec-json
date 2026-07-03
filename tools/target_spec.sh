@@ -30,6 +30,7 @@ target_env=(
   # Environments that do not included in builtin targets.
   # See also ones removed in https://github.com/rust-lang/rust/commit/f026e0bfc16633d225dbc49e5b4da048bd419831.
   libnx
+  nto80 # Removed in https://github.com/rust-lang/rust/pull/158449
 )
 binary_format=()
 target_family=()
