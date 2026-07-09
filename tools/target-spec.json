@@ -9120,6 +9120,14 @@
     "dynamic-linking": true,
     "has-rpath": true,
     "has-thread-local": true,
+    "late-link-args": {
+      "gnu-cc": [
+        "-lgcc"
+      ],
+      "gnu-lld-cc": [
+        "-lgcc"
+      ]
+    },
     "linker-flavor": "gnu-cc",
     "llvm-abiname": "elfv2",
     "llvm-target": "powerpc64le-unknown-freebsd",
