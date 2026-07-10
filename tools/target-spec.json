@@ -11986,6 +11986,7 @@
     "dynamic-linking": true,
     "eh-frame-header": false,
     "emit-debug-gdb-scripts": false,
+    "entry-name": "__main_argc_argv",
     "exe-suffix": ".js",
     "generate-arange-section": false,
     "has-thread-local": true,
