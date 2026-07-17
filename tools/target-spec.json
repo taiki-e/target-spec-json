@@ -1009,6 +1009,7 @@
     "supported-sanitizers": [
       "address",
       "leak",
+      "hwaddress",
       "cfi",
       "shadow-call-stack"
     ],
@@ -10177,6 +10178,8 @@
     },
     "supported-sanitizers": [
       "address",
+      "leak",
+      "cfi",
       "shadow-call-stack"
     ],
     "supports-xray": true,
