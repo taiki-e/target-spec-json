@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::requires_consistent_cpu`.
+
 ## [0.2.11] - 2026-07-03
 
 - Add `Os::qnx`.
