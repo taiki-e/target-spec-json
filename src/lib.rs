@@ -24,7 +24,8 @@ The following combinations have been confirmed to work:
 
 | target-spec-json | Rust                                    |
 | ---------------- | --------------------------------------- |
-| 0.2.11           | nightly-2026-07-03                      |
+| 0.2.12           | nightly-2026-07-23                      |
+| 0.2.11           | nightly-2026-07-03 - nightly-2026-07-20 |
 | 0.2.10           | nightly-2026-06-27 - nightly-2026-06-28 |
 | 0.2.9            | nightly-2026-04-29 - nightly-2026-06-26 |
 | 0.2.8            | nightly-2026-03-26 - nightly-2026-04-29 |
@@ -309,6 +310,8 @@ pub struct TargetSpec {
     pub relocation_model: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub relro_level: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub requires_consistent_cpu: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub requires_lto: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
