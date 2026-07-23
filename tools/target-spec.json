@@ -2393,6 +2393,7 @@
     "only-cdylib": true,
     "os": "amdhsa",
     "panic-strategy": "abort",
+    "requires-consistent-cpu": true,
     "requires-lto": true,
     "simd-types-indirect": false,
     "supports-stack-protector": false,
@@ -4581,6 +4582,7 @@
       "gnu-lld-cc": []
     },
     "relocation-model": "static",
+    "requires-consistent-cpu": true,
     "target-c-int-width": 16,
     "target-pointer-width": 16
   },
@@ -8158,6 +8160,7 @@
     "only-cdylib": true,
     "os": "cuda",
     "panic-strategy": "abort",
+    "requires-consistent-cpu": true,
     "static-initializer-must-be-acyclic": true,
     "supports-stack-protector": false,
     "target-pointer-width": 64,
