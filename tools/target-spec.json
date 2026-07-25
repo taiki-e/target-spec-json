@@ -10272,7 +10272,7 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "RISC-V Linux (kernel 4.20, musl 1.2.5)",
-      "host_tools": false,
+      "host_tools": true,
       "std": true,
       "tier": 2
     },
@@ -12449,7 +12449,8 @@
         "-z",
         "stack-size=1048576",
         "--stack-first",
-        "--no-demangle"
+        "--no-demangle",
+        "--cooperative-threading"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
