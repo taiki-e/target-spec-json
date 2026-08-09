@@ -1113,6 +1113,118 @@
     ],
     "target-pointer-width": 64
   },
+  "aarch64-unknown-l4re-uclibc": {
+    "arch": "aarch64",
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "dynamic-linking": true,
+    "env": "uclibc",
+    "features": "+v8a",
+    "has-thread-local": true,
+    "late-link-args": {
+      "unix": [
+        "-lc",
+        "-lgcc_eh"
+      ],
+      "unix-cc": [
+        "-Wl,-lc",
+        "-Wl,-lgcc_eh"
+      ]
+    },
+    "link-self-contained": {
+      "components": [
+        "crto",
+        "libc"
+      ]
+    },
+    "linker-flavor": "unix",
+    "linker-is-gnu": false,
+    "llvm-target": "aarch64-unknown-l4re-uclibc",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "Arm64 L4Re",
+      "host_tools": false,
+      "std": true,
+      "tier": 3
+    },
+    "os": "l4re",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "post-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crtendS.o",
+        "crtn.s.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ],
+      "dynamic-pic-exe": [
+        "crtendS.o",
+        "crtn.o"
+      ],
+      "static-dylib": [
+        "crtendS.o",
+        "crtn.s.o"
+      ],
+      "static-nopic-exe": [
+        "crtendT.o",
+        "crtn.o"
+      ],
+      "static-pic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ]
+    },
+    "pre-link-args": {
+      "unix": [
+        "-nostdlib",
+        "-dynamic-linker=rom/libld-l4.so",
+        "-zmax-page-size=0x1000",
+        "-zcommon-page-size=0x1000"
+      ],
+      "unix-cc": [
+        "-Wl,-nostdlib",
+        "-Wl,-dynamic-linker=rom/libld-l4.so",
+        "-zmax-page-size=0x1000",
+        "-zcommon-page-size=0x1000"
+      ]
+    },
+    "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crti.s.o",
+        "crtbeginS.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbegin.o"
+      ],
+      "dynamic-pic-exe": [
+        "crt1.s.o",
+        "crti.o",
+        "crtbeginS.o"
+      ],
+      "static-dylib": [
+        "crti.s.o",
+        "crtbeginS.o"
+      ],
+      "static-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbeginT.o"
+      ],
+      "static-pic-exe": [
+        "crt1.p.o",
+        "crti.o",
+        "crtbegin.o"
+      ]
+    },
+    "target-family": [
+      "unix"
+    ],
+    "target-mcount": "__mcount",
+    "target-pointer-width": 64
+  },
   "aarch64-unknown-linux-gnu": {
     "arch": "aarch64",
     "crt-static-respected": true,
@@ -14132,10 +14244,26 @@
   "x86_64-unknown-l4re-uclibc": {
     "arch": "x86_64",
     "cpu": "x86-64",
-    "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "dynamic-linking": true,
     "env": "uclibc",
-    "linker": "l4-bender",
+    "has-thread-local": true,
+    "late-link-args": {
+      "unix": [
+        "-lc",
+        "-lgcc_eh"
+      ],
+      "unix-cc": [
+        "-Wl,-lc",
+        "-Wl,-lgcc_eh"
+      ]
+    },
+    "link-self-contained": {
+      "components": [
+        "crto",
+        "libc"
+      ]
+    },
     "linker-flavor": "unix",
     "linker-is-gnu": false,
     "llvm-target": "x86_64-unknown-l4re-gnu",
@@ -14149,7 +14277,77 @@
     "os": "l4re",
     "panic-strategy": "abort",
     "plt-by-default": false,
-    "relocation-model": "static",
+    "position-independent-executables": true,
+    "post-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crtendS.o",
+        "crtn.s.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ],
+      "dynamic-pic-exe": [
+        "crtendS.o",
+        "crtn.o"
+      ],
+      "static-dylib": [
+        "crtendS.o",
+        "crtn.s.o"
+      ],
+      "static-nopic-exe": [
+        "crtendT.o",
+        "crtn.o"
+      ],
+      "static-pic-exe": [
+        "crtend.o",
+        "crtn.o"
+      ]
+    },
+    "pre-link-args": {
+      "unix": [
+        "-nostdlib",
+        "-dynamic-linker=rom/libld-l4.so",
+        "-zmax-page-size=0x1000",
+        "-zcommon-page-size=0x1000"
+      ],
+      "unix-cc": [
+        "-Wl,-nostdlib",
+        "-Wl,-dynamic-linker=rom/libld-l4.so",
+        "-zmax-page-size=0x1000",
+        "-zcommon-page-size=0x1000"
+      ]
+    },
+    "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crti.s.o",
+        "crtbeginS.o"
+      ],
+      "dynamic-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbegin.o"
+      ],
+      "dynamic-pic-exe": [
+        "crt1.s.o",
+        "crti.o",
+        "crtbeginS.o"
+      ],
+      "static-dylib": [
+        "crti.s.o",
+        "crtbeginS.o"
+      ],
+      "static-nopic-exe": [
+        "crt1.o",
+        "crti.o",
+        "crtbeginT.o"
+      ],
+      "static-pic-exe": [
+        "crt1.p.o",
+        "crti.o",
+        "crtbegin.o"
+      ]
+    },
     "target-family": [
       "unix"
     ],
