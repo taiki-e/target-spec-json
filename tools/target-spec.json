@@ -701,6 +701,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
       "leak",
@@ -1264,6 +1265,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
       "leak",
@@ -1319,6 +1321,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -2199,6 +2202,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -2243,6 +2247,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -2581,6 +2586,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -2621,6 +2627,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -3136,6 +3143,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -3259,6 +3267,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -3332,6 +3341,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -3718,6 +3728,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -3861,6 +3872,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -3902,6 +3914,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -4753,6 +4766,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -4802,6 +4816,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -5055,6 +5070,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -5392,6 +5408,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -6037,6 +6054,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address"
     ],
@@ -6831,6 +6849,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
       "leak",
@@ -7064,6 +7083,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -7157,6 +7177,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -7436,6 +7457,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -7578,6 +7600,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -7807,6 +7830,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8043,6 +8067,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8087,6 +8112,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8131,6 +8157,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8176,6 +8203,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8367,6 +8395,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8419,6 +8448,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8936,6 +8966,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -8988,6 +9019,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -9282,6 +9314,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -9538,6 +9571,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "target-family": [
       "unix"
     ],
@@ -10071,6 +10105,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "target-family": [
       "unix"
     ],
@@ -10143,6 +10178,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "target-family": [
       "unix"
     ],
@@ -10327,6 +10363,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "target-family": [
       "unix"
     ],
@@ -10727,6 +10764,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-sanitizers": [
       "address",
       "leak",
@@ -10916,6 +10954,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -11012,6 +11051,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -11762,6 +11802,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
@@ -14628,6 +14669,7 @@
     "stack-probes": {
       "kind": "inline"
     },
+    "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
       "unpacked",
