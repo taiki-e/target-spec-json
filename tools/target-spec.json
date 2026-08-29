@@ -10917,6 +10917,7 @@
     "target-pointer-width": 64
   },
   "sparc-unknown-linux-gnu": {
+    "abi": "v8plus",
     "arch": "sparc",
     "cpu": "v9",
     "crt-static-respected": true,
@@ -10954,6 +10955,7 @@
     "os": "linux",
     "position-independent-executables": true,
     "relro-level": "full",
+    "rustc-abi": "sparc-v8plus",
     "static-position-independent-executables": true,
     "supported-split-debuginfo": [
       "packed",
@@ -12295,11 +12297,17 @@
       ]
     },
     "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crt1-reactor.o"
+      ],
       "dynamic-nopic-exe": [
         "crt1-command.o"
       ],
       "dynamic-pic-exe": [
         "crt1-command.o"
+      ],
+      "static-dylib": [
+        "crt1-reactor.o"
       ],
       "static-nopic-exe": [
         "crt1-command.o"
@@ -12373,11 +12381,17 @@
       ]
     },
     "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crt1-reactor.o"
+      ],
       "dynamic-nopic-exe": [
         "crt1-command.o"
       ],
       "dynamic-pic-exe": [
         "crt1-command.o"
+      ],
+      "static-dylib": [
+        "crt1-reactor.o"
       ],
       "static-nopic-exe": [
         "crt1-command.o"
@@ -12460,11 +12474,17 @@
       ]
     },
     "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crt1-reactor.o"
+      ],
       "dynamic-nopic-exe": [
         "crt1-command.o"
       ],
       "dynamic-pic-exe": [
         "crt1-command.o"
+      ],
+      "static-dylib": [
+        "crt1-reactor.o"
       ],
       "static-nopic-exe": [
         "crt1-command.o"
@@ -12536,11 +12556,17 @@
       ]
     },
     "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crt1-reactor.o"
+      ],
       "dynamic-nopic-exe": [
         "crt1-command.o"
       ],
       "dynamic-pic-exe": [
         "crt1-command.o"
+      ],
+      "static-dylib": [
+        "crt1-reactor.o"
       ],
       "static-nopic-exe": [
         "crt1-command.o"
@@ -12613,11 +12639,17 @@
       ]
     },
     "pre-link-objects-fallback": {
+      "dynamic-dylib": [
+        "crt1-reactor.o"
+      ],
       "dynamic-nopic-exe": [
         "crt1-command.o"
       ],
       "dynamic-pic-exe": [
         "crt1-command.o"
+      ],
+      "static-dylib": [
+        "crt1-reactor.o"
       ],
       "static-nopic-exe": [
         "crt1-command.o"
