@@ -935,7 +935,7 @@
       "shadow-call-stack"
     ],
     "dynamic-linking": true,
-    "features": "+v8a,+crc,+aes,+sha2,+neon",
+    "features": "+v8a,+crc,+aes,+sha2,+neon,+fix-cortex-a53-835769",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "linker": "rust-lld",
