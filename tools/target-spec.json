@@ -14050,6 +14050,9 @@
     "cpu": "x86-64",
     "crt-objects-fallback": "false",
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "default-sanitizers": [
+      "safestack"
+    ],
     "dynamic-linking": true,
     "features": "+cmpxchg16b,+lahfsahf,+popcnt,+sse3,+sse4.1,+sse4.2,+ssse3",
     "frame-pointer": "non-leaf",
@@ -14123,7 +14126,8 @@
     "supported-sanitizers": [
       "address",
       "leak",
-      "cfi"
+      "cfi",
+      "safestack"
     ],
     "supports-xray": true,
     "target-family": [
