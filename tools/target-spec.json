@@ -8883,6 +8883,75 @@
     "target-pointer-width": 64,
     "vendor": "ibm"
   },
+  "powerpc64-sony-ps3": {
+    "abi": "elfv1",
+    "arch": "powerpc64",
+    "code-model": "small",
+    "crt-objects-fallback": "false",
+    "data-layout": "E-m:e-Fi64-i64:64-i128:128-n32:64",
+    "exe-suffix": ".ELF",
+    "features": "+altivec",
+    "linker": "mold",
+    "linker-flavor": "gnu",
+    "llvm-abiname": "elfv1",
+    "llvm-target": "powerpc64-sony-ps3",
+    "metadata": {
+      "description": "PowerPC64 (big endian) Sony PlayStation 3 (PS3)",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "ps3",
+    "panic-strategy": "abort",
+    "pre-link-args": {
+      "gnu": [
+        "-m",
+        "elf64ppc",
+        "--image-base=0x10000",
+        "-e",
+        "_start",
+        "--no-rosegment",
+        "-z",
+        "separate-loadable-segments",
+        "-z",
+        "norelro",
+        "-Bstatic",
+        "-u",
+        "sys_process_param",
+        "-u",
+        "sys_proc_prx_param",
+        "--undefined-glob=*_prx_header",
+        "--undefined-glob=*_fnid_table",
+        "--undefined-glob=*_name",
+        "--undefined-glob=*_fstub_table"
+      ],
+      "gnu-lld": [
+        "-m",
+        "elf64ppc",
+        "--image-base=0x10000",
+        "-e",
+        "_start",
+        "--no-rosegment",
+        "-z",
+        "separate-loadable-segments",
+        "-z",
+        "norelro",
+        "-Bstatic",
+        "-u",
+        "sys_process_param",
+        "-u",
+        "sys_proc_prx_param",
+        "--undefined-glob=*_prx_header",
+        "--undefined-glob=*_fnid_table",
+        "--undefined-glob=*_name",
+        "--undefined-glob=*_fstub_table"
+      ]
+    },
+    "relocation-model": "static",
+    "target-endian": "big",
+    "target-pointer-width": 64,
+    "vendor": "sony"
+  },
   "powerpc64-unknown-freebsd": {
     "abi": "elfv2",
     "abi-return-struct-as-int": true,
@@ -12618,7 +12687,7 @@
       "description": "WebAssembly",
       "host_tools": false,
       "std": true,
-      "tier": 3
+      "tier": 2
     },
     "only-cdylib": true,
     "os": "wasi",
@@ -12629,7 +12698,8 @@
         "stack-size=1048576",
         "--stack-first",
         "--no-demangle",
-        "--cooperative-threading"
+        "--cooperative-threading",
+        "--export-if-defined=__wasm_task_hook"
       ],
       "wasm-lld-cc": [
         "-Wl,-z",
