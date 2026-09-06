@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::ps3`.
+
 ## [0.2.12] - 2026-07-23
 
 - Add `TargetSpec::requires_consistent_cpu`.
