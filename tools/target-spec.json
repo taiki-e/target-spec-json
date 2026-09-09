@@ -731,8 +731,6 @@
     "arch": "aarch64",
     "binary-format": "coff",
     "crt-objects-fallback": "mingw",
-    "crt-static-allows-dylibs": true,
-    "crt-static-respected": true,
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-p:64:64-i32:32-i64:64-i128:128-n32:64-S128-Fn32",
     "dll-prefix": "",
     "dll-suffix": ".dll",
@@ -752,7 +750,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-cc": [
         "-lmingw32",
@@ -766,7 +765,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-lld-cc": [
         "-lmingw32",
@@ -795,7 +795,8 @@
       ],
       "gnu-cc": [
         "-nolibc",
-        "--unwindlib=none"
+        "--unwindlib=libunwind",
+        "-static-libgcc"
       ],
       "gnu-lld": [
         "-m",
@@ -803,7 +804,8 @@
       ],
       "gnu-lld-cc": [
         "-nolibc",
-        "--unwindlib=none"
+        "--unwindlib=libunwind",
+        "-static-libgcc"
       ]
     },
     "pre-link-objects-fallback": {
@@ -5698,8 +5700,6 @@
     "binary-format": "coff",
     "cpu": "pentium4",
     "crt-objects-fallback": "mingw",
-    "crt-static-allows-dylibs": true,
-    "crt-static-respected": true,
     "data-layout": "e-m:x-p:32:32-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:32-n8:16:32-a:0:32-S32",
     "dll-prefix": "",
     "dll-suffix": ".dll",
@@ -5718,7 +5718,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-cc": [
         "-lmingw32",
@@ -5732,7 +5733,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-lld-cc": [
         "-lmingw32",
@@ -5762,7 +5764,8 @@
       ],
       "gnu-cc": [
         "-nolibc",
-        "--unwindlib=none"
+        "--unwindlib=libunwind",
+        "-static-libgcc"
       ],
       "gnu-lld": [
         "-m",
@@ -5771,7 +5774,8 @@
       ],
       "gnu-lld-cc": [
         "-nolibc",
-        "--unwindlib=none"
+        "--unwindlib=libunwind",
+        "-static-libgcc"
       ]
     },
     "pre-link-objects-fallback": {
@@ -13827,8 +13831,6 @@
     "binary-format": "coff",
     "cpu": "x86-64",
     "crt-objects-fallback": "mingw",
-    "crt-static-allows-dylibs": true,
-    "crt-static-respected": true,
     "data-layout": "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
     "dll-prefix": "",
     "dll-suffix": ".dll",
@@ -13847,7 +13849,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-cc": [
         "-lmingw32",
@@ -13861,7 +13864,8 @@
         "-lmingwex",
         "-lmsvcrt",
         "-lkernel32",
-        "-luser32"
+        "-luser32",
+        "-l:libunwind.a"
       ],
       "gnu-lld-cc": [
         "-lmingw32",
@@ -13891,7 +13895,8 @@
       ],
       "gnu-cc": [
         "-nolibc",
-        "--unwindlib=none",
+        "--unwindlib=libunwind",
+        "-static-libgcc",
         "-m64"
       ],
       "gnu-lld": [
@@ -13900,7 +13905,8 @@
       ],
       "gnu-lld-cc": [
         "-nolibc",
-        "--unwindlib=none",
+        "--unwindlib=libunwind",
+        "-static-libgcc",
         "-m64"
       ]
     },
