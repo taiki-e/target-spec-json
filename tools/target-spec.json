@@ -5565,7 +5565,7 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "32-bit MinGW (Windows 10+)",
-      "host_tools": true,
+      "host_tools": false,
       "std": true,
       "tier": 2
     },
@@ -5835,7 +5835,7 @@
     "max-atomic-width": 64,
     "metadata": {
       "description": "32-bit MSVC (Windows 10+)",
-      "host_tools": true,
+      "host_tools": false,
       "std": true,
       "tier": 1
     },
@@ -6852,6 +6852,14 @@
     },
     "os": "linux",
     "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Wl,--no-rosegment"
+      ],
+      "gnu-lld-cc": [
+        "-Wl,--no-rosegment"
+      ]
+    },
     "relro-level": "full",
     "static-position-independent-executables": true,
     "supported-sanitizers": [
@@ -6922,6 +6930,14 @@
       "static-pic-exe": [
         "crtendS.o",
         "crtn.o"
+      ]
+    },
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Wl,--no-rosegment"
+      ],
+      "gnu-lld-cc": [
+        "-Wl,--no-rosegment"
       ]
     },
     "pre-link-objects-fallback": {
@@ -6998,6 +7014,14 @@
     },
     "os": "linux",
     "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu-cc": [
+        "-Wl,--no-rosegment"
+      ],
+      "gnu-lld-cc": [
+        "-Wl,--no-rosegment"
+      ]
+    },
     "relro-level": "full",
     "supported-sanitizers": [
       "address",
