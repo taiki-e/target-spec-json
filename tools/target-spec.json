@@ -8859,7 +8859,7 @@
     "vendor": "wrs"
   },
   "powerpc64-ibm-aix": {
-    "abi": "vec-extabi",
+    "abi": "vec-default",
     "arch": "powerpc64",
     "archive-format": "aix_big",
     "binary-format": "xcoff",
