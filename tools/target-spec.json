@@ -12265,8 +12265,7 @@
     "os": "emscripten",
     "post-link-args": {
       "em-cc": [
-        "-sABORTING_MALLOC=0",
-        "-sWASM_BIGINT"
+        "-sABORTING_MALLOC=0"
       ]
     },
     "singlethread": true,
