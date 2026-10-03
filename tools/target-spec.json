@@ -1074,6 +1074,40 @@
     "target-pointer-width": 64,
     "tls-model": "initial-exec"
   },
+  "aarch64-unknown-hyperlight": {
+    "arch": "aarch64",
+    "code-model": "small",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "default-uwtable": true,
+    "direct-access-external-data": true,
+    "disable-redzone": true,
+    "features": "+v8.1a,+strict-align,+neon,+fp-armv8",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "aarch64-unknown-none",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "ARM64 Hyperlight guest",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "hyperlight",
+    "panic-strategy": "abort",
+    "position-independent-executables": true,
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
+    "supported-sanitizers": [
+      "kcfi",
+      "kernel-address",
+      "kernel-hwaddress"
+    ],
+    "supports-xray": true,
+    "target-pointer-width": 64
+  },
   "aarch64-unknown-illumos": {
     "arch": "aarch64",
     "crt-objects-fallback": "false",
@@ -5485,6 +5519,7 @@
     "exe-suffix": ".exe",
     "frame-pointer": "always",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -6343,6 +6378,7 @@
     "exe-suffix": ".exe",
     "frame-pointer": "always",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -6533,6 +6569,7 @@
     "exe-suffix": ".exe",
     "frame-pointer": "always",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -13703,6 +13740,7 @@
     "exe-suffix": ".exe",
     "features": "+cmpxchg16b,+sse3,+lahfsahf",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -14366,6 +14404,39 @@
     "supports-xray": true,
     "target-family": [
       "unix"
+    ],
+    "target-pointer-width": 64
+  },
+  "x86_64-unknown-hyperlight": {
+    "arch": "x86_64",
+    "code-model": "small",
+    "cpu": "x86-64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
+    "disable-redzone": true,
+    "features": "-mmx,+sse,+sse2,-sse3,-ssse3,-sse4.1,-sse4.2,-avx,-avx2,-soft-float",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "x86_64-unknown-none-elf",
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "x86_64 Hyperlight guest",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "os": "hyperlight",
+    "panic-strategy": "abort",
+    "plt-by-default": false,
+    "position-independent-executables": true,
+    "relro-level": "full",
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "static-position-independent-executables": true,
+    "supported-sanitizers": [
+      "kcfi",
+      "kernel-address"
     ],
     "target-pointer-width": 64
   },
@@ -15367,6 +15438,7 @@
     "exe-suffix": ".exe",
     "features": "+cmpxchg16b,+sse3,+lahfsahf",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
@@ -15559,6 +15631,7 @@
     "env": "gnu",
     "exe-suffix": ".exe",
     "function-sections": false,
+    "has-thread-local": true,
     "is-like-windows": true,
     "late-link-args": {
       "gnu": [
