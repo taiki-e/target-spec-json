@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::hyperlight`.
+
 ## [0.2.13] - 2026-09-06
 
 - Add `Os::ps3`.
