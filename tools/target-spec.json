@@ -1918,6 +1918,53 @@
     ],
     "target-pointer-width": 64
   },
+  "aarch64-unknown-qtee": {
+    "arch": "aarch64",
+    "crt-objects-fallback": "false",
+    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+    "default-uwtable": true,
+    "disable-redzone": true,
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "entry-name": "tz_app_init",
+    "exe-suffix": ".rta",
+    "features": "+v8a,+strict-align,+neon",
+    "link-script": "ENTRY(tz_app_init);\n\nPHDRS {\n  CODE_RO PT_LOAD FILEHDR PHDRS;\n  MTDATA PT_LOAD FLAGS(0x04000004);\n  GOT PT_LOAD;\n  DATA PT_LOAD;\n  DYN PT_DYNAMIC;\n  REL PT_LOAD;\n  RELRO PT_GNU_RELRO;\n}\n\nSECTIONS {\n . = SIZEOF_HEADERS;\n\n .plt : {\n    PROVIDE (text_section_base = .);\n    * (.plt*)\n  } : CODE_RO\n\n  .text : {\n    * (.text* kthread_shared)\n    KEEP (*(tzapp_syscall_asm))\n    * (.rodata*)\n  } : CODE_RO\n\n  .eh_frame ALIGN(8) : {\n      PROVIDE (__eh_frame = .);\n      KEEP (*(.eh_frame)) *(.eh_frame.*)\n  }\n\n  PROVIDE (text_section_limit = .);\n  PROVIDE (__etext = .);\n  PROVIDE (_etext = .);\n  PROVIDE (etext = .);\n\n  .metadata ALIGN(4096) : {\n    KEEP (*(.metadata))\n    KEEP (*(.metadata.*))\n  } : MTDATA\n\n  .got ALIGN(4096) : { *(.got.plt) *(.igot.plt) *(.got) *(.igot) } : GOT\n    : RELRO\n\n  .data.rel.ro.local : {\n    *(.data.rel.ro.local*)\n  } : GOT\n    : RELRO\n\n  .data.rel.ro : {\n    *(.data.rel.ro*)\n  } : GOT\n    : RELRO\n\n  INIT_ARRAY : {\n    FILL(0x0)\n    __init_array_start = .;\n    *(.init_array)\n    __init_array_end = .;\n  } : GOT : RELRO\n\n  FINI_ARRAY : {\n    FILL(0x0)\n    __fini_array_start = .;\n    *(.fini_array)\n    __fini_array_end = .;\n  } : GOT : RELRO\n\n  .data ALIGN(4096) : {\n    data_section_base = .;\n    * (.data*)\n    * (.bss* COMMON)\n    data_section_limit = .;\n  } : DATA\n\n  .dynamic ALIGN(4096) : { *(.dynamic) } : DYN : REL\n  .rela.dyn : { *(.rela.dyn) } : REL\n  .rela.plt : { *(.rela.plt) } : REL\n  .hash : { *(.hash) } : REL\n  .dynsym : { *(.dynsym) } : REL\n  .dynstr : { *(.dynstr) } : REL\n  .gnu.attributes 0 : { KEEP (*(.gnu.attributes)) }\n  .note.gnu.arm.ident 0 : { KEEP (*(.note.gnu.arm.ident)) }\n  /DISCARD/ : { *(.ARM.exidx*) *(.note.GNU-stack) *(.gnu_debuglink) *(.gnu.lto_*) *(.init) *(.fini) }\n}\n",
+    "linker": "rust-lld",
+    "linker-flavor": "gnu-lld",
+    "llvm-target": "aarch64-unknown-none",
+    "max-atomic-width": 128,
+    "metadata": {
+      "description": "Trusted Applications running on QTEE for ARM64",
+      "host_tools": false,
+      "std": null,
+      "tier": 3
+    },
+    "only-cdylib": true,
+    "os": "qtee",
+    "position-independent-executables": true,
+    "pre-link-args": {
+      "gnu": [
+        "--fix-cortex-a53-843419"
+      ],
+      "gnu-lld": [
+        "--fix-cortex-a53-843419"
+      ]
+    },
+    "relro-level": "full",
+    "singlethread": true,
+    "stack-probes": {
+      "kind": "inline"
+    },
+    "supported-sanitizers": [
+      "kcfi",
+      "kernel-address",
+      "kernel-hwaddress"
+    ],
+    "supports-xray": true,
+    "target-pointer-width": 64
+  },
   "aarch64-unknown-redox": {
     "arch": "aarch64",
     "crt-objects-fallback": "false",
@@ -12267,6 +12314,61 @@
     "panic-strategy": "abort",
     "relocation-model": "static",
     "target-pointer-width": 32
+  },
+  "wasm32-none-component": {
+    "arch": "wasm32",
+    "binary-format": "wasm",
+    "crt-objects-fallback": "true",
+    "data-layout": "e-m:e-p:32:32-p10:8:8-p20:8:8-i64:64-i128:128-n32:64-S128-ni:1:10:20",
+    "dll-prefix": "",
+    "dll-suffix": ".wasm",
+    "dynamic-linking": true,
+    "eh-frame-header": false,
+    "emit-debug-gdb-scripts": false,
+    "exe-suffix": ".wasm",
+    "generate-arange-section": false,
+    "has-thread-local": true,
+    "is-like-wasm": true,
+    "linker": "wasm-component-ld",
+    "linker-flavor": "wasm-lld",
+    "linker-is-gnu": false,
+    "lld-flavor": "wasm",
+    "llvm-args": [
+      "-wasm-use-legacy-eh=false"
+    ],
+    "llvm-target": "wasm32-none-component",
+    "main-needs-argc-argv": false,
+    "max-atomic-width": 64,
+    "metadata": {
+      "description": "WebAssembly",
+      "host_tools": false,
+      "std": false,
+      "tier": 3
+    },
+    "only-cdylib": true,
+    "panic-strategy": "abort",
+    "pre-link-args": {
+      "wasm-lld": [
+        "-z",
+        "stack-size=1048576",
+        "--stack-first",
+        "--no-demangle",
+        "--no-entry"
+      ],
+      "wasm-lld-cc": [
+        "-Wl,-z",
+        "-Wl,stack-size=1048576",
+        "-Wl,--stack-first",
+        "-Wl,--no-demangle"
+      ]
+    },
+    "relocation-model": "static",
+    "singlethread": true,
+    "target-family": [
+      "wasm"
+    ],
+    "target-pointer-width": 32,
+    "tls-model": "local-exec"
   },
   "wasm32-unknown-emscripten": {
     "arch": "wasm32",
