@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `Os::qtee`.
+
 ## [0.2.14] - 2026-10-08
 
 - Add `Os::hyperlight`.
