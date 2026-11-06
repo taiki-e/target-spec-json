@@ -596,7 +596,7 @@
     "default-dwarf-version": 2,
     "default-uwtable": true,
     "dynamic-linking": true,
-    "features": "+v8a,+neon",
+    "features": "+v8a,+neon,+outline-atomics",
     "frame-pointer": "non-leaf",
     "has-rpath": true,
     "is-like-android": true,
@@ -689,14 +689,6 @@
     },
     "os": "linux",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-Wl,--fix-cortex-a53-843419"
-      ],
-      "gnu-lld-cc": [
-        "-Wl,--fix-cortex-a53-843419"
-      ]
-    },
     "relro-level": "full",
     "stack-probes": {
       "kind": "inline"
@@ -740,7 +732,7 @@
     "emit-debug-gdb-scripts": false,
     "env": "gnu",
     "exe-suffix": ".exe",
-    "features": "+v8a,+neon",
+    "features": "+v8a,+neon,+outline-atomics",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "is-like-windows": true,
@@ -853,7 +845,7 @@
     "emit-debug-gdb-scripts": false,
     "env": "msvc",
     "exe-suffix": ".exe",
-    "features": "+v8a,+neon",
+    "features": "+v8a,+neon,+outline-atomics",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "is-like-msvc": true,
@@ -900,7 +892,7 @@
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-dwarf-version": 2,
     "dynamic-linking": true,
-    "features": "+v8a",
+    "features": "+v8a,+outline-atomics",
     "has-rpath": true,
     "has-thread-local": true,
     "linker-flavor": "gnu-cc",
@@ -937,7 +929,7 @@
       "shadow-call-stack"
     ],
     "dynamic-linking": true,
-    "features": "+v8a,+crc,+aes,+sha2,+neon,+fix-cortex-a53-835769",
+    "features": "+v8a,+crc,+aes,+sha2,+neon,+fix-cortex-a53-835769,+outline-atomics",
     "frame-pointer": "non-leaf",
     "has-thread-local": true,
     "linker": "rust-lld",
@@ -1289,14 +1281,6 @@
     },
     "os": "linux",
     "position-independent-executables": true,
-    "pre-link-args": {
-      "gnu-cc": [
-        "-Wl,--fix-cortex-a53-843419"
-      ],
-      "gnu-lld-cc": [
-        "-Wl,--fix-cortex-a53-843419"
-      ]
-    },
     "relro-level": "full",
     "stack-probes": {
       "kind": "inline"
@@ -1417,14 +1401,6 @@
       "static-pic-exe": [
         "crtendS.o",
         "crtn.o"
-      ]
-    },
-    "pre-link-args": {
-      "gnu-cc": [
-        "-Wl,--fix-cortex-a53-843419"
-      ],
-      "gnu-lld-cc": [
-        "-Wl,--fix-cortex-a53-843419"
       ]
     },
     "pre-link-objects-fallback": {
@@ -1858,7 +1834,7 @@
     "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
     "default-dwarf-version": 2,
     "dynamic-linking": true,
-    "features": "+v8a",
+    "features": "+v8a,+outline-atomics",
     "frame-pointer": "always",
     "has-rpath": true,
     "linker-flavor": "gnu-cc",
@@ -2099,7 +2075,7 @@
     "linker-flavor": "msvc-lld",
     "linker-is-gnu": false,
     "lld-flavor": "link",
-    "llvm-target": "aarch64-unknown-windows",
+    "llvm-target": "aarch64-unknown-uefi",
     "max-atomic-width": 128,
     "metadata": {
       "description": "ARM64 UEFI",
@@ -2572,7 +2548,7 @@
   "amdgcn-amd-amdhsa": {
     "arch": "amdgpu",
     "crt-objects-fallback": "false",
-    "data-layout": "e-m:e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-p7:160:256:256:32-p8:128:128:128:48-p9:192:256:256:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7:8:9",
+    "data-layout": "e-m:e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-p7:160:256:256:32-p8:128:128:128:48-p9:192:256:256:32-p10:32:32-p11:32:32-p12:32:32-p13:32:32-p14:32:32-p15:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7:8:9",
     "dll-prefix": "",
     "dll-suffix": ".elf",
     "dynamic-linking": true,
@@ -15487,7 +15463,7 @@
     "linker-flavor": "msvc-lld",
     "linker-is-gnu": false,
     "lld-flavor": "link",
-    "llvm-target": "x86_64-unknown-windows",
+    "llvm-target": "x86_64-unknown-uefi",
     "max-atomic-width": 64,
     "metadata": {
       "description": "64-bit UEFI",
