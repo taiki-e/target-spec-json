@@ -4756,10 +4756,28 @@
       "std": false,
       "tier": 3
     },
-    "min-atomic-width": 64,
+    "min-atomic-width": 8,
     "no-builtins": true,
     "obj-is-bitcode": true,
     "panic-strategy": "abort",
+    "per-cpu-atomic-widths": {
+      "generic": [
+        8,
+        0
+      ],
+      "v1": [
+        8,
+        0
+      ],
+      "v2": [
+        8,
+        0
+      ],
+      "v3": [
+        8,
+        0
+      ]
+    },
     "position-independent-executables": true,
     "singlethread": true,
     "target-endian": "big",
@@ -4782,10 +4800,28 @@
       "std": false,
       "tier": 3
     },
-    "min-atomic-width": 64,
+    "min-atomic-width": 8,
     "no-builtins": true,
     "obj-is-bitcode": true,
     "panic-strategy": "abort",
+    "per-cpu-atomic-widths": {
+      "generic": [
+        8,
+        0
+      ],
+      "v1": [
+        8,
+        0
+      ],
+      "v2": [
+        8,
+        0
+      ],
+      "v3": [
+        8,
+        0
+      ]
+    },
     "position-independent-executables": true,
     "singlethread": true,
     "target-pointer-width": 64
