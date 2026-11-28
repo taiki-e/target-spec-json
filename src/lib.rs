@@ -292,6 +292,8 @@ pub struct TargetSpec {
     #[serde(default, skip_serializing_if = "PanicStrategy::is_unwind")]
     pub panic_strategy: PanicStrategy,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub per_cpu_atomic_widths: Option<BTreeMap<String, Vec<u32>>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub plt_by_default: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub position_independent_executables: Option<bool>,
