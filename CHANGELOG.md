@@ -12,6 +12,10 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Add `TargetSpec::per_cpu_atomic_widths`.
+
+- Add `Os::serenity`.
+
 ## [0.2.15] - 2026-11-01
 
 - Add `Os::qtee`.
