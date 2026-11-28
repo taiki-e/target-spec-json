@@ -12,6 +12,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+## [0.2.16] - 2026-11-28
+
 - Add `TargetSpec::per_cpu_atomic_widths`.
 
 - Add `Os::serenity`.
@@ -241,7 +243,8 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 Initial release
 
-[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.15...HEAD
+[Unreleased]: https://github.com/taiki-e/target-spec-json/compare/v0.2.16...HEAD
+[0.2.16]: https://github.com/taiki-e/target-spec-json/compare/v0.2.15...v0.2.16
 [0.2.15]: https://github.com/taiki-e/target-spec-json/compare/v0.2.14...v0.2.15
 [0.2.14]: https://github.com/taiki-e/target-spec-json/compare/v0.2.13...v0.2.14
 [0.2.13]: https://github.com/taiki-e/target-spec-json/compare/v0.2.12...v0.2.13
