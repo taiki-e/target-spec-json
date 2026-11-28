@@ -428,7 +428,7 @@ mod tests {
             "--target",
             target
         );
-        if !rustversion::cfg!(nightly) {
+        if !build_context::RUSTC_NIGHTLY {
             cmd.env("RUSTC_BOOTSTRAP", "1");
         }
         let raw = cmd.read()?;
@@ -437,18 +437,20 @@ mod tests {
 
     fn all_target_specs_json() -> Result<(AllTargetSpecs, String)> {
         let mut cmd = cmd!("rustc", "-Z", "unstable-options", "--print", "all-target-specs-json");
-        if !rustversion::cfg!(nightly) {
+        if !build_context::RUSTC_NIGHTLY {
             cmd.env("RUSTC_BOOTSTRAP", "1");
         }
         let raw = cmd.read()?;
         Ok((serde_json::from_str(&raw).map_err(Error::new)?, raw))
     }
 
-    // Skip pre-1.91 because target-pointer-width change
-    #[rustversion::attr(before(1.91), ignore)]
     #[test]
     #[cfg_attr(miri, ignore)] // Miri doesn't support std::process::Command: https://github.com/rust-lang/miri/issues/3374
     fn parse_target_spec_json() {
+        // Skip pre-1.91 because target-pointer-width change.
+        if build_context::RUSTC_MINOR_VERSION < 91 {
+            return;
+        }
         // builtin targets
         for target in cmd!("rustc", "--print", "target-list").read().unwrap().lines() {
             eprintln!("target={target}:");

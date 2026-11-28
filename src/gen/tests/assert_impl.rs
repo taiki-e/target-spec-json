@@ -4,106 +4,42 @@
 // It is not intended for manual editing.
 
 #![cfg_attr(rustfmt, rustfmt::skip)]
-#![allow(
-    dead_code,
-    unused_macros,
-    clippy::std_instead_of_alloc,
-    clippy::std_instead_of_core,
-)]
-fn assert_send<T: ?Sized + Send>() {}
-fn assert_sync<T: ?Sized + Sync>() {}
-fn assert_unpin<T: ?Sized + Unpin>() {}
-fn assert_unwind_safe<T: ?Sized + std::panic::UnwindSafe>() {}
-fn assert_ref_unwind_safe<T: ?Sized + std::panic::RefUnwindSafe>() {}
-macro_rules! assert_not_send {
-    ($ty:ty) => {
-        static_assertions::assert_not_impl_all!($ty : Send);
-    };
-}
-macro_rules! assert_not_sync {
-    ($ty:ty) => {
-        static_assertions::assert_not_impl_all!($ty : Sync);
-    };
-}
-macro_rules! assert_not_unpin {
-    ($ty:ty) => {
-        static_assertions::assert_not_impl_all!($ty : Unpin);
-    };
-}
-macro_rules! assert_not_unwind_safe {
-    ($ty:ty) => {
-        static_assertions::assert_not_impl_all!($ty : std::panic::UnwindSafe);
-    };
-}
-macro_rules! assert_not_ref_unwind_safe {
-    ($ty:ty) => {
-        static_assertions::assert_not_impl_all!($ty : std::panic::RefUnwindSafe);
-    };
-}
-const _: fn() = || {
-    assert_send::<crate::error::Error>();
-    assert_sync::<crate::error::Error>();
-    assert_unpin::<crate::error::Error>();
-    assert_not_unwind_safe!(crate::error::Error);
-    assert_not_ref_unwind_safe!(crate::error::Error);
-    assert_send::<crate::target_spec::Arch>();
-    assert_sync::<crate::target_spec::Arch>();
-    assert_unpin::<crate::target_spec::Arch>();
-    assert_unwind_safe::<crate::target_spec::Arch>();
-    assert_ref_unwind_safe::<crate::target_spec::Arch>();
-    assert_send::<crate::target_spec::Os>();
-    assert_sync::<crate::target_spec::Os>();
-    assert_unpin::<crate::target_spec::Os>();
-    assert_unwind_safe::<crate::target_spec::Os>();
-    assert_ref_unwind_safe::<crate::target_spec::Os>();
-    assert_send::<crate::target_spec::Env>();
-    assert_sync::<crate::target_spec::Env>();
-    assert_unpin::<crate::target_spec::Env>();
-    assert_unwind_safe::<crate::target_spec::Env>();
-    assert_ref_unwind_safe::<crate::target_spec::Env>();
-    assert_send::<crate::target_spec::TargetFamily>();
-    assert_sync::<crate::target_spec::TargetFamily>();
-    assert_unpin::<crate::target_spec::TargetFamily>();
-    assert_unwind_safe::<crate::target_spec::TargetFamily>();
-    assert_ref_unwind_safe::<crate::target_spec::TargetFamily>();
-    assert_send::<crate::target_spec::Sanitizer>();
-    assert_sync::<crate::target_spec::Sanitizer>();
-    assert_unpin::<crate::target_spec::Sanitizer>();
-    assert_unwind_safe::<crate::target_spec::Sanitizer>();
-    assert_ref_unwind_safe::<crate::target_spec::Sanitizer>();
-    assert_send::<crate::target_spec::BinaryFormat>();
-    assert_sync::<crate::target_spec::BinaryFormat>();
-    assert_unpin::<crate::target_spec::BinaryFormat>();
-    assert_unwind_safe::<crate::target_spec::BinaryFormat>();
-    assert_ref_unwind_safe::<crate::target_spec::BinaryFormat>();
-    assert_send::<crate::target_spec::TargetEndian>();
-    assert_sync::<crate::target_spec::TargetEndian>();
-    assert_unpin::<crate::target_spec::TargetEndian>();
-    assert_unwind_safe::<crate::target_spec::TargetEndian>();
-    assert_ref_unwind_safe::<crate::target_spec::TargetEndian>();
-    assert_send::<crate::target_spec::PanicStrategy>();
-    assert_sync::<crate::target_spec::PanicStrategy>();
-    assert_unpin::<crate::target_spec::PanicStrategy>();
-    assert_unwind_safe::<crate::target_spec::PanicStrategy>();
-    assert_ref_unwind_safe::<crate::target_spec::PanicStrategy>();
-    assert_send::<crate::AllTargetSpecs>();
-    assert_sync::<crate::AllTargetSpecs>();
-    assert_unpin::<crate::AllTargetSpecs>();
-    assert_unwind_safe::<crate::AllTargetSpecs>();
-    assert_ref_unwind_safe::<crate::AllTargetSpecs>();
-    assert_send::<crate::TargetSpec>();
-    assert_sync::<crate::TargetSpec>();
-    assert_unpin::<crate::TargetSpec>();
-    assert_unwind_safe::<crate::TargetSpec>();
-    assert_ref_unwind_safe::<crate::TargetSpec>();
-    assert_send::<crate::Metadata>();
-    assert_sync::<crate::Metadata>();
-    assert_unpin::<crate::Metadata>();
-    assert_unwind_safe::<crate::Metadata>();
-    assert_ref_unwind_safe::<crate::Metadata>();
-    assert_send::<crate::StackProbes>();
-    assert_sync::<crate::StackProbes>();
-    assert_unpin::<crate::StackProbes>();
-    assert_unwind_safe::<crate::StackProbes>();
-    assert_ref_unwind_safe::<crate::StackProbes>();
-};
+test_helper::assert_value!(
+    crate ::error::Error : Send & Sync & Unpin & ! UnwindSafe & ! RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::Arch : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::Os : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::Env : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::TargetFamily : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::Sanitizer : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::BinaryFormat : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::TargetEndian : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::target_spec::PanicStrategy : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::AllTargetSpecs : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::TargetSpec : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::Metadata : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
+test_helper::assert_value!(
+    crate ::StackProbes : Send & Sync & Unpin & UnwindSafe & RefUnwindSafe
+);
